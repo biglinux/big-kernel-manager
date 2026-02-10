@@ -3,58 +3,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-10 15:07\n"
-"PO-Revision-Date: 2026-02-10 15:07\n"
 "Last-Translator: Translation Automator <auto@translator.ai>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:68
 msgid "Kernel Versions"
 msgstr "Kernel verziók"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:69
 msgid "Select a kernel version to install or update"
 msgstr "Válassza ki a telepíteni vagy frissíteni kívánt kernel verziót"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
 msgid "Installed Kernels"
 msgstr "Telepített rendszermagok"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
 msgid "Available Kernels"
 msgstr "Elérhető rendszermagok"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
 #, python-brace-format
 msgid "Version: {}"
 msgstr "Verzió: {}"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
 msgid "Running"
 msgstr "Futás"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
 msgid "Remove"
 msgstr "Eltávolítás"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
 msgid "Cannot remove the currently running kernel"
 msgstr "A jelenleg futó rendszermag nem távolítható el"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
 msgid "Install"
 msgstr "Telepítés"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
 msgid "Install Kernel"
 msgstr "Telepítse a rendszermagot"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:302
 #, python-brace-format
 msgid ""
@@ -67,7 +54,6 @@ msgstr ""
 "\n"
 "Ezzel a kernel és moduljai is telepítésre kerülnek.\n"
 "Ehhez a művelethez sudo jogosultságok szükségesek."
-
 #. Cancel button (shown during operation)
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:307
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:376
@@ -75,33 +61,27 @@ msgstr ""
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:161
 msgid "Cancel"
 msgstr "Mégse"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
 #, python-brace-format
 msgid "Installing {}"
 msgstr "Telepítés {}"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
 #, python-brace-format
 msgid "Preparing to install {} kernel..."
 msgstr "A kernel {}telepítésének előkészítése..."
-
 #. Add initial terminal output
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
 #, python-brace-format
 msgid "Starting installation of {} kernel..."
 msgstr "A kernel {}telepítésének megkezdése..."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
 msgid "This may take a few minutes. Please wait..."
 msgstr "Ez néhány percig tarthat. Kérjük, várjon..."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
 msgid "Cannot Remove Running Kernel"
 msgstr "A futó rendszermag nem távolítható el"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
 msgid ""
 "The kernel you are trying to remove is currently in use.\n"
@@ -109,11 +89,9 @@ msgid ""
 msgstr ""
 "A törölni kívánt kernelt jelenleg használatban van.\n"
 "Kérjük, először indítson el egy másik kernelt."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
 msgid "Remove Kernel"
 msgstr "Kernel eltávolítása"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:371
 #, python-brace-format
 msgid ""
@@ -126,23 +104,19 @@ msgstr ""
 "\n"
 "Ezzel a kernel és moduljai is törlésre kerülnek.\n"
 "Ehhez a művelethez sudo jogosultság szükséges."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
 #, python-brace-format
 msgid "Removing {}"
 msgstr "Eltávolítás {}"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
 #, python-brace-format
 msgid "Preparing to remove {} kernel..."
 msgstr "A kernel {}eltávolításának előkészítése..."
-
 #. Add initial terminal output
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
 #, python-brace-format
 msgid "Starting removal of {} kernel..."
 msgstr "A{}kernel eltávolítása megkezdődött..."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
 msgid ""
 "The kernel was installed successfully.\n"
@@ -150,7 +124,6 @@ msgid ""
 msgstr ""
 "A kernel telepítése sikeresen megtörtént.\n"
 "Lehet, hogy újra kell indítania a rendszert az új kernel használatához."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
 msgid ""
 "The kernel installation failed.\n"
@@ -158,11 +131,9 @@ msgid ""
 msgstr ""
 "A kernel telepítése sikertelen volt.\n"
 "A részleteket a terminál kimenetében ellenőrizze."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
 msgid "The kernel was removed successfully."
 msgstr "A kernel sikeresen eltávolításra került."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
 msgid ""
 "The kernel removal failed.\n"
@@ -170,36 +141,28 @@ msgid ""
 msgstr ""
 "A kernel eltávolítása sikertelen volt.\n"
 "Kérjük, ellenőrizze a terminál kimenetét a részletekért."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:65
 msgid "Video Drivers"
 msgstr "Videó illesztőprogramok"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:66
 msgid "Select a video driver version to use"
 msgstr "Válassza ki a használni kívánt videokártya-illesztőprogram verzióját"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:70
 msgid "Information about video drivers"
 msgstr "Információk a videokártya-illesztőprogramokról"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:108
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:271
 msgid "Apply Changes"
 msgstr "Változtatások alkalmazása"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:210
 msgid "STABLE"
 msgstr "STABLE"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
 msgstr "Aktív"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:236
 msgid "Video Drivers Information"
 msgstr "Videokártya-illesztőprogramok információi"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:238
 msgid ""
 "Different driver versions offer various features and performance "
@@ -207,36 +170,28 @@ msgid ""
 msgstr ""
 "A különböző illesztőprogram-verziók különböző funkciókat és "
 "teljesítményjellemzőket kínálnak:"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:239
 msgid "Amber: Stable and well-tested version"
 msgstr "Amber: Stabil és jól tesztelt verzió"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:240
 msgid "Stable: Regular Mesa release"
 msgstr "Stabil: Rendszeres Mesa kiadás"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:241
 msgid "Tkg-Stable: Enhanced performance build"
 msgstr "Tkg-Stable: Fokozott teljesítményű összeállítás"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:242
 msgid "Tkg-git: Latest development version with cutting-edge features"
 msgstr "Tkg-git: Legújabb fejlesztői verzió a legmodernebb funkciókkal"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:243
 msgid "Choose the one that best fits your needs and hardware."
 msgstr ""
 "Válassza ki azt, amelyik leginkább megfelel az Ön igényeinek és hardverének."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:245
 msgid "OK"
 msgstr "Rendben"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:264
 msgid "Apply Driver Changes"
 msgstr "Illesztőprogram-módosítások alkalmazása"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:266
 msgid ""
 "Are you sure you want to apply the selected driver changes?\n"
@@ -246,23 +201,19 @@ msgstr ""
 "Biztosan alkalmazni szeretné a kiválasztott illesztőprogram-módosításokat?\n"
 "\n"
 "Ez megváltoztatja a rendszer videokártya-illesztőprogramjait, és újraindítást igényelhet."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290
 #, python-brace-format
 msgid "Applying {}"
 msgstr "Alkalmazás {}"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:291
 #, python-brace-format
 msgid "Preparing to apply {} driver..."
 msgstr "A meghajtó {}telepítésének előkészítése..."
-
 #. Add initial terminal output
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:299
 #, python-brace-format
 msgid "Applying {} driver..."
 msgstr "Illesztőprogram{} telepítése..."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:329
 msgid ""
 "The video driver was changed successfully.\n"
@@ -270,7 +221,6 @@ msgid ""
 msgstr ""
 "A videokártya illesztőprogramja sikeresen frissült.\n"
 "A változások érvénybe lépéséhez újra kell indítania a számítógépet."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
 msgid ""
 "The driver change failed.\n"
@@ -278,35 +228,27 @@ msgid ""
 msgstr ""
 "A meghajtócsere sikertelen volt.\n"
 "A részleteket a terminál kimenetén ellenőrizze."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:89
 msgid "Kernel"
 msgstr "Kernel"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:90
 msgid "Mesa Drivers"
 msgstr "Mesa illesztőprogramok"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:129
 msgid "Menu"
 msgstr "Menü"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:133
 msgid "Refresh"
 msgstr "Frissítés"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:134
 msgid "About"
 msgstr "Rólunk"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:235
 msgid "Kernel and Mesa Management"
 msgstr "Kernel és Mesa kezelés"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:276
 msgid "Important Information About Kernel and Mesa Changes"
 msgstr "Fontos információk a Kernel és a Mesa változásairól"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:290
 msgid ""
 "Changing your system's kernel or Mesa drivers can impact system stability. "
@@ -316,20 +258,16 @@ msgstr ""
 "A rendszer kernele vagy a Mesa illesztőprogramok megváltoztatása hatással "
 "lehet a rendszer stabilitására. Kérjük, óvatosan járjon el, és vegye "
 "figyelembe az alábbi kockázatokat és ajánlásokat:"
-
 #. Kernel section
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:296
 msgid "Kernel Management"
 msgstr "Kernel menedzsment"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:297
 msgid "Always keep at least one working kernel"
 msgstr "Mindig tartson legalább egy működő kernelt"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:297
 msgid " installed as a fallback"
 msgstr " tartaléknak telepítve"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:298
 msgid ""
 "LTS kernels offer better stability, while newer kernels provide newer "
@@ -337,11 +275,9 @@ msgid ""
 msgstr ""
 "Az LTS kernelt jobb stabilitást biztosít, míg az újabb kernelt újabb hardver"
 " támogatást nyújt."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:299
 msgid "Test your system thoroughly after kernel changes"
 msgstr "A rendszert alaposan tesztelje a kernel módosításai után"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:300
 msgid ""
 "If a new kernel causes issues, you can select the previous kernel from the "
@@ -349,7 +285,6 @@ msgid ""
 msgstr ""
 "Ha az új rendszermag problémákat okoz, akkor a rendszerindítási menüből "
 "kiválaszthatja az előző rendszermagot."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:301
 msgid ""
 "Real-time (RT) kernels are specialized for low-latency tasks but may not be "
@@ -357,12 +292,10 @@ msgid ""
 msgstr ""
 "A valós idejű (RT) rendszermagok alacsony késleltetésű feladatokra "
 "specializálódtak, de általános használatra nem feltétlenül alkalmasak."
-
 #. Mesa section
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:305
 msgid "Mesa Driver Management"
 msgstr "Mesa illesztőprogram-kezelés"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:306
 msgid ""
 "Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some "
@@ -370,7 +303,6 @@ msgid ""
 msgstr ""
 "A Mesa illesztőprogramok 3D grafikus gyorsítást biztosítanak az AMD, Intel "
 "és egyes NVIDIA GPU-k számára."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:307
 msgid ""
 "Changing Mesa versions may affect graphics performance and application "
@@ -378,17 +310,14 @@ msgid ""
 msgstr ""
 "A Mesa verziók megváltoztatása hatással lehet a grafikus teljesítményre és "
 "az alkalmazások kompatibilitására."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:308
 msgid "The stable version is recommended for most users"
 msgstr "A legtöbb felhasználó számára a stabil verzió ajánlott."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:309
 msgid ""
 "Development versions may offer better performance but with less stability"
 msgstr ""
 "A fejlesztési verziók jobb teljesítményt nyújthatnak, de kevésbé stabilak."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:310
 msgid ""
 "If graphics issues occur after a change, you can switch back to the previous"
@@ -396,11 +325,9 @@ msgid ""
 msgstr ""
 "Ha a módosítás után grafikai problémák lépnek fel, visszatérhet az előző "
 "illesztőprogramhoz."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:319
 msgid "General Advice:"
 msgstr "Általános tanácsok:"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:320
 msgid ""
 "Consider creating a system backup before making changes. If you're not sure "
@@ -411,50 +338,39 @@ msgstr ""
 "elkészítését. Ha nem biztos benne, melyik opciót válassza, az LTS kernel és "
 "a stabil Mesa illesztőprogramok általában a legbiztonságosabb választás a "
 "legtöbb felhasználó számára."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:364
 msgid "Show this warning on startup"
 msgstr "Ezt a figyelmeztetést indításkor megjeleníteni"
-
 #. Close button
 #. Close button (shown on completion)
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:378
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:169
 msgid "Close"
 msgstr "Bezárás"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
 msgstr "Terminál kimenet"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Show Terminal Output"
 msgstr "Terminál kimenet megjelenítése"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:200
 msgid "Please wait..."
 msgstr "Kérjük, várjon..."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:279
 msgid "Operation completed successfully!"
 msgstr "A művelet sikeresen befejeződött!"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:290
 msgid "Operation failed. Check terminal output for details."
 msgstr "A művelet sikertelen. A részleteket a terminál kimenetén ellenőrizze."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:305
 msgid "Completed!"
 msgstr "Befejezve!"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:308
 msgid "Failed"
 msgstr "Sikertelen"
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:333
 msgid "Operation cancelled by user."
 msgstr "A műveletet a felhasználó törölte."
-
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:334
 msgid "Cancelled"
 msgstr "Törölve"
