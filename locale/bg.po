@@ -1,0 +1,459 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: big-kernel-manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-10 14:59\n"
+"PO-Revision-Date: 2026-02-10 14:59\n"
+"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"Language-Team: Bulgarian <bg@li.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:68
+msgid "Kernel Versions"
+msgstr "Версии на ядрото"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:69
+msgid "Select a kernel version to install or update"
+msgstr "Изберете версия на ядрото, която да инсталирате или актуализирате"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
+msgid "Installed Kernels"
+msgstr "Инсталирани ядра"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
+msgid "Available Kernels"
+msgstr "Налични ядра"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
+#, python-brace-format
+msgid "Version: {}"
+msgstr "Версия: {}"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
+msgid "Running"
+msgstr "Тичане"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
+msgid "Remove"
+msgstr "Премахване"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
+msgid "Cannot remove the currently running kernel"
+msgstr "Не може да се премахне текущо изпълняваният ядро"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
+msgid "Install"
+msgstr "Инсталиране"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
+msgid "Install Kernel"
+msgstr "Инсталиране на ядро"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:302
+#, python-brace-format
+msgid ""
+"Are you sure you want to install the <b>{}</b> kernel?\n"
+"\n"
+"This will install the kernel and its modules.\n"
+"This operation requires sudo privileges."
+msgstr ""
+"Сигурен ли сте, че искате да инсталирате <b>{}</b>ядрото?\n"
+"\n"
+"Това ще инсталира ядрото и неговите модули.\n"
+"Тази операция изисква sudo привилегии."
+
+#. Cancel button (shown during operation)
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:307
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:376
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:270
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:161
+msgid "Cancel"
+msgstr "Отмени"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
+#, python-brace-format
+msgid "Installing {}"
+msgstr "Инсталиране {}"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
+#, python-brace-format
+msgid "Preparing to install {} kernel..."
+msgstr "Подготовка за инсталиране на{} ядрото..."
+
+#. Add initial terminal output
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
+#, python-brace-format
+msgid "Starting installation of {} kernel..."
+msgstr "Започва инсталирането на{}ядрото..."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
+msgid "This may take a few minutes. Please wait..."
+msgstr "Това може да отнеме няколко минути. Моля, изчакайте..."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
+msgid "Cannot Remove Running Kernel"
+msgstr "Не може да се премахне работещ ядро"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
+msgid ""
+"The kernel you are trying to remove is currently in use.\n"
+"Please boot into a different kernel first."
+msgstr ""
+"Ядрото, което се опитвате да премахнете, в момента се използва.\n"
+"Моля, първо стартирайте с друго ядро."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
+msgid "Remove Kernel"
+msgstr "Премахване на ядрото"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:371
+#, python-brace-format
+msgid ""
+"Are you sure you want to remove the <b>{}</b> kernel?\n"
+"\n"
+"This will remove the kernel and its modules.\n"
+"This operation requires sudo privileges."
+msgstr ""
+"Сигурен ли сте, че искате да премахнете <b>{}</b>ядрото?\n"
+"\n"
+"Това ще премахне ядрото и неговите модули.\n"
+"Тази операция изисква sudo привилегии."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
+#, python-brace-format
+msgid "Removing {}"
+msgstr "Премахване {}"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
+#, python-brace-format
+msgid "Preparing to remove {} kernel..."
+msgstr "Подготовка за премахване на{} ядрото..."
+
+#. Add initial terminal output
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
+#, python-brace-format
+msgid "Starting removal of {} kernel..."
+msgstr "Започва премахването на{}ядрото..."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
+msgid ""
+"The kernel was installed successfully.\n"
+"You may need to reboot to use the new kernel."
+msgstr ""
+"Ядрото беше инсталирано успешно.\n"
+"Може да се наложи да рестартирате, за да използвате новото ядро."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
+msgid ""
+"The kernel installation failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"Инсталирането на ядрото се провали.\n"
+"Моля, проверете изхода на терминала за подробности."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
+msgid "The kernel was removed successfully."
+msgstr "Ядрото беше успешно премахнато."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
+msgid ""
+"The kernel removal failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"Премахването на ядрото се провали.\n"
+"Моля, проверете изхода на терминала за подробности."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:65
+msgid "Video Drivers"
+msgstr "Видео драйвери"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:66
+msgid "Select a video driver version to use"
+msgstr "Изберете версия на видео драйвера, която да използвате"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:70
+msgid "Information about video drivers"
+msgstr "Информация за видео драйвери"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:108
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:271
+msgid "Apply Changes"
+msgstr "Приложи промените"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:210
+msgid "STABLE"
+msgstr "СТАБИЛЕН"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
+msgid "Active"
+msgstr "Активен"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:236
+msgid "Video Drivers Information"
+msgstr "Информация за видео драйвери"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:238
+msgid ""
+"Different driver versions offer various features and performance "
+"characteristics:"
+msgstr ""
+"Различните версии на драйверите предлагат различни функции и характеристики "
+"на производителността:"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:239
+msgid "Amber: Stable and well-tested version"
+msgstr "Amber: Стабилна и добре тествана версия"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:240
+msgid "Stable: Regular Mesa release"
+msgstr "Стабилна: Редовна версия на Mesa"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:241
+msgid "Tkg-Stable: Enhanced performance build"
+msgstr "Tkg-Stable: Подобрена производителност"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:242
+msgid "Tkg-git: Latest development version with cutting-edge features"
+msgstr "Tkg-git: Най-новата версия с най-модерни функции"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:243
+msgid "Choose the one that best fits your needs and hardware."
+msgstr "Изберете този, който най-добре отговаря на вашите нужди и хардуер."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:245
+msgid "OK"
+msgstr "Добре"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:264
+msgid "Apply Driver Changes"
+msgstr "Приложи промени в драйвера"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:266
+msgid ""
+"Are you sure you want to apply the selected driver changes?\n"
+"\n"
+"This will modify your system's video drivers and might require a reboot."
+msgstr ""
+"Сигурен ли сте, че искате да приложите избраните промени в драйверите?\n"
+"\n"
+"Това ще промени видео драйверите на вашата система и може да се наложи рестартиране."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290
+#, python-brace-format
+msgid "Applying {}"
+msgstr "Прилагане {}"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:291
+#, python-brace-format
+msgid "Preparing to apply {} driver..."
+msgstr "Подготовка за прилагане на{} драйвер..."
+
+#. Add initial terminal output
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:299
+#, python-brace-format
+msgid "Applying {} driver..."
+msgstr "Прилагане на {}драйвер..."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:329
+msgid ""
+"The video driver was changed successfully.\n"
+"You may need to reboot for changes to take effect."
+msgstr ""
+"Видео драйверът беше променен успешно.\n"
+"Може да се наложи да рестартирате компютъра, за да влязат промените в сила."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
+msgid ""
+"The driver change failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"Смяната на драйвера не успя.\n"
+"Моля, проверете изхода на терминала за подробности."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:89
+msgid "Kernel"
+msgstr "Ядро"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:90
+msgid "Mesa Drivers"
+msgstr "Драйвери за Mesa"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:129
+msgid "Menu"
+msgstr "Меню"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:133
+msgid "Refresh"
+msgstr "Опресни"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:134
+msgid "About"
+msgstr "За"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:235
+msgid "Kernel and Mesa Management"
+msgstr "Управление на ядрото и Mesa"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:276
+msgid "Important Information About Kernel and Mesa Changes"
+msgstr "Важна информация за промените в ядрото и Mesa"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:290
+msgid ""
+"Changing your system's kernel or Mesa drivers can impact system stability. "
+"Please proceed with caution and understand the following risks and "
+"recommendations:"
+msgstr ""
+"Промяната на ядрото на системата или драйверите на Mesa може да повлияе на "
+"стабилността на системата. Моля, действайте с повишено внимание и се "
+"запознайте с следните рискове и препоръки:"
+
+#. Kernel section
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:296
+msgid "Kernel Management"
+msgstr "Управление на ядрото"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:297
+msgid "Always keep at least one working kernel"
+msgstr "Винаги поддържайте поне едно работещо ядро"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:297
+msgid " installed as a fallback"
+msgstr " инсталиран като резервен вариант"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:298
+msgid ""
+"LTS kernels offer better stability, while newer kernels provide newer "
+"hardware support"
+msgstr ""
+"LTS ядрата предлагат по-добра стабилност, докато по-новите ядра осигуряват "
+"поддръжка за по-нов хардуер."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:299
+msgid "Test your system thoroughly after kernel changes"
+msgstr "Тествайте системата си задълбочено след промени в ядрото"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:300
+msgid ""
+"If a new kernel causes issues, you can select the previous kernel from the "
+"boot menu"
+msgstr ""
+"Ако новото ядро предизвиква проблеми, можете да изберете предишното ядро от "
+"менюто за стартиране."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:301
+msgid ""
+"Real-time (RT) kernels are specialized for low-latency tasks but may not be "
+"suitable for general use"
+msgstr ""
+"Ядрата в реално време (RT) са специализирани за задачи с ниска латентност, "
+"но може да не са подходящи за общо ползване."
+
+#. Mesa section
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:305
+msgid "Mesa Driver Management"
+msgstr "Управление на драйвери Mesa"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:306
+msgid ""
+"Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some "
+"NVIDIA GPUs"
+msgstr ""
+"Драйверите на Mesa осигуряват 3D графична ускорение за AMD, Intel и някои "
+"NVIDIA GPU"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:307
+msgid ""
+"Changing Mesa versions may affect graphics performance and application "
+"compatibility"
+msgstr ""
+"Промяната на версиите на Mesa може да повлияе на графичната производителност"
+" и съвместимостта на приложенията."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:308
+msgid "The stable version is recommended for most users"
+msgstr "Стабилната версия се препоръчва за повечето потребители."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:309
+msgid ""
+"Development versions may offer better performance but with less stability"
+msgstr ""
+"Разработваните версии могат да предлагат по-добра производителност, но с по-"
+"малка стабилност."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:310
+msgid ""
+"If graphics issues occur after a change, you can switch back to the previous"
+" driver"
+msgstr ""
+"Ако след промяната възникнат проблеми с графиката, можете да се върнете към "
+"предишния драйвер."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:319
+msgid "General Advice:"
+msgstr "Общи съвети:"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:320
+msgid ""
+"Consider creating a system backup before making changes. If you're not sure "
+"which option to choose, the LTS kernel and stable Mesa drivers are generally"
+" the safest choices for most users."
+msgstr ""
+"Обмислете да направите резервно копие на системата, преди да направите "
+"промени. Ако не сте сигурни коя опция да изберете, LTS ядрото и стабилните "
+"Mesa драйвери обикновено са най-безопасният избор за повечето потребители."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:364
+msgid "Show this warning on startup"
+msgstr "Покажи това предупреждение при стартиране"
+
+#. Close button
+#. Close button (shown on completion)
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:378
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:169
+msgid "Close"
+msgstr "Затвори"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
+msgid "Terminal Output"
+msgstr "Терминална продукция"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
+msgid "Show Terminal Output"
+msgstr "Показване на терминалния изход"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:200
+msgid "Please wait..."
+msgstr "Моля, изчакайте..."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:279
+msgid "Operation completed successfully!"
+msgstr "Операцията приключи успешно!"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:290
+msgid "Operation failed. Check terminal output for details."
+msgstr "Операцията се провали. Проверете изхода на терминала за подробности."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:305
+msgid "Completed!"
+msgstr "Завършено!"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:308
+msgid "Failed"
+msgstr "Неуспешен"
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:333
+msgid "Operation cancelled by user."
+msgstr "Операцията е отменена от потребителя."
+
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:334
+msgid "Cancelled"
+msgstr "Отменено"

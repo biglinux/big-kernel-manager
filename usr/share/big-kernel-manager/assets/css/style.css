@@ -1,0 +1,160 @@
+/* Big Kernel Manager - CSS Styles */
+
+/* Terminal output styling */
+.terminal {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: "Monospace", "Consolas", monospace;
+    font-size: 12px;
+}
+
+/* Status message styles */
+.success-message {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.warning-message {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.info-message {
+    color: #2196f3;
+}
+
+/* Kernel status badges */
+.badge {
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badge-box {
+    border-radius: 4px;
+    padding: 2px 6px;
+    margin: 0 2px;
+}
+
+.badge-box.success {
+    background-color: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+}
+
+.badge-box.warning {
+    background-color: rgba(241, 196, 15, 0.15);
+    color: #f1c40f;
+}
+
+.badge-box.accent {
+    background-color: rgba(52, 152, 219, 0.15);
+    color: #3498db;
+}
+
+/* Running kernel badge */
+.badge-box.running {
+    background-color: rgba(114, 137, 218, 0.20);
+    color: #7289da;
+    border: 1px solid rgba(114, 137, 218, 0.3);
+}
+
+/* Danger badge (e.g. for destructive actions) */
+.badge-box.danger {
+    background-color: rgba(224, 27, 36, 0.15);
+    color: #e01b24;
+}
+
+/* Section headers */
+.heading {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Progress container */
+.progress-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 0;
+}
+
+/* Card styling for kernel/mesa rows */
+.kernel-card,
+.mesa-card {
+    border-radius: 8px;
+    padding: 16px;
+    margin: 4px 0;
+}
+
+/* Disabled state */
+.kernel-card.disabled,
+.mesa-card.disabled {
+    opacity: 0.5;
+}
+
+/* Action buttons styling - slim version */
+.action-button {
+    min-width: 100px;
+}
+
+/* Slim action buttons for Install/Remove in kernel/mesa lists */
+button.slim-action {
+    font-weight: bold;
+}
+
+/* Spinner for loading states */
+.loading-spinner {
+    min-width: 32px;
+    min-height: 32px;
+}
+
+/* Section headers */
+.section-header {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Dimmed/secondary text */
+.dim-label {
+    opacity: 0.7;
+    font-size: 12px;
+}
+
+/* Version text */
+.version-label {
+    font-family: "Monospace", monospace;
+    font-size: 11px;
+}
+
+/* Flat action buttons with colored text for Adwaita compliance */
+button.flat.install-action {
+    color: #3584e4;
+    font-weight: 600;
+}
+
+button.flat.remove-action {
+    color: #e01b24;
+    font-weight: 600;
+}
+
+button.flat.install-action:hover {
+    background-color: rgba(53, 132, 228, 0.1);
+}
+
+button.flat.remove-action:hover {
+    background-color: rgba(224, 27, 36, 0.1);
+}
+
+/* Disabled remove button for running kernel */
+button.flat.remove-action:disabled {
+    opacity: 0.4;
+    color: @insensitive_fg_color;
+}
