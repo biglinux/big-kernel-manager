@@ -34,8 +34,9 @@ class MesaPage(BasePage):
         # Create content
         self._create_content()
         
-        # Load available Mesa drivers (synchronous to ensure data is ready before window shows)
-        self._load_mesa_drivers()
+        # Load available Mesa drivers asynchronously (show spinner while loading)
+        self._show_loading()
+        GLib.idle_add(self._load_mesa_drivers_async)
     
     # Extended descriptions per driver id (combines old description + info)
     DRIVER_INFO = {
@@ -74,8 +75,8 @@ class MesaPage(BasePage):
         info = self.DRIVER_INFO
         info["amber"]["badge"] = _("Legacy")
         info["amber"]["desc"] = _(
-            "Classic OpenGL implementation. Ideal for older hardware "
-            "or applications that require the legacy Mesa pipeline."
+            "Classic OpenGL implementation for very old hardware. "
+            "Only use if your GPU does not support modern Mesa drivers."
         )
         info["stable"]["badge"] = _("Recommended")
         info["stable"]["desc"] = _(
@@ -85,13 +86,13 @@ class MesaPage(BasePage):
         )
         info["tkg-stable"]["badge"] = _("Performance")
         info["tkg-stable"]["desc"] = _(
-            "Custom build of stable Mesa with performance optimizations. "
-            "May provide better FPS in games while maintaining stability."
+            "Custom build with performance patches. May provide better FPS "
+            "in games, but can cause issues with system updates. Use with caution."
         )
         info["tkg-git"]["badge"] = "DEV"
         info["tkg-git"]["desc"] = _(
-            "Bleeding-edge development version built from the latest source code. "
-            "Contains the newest features but may introduce instability."
+            "Bleeding-edge development version. Contains the newest features "
+            "but is unstable and may break with updates. Not recommended for daily use."
         )
     
     def _create_content(self):
@@ -152,6 +153,7 @@ class MesaPage(BasePage):
     
     def _update_driver_list(self, drivers=None):
         """Update the 2x2 driver grid."""
+        self._hide_loading()
         # Clear grid
         while True:
             child = self.driver_grid.get_first_child()
@@ -254,15 +256,15 @@ class MesaPage(BasePage):
             return
         
         dialog = Adw.MessageDialog.new(self.get_root())
-        dialog.set_heading(_("Switch Video Driver"))
+        dialog.set_heading(_("Change Video Driver"))
         dialog.set_body(
-            _("Do you want to switch to the <b>{}</b> driver?\n\n"
-              "This will modify your system's video drivers and might require a reboot.").format(driver['name'])
+            _("Do you want to change to the <b>{}</b> driver?\n\n"
+              "This will modify your system's video drivers and may require a reboot.").format(driver['name'])
         )
         dialog.set_body_use_markup(True)
         
         dialog.add_response("cancel", _("Cancel"))
-        dialog.add_response("apply", _("Switch"))
+        dialog.add_response("apply", _("Apply"))
         dialog.set_response_appearance("apply", Adw.ResponseAppearance.SUGGESTED)
         dialog.set_default_response("cancel")
         dialog.set_close_response("cancel")

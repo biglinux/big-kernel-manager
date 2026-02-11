@@ -34,6 +34,36 @@ class BasePage(Gtk.Box):
         self._progress_container = None
         self._terminal_view = None
         self._terminal_buffer = None
+        
+        # Loading spinner
+        self._loading_box = None
+    
+    def _show_loading(self):
+        """Show a centered loading spinner overlay."""
+        if self._loading_box is not None:
+            return
+        
+        self._loading_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=12)
+        self._loading_box.set_valign(Gtk.Align.CENTER)
+        self._loading_box.set_halign(Gtk.Align.CENTER)
+        self._loading_box.set_vexpand(True)
+        
+        spinner = Gtk.Spinner()
+        spinner.set_size_request(32, 32)
+        spinner.start()
+        self._loading_box.append(spinner)
+        
+        label = Gtk.Label(label=_("Loading..."))
+        label.add_css_class("dim-label")
+        self._loading_box.append(label)
+        
+        self.append(self._loading_box)
+    
+    def _hide_loading(self):
+        """Remove the loading spinner."""
+        if self._loading_box is not None:
+            self.remove(self._loading_box)
+            self._loading_box = None
     
     def _create_progress_container(self) -> Gtk.Box:
         """

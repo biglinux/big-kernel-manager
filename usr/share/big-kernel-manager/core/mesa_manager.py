@@ -177,34 +177,32 @@ class MesaManager(BaseManager):
                     self._output(output_callback, f"Removing conflicts: {', '.join(installed_conflicts)}")
                     self._progress(progress_callback, 0.3, "Removing conflicting packages...")
                     
-                    # Use -Rdd to skip dependency checks (we're replacing the packages right after)
-                    remove_cmd = [self.sudo_command, "pacman", "-Rdd", "--noconfirm"] + installed_conflicts
-                    
-                    env = os.environ.copy()
-                    env["LANG"] = "C"
-                    
-                    process = subprocess.Popen(
-                        remove_cmd,
-                        stdout=subprocess.PIPE,
-                        stderr=subprocess.STDOUT,
-                        stdin=subprocess.DEVNULL,
-                        text=True,
-                        env=env
-                    )
-                    
-                    for line in iter(process.stdout.readline, ""):
-                        line = line.strip()
-                        if line:
-                            self._output(output_callback, line)
-                    
-                    process.wait()
-                    
-                    if process.returncode != 0:
-                        self._progress(progress_callback, 0.0, "Failed to remove conflicting packages.")
-                        self._output(output_callback, "❌ Failed to remove conflicting packages.")
-                        if complete_callback:
-                            complete_callback(False)
-                        return
+                    # Remove conflicts one-by-one to handle partial failures gracefully
+                    for conflict_pkg in installed_conflicts:
+                        remove_cmd = [self.sudo_command, "pacman", "-Rdd", "--noconfirm", conflict_pkg]
+                        
+                        env = os.environ.copy()
+                        env["LANG"] = "C"
+                        
+                        process = subprocess.Popen(
+                            remove_cmd,
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.STDOUT,
+                            stdin=subprocess.DEVNULL,
+                            text=True,
+                            env=env
+                        )
+                        
+                        for line in iter(process.stdout.readline, ""):
+                            line = line.strip()
+                            if line:
+                                self._output(output_callback, line)
+                        
+                        process.wait()
+                        
+                        if process.returncode != 0:
+                            self._output(output_callback, f"⚠️ Could not remove {conflict_pkg}, skipping...")
+                            self._logger.warning(f"Failed to remove conflict package: {conflict_pkg}")
             
             # Step 2: Install the new packages
             self._progress(progress_callback, 0.5, f"Installing {driver['name']} packages...")

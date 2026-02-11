@@ -37,8 +37,9 @@ class KernelPage(BasePage):
         # Create content
         self._create_content()
         
-        # Load available kernels (synchronous to ensure data is ready before window shows)
-        self._load_kernels()
+        # Load available kernels asynchronously (show spinner while loading)
+        self._show_loading()
+        GLib.idle_add(self._load_kernels_async)
     
     def _create_content(self):
         """Create the UI elements for kernel management with fixed layout."""
@@ -112,6 +113,7 @@ class KernelPage(BasePage):
     
     def _update_kernel_list(self, kernels, running_kernel_package=""):
         """Update the kernel list in the main thread."""
+        self._hide_loading()
         self._running_kernel_package = running_kernel_package
         
         # Clear existing items
@@ -235,7 +237,7 @@ class KernelPage(BasePage):
         
         # Running badge
         if is_running:
-            running_badge = self._create_badge(_("Running"), "running")
+            running_badge = self._create_badge(_("In Use"), "running")
             tags_box.append(running_badge)
         
         # LTS badge

@@ -32,8 +32,8 @@ msgid "Version: {}"
 msgstr "Versão: {}"
 
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
-msgid "Running"
-msgstr "Corrida"
+msgid "In Use"
+msgstr "Em uso"
 
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
@@ -193,6 +193,63 @@ msgstr "ESTÁVEL"
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
 msgstr "Ativo"
+
+#: mesa_page.py - driver descriptions
+msgid ""
+"Classic OpenGL implementation for very old hardware. "
+"Only use if your GPU does not support modern Mesa drivers."
+msgstr ""
+"Implementação OpenGL clássica para hardware muito antigo. "
+"Use apenas se sua GPU não suportar os drivers Mesa modernos."
+
+msgid ""
+"Official Mesa release. Tested and compatible with system updates. "
+"Recommended for most users."
+msgstr ""
+"Versão oficial do Mesa. Testada e compatível com atualizações do sistema. "
+"Recomendada para a maioria dos usuários."
+
+msgid ""
+"Custom build with performance patches. May provide better FPS "
+"in games, but can cause issues with system updates. Use with caution."
+msgstr ""
+"Compilação personalizada com patches de desempenho. Pode oferecer mais FPS "
+"em jogos, mas pode causar problemas com atualizações. Use com cautela."
+
+msgid ""
+"Bleeding-edge development version. Contains the newest features "
+"but is unstable and may break with updates. Not recommended for daily use."
+msgstr ""
+"Versão de desenvolvimento de ponta. Contém os recursos mais novos, "
+"mas é instável e pode quebrar com atualizações. Não recomendada para uso diário."
+
+msgid "Change Video Driver"
+msgstr "Trocar driver de vídeo"
+
+#, python-brace-format
+msgid ""
+"Do you want to change to the <b>{}</b> driver?\n"
+"\n"
+"This will modify your system's video drivers and may require a reboot."
+msgstr ""
+"Deseja trocar para o driver <b>{}</b>?\n"
+"\n"
+"Isso modificará os drivers de vídeo do sistema e pode exigir uma reinicialização."
+
+msgid "Apply"
+msgstr "Aplicar"
+
+msgid "Loading..."
+msgstr "Carregando..."
+
+msgid "Legacy"
+msgstr "Legado"
+
+msgid "Recommended"
+msgstr "Recomendado"
+
+msgid "Performance"
+msgstr "Desempenho"
 
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:236
 msgid "Video Drivers Information"
