@@ -20,16 +20,6 @@ msgstr ""
 msgid "Terminal Output"
 msgstr "Τερματική έξοδος"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 68
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:68
-msgid "Kernel Versions"
-msgstr "Εκδόσεις πυρήνα"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 69
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:69
-msgid "Select a kernel version to install or update"
-msgstr "Επιλέξτε μια έκδοση πυρήνα για εγκατάσταση ή ενημέρωση"
-# 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
 msgid "Installed Kernels"
@@ -269,25 +259,56 @@ msgstr "Η λειτουργία ακυρώθηκε από τον χρήστη."
 msgid "Cancelled"
 msgstr "Ακυρώθηκε"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:65
-msgid "Video Drivers"
-msgstr "Οδηγοί βίντεο"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 66
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
 #: NEEDS WORK
-msgid "Click on a driver version to switch"
-msgstr "Κάντε κλικ σε μια έκδοση οδηγού για να αλλάξετε"
+msgid "Legacy"
+msgstr "Κληρονομιά"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 70
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:70
-msgid "Information about video drivers"
-msgstr "Πληροφορίες σχετικά με τους οδηγούς βίντεο"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+#: NEEDS WORK
+msgid ""
+"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
+"Mesa pipeline."
+msgstr ""
+"Κλασική υλοποίηση OpenGL. Ιδανική για παλαιότερο υλικό ή εφαρμογές που απαιτούν την κληρονομημένη "
+"ροή εργασίας Mesa."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 179
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:210
-msgid "STABLE"
-msgstr "ΣΤΑΘΕΡΟΣ"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: NEEDS WORK
+msgid "Recommended"
+msgstr "Συνιστώμενο"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 82
+#: NEEDS WORK
+msgid ""
+"Official stable Mesa release. Best balance of performance, compatibility and stability. Includes "
+"Vulkan drivers for AMD, Intel and software rendering."
+msgstr ""
+"Επίσημη σταθερή έκδοση Mesa. Καλύτερη ισορροπία απόδοσης, συμβατότητας και σταθερότητας. "
+"Περιλαμβάνει οδηγούς Vulkan για AMD, Intel και λογισμικό απόδοσης."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
+#: NEEDS WORK
+msgid "Performance"
+msgstr "Απόδοση"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+#: NEEDS WORK
+msgid ""
+"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
+"maintaining stability."
+msgstr ""
+"Προσαρμοσμένη έκδοση του σταθερού Mesa με βελτιστοποιήσεις απόδοσης. Μπορεί να προσφέρει καλύτερα "
+"FPS σε παιχνίδια διατηρώντας τη σταθερότητα."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 93
+#: NEEDS WORK
+msgid ""
+"Bleeding-edge development version built from the latest source code. Contains the newest features "
+"but may introduce instability."
+msgstr ""
+"Έκδοση ανάπτυξης αιχμής που έχει κατασκευαστεί από τον τελευταίο πηγαίο κώδικα. Περιέχει τα πιο "
+"πρόσφατα χαρακτηριστικά αλλά μπορεί να εισάγει αστάθεια."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
@@ -315,76 +336,6 @@ msgstr ""
 #: NEEDS WORK
 msgid "Switch"
 msgstr "Διακόπτης"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 244
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:236
-msgid "Video Drivers Information"
-msgstr "Πληροφορίες για προγράμματα οδήγησης βίντεο"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 262
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:238
-msgid "Different driver versions offer various features and performance characteristics:"
-msgstr ""
-"Οι διαφορετικές εκδόσεις προγραμμάτων οδήγησης προσφέρουν διάφορες λειτουργίες και χαρακτηριστικά "
-"απόδοσης:"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
-#: NEEDS WORK
-msgid "Legacy"
-msgstr "Κληρονομιά"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
-#: NEEDS WORK
-msgid ""
-"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
-"Mesa pipeline."
-msgstr ""
-"Κλασική υλοποίηση OpenGL. Ιδανική για παλαιότερο υλικό ή εφαρμογές που απαιτούν την κληρονομημένη "
-"ροή εργασίας Mesa."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
-#: NEEDS WORK
-msgid "Recommended"
-msgstr "Συνιστώμενο"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 287
-#: NEEDS WORK
-msgid ""
-"Official stable Mesa release from Manjaro repositories. Best balance of performance, compatibility "
-"and stability. Includes Vulkan drivers for AMD, Intel and software rendering."
-msgstr ""
-"Επίσημη σταθερή έκδοση Mesa από τα αποθετήρια του Manjaro. Καλύτερη ισορροπία απόδοσης, "
-"συμβατότητας και σταθερότητας. Περιλαμβάνει οδηγούς Vulkan για AMD, Intel και λογισμικό απόδοσης."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
-#: NEEDS WORK
-msgid "Performance"
-msgstr "Απόδοση"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
-#: NEEDS WORK
-msgid ""
-"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
-"maintaining stability."
-msgstr ""
-"Προσαρμοσμένη έκδοση του σταθερού Mesa με βελτιστοποιήσεις απόδοσης. Μπορεί να προσφέρει καλύτερα "
-"FPS σε παιχνίδια διατηρώντας τη σταθερότητα."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 306
-#: NEEDS WORK
-msgid ""
-"Bleeding-edge development version built from the latest source code. Contains the newest features "
-"and driver improvements, but may introduce instability or regressions."
-msgstr ""
-"Έκδοση ανάπτυξης αιχμής που έχει κατασκευαστεί από τον τελευταίο πηγαίο κώδικα. Περιέχει τα πιο "
-"πρόσφατα χαρακτηριστικά και βελτιώσεις οδηγών, αλλά μπορεί να εισάγει αστάθεια ή υποχωρήσεις."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 372
-#: NEEDS WORK
-msgid "If unsure, the <b>Stable</b> driver is the safest choice for most users."
-msgstr ""
-"Αν δεν είστε σίγουροι, ο <b>Σταθερός</b> οδηγός είναι η ασφαλέστερη επιλογή για τους περισσότερους "
-"χρήστες."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290
@@ -428,10 +379,10 @@ msgstr ""
 msgid "Kernel"
 msgstr "Πυρήνας"
 # 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 90
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:90
-msgid "Mesa Drivers"
-msgstr "Οδηγοί Mesa"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:65
+msgid "Video Drivers"
+msgstr "Οδηγοί βίντεο"
 # 
 # File: usr/share/big-kernel-manager/ui/window.py, line: 129
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:129

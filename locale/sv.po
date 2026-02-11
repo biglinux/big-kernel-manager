@@ -20,16 +20,6 @@ msgstr ""
 msgid "Terminal Output"
 msgstr "Terminalutgång"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 68
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:68
-msgid "Kernel Versions"
-msgstr "Kärnversioner"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 69
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:69
-msgid "Select a kernel version to install or update"
-msgstr "Välj en kärnversion att installera eller uppdatera"
-# 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
 msgid "Installed Kernels"
@@ -269,25 +259,56 @@ msgstr "Åtgärden avbruten av användaren."
 msgid "Cancelled"
 msgstr "Inställt"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:65
-msgid "Video Drivers"
-msgstr "Videodrivrutiner"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 66
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
 #: NEEDS WORK
-msgid "Click on a driver version to switch"
-msgstr "Klicka på en drivrutinsversion för att byta"
+msgid "Legacy"
+msgstr "Arvtagande"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 70
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:70
-msgid "Information about video drivers"
-msgstr "Information om videodrivrutiner"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+#: NEEDS WORK
+msgid ""
+"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
+"Mesa pipeline."
+msgstr ""
+"Klassisk OpenGL-implementation. Ideal för äldre hårdvara eller applikationer som kräver den äldre "
+"Mesa-pipelinen."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 179
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:210
-msgid "STABLE"
-msgstr "STABIL"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: NEEDS WORK
+msgid "Recommended"
+msgstr "Rekommenderad"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 82
+#: NEEDS WORK
+msgid ""
+"Official stable Mesa release. Best balance of performance, compatibility and stability. Includes "
+"Vulkan drivers for AMD, Intel and software rendering."
+msgstr ""
+"Officiell stabil Mesa-version. Bästa balans mellan prestanda, kompatibilitet och stabilitet. "
+"Inkluderar Vulkan-drivrutiner för AMD, Intel och programvaru-rendering."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
+#: NEEDS WORK
+msgid "Performance"
+msgstr "Prestanda"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+#: NEEDS WORK
+msgid ""
+"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
+"maintaining stability."
+msgstr ""
+"Anpassad version av stabil Mesa med prestandaoptimeringar. Kan ge bättre FPS i spel samtidigt som "
+"stabiliteten bibehålls."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 93
+#: NEEDS WORK
+msgid ""
+"Bleeding-edge development version built from the latest source code. Contains the newest features "
+"but may introduce instability."
+msgstr ""
+"Bleeding-edge utvecklingsversion byggd från den senaste källkoden. Innehåller de senaste "
+"funktionerna men kan introducera instabilitet."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
@@ -315,73 +336,6 @@ msgstr ""
 #: NEEDS WORK
 msgid "Switch"
 msgstr "Växla"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 244
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:236
-msgid "Video Drivers Information"
-msgstr "Information om videodrivrutiner"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 262
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:238
-msgid "Different driver versions offer various features and performance characteristics:"
-msgstr "Olika drivrutinsversioner erbjuder olika funktioner och prestandaegenskaper:"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
-#: NEEDS WORK
-msgid "Legacy"
-msgstr "Arvtagande"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
-#: NEEDS WORK
-msgid ""
-"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
-"Mesa pipeline."
-msgstr ""
-"Klassisk OpenGL-implementation. Ideal för äldre hårdvara eller applikationer som kräver den äldre "
-"Mesa-pipelinen."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
-#: NEEDS WORK
-msgid "Recommended"
-msgstr "Rekommenderad"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 287
-#: NEEDS WORK
-msgid ""
-"Official stable Mesa release from Manjaro repositories. Best balance of performance, compatibility "
-"and stability. Includes Vulkan drivers for AMD, Intel and software rendering."
-msgstr ""
-"Officiell stabil Mesa-version från Manjaro-repositorier. Bästa balans mellan prestanda, "
-"kompatibilitet och stabilitet. Inkluderar Vulkan-drivrutiner för AMD, Intel och "
-"programvaru-rendering."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
-#: NEEDS WORK
-msgid "Performance"
-msgstr "Prestanda"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
-#: NEEDS WORK
-msgid ""
-"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
-"maintaining stability."
-msgstr ""
-"Anpassad version av stabil Mesa med prestandaoptimeringar. Kan ge bättre FPS i spel samtidigt som "
-"stabiliteten bibehålls."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 306
-#: NEEDS WORK
-msgid ""
-"Bleeding-edge development version built from the latest source code. Contains the newest features "
-"and driver improvements, but may introduce instability or regressions."
-msgstr ""
-"Bleeding-edge utvecklingsversion byggd från den senaste källkoden. Innehåller de senaste "
-"funktionerna och drivrutinsförbättringarna, men kan introducera instabilitet eller regressioner."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 372
-#: NEEDS WORK
-msgid "If unsure, the <b>Stable</b> driver is the safest choice for most users."
-msgstr "Om du är osäker är <b>Stabil</b> drivrutinen det säkraste valet för de flesta användare."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290
@@ -425,10 +379,10 @@ msgstr ""
 msgid "Kernel"
 msgstr "Kärna"
 # 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 90
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:90
-msgid "Mesa Drivers"
-msgstr "Mesa-drivrutiner"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:65
+msgid "Video Drivers"
+msgstr "Videodrivrutiner"
 # 
 # File: usr/share/big-kernel-manager/ui/window.py, line: 129
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:129
