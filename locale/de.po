@@ -1,4 +1,8 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the big-kernel-manager package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
@@ -9,80 +13,132 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
+msgid "Terminal Output"
+msgstr "Terminalausgabe"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 68
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:68
 msgid "Kernel Versions"
 msgstr "Kernel-Versionen"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 69
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:69
 msgid "Select a kernel version to install or update"
-msgstr ""
-"Wählen Sie eine Kernel-Version zur Installation oder Aktualisierung aus."
+msgstr "Wählen Sie eine Kernel-Version zur Installation oder Aktualisierung aus."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
 msgid "Installed Kernels"
 msgstr "Installierte Kernel"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
 msgid "Available Kernels"
 msgstr "Verfügbare Kernel"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
 #, python-brace-format
 msgid "Version: {}"
 msgstr "Version: {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
 msgid "Running"
 msgstr "Laufen"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
 msgid "Remove"
 msgstr "Entfernen"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
 msgid "Cannot remove the currently running kernel"
 msgstr "Der aktuell ausgeführte Kernel kann nicht entfernt werden."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
 msgid "Install"
 msgstr "Installieren"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
 msgid "Install Kernel"
 msgstr "Kernel installieren"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:302
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+#: NEEDS WORK
 #, python-brace-format
 msgid ""
 "Are you sure you want to install the <b>{}</b> kernel?\n"
 "\n"
-"This will install the kernel and its modules.\n"
-"This operation requires sudo privileges."
+"This will install the kernel and its modules."
 msgstr ""
-"Möchten Sie den<b>{}</b>Kernel wirklich installieren?\n"
+"Sind Sie sicher, dass Sie den <b>{}</b>-Kernel installieren möchten?\n"
 "\n"
-"Dadurch werden der Kernel und seine Module installiert.\n"
-"Für diesen Vorgang sind sudo-Rechte erforderlich."
-#. Cancel button (shown during operation)
+"Dies installiert den Kernel und seine Module."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 306
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 374
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 161
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 218
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:307
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:376
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:270
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:161
+#. Cancel button (shown during operation)
 msgid "Cancel"
 msgstr "Abbrechen"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
 #, python-brace-format
 msgid "Installing {}"
 msgstr "Installieren {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
 #, python-brace-format
 msgid "Preparing to install {} kernel..."
 msgstr "Vorbereitung der Installation{}des Kernels..."
-#. Add initial terminal output
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
+#. Add initial terminal output
 #, python-brace-format
 msgid "Starting installation of {} kernel..."
 msgstr "Installation des{}Kernels wird gestartet..."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
 msgid "This may take a few minutes. Please wait..."
 msgstr "Dies kann einige Minuten dauern. Bitte warten Sie..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
 msgid "Cannot Remove Running Kernel"
 msgstr "Laufenden Kernel kann nicht entfernt werden"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
 msgid ""
 "The kernel you are trying to remove is currently in use.\n"
@@ -90,34 +146,44 @@ msgid ""
 msgstr ""
 "Der Kernel, den Sie entfernen möchten, wird derzeit verwendet.\n"
 "Bitte starten Sie zunächst einen anderen Kernel."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
 msgid "Remove Kernel"
 msgstr "Kernel entfernen"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:371
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+#: NEEDS WORK
 #, python-brace-format
 msgid ""
 "Are you sure you want to remove the <b>{}</b> kernel?\n"
 "\n"
-"This will remove the kernel and its modules.\n"
-"This operation requires sudo privileges."
+"This will remove the kernel and its modules."
 msgstr ""
-"Möchten Sie den<b>{}</b>Kernel wirklich entfernen?\n"
+"Sind Sie sicher, dass Sie den <b>{}</b>-Kernel entfernen möchten?\n"
 "\n"
-"Dadurch werden der Kernel und seine Module entfernt.\n"
-"Für diesen Vorgang sind sudo-Rechte erforderlich."
+"Dies entfernt den Kernel und seine Module."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
 #, python-brace-format
 msgid "Removing {}"
 msgstr "Entfernen {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
 #, python-brace-format
 msgid "Preparing to remove {} kernel..."
 msgstr "Vorbereitung zum Entfernen{}des Kernels..."
-#. Add initial terminal output
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
+#. Add initial terminal output
 #, python-brace-format
 msgid "Starting removal of {} kernel..."
 msgstr "Entfernung des{}Kernels wird gestartet..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
 msgid ""
 "The kernel was installed successfully.\n"
@@ -125,6 +191,8 @@ msgid ""
 msgstr ""
 "Der Kernel wurde erfolgreich installiert.\n"
 "Möglicherweise müssen Sie einen Neustart durchführen, um den neuen Kernel zu verwenden."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
 msgid ""
 "The kernel installation failed.\n"
@@ -132,9 +200,13 @@ msgid ""
 msgstr ""
 "Die Kernel-Installation ist fehlgeschlagen.\n"
 "Bitte überprüfen Sie die Terminalausgabe für weitere Details."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
 msgid "The kernel was removed successfully."
 msgstr "Der Kernel wurde erfolgreich entfernt."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
 msgid ""
 "The kernel removal failed.\n"
@@ -142,80 +214,196 @@ msgid ""
 msgstr ""
 "Das Entfernen des Kernels ist fehlgeschlagen.\n"
 "Bitte überprüfen Sie die Terminalausgabe für weitere Details."
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
+msgid "Show Terminal Output"
+msgstr "Terminalausgabe anzeigen"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 169
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 390
+# File: usr/share/big-kernel-manager/ui/window.py, line: 463
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:378
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:169
+#. Close button
+#. Close button (shown on completion)
+msgid "Close"
+msgstr "Schließen"
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 200
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:200
+msgid "Please wait..."
+msgstr "Bitte warten..."
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:279
+msgid "Operation completed successfully!"
+msgstr "Operation erfolgreich abgeschlossen!"
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:290
+msgid "Operation failed. Check terminal output for details."
+msgstr "Der Vorgang ist fehlgeschlagen. Überprüfen Sie die Terminalausgabe für weitere Details."
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:305
+msgid "Completed!"
+msgstr "Fertig!"
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 308
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:308
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 333
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:333
+msgid "Operation cancelled by user."
+msgstr "Vorgang vom Benutzer abgebrochen."
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:334
+msgid "Cancelled"
+msgstr "Abgesagt"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:65
 msgid "Video Drivers"
 msgstr "Grafiktreiber"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:66
-msgid "Select a video driver version to use"
-msgstr "Wählen Sie eine zu verwendende Version des Grafiktreibers aus."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 66
+#: NEEDS WORK
+msgid "Click on a driver version to switch"
+msgstr "Klicken Sie auf eine Treiberversion, um zu wechseln"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 70
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:70
 msgid "Information about video drivers"
 msgstr "Informationen zu Grafiktreibern"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:108
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:271
-msgid "Apply Changes"
-msgstr "Änderungen übernehmen"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 179
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:210
 msgid "STABLE"
 msgstr "STABIL"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
 msgstr "Aktiv"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:236
-msgid "Video Drivers Information"
-msgstr "Informationen zu Grafiktreibern"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:238
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 211
+#: NEEDS WORK
+msgid "Switch Video Driver"
+msgstr "Video-Treiber wechseln"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 213
+#: NEEDS WORK
+#, python-brace-format
 msgid ""
-"Different driver versions offer various features and performance "
-"characteristics:"
-msgstr ""
-"Verschiedene Treiberversionen bieten unterschiedliche Funktionen und "
-"Leistungsmerkmale:"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:239
-msgid "Amber: Stable and well-tested version"
-msgstr "Amber: Stabile und bewährte Version"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:240
-msgid "Stable: Regular Mesa release"
-msgstr "Stabil: Reguläre Mesa-Version"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:241
-msgid "Tkg-Stable: Enhanced performance build"
-msgstr "Tkg-Stable: Verbesserte Leistungsfähigkeit"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:242
-msgid "Tkg-git: Latest development version with cutting-edge features"
-msgstr "Tkg-git: Neueste Entwicklungsversion mit modernsten Funktionen"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:243
-msgid "Choose the one that best fits your needs and hardware."
-msgstr ""
-"Wählen Sie das Modell, das Ihren Anforderungen und Ihrer Hardware am besten "
-"entspricht."
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:245
-msgid "OK"
-msgstr "OK"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:264
-msgid "Apply Driver Changes"
-msgstr "Treiberänderungen anwenden"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:266
-msgid ""
-"Are you sure you want to apply the selected driver changes?\n"
+"Do you want to switch to the <b>{}</b> driver?\n"
 "\n"
 "This will modify your system's video drivers and might require a reboot."
 msgstr ""
-"Möchten Sie die ausgewählten Treiberänderungen wirklich anwenden?\n"
+"Möchten Sie zum <b>{}</b> Treiber wechseln?\n"
 "\n"
-"Dadurch werden die Grafiktreiber Ihres Systems geändert, was möglicherweise einen Neustart erforderlich macht."
+"Dies wird die Video-Treiber Ihres Systems ändern und könnte einen Neustart erfordern."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 219
+#: NEEDS WORK
+msgid "Switch"
+msgstr "Schalter"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 244
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:236
+msgid "Video Drivers Information"
+msgstr "Informationen zu Grafiktreibern"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 262
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:238
+msgid "Different driver versions offer various features and performance characteristics:"
+msgstr "Verschiedene Treiberversionen bieten unterschiedliche Funktionen und Leistungsmerkmale:"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
+#: NEEDS WORK
+msgid "Legacy"
+msgstr "Legacy"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+#: NEEDS WORK
+msgid ""
+"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
+"Mesa pipeline."
+msgstr ""
+"Klassische OpenGL-Implementierung. Ideal für ältere Hardware oder Anwendungen, die die "
+"Legacy-Mesa-Pipeline benötigen."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: NEEDS WORK
+msgid "Recommended"
+msgstr "Empfohlen"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 287
+#: NEEDS WORK
+msgid ""
+"Official stable Mesa release from Manjaro repositories. Best balance of performance, compatibility "
+"and stability. Includes Vulkan drivers for AMD, Intel and software rendering."
+msgstr ""
+"Offizielle stabile Mesa-Version aus den Manjaro-Repositorys. Beste Balance aus Leistung, "
+"Kompatibilität und Stabilität. Enthält Vulkan-Treiber für AMD, Intel und Software-Rendering."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
+#: NEEDS WORK
+msgid "Performance"
+msgstr "Leistung"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+#: NEEDS WORK
+msgid ""
+"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
+"maintaining stability."
+msgstr ""
+"Benutzerdefinierte Version von stabiler Mesa mit Leistungsoptimierungen. Kann bessere FPS in "
+"Spielen bieten und gleichzeitig die Stabilität aufrechterhalten."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 306
+#: NEEDS WORK
+msgid ""
+"Bleeding-edge development version built from the latest source code. Contains the newest features "
+"and driver improvements, but may introduce instability or regressions."
+msgstr ""
+"Bleeding-Edge-Entwicklungsversion, die aus dem neuesten Quellcode erstellt wurde. Enthält die "
+"neuesten Funktionen und Treiberverbesserungen, kann jedoch Instabilität oder Rückschritte einführen."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 372
+#: NEEDS WORK
+msgid "If unsure, the <b>Stable</b> driver is the safest choice for most users."
+msgstr ""
+"Wenn Sie sich nicht sicher sind, ist der <b>Stabile</b> Treiber die sicherste Wahl für die meisten "
+"Benutzer."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290
 #, python-brace-format
 msgid "Applying {}"
 msgstr "Anwendung {}"
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:291
 #, python-brace-format
 msgid "Preparing to apply {} driver..."
 msgstr "Vorbereitung der {}Treiberinstallation..."
-#. Add initial terminal output
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:299
+#. Add initial terminal output
 #, python-brace-format
 msgid "Applying {} driver..."
 msgstr "Treiber wird{} angewendet..."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 447
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:329
 msgid ""
 "The video driver was changed successfully.\n"
@@ -223,6 +411,8 @@ msgid ""
 msgstr ""
 "Der Grafiktreiber wurde erfolgreich geändert.\n"
 "Möglicherweise müssen Sie den Computer neu starten, damit die Änderungen wirksam werden."
+# 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
 msgid ""
 "The driver change failed.\n"
@@ -230,153 +420,137 @@ msgid ""
 msgstr ""
 "Der Treiberwechsel ist fehlgeschlagen.\n"
 "Bitte überprüfen Sie die Terminalausgabe für weitere Details."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 89
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:89
 msgid "Kernel"
 msgstr "Kernel"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 90
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:90
 msgid "Mesa Drivers"
 msgstr "Mesa-Treiber"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 129
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:129
 msgid "Menu"
 msgstr "Menü"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 133
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:133
 msgid "Refresh"
 msgstr "Aktualisieren"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 134
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:134
 msgid "About"
 msgstr "Über"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 235
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:235
 msgid "Kernel and Mesa Management"
 msgstr "Kernel- und Mesa-Verwaltung"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:276
-msgid "Important Information About Kernel and Mesa Changes"
-msgstr "Wichtige Informationen zu Änderungen am Kernel und Mesa"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:290
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 274
+#: NEEDS WORK
 msgid ""
-"Changing your system's kernel or Mesa drivers can impact system stability. "
-"Please proceed with caution and understand the following risks and "
-"recommendations:"
+"Changing your system's kernel or Mesa drivers can impact system stability. Please review the "
+"following recommendations:"
 msgstr ""
-"Das Ändern des Kernels oder der Mesa-Treiber Ihres Systems kann sich auf die"
-" Systemstabilität auswirken. Bitte gehen Sie vorsichtig vor und beachten Sie"
-" die folgenden Risiken und Empfehlungen:"
-#. Kernel section
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:296
-msgid "Kernel Management"
-msgstr "Kernel-Verwaltung"
+"Ändern des Kernels oder der Mesa-Treiber Ihres Systems kann die Systemstabilität beeinträchtigen. "
+"Bitte überprüfen Sie die folgenden Empfehlungen:"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 282
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:297
 msgid "Always keep at least one working kernel"
 msgstr "Halten Sie immer mindestens einen funktionierenden Kernel bereit."
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:297
-msgid " installed as a fallback"
-msgstr " als Fallback installiert"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 282
+#: NEEDS WORK
+msgid "installed as a fallback"
+msgstr "als Fallback installiert"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 284
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:298
-msgid ""
-"LTS kernels offer better stability, while newer kernels provide newer "
-"hardware support"
+msgid "LTS kernels offer better stability, while newer kernels provide newer hardware support"
 msgstr ""
-"LTS-Kernel bieten eine höhere Stabilität, während neuere Kernel "
-"Unterstützung für neuere Hardware bieten."
+"LTS-Kernel bieten eine höhere Stabilität, während neuere Kernel Unterstützung für neuere Hardware "
+"bieten."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 286
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:299
 msgid "Test your system thoroughly after kernel changes"
 msgstr "Testen Sie Ihr System nach Änderungen am Kernel gründlich."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 288
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:300
-msgid ""
-"If a new kernel causes issues, you can select the previous kernel from the "
-"boot menu"
+msgid "If a new kernel causes issues, you can select the previous kernel from the boot menu"
 msgstr ""
-"Wenn ein neuer Kernel Probleme verursacht, können Sie den vorherigen Kernel "
-"aus dem Startmenü auswählen."
+"Wenn ein neuer Kernel Probleme verursacht, können Sie den vorherigen Kernel aus dem Startmenü "
+"auswählen."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 290
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:301
-msgid ""
-"Real-time (RT) kernels are specialized for low-latency tasks but may not be "
-"suitable for general use"
+msgid "Real-time (RT) kernels are specialized for low-latency tasks but may not be suitable for general use"
 msgstr ""
-"Echtzeit-Kernel (RT-Kernel) sind auf Aufgaben mit geringer Latenz "
-"spezialisiert, eignen sich jedoch möglicherweise nicht für den allgemeinen "
-"Gebrauch."
-#. Mesa section
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:305
-msgid "Mesa Driver Management"
-msgstr "Mesa-Treiberverwaltung"
+"Echtzeit-Kernel (RT-Kernel) sind auf Aufgaben mit geringer Latenz spezialisiert, eignen sich jedoch "
+"möglicherweise nicht für den allgemeinen Gebrauch."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 293
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:296
+#. Kernel section
+msgid "Kernel Management"
+msgstr "Kernel-Verwaltung"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 294
+# File: usr/share/big-kernel-manager/ui/window.py, line: 313
+#: NEEDS WORK
+msgid "Tips"
+msgstr "Tipps"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 301
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:306
-msgid ""
-"Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some "
-"NVIDIA GPUs"
-msgstr ""
-"Mesa-Treiber bieten 3D-Grafikbeschleunigung für AMD-, Intel- und einige "
-"NVIDIA-GPUs."
+msgid "Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some NVIDIA GPUs"
+msgstr "Mesa-Treiber bieten 3D-Grafikbeschleunigung für AMD-, Intel- und einige NVIDIA-GPUs."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 303
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:307
-msgid ""
-"Changing Mesa versions may affect graphics performance and application "
-"compatibility"
+msgid "Changing Mesa versions may affect graphics performance and application compatibility"
 msgstr ""
-"Das Ändern der Mesa-Versionen kann sich auf die Grafikleistung und die "
-"Anwendungskompatibilität auswirken."
+"Das Ändern der Mesa-Versionen kann sich auf die Grafikleistung und die Anwendungskompatibilität "
+"auswirken."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 305
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:308
 msgid "The stable version is recommended for most users"
 msgstr "Die stabile Version wird für die meisten Benutzer empfohlen."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 307
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:309
-msgid ""
-"Development versions may offer better performance but with less stability"
-msgstr ""
-"Entwicklungsversionen bieten möglicherweise eine bessere Leistung, sind "
-"jedoch weniger stabil."
+msgid "Development versions may offer better performance but with less stability"
+msgstr "Entwicklungsversionen bieten möglicherweise eine bessere Leistung, sind jedoch weniger stabil."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 309
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:310
+msgid "If graphics issues occur after a change, you can switch back to the previous driver"
+msgstr "Wenn nach einer Änderung Grafikprobleme auftreten, können Sie zum vorherigen Treiber zurückwechseln."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 312
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:305
+#. Mesa section
+msgid "Mesa Driver Management"
+msgstr "Mesa-Treiberverwaltung"
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 329
+#: NEEDS WORK
 msgid ""
-"If graphics issues occur after a change, you can switch back to the previous"
-" driver"
+"If unsure, the <b>LTS kernel</b> and <b>Stable Mesa</b> drivers are the safest choices for most "
+"users."
 msgstr ""
-"Wenn nach einer Änderung Grafikprobleme auftreten, können Sie zum vorherigen"
-" Treiber zurückwechseln."
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:319
-msgid "General Advice:"
-msgstr "Allgemeiner Hinweis:"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:320
-msgid ""
-"Consider creating a system backup before making changes. If you're not sure "
-"which option to choose, the LTS kernel and stable Mesa drivers are generally"
-" the safest choices for most users."
-msgstr ""
-"Erstellen Sie vor dem Vornehmen von Änderungen eine Systemsicherung. Wenn "
-"Sie sich nicht sicher sind, welche Option Sie wählen sollen, sind der LTS-"
-"Kernel und stabile Mesa-Treiber in der Regel die sicherste Wahl für die "
-"meisten Benutzer."
+"Wenn Sie sich unsicher sind, sind der <b>LTS-Kernel</b> und die <b>Stable Mesa</b>-Treiber die "
+"sichersten Optionen für die meisten Benutzer."
+# 
+# File: usr/share/big-kernel-manager/ui/window.py, line: 449
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:364
 msgid "Show this warning on startup"
 msgstr "Diese Warnung beim Start anzeigen"
-#. Close button
-#. Close button (shown on completion)
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:378
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:169
-msgid "Close"
-msgstr "Schließen"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
-msgid "Terminal Output"
-msgstr "Terminalausgabe"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
-msgid "Show Terminal Output"
-msgstr "Terminalausgabe anzeigen"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:200
-msgid "Please wait..."
-msgstr "Bitte warten..."
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:279
-msgid "Operation completed successfully!"
-msgstr "Operation erfolgreich abgeschlossen!"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:290
-msgid "Operation failed. Check terminal output for details."
-msgstr ""
-"Der Vorgang ist fehlgeschlagen. Überprüfen Sie die Terminalausgabe für "
-"weitere Details."
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:305
-msgid "Completed!"
-msgstr "Fertig!"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:308
-msgid "Failed"
-msgstr "Fehlgeschlagen"
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:333
-msgid "Operation cancelled by user."
-msgstr "Vorgang vom Benutzer abgebrochen."
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:334
-msgid "Cancelled"
-msgstr "Abgesagt"
