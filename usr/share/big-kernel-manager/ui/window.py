@@ -203,7 +203,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         about = Adw.AboutWindow(
             transient_for=self,
             application_name=APP_NAME,
-            application_icon=APP_ID,
+            application_icon="big-kernel-manager",
             version=APP_VERSION,
             developer_name=APP_AUTHOR,
             website=APP_WEBSITE,
