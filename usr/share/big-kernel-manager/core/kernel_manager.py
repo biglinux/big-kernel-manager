@@ -261,15 +261,73 @@ class KernelManager(BaseManager):
     
     def _get_kernel_modules(self, kernel_name: str) -> List[str]:
         """
-        Get a list of module packages that should be installed with the kernel.
+        Detect modules installed on the running kernel and return equivalent
+        module packages for the target kernel.
+        
+        This detects packages like nvidia, virtualbox-host-modules, headers, etc.
+        that are installed for the current running kernel and maps them to the
+        target kernel name, keeping the same version suffixes (e.g. nvidia-550xx).
         
         Args:
-            kernel_name: Name of the kernel.
+            kernel_name: Name of the target kernel (e.g. "linux619").
             
         Returns:
-            List of module package names.
+            List of module package names to install with the target kernel.
         """
-        return [f"{kernel_name}-headers"]
+        running_kernel = self.get_running_kernel_package()
+        if not running_kernel:
+            self._logger.warning("Could not detect running kernel, falling back to headers only")
+            return [f"{kernel_name}-headers"]
+        
+        self._logger.info(f"Detecting modules from running kernel: {running_kernel}")
+        
+        # Get all installed packages that are modules of the running kernel
+        installed = self.package_manager.get_installed_packages()
+        modules = []
+        
+        for pkg in installed:
+            pkg_name = pkg["name"]
+            # Check if package is a module of the running kernel (e.g. linux618-headers, linux618-nvidia-550xx)
+            if pkg_name.startswith(f"{running_kernel}-"):
+                suffix = pkg_name[len(running_kernel):]  # e.g., "-headers", "-nvidia-550xx"
+                target_module = f"{kernel_name}{suffix}"
+                modules.append(target_module)
+                self._logger.debug(f"Detected module: {pkg_name} -> {target_module}")
+        
+        # Always ensure headers are included
+        headers_pkg = f"{kernel_name}-headers"
+        if headers_pkg not in modules:
+            modules.insert(0, headers_pkg)
+        
+        # Verify which modules exist in the repositories
+        verified_modules = []
+        for module in modules:
+            if self._package_exists_in_repos(module):
+                verified_modules.append(module)
+                self._logger.debug(f"Module verified in repos: {module}")
+            else:
+                self._logger.warning(f"Module not found in repos, skipping: {module}")
+        
+        if not verified_modules:
+            verified_modules = [headers_pkg]
+        
+        self._logger.info(f"Modules to install for {kernel_name}: {verified_modules}")
+        return verified_modules
+    
+    def _package_exists_in_repos(self, package_name: str) -> bool:
+        """
+        Check if a package exists in the repositories.
+        
+        Args:
+            package_name: Name of the package to check.
+            
+        Returns:
+            True if the package exists in repos, False otherwise.
+        """
+        import subprocess
+        cmd = ["pacman", "-Si", package_name]
+        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        return result.returncode == 0
     
     def install_kernel(
         self,

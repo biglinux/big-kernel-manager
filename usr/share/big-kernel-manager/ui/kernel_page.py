@@ -300,8 +300,7 @@ class KernelPage(BasePage):
         dialog.set_body_use_markup(True)
         dialog.set_body(
             _("Are you sure you want to install the <b>{}</b> kernel?\n\n"
-              "This will install the kernel and its modules.\n"
-              "This operation requires sudo privileges.").format(kernel['name'])
+              "This will install the kernel and its modules.").format(kernel['name'])
         )
         
         dialog.add_response("cancel", _("Cancel"))
@@ -369,8 +368,7 @@ class KernelPage(BasePage):
         dialog.set_body_use_markup(True)
         dialog.set_body(
             _("Are you sure you want to remove the <b>{}</b> kernel?\n\n"
-              "This will remove the kernel and its modules.\n"
-              "This operation requires sudo privileges.").format(kernel['name'])
+              "This will remove the kernel and its modules.").format(kernel['name'])
         )
         
         dialog.add_response("cancel", _("Cancel"))

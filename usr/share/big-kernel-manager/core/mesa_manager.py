@@ -17,6 +17,8 @@ from core.logging_config import get_logger
 
 
 # Mesa driver configurations
+# Note: stable mesa includes all complementary packages that Manjaro separates,
+# while mesa-tkg bundles everything together.
 MESA_DRIVERS = [
     {
         "id": "amber",
@@ -28,9 +30,15 @@ MESA_DRIVERS = [
     {
         "id": "stable",
         "name": "Stable",
-        "packages": ["mesa"],
+        "packages": [
+            "mesa", "lib32-mesa",
+            "vulkan-radeon", "lib32-vulkan-radeon",
+            "vulkan-intel", "lib32-vulkan-intel",
+            "vulkan-swrast", "lib32-vulkan-swrast",
+            "mesa-utils"
+        ],
         "conflicts": ["mesa-amber", "mesa-git", "mesa-tkg-git"],
-        "description": "Regular Mesa release"
+        "description": "Regular Mesa release (recommended)"
     },
     {
         "id": "tkg-stable",
@@ -169,7 +177,8 @@ class MesaManager(BaseManager):
                     self._output(output_callback, f"Removing conflicts: {', '.join(installed_conflicts)}")
                     self._progress(progress_callback, 0.3, "Removing conflicting packages...")
                     
-                    remove_cmd = [self.sudo_command, "pacman", "-Rs", "--noconfirm"] + installed_conflicts
+                    # Use -Rdd to skip dependency checks (we're replacing the packages right after)
+                    remove_cmd = [self.sudo_command, "pacman", "-Rdd", "--noconfirm"] + installed_conflicts
                     
                     env = os.environ.copy()
                     env["LANG"] = "C"
@@ -199,9 +208,25 @@ class MesaManager(BaseManager):
             
             # Step 2: Install the new packages
             self._progress(progress_callback, 0.5, f"Installing {driver['name']} packages...")
-            self._output(output_callback, f"Installing: {', '.join(driver['packages'])}")
             
-            install_cmd = [self.sudo_command, "pacman", "-S", "--noconfirm"] + driver["packages"]
+            # For packages with multiple items (like stable mesa), filter to those available
+            packages_to_install = []
+            for pkg in driver["packages"]:
+                if self._package_available(pkg):
+                    packages_to_install.append(pkg)
+                else:
+                    self._output(output_callback, f"⚠️ Package {pkg} not available, skipping...")
+            
+            if not packages_to_install:
+                self._output(output_callback, "❌ No packages available to install.")
+                if complete_callback:
+                    complete_callback(False)
+                return
+            
+            self._output(output_callback, f"Installing: {', '.join(packages_to_install)}")
+            
+            # Use --noconfirm --ask 4 to auto-resolve replace conflicts
+            install_cmd = [self.sudo_command, "pacman", "-S", "--noconfirm", "--ask", "4"] + packages_to_install
             
             env = os.environ.copy()
             env["LANG"] = "C"
@@ -245,3 +270,18 @@ class MesaManager(BaseManager):
             self._output(output_callback, f"❌ Error: {str(e)}")
             if complete_callback:
                 complete_callback(False)
+    
+    def _package_available(self, package_name: str) -> bool:
+        """
+        Check if a package is available in the repositories.
+        
+        Args:
+            package_name: Name of the package to check.
+            
+        Returns:
+            True if the package exists in repos, False otherwise.
+        """
+        import subprocess
+        cmd = ["pacman", "-Si", package_name]
+        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        return result.returncode == 0

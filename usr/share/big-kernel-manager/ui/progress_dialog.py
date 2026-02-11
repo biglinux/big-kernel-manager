@@ -129,7 +129,7 @@ class ProgressDialog(Gtk.Box):
         # Terminal expander
         terminal_expander = Gtk.Expander()
         terminal_expander.set_label(_("Show Terminal Output"))
-        terminal_expander.add_css_class("caption")
+        # Note: caption class removed to prevent small font size
         self.terminal_expander = terminal_expander
         
         # Terminal scrolled window
@@ -374,5 +374,17 @@ def get_progress_dialog_css() -> str:
 .progress-dialog-card .title-2 {
     font-weight: 700;
     font-size: 18px;
+}
+
+.progress-dialog-card .dim-label {
+    font-size: 14px;
+}
+
+.progress-dialog-card progressbar text {
+    font-size: 14px;
+}
+
+.progress-dialog-card expander title {
+    font-size: 14px;
 }
 """

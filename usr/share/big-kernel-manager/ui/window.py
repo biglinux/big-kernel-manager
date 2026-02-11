@@ -257,76 +257,161 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         dialog.present()
     
     def _create_warning_content(self) -> Gtk.Box:
-        """Create the warning dialog content."""
+        """Create the warning dialog content with cards and colors."""
         main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         main_box.set_margin_start(24)
         main_box.set_margin_end(24)
-        main_box.set_margin_top(12)
-        main_box.set_spacing(12)
-        
-        # Header with icon
-        header_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=12)
-        header_box.set_margin_bottom(16)
-        
-        warning_icon = Gtk.Image.new_from_icon_name("dialog-warning-symbolic")
-        warning_icon.set_pixel_size(32)
-        warning_icon.add_css_class("warning")
-        
-        header_label = Gtk.Label()
-        header_label.set_markup("<b>" + _("Important Information About Kernel and Mesa Changes") + "</b>")
-        header_label.set_wrap(True)
-        header_label.set_xalign(0)
-        
-        header_box.append(warning_icon)
-        header_box.append(header_label)
-        main_box.append(header_box)
+        main_box.set_margin_top(16)
+        main_box.set_margin_bottom(16)
+        main_box.set_spacing(16)
         
         # Introduction
         intro_label = Gtk.Label()
         intro_label.set_wrap(True)
-        intro_label.set_xalign(0)
-        intro_label.set_margin_bottom(16)
+        intro_label.set_xalign(0.5)
+        intro_label.add_css_class("dim-label")
         intro_label.set_markup(
             _("Changing your system's kernel or Mesa drivers can impact system stability. "
-              "Please proceed with caution and understand the following risks and recommendations:")
+              "Please review the following recommendations:")
         )
         main_box.append(intro_label)
         
-        # Kernel section
-        self._add_section(main_box, _("Kernel Management"), [
-            "• <b>" + _("Always keep at least one working kernel") + "</b>" + _(" installed as a fallback"),
-            "• " + _("LTS kernels offer better stability, while newer kernels provide newer hardware support"),
-            "• " + _("Test your system thoroughly after kernel changes"),
-            "• " + _("If a new kernel causes issues, you can select the previous kernel from the boot menu"),
-            "• " + _("Real-time (RT) kernels are specialized for low-latency tasks but may not be suitable for general use")
-        ])
+        # Kernel Management card
+        kernel_items = [
+            ("emblem-important-symbolic", "warning",
+             "<b>" + _("Always keep at least one working kernel") + "</b> " + _("installed as a fallback")),
+            ("emblem-ok-symbolic", "success",
+             _("LTS kernels offer better stability, while newer kernels provide newer hardware support")),
+            ("system-run-symbolic", "accent",
+             _("Test your system thoroughly after kernel changes")),
+            ("go-previous-symbolic", "",
+             _("If a new kernel causes issues, you can select the previous kernel from the boot menu")),
+            ("dialog-information-symbolic", "",
+             _("Real-time (RT) kernels are specialized for low-latency tasks but may not be suitable for general use")),
+        ]
+        kernel_card = self._create_info_card(
+            _("Kernel Management"), "system-software-install-symbolic", "accent",
+            _("Tips"), "accent", kernel_items
+        )
+        main_box.append(kernel_card)
         
-        # Mesa section
-        self._add_section(main_box, _("Mesa Driver Management"), [
-            "• " + _("Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some NVIDIA GPUs"),
-            "• " + _("Changing Mesa versions may affect graphics performance and application compatibility"),
-            "• " + _("The stable version is recommended for most users"),
-            "• " + _("Development versions may offer better performance but with less stability"),
-            "• " + _("If graphics issues occur after a change, you can switch back to the previous driver")
-        ])
+        # Mesa Drivers card
+        mesa_items = [
+            ("video-display-symbolic", "accent",
+             _("Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some NVIDIA GPUs")),
+            ("dialog-warning-symbolic", "warning",
+             _("Changing Mesa versions may affect graphics performance and application compatibility")),
+            ("emblem-ok-symbolic", "success",
+             _("The stable version is recommended for most users")),
+            ("system-software-update-symbolic", "",
+             _("Development versions may offer better performance but with less stability")),
+            ("edit-undo-symbolic", "",
+             _("If graphics issues occur after a change, you can switch back to the previous driver")),
+        ]
+        mesa_card = self._create_info_card(
+            _("Mesa Driver Management"), "preferences-desktop-display-symbolic", "success",
+            _("Tips"), "success", mesa_items
+        )
+        main_box.append(mesa_card)
         
-        # General advice
+        # Footer advice
+        advice_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+        advice_box.set_margin_top(4)
+        
+        advice_icon = Gtk.Image.new_from_icon_name("dialog-information-symbolic")
+        advice_icon.set_pixel_size(16)
+        advice_icon.add_css_class("accent")
+        advice_icon.set_valign(Gtk.Align.START)
+        advice_box.append(advice_icon)
+        
         advice_label = Gtk.Label()
+        advice_label.set_markup(
+            "<i>" + _("If unsure, the <b>LTS kernel</b> and <b>Stable Mesa</b> drivers "
+                      "are the safest choices for most users.") + "</i>"
+        )
         advice_label.set_wrap(True)
         advice_label.set_xalign(0)
-        advice_label.set_margin_top(16)
-        advice_label.set_markup(
-            "<b>" + _("General Advice:") + "</b> " +
-            _("Consider creating a system backup before making changes. "
-              "If you're not sure which option to choose, the LTS kernel and stable Mesa drivers "
-              "are generally the safest choices for most users.")
-        )
-        main_box.append(advice_label)
+        advice_label.add_css_class("dim-label")
+        advice_box.append(advice_label)
+        
+        main_box.append(advice_box)
         
         return main_box
     
+    def _create_info_card(self, title, icon_name, icon_color, badge_text, badge_color, items):
+        """Create a styled card with icon header and item list."""
+        card = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
+        card.add_css_class("card")
+        card.set_margin_start(4)
+        card.set_margin_end(4)
+        
+        inner = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
+        inner.set_margin_start(16)
+        inner.set_margin_end(16)
+        inner.set_margin_top(12)
+        inner.set_margin_bottom(12)
+        
+        # Header row: icon + title + badge
+        header_row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
+        header_row.set_valign(Gtk.Align.CENTER)
+        
+        icon = Gtk.Image.new_from_icon_name(icon_name)
+        icon.set_pixel_size(20)
+        icon.add_css_class(icon_color)
+        header_row.append(icon)
+        
+        name_label = Gtk.Label()
+        name_label.set_markup(f"<b>{title}</b>")
+        name_label.set_xalign(0)
+        name_label.set_hexpand(True)
+        header_row.append(name_label)
+        
+        # Badge
+        badge_container = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        badge_container.add_css_class("badge-box")
+        badge_container.add_css_class(badge_color)
+        badge_lbl = Gtk.Label(label=badge_text)
+        badge_lbl.add_css_class("badge")
+        badge_container.append(badge_lbl)
+        header_row.append(badge_container)
+        
+        inner.append(header_row)
+        
+        # Separator
+        sep = Gtk.Separator(orientation=Gtk.Orientation.HORIZONTAL)
+        sep.set_margin_top(4)
+        sep.set_margin_bottom(4)
+        inner.append(sep)
+        
+        # Items with icons
+        for item_icon, item_color, item_text in items:
+            item_row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+            item_row.set_margin_start(4)
+            item_row.set_margin_bottom(4)
+            
+            item_img = Gtk.Image.new_from_icon_name(item_icon)
+            item_img.set_pixel_size(14)
+            if item_color:
+                item_img.add_css_class(item_color)
+            else:
+                item_img.add_css_class("dim-label")
+            item_img.set_valign(Gtk.Align.START)
+            item_img.set_margin_top(3)
+            item_row.append(item_img)
+            
+            item_label = Gtk.Label()
+            item_label.set_markup(item_text)
+            item_label.set_wrap(True)
+            item_label.set_xalign(0)
+            item_row.append(item_label)
+            
+            inner.append(item_row)
+        
+        card.append(inner)
+        return card
+    
     def _add_section(self, parent: Gtk.Box, title: str, items: list):
-        """Add a section with title and items to the parent box."""
+        """Add a section with title and items to the parent box (legacy fallback)."""
         title_label = Gtk.Label()
         title_label.set_markup(f"<b>{title}</b>")
         title_label.set_xalign(0)
@@ -377,6 +462,8 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         # Close button
         close_button = Gtk.Button(label=_("Close"))
         close_button.add_css_class("suggested-action")
+        close_button.add_css_class("pill")
+        close_button.set_size_request(100, -1)
         close_button.connect("clicked", lambda btn: self._close_dialog(dialog))
         close_button.set_halign(Gtk.Align.END)
         controls_box.append(close_button)
