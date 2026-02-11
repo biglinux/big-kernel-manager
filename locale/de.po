@@ -15,6 +15,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
+#: NEEDS WORK
+msgid "Loading..."
+msgstr "Laden..."
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
@@ -37,9 +42,9 @@ msgid "Version: {}"
 msgstr "Version: {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
-msgid "Running"
-msgstr "Laufen"
+#: NEEDS WORK
+msgid "In Use"
+msgstr "In Verwendung"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
@@ -264,14 +269,14 @@ msgstr "Abgesagt"
 msgid "Legacy"
 msgstr "Legacy"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
 #: NEEDS WORK
 msgid ""
-"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
-"Mesa pipeline."
+"Classic OpenGL implementation for very old hardware. Only use if your GPU does not support modern "
+"Mesa drivers."
 msgstr ""
-"Klassische OpenGL-Implementierung. Ideal für ältere Hardware oder Anwendungen, die die "
-"Legacy-Mesa-Pipeline benötigen."
+"Klassische OpenGL-Implementierung für sehr alte Hardware. Nur verwenden, wenn Ihre GPU keine "
+"modernen Mesa-Treiber unterstützt."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
 #: NEEDS WORK
@@ -292,50 +297,50 @@ msgstr ""
 msgid "Performance"
 msgstr "Leistung"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
 #: NEEDS WORK
 msgid ""
-"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
-"maintaining stability."
+"Custom build with performance patches. May provide better FPS in games, but can cause issues with "
+"system updates. Use with caution."
 msgstr ""
-"Benutzerdefinierte Version von stabiler Mesa mit Leistungsoptimierungen. Kann bessere FPS in "
-"Spielen bieten und gleichzeitig die Stabilität aufrechterhalten."
+"Benutzerdefinierte Version mit Leistungs-Patches. Kann bessere FPS in Spielen bieten, kann jedoch "
+"Probleme mit Systemupdates verursachen. Mit Vorsicht verwenden."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 93
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
 #: NEEDS WORK
 msgid ""
-"Bleeding-edge development version built from the latest source code. Contains the newest features "
-"but may introduce instability."
+"Bleeding-edge development version. Contains the newest features but is unstable and may break with "
+"updates. Not recommended for daily use."
 msgstr ""
-"Bleeding-Edge-Entwicklungsversion, die aus dem neuesten Quellcode erstellt wurde. Enthält die "
-"neuesten Funktionen, kann jedoch Instabilität einführen."
+"Bleeding-Edge-Entwicklungsversion. Enthält die neuesten Funktionen, ist jedoch instabil und kann "
+"bei Updates fehlerhaft werden. Nicht für den täglichen Gebrauch empfohlen."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
 msgstr "Aktiv"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 211
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
 #: NEEDS WORK
-msgid "Switch Video Driver"
-msgstr "Video-Treiber wechseln"
+msgid "Change Video Driver"
+msgstr "Video-Treiber ändern"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 213
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
-"Do you want to switch to the <b>{}</b> driver?\n"
+"Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and might require a reboot."
+"This will modify your system's video drivers and may require a reboot."
 msgstr ""
-"Möchten Sie zum <b>{}</b> Treiber wechseln?\n"
+"Möchten Sie auf den <b>{}</b> Treiber wechseln?\n"
 "\n"
-"Dies wird die Video-Treiber Ihres Systems ändern und könnte einen Neustart erfordern."
+"Dies wird die Video-Treiber Ihres Systems ändern und kann einen Neustart erfordern."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 219
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
-msgid "Switch"
-msgstr "Schalter"
+msgid "Apply"
+msgstr "Anwenden"
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290

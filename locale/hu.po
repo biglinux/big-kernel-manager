@@ -15,6 +15,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
+#: NEEDS WORK
+msgid "Loading..."
+msgstr "Betöltés..."
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
@@ -37,9 +42,9 @@ msgid "Version: {}"
 msgstr "Verzió: {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
-msgid "Running"
-msgstr "Futás"
+#: NEEDS WORK
+msgid "In Use"
+msgstr "Használatban"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
@@ -264,14 +269,14 @@ msgstr "Törölve"
 msgid "Legacy"
 msgstr "Örökség"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
 #: NEEDS WORK
 msgid ""
-"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
-"Mesa pipeline."
+"Classic OpenGL implementation for very old hardware. Only use if your GPU does not support modern "
+"Mesa drivers."
 msgstr ""
-"Klasszikus OpenGL megvalósítás. Ideális régebbi hardverhez vagy olyan alkalmazásokhoz, amelyek a "
-"régi Mesa csővezetékhez szükségesek."
+"Klasszikus OpenGL megvalósítás nagyon régi hardverhez. Csak akkor használja, ha a GPU-ja nem "
+"támogatja a modern Mesa illesztőprogramokat."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
 #: NEEDS WORK
@@ -292,50 +297,50 @@ msgstr ""
 msgid "Performance"
 msgstr "Teljesítmény"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
 #: NEEDS WORK
 msgid ""
-"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
-"maintaining stability."
+"Custom build with performance patches. May provide better FPS in games, but can cause issues with "
+"system updates. Use with caution."
 msgstr ""
-"Személyre szabott, stabil Mesa verzió teljesítményoptimalizálásokkal. Jobb FPS-t biztosíthat "
-"játékokban a stabilitás megőrzése mellett."
+"Egyedi build teljesítményjavító javításokkal. Jobb FPS-t biztosíthat játékokban, de problémákat "
+"okozhat a rendszerfrissítésekkel. Használja óvatosan."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 93
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
 #: NEEDS WORK
 msgid ""
-"Bleeding-edge development version built from the latest source code. Contains the newest features "
-"but may introduce instability."
+"Bleeding-edge development version. Contains the newest features but is unstable and may break with "
+"updates. Not recommended for daily use."
 msgstr ""
-"Vérzésélénk fejlesztési verzió, amely a legújabb forráskódból készült. Tartalmazza a legújabb "
-"funkciókat, de instabilitást okozhat."
+"Vérzésélénk fejlesztési verzió. Tartalmazza a legújabb funkciókat, de instabil, és frissítések "
+"során megsérülhet. Napi használatra nem ajánlott."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
 msgstr "Aktív"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 211
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
 #: NEEDS WORK
-msgid "Switch Video Driver"
-msgstr "Videómeghajtó váltása"
+msgid "Change Video Driver"
+msgstr "Videómeghajtó cseréje"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 213
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
-"Do you want to switch to the <b>{}</b> driver?\n"
+"Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and might require a reboot."
+"This will modify your system's video drivers and may require a reboot."
 msgstr ""
-"Szeretné átváltani a <b>{}</b> illesztőprogramra?\n"
+"Szeretné megváltoztatni a <b>{}</b> illesztőprogramot?\n"
 "\n"
 "Ez módosítani fogja a rendszer videóillesztőprogramjait, és szükség lehet a rendszer újraindítására."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 219
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
-msgid "Switch"
-msgstr "Kapcsoló"
+msgid "Apply"
+msgstr "Alkalmazás"
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290

@@ -15,6 +15,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
+#: NEEDS WORK
+msgid "Loading..."
+msgstr "加载中..."
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
@@ -37,9 +42,9 @@ msgid "Version: {}"
 msgstr "版本： {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
-msgid "Running"
-msgstr "奔跑"
+#: NEEDS WORK
+msgid "In Use"
+msgstr "使用中"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
@@ -264,12 +269,12 @@ msgstr "取消"
 msgid "Legacy"
 msgstr "遗留"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
 #: NEEDS WORK
 msgid ""
-"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
-"Mesa pipeline."
-msgstr "经典OpenGL实现。适用于较旧的硬件或需要传统Mesa管道的应用程序。"
+"Classic OpenGL implementation for very old hardware. Only use if your GPU does not support modern "
+"Mesa drivers."
+msgstr "经典OpenGL实现，适用于非常旧的硬件。仅在您的GPU不支持现代Mesa驱动程序时使用。"
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
 #: NEEDS WORK
@@ -288,46 +293,46 @@ msgstr "官方稳定的Mesa版本。最佳性能、兼容性和稳定性的平�
 msgid "Performance"
 msgstr "性能"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
 #: NEEDS WORK
 msgid ""
-"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
-"maintaining stability."
-msgstr "自定义构建的稳定Mesa，具有性能优化。可能在保持稳定性的同时提供更好的游戏帧率。"
+"Custom build with performance patches. May provide better FPS in games, but can cause issues with "
+"system updates. Use with caution."
+msgstr "自定义构建，带有性能补丁。可能在游戏中提供更好的帧率，但可能会导致系统更新出现问题。请谨慎使用。"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 93
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
 #: NEEDS WORK
 msgid ""
-"Bleeding-edge development version built from the latest source code. Contains the newest features "
-"but may introduce instability."
-msgstr "前沿开发版本，基于最新源代码构建。包含最新功能，但可能会引入不稳定性。"
+"Bleeding-edge development version. Contains the newest features but is unstable and may break with "
+"updates. Not recommended for daily use."
+msgstr "前沿开发版本。包含最新功能，但不稳定，可能会在更新时出现故障。不建议用于日常使用。"
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
 msgstr "活动"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 211
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
 #: NEEDS WORK
-msgid "Switch Video Driver"
-msgstr "切换视频驱动程序"
+msgid "Change Video Driver"
+msgstr "更改视频驱动程序"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 213
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
-"Do you want to switch to the <b>{}</b> driver?\n"
+"Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and might require a reboot."
+"This will modify your system's video drivers and may require a reboot."
 msgstr ""
-"您想切换到 <b>{}</b> 驱动程序吗？\n"
+"您想要更改为 <b>{}</b> 驱动程序吗？\n"
 "\n"
 "这将修改您系统的视频驱动程序，并可能需要重新启动。"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 219
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
-msgid "Switch"
-msgstr "切换"
+msgid "Apply"
+msgstr "应用"
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290

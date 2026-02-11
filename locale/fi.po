@@ -15,6 +15,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
+#: NEEDS WORK
+msgid "Loading..."
+msgstr "Lataaminen..."
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
@@ -37,9 +42,9 @@ msgid "Version: {}"
 msgstr "Versio: {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
-msgid "Running"
-msgstr "Juoksu"
+#: NEEDS WORK
+msgid "In Use"
+msgstr "Käytössä"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
@@ -264,14 +269,14 @@ msgstr "Peruutettu"
 msgid "Legacy"
 msgstr "Perintö"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
 #: NEEDS WORK
 msgid ""
-"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
-"Mesa pipeline."
+"Classic OpenGL implementation for very old hardware. Only use if your GPU does not support modern "
+"Mesa drivers."
 msgstr ""
-"Klassinen OpenGL-toteutus. Ihanteellinen vanhemmalle laitteistolle tai sovelluksille, jotka "
-"vaativat perinteistä Mesa-putkea."
+"Klassinen OpenGL-toteutus erittäin vanhalle laitteistolle. Käytä vain, jos GPU:si ei tue moderneja "
+"Mesa-ohjaimia."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
 #: NEEDS WORK
@@ -292,50 +297,50 @@ msgstr ""
 msgid "Performance"
 msgstr "Suorituskyky"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
 #: NEEDS WORK
 msgid ""
-"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
-"maintaining stability."
+"Custom build with performance patches. May provide better FPS in games, but can cause issues with "
+"system updates. Use with caution."
 msgstr ""
-"Mukautettu versio vakaasta Mesasta suorituskykyoptimoinneilla. Saattaa tarjota parempia FPS:ää "
-"peleissä samalla kun säilyttää vakauden."
+"Mukautettu versio suorituskykykorjauksilla. Saattaa tarjota parempaa FPS:ää peleissä, mutta voi "
+"aiheuttaa ongelmia järjestelmäpäivityksissä. Käytä varoen."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 93
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
 #: NEEDS WORK
 msgid ""
-"Bleeding-edge development version built from the latest source code. Contains the newest features "
-"but may introduce instability."
+"Bleeding-edge development version. Contains the newest features but is unstable and may break with "
+"updates. Not recommended for daily use."
 msgstr ""
-"Verkkomallin kehitysversio, joka on rakennettu uusimmasta lähdekoodista. Sisältää uusimmat "
-"ominaisuudet, mutta voi aiheuttaa epävakautta."
+"Verkkomallin kehitysversio. Sisältää uusimmat ominaisuudet, mutta on epävakaa ja saattaa rikkoutua "
+"päivitysten myötä. Ei suositella päivittäiseen käyttöön."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
 msgstr "Aktiivinen"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 211
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
 #: NEEDS WORK
-msgid "Switch Video Driver"
-msgstr "Vaihda videodriversiä"
+msgid "Change Video Driver"
+msgstr "Vaihda näytönohjain"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 213
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
-"Do you want to switch to the <b>{}</b> driver?\n"
+"Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and might require a reboot."
+"This will modify your system's video drivers and may require a reboot."
 msgstr ""
 "Haluatko vaihtaa <b>{}</b> ohjaimeen?\n"
 "\n"
 "Tämä muuttaa järjestelmäsi videon ohjaimia ja saattaa vaatia uudelleenkäynnistyksen."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 219
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
-msgid "Switch"
-msgstr "Kytkin"
+msgid "Apply"
+msgstr "Käytä"
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290

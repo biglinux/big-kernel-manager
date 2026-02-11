@@ -15,6 +15,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
+#: NEEDS WORK
+msgid "Loading..."
+msgstr "로딩 중..."
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
@@ -37,9 +42,9 @@ msgid "Version: {}"
 msgstr "버전: {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
-msgid "Running"
-msgstr "달리기"
+#: NEEDS WORK
+msgid "In Use"
+msgstr "사용 중"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
@@ -264,12 +269,12 @@ msgstr "취소됨"
 msgid "Legacy"
 msgstr "레거시"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
 #: NEEDS WORK
 msgid ""
-"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
-"Mesa pipeline."
-msgstr "클래식 OpenGL 구현. 구형 하드웨어나 레거시 Mesa 파이프라인이 필요한 애플리케이션에 적합합니다."
+"Classic OpenGL implementation for very old hardware. Only use if your GPU does not support modern "
+"Mesa drivers."
+msgstr "매우 오래된 하드웨어를 위한 클래식 OpenGL 구현입니다. GPU가 최신 Mesa 드라이버를 지원하지 않는 경우에만 사용하세요."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
 #: NEEDS WORK
@@ -288,46 +293,46 @@ msgstr "공식 안정적인 Mesa 릴리스. 성능, 호환성 및 안정성의 �
 msgid "Performance"
 msgstr "성능"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
 #: NEEDS WORK
 msgid ""
-"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
-"maintaining stability."
-msgstr "성능 최적화가 적용된 안정적인 Mesa의 사용자 정의 빌드. 안정성을 유지하면서 게임에서 더 나은 FPS를 제공할 수 있습니다."
+"Custom build with performance patches. May provide better FPS in games, but can cause issues with "
+"system updates. Use with caution."
+msgstr "성능 패치가 적용된 사용자 정의 빌드. 게임에서 더 나은 FPS를 제공할 수 있지만 시스템 업데이트에 문제를 일으킬 수 있습니다. 주의해서 사용하세요."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 93
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
 #: NEEDS WORK
 msgid ""
-"Bleeding-edge development version built from the latest source code. Contains the newest features "
-"but may introduce instability."
-msgstr "최신 소스 코드로 빌드된 최첨단 개발 버전. 최신 기능이 포함되어 있지만 불안정성을 초래할 수 있습니다."
+"Bleeding-edge development version. Contains the newest features but is unstable and may break with "
+"updates. Not recommended for daily use."
+msgstr "최신 기능이 포함된 최전선 개발 버전입니다. 불안정하며 업데이트 시 문제가 발생할 수 있습니다. 일상적인 사용에는 권장되지 않습니다."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
 msgstr "활성"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 211
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
 #: NEEDS WORK
-msgid "Switch Video Driver"
-msgstr "비디오 드라이버 전환"
+msgid "Change Video Driver"
+msgstr "비디오 드라이버 변경"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 213
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
-"Do you want to switch to the <b>{}</b> driver?\n"
+"Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and might require a reboot."
+"This will modify your system's video drivers and may require a reboot."
 msgstr ""
-"<b>{}</b> 드라이버로 전환하시겠습니까?\n"
+"<b>{}</b> 드라이버로 변경하시겠습니까?\n"
 "\n"
 "이 작업은 시스템의 비디오 드라이버를 수정하며 재부팅이 필요할 수 있습니다."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 219
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
-msgid "Switch"
-msgstr "스위치"
+msgid "Apply"
+msgstr "적용"
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290

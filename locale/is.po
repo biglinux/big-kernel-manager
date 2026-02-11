@@ -15,6 +15,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
 # 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
+#: NEEDS WORK
+msgid "Loading..."
+msgstr "Hlaða..."
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 #, fuzzy
@@ -40,10 +45,9 @@ msgid "Version: {}"
 msgstr "Version: {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:240
-#, fuzzy
-msgid "Running"
-msgstr "Running"
+#: NEEDS WORK
+msgid "In Use"
+msgstr "Í notkun"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
@@ -290,14 +294,14 @@ msgstr "Cancelled"
 msgid "Legacy"
 msgstr "Arfleifð"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 278
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
 #: NEEDS WORK
 msgid ""
-"Classic OpenGL implementation. Ideal for older hardware or applications that require the legacy "
-"Mesa pipeline."
+"Classic OpenGL implementation for very old hardware. Only use if your GPU does not support modern "
+"Mesa drivers."
 msgstr ""
-"Classic OpenGL útfærsla. Fullkomin fyrir eldri vélbúnað eða forrit sem krafist er arfleifðar Mesa "
-"rásarinnar."
+"Classic OpenGL útfærsla fyrir mjög gamla vélbúnað. Notaðu aðeins ef GPU þinn styður ekki nútíma "
+"Mesa drif."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
 #: NEEDS WORK
@@ -318,23 +322,23 @@ msgstr ""
 msgid "Performance"
 msgstr "Frammistaðla"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
 #: NEEDS WORK
 msgid ""
-"Custom build of stable Mesa with performance optimizations. May provide better FPS in games while "
-"maintaining stability."
+"Custom build with performance patches. May provide better FPS in games, but can cause issues with "
+"system updates. Use with caution."
 msgstr ""
-"Sérsniðin útgáfa af stöðugum Mesa með frammistöðubætum. Gæti veitt betri FPS í leikjum á meðan "
-"stöðugleiki er viðhaldið."
+"Sérsniðin uppbygging með frammistöðupatchum. Gæti veitt betri FPS í leikjum, en getur valdið "
+"vandamálum við kerfisuppfærslur. Notið með varúð."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 93
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
 #: NEEDS WORK
 msgid ""
-"Bleeding-edge development version built from the latest source code. Contains the newest features "
-"but may introduce instability."
+"Bleeding-edge development version. Contains the newest features but is unstable and may break with "
+"updates. Not recommended for daily use."
 msgstr ""
-"Blæðandi jaðar þróunarútgáfa byggð á nýjustu kóðanum. Inniheldur nýjustu eiginleikana en getur "
-"leitt til óstöðugleika."
+"Blæðandi jaðar þróunarútgáfa. Inniheldur nýjustu eiginleikana en er óstöðug og getur brotnað með "
+"uppfærslum. Ekki mælt með fyrir daglega notkun."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
@@ -342,27 +346,27 @@ msgstr ""
 msgid "Active"
 msgstr "Active"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 211
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
 #: NEEDS WORK
-msgid "Switch Video Driver"
-msgstr "Skipta vídeódrifti"
+msgid "Change Video Driver"
+msgstr "Breyta vídeódrifti"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 213
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
-"Do you want to switch to the <b>{}</b> driver?\n"
+"Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and might require a reboot."
+"This will modify your system's video drivers and may require a reboot."
 msgstr ""
-"Viltu skipta yfir í <b>{}</b> drifinn?\n"
+"Viltu breyta í <b>{}</b> drifinu?\n"
 "\n"
 "Þetta mun breyta vídeodrifum kerfisins þíns og gæti krafist endurræsingar."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 219
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
-msgid "Switch"
-msgstr "Breyta"
+msgid "Apply"
+msgstr "Beita"
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290
