@@ -86,14 +86,31 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         self.kernel_page = KernelPage()
         self.mesa_page = MesaPage()
         
-        self.stack.add_titled(self.kernel_page, "kernel", _("Kernel"))
-        self.stack.add_titled(self.mesa_page, "mesa", _("Video Drivers"))
+        self.stack.add_named(self.kernel_page, "kernel")
+        self.stack.add_named(self.mesa_page, "mesa")
         
-        # Create stack switcher
-        stack_switcher = Gtk.StackSwitcher()
-        stack_switcher.set_stack(self.stack)
-        stack_switcher.set_halign(Gtk.Align.CENTER)
-        header.set_title_widget(stack_switcher)
+        # Create tab buttons with linked style (same approach as big-network-info)
+        tab_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
+        tab_box.add_css_class("linked")
+        tab_box.set_halign(Gtk.Align.CENTER)
+        
+        self.kernel_button = Gtk.Button(label=_("Kernel"))
+        self.kernel_button.connect("clicked", self._on_tab_clicked, "kernel")
+        tab_box.append(self.kernel_button)
+        
+        self.mesa_button = Gtk.Button(label=_("Video Drivers"))
+        self.mesa_button.connect("clicked", self._on_tab_clicked, "mesa")
+        tab_box.append(self.mesa_button)
+        
+        self.tab_buttons = {
+            "kernel": self.kernel_button,
+            "mesa": self.mesa_button,
+        }
+        
+        header.set_title_widget(tab_box)
+        
+        # Activate first tab
+        self._activate_tab("kernel")
         
         # Toast overlay for notifications
         toast_overlay = Adw.ToastOverlay()
@@ -119,9 +136,27 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         
         self.set_content(main_box)
     
+    def _on_tab_clicked(self, button, tab_name):
+        """Handle tab button click."""
+        self._activate_tab(tab_name)
+    
+    def _activate_tab(self, tab_name):
+        """Switch to the specified tab and update button styling."""
+        for name, button in self.tab_buttons.items():
+            if name == tab_name:
+                button.add_css_class("suggested-action")
+            else:
+                button.remove_css_class("suggested-action")
+        self.stack.set_visible_child_name(tab_name)
+    
     def _create_header(self) -> Adw.HeaderBar:
         """Create the header bar with controls."""
         header = Adw.HeaderBar()
+        
+        # App icon on the left side
+        app_icon = Gtk.Image.new_from_icon_name("big-kernel-manager")
+        app_icon.set_pixel_size(20)
+        header.pack_start(app_icon)
         
         # Create hamburger menu button
         menu_button = Gtk.MenuButton()
@@ -155,7 +190,8 @@ class KernelManagerWindow(Adw.ApplicationWindow):
     
     def _on_refresh_activated(self, action, param):
         """Handle refresh action from menu."""
-        if self.stack.get_visible_child_name() == "kernel":
+        visible = self.stack.get_visible_child_name()
+        if visible == "kernel":
             self.kernel_page._on_refresh_clicked(None)
         else:
             self.mesa_page._on_refresh_clicked(None)

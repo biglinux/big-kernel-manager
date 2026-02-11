@@ -177,20 +177,20 @@ button.flat.remove-action:disabled {
     color: @insensitive_fg_color;
 }
 
-/* Global compact buttons */
-button {
+/* Compact buttons in content areas (exclude header/stackswitcher) */
+.content button {
     min-height: 28px;
     padding-top: 4px;
     padding-bottom: 4px;
 }
 
-button.pill {
+.content button.pill {
     padding-left: 16px;
     padding-right: 16px;
 }
 
-button.suggested-action,
-button.destructive-action {
+.content button.suggested-action,
+.content button.destructive-action {
     min-height: 28px;
     padding: 4px 14px;
 }
