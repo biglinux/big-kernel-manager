@@ -44,31 +44,49 @@
 }
 
 .badge-box.success {
-    background-color: rgba(46, 204, 113, 0.15);
-    color: #2ecc71;
+    background-color: alpha(@success_color, 0.15);
+    color: @success_color;
 }
 
 .badge-box.warning {
-    background-color: rgba(241, 196, 15, 0.15);
-    color: #f1c40f;
+    background-color: alpha(@warning_color, 0.15);
+    color: @warning_color;
 }
 
 .badge-box.accent {
-    background-color: rgba(52, 152, 219, 0.15);
-    color: #3498db;
+    background-color: alpha(@accent_color, 0.15);
+    color: @accent_color;
 }
 
 /* Running kernel badge */
 .badge-box.running {
-    background-color: rgba(114, 137, 218, 0.20);
-    color: #7289da;
-    border: 1px solid rgba(114, 137, 218, 0.3);
+    background-color: alpha(@accent_color, 0.12);
+    color: @accent_color;
+    border: 1px solid alpha(@accent_color, 0.30);
 }
 
 /* Danger badge (e.g. for destructive actions) */
 .badge-box.danger {
-    background-color: rgba(224, 27, 36, 0.15);
-    color: #e01b24;
+    background-color: alpha(@error_color, 0.15);
+    color: @error_color;
+}
+
+/* Driver selection cards */
+.driver-card {
+    border-radius: 12px;
+    border: 1px solid alpha(@borders, 0.5);
+    background-color: alpha(@card_bg_color, 0.5);
+    transition: all 200ms ease;
+}
+
+.driver-card:hover {
+    background-color: alpha(@accent_color, 0.08);
+    border-color: alpha(@accent_color, 0.4);
+}
+
+.driver-card-active {
+    border: 2px solid @accent_color;
+    background-color: alpha(@accent_color, 0.06);
 }
 
 /* Section headers */
@@ -99,9 +117,9 @@
     opacity: 0.5;
 }
 
-/* Action buttons styling - slim version */
+/* Action buttons styling - compact */
 .action-button {
-    min-width: 100px;
+    min-width: 80px;
 }
 
 /* Slim action buttons for Install/Remove in kernel/mesa lists */
@@ -157,4 +175,22 @@ button.flat.remove-action:hover {
 button.flat.remove-action:disabled {
     opacity: 0.4;
     color: @insensitive_fg_color;
+}
+
+/* Global compact buttons */
+button {
+    min-height: 28px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+button.pill {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+button.suggested-action,
+button.destructive-action {
+    min-height: 28px;
+    padding: 4px 14px;
 }

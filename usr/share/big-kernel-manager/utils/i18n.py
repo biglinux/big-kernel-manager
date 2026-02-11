@@ -1,24 +1,26 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#
-# i18n.py - Utilities for translation support
-#
+"""Internationalization support for Big Kernel Manager."""
+
 import gettext
 import os
 
-# Determine locale directory (works in AppImage and system install)
-locale_dir = '/usr/share/locale'  # Default for system install
+# Determine locale directory
+# Priority: 1) Local project locale, 2) AppImage, 3) System install
+locale_dir = '/usr/share/locale'  # Default fallback for system install
 
-# Check if we're in an AppImage
+# Check if running from source/local (e.g. python main.py from the project)
+script_dir = os.path.dirname(os.path.abspath(__file__))  # utils/
+app_dir = os.path.dirname(script_dir)                    # big-kernel-manager/
+share_dir = os.path.dirname(app_dir)                     # share/
+local_locale = os.path.join(share_dir, 'locale')         # share/locale
+
+if os.path.isdir(local_locale):
+    locale_dir = local_locale
+
+# Check if we're in an AppImage (overrides local)
 if 'APPIMAGE' in os.environ or 'APPDIR' in os.environ:
-    # Running from AppImage
-    # i18n.py is in: usr/share/big-kernel-manager/utils/i18n.py
-    # We need to get to: usr/share/locale
-    script_dir = os.path.dirname(os.path.abspath(__file__))  # usr/share/big-kernel-manager/utils
-    app_dir = os.path.dirname(script_dir)                    # usr/share/big-kernel-manager
-    share_dir = os.path.dirname(app_dir)                     # usr/share
-    appimage_locale = os.path.join(share_dir, 'locale')      # usr/share/locale
-    
+    appimage_locale = os.path.join(share_dir, 'locale')
     if os.path.isdir(appimage_locale):
         locale_dir = appimage_locale
 

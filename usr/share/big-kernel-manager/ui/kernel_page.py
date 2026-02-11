@@ -65,8 +65,6 @@ class KernelPage(BasePage):
         
         # Add header with Adw.PreferencesGroup for better GNOME style
         kernel_group = Adw.PreferencesGroup()
-        kernel_group.set_title(_("Kernel Versions"))
-        kernel_group.set_description(_("Select a kernel version to install or update"))
         
         # Create scrolled window for kernels that will resize itself
         self.kernels_scrolled = Gtk.ScrolledWindow()
@@ -259,7 +257,7 @@ class KernelPage(BasePage):
         
         # Action button (fixed width for alignment)
         button_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
-        button_box.set_size_request(100, -1)
+        button_box.set_size_request(80, -1)
         button_box.set_halign(Gtk.Align.END)
         button_box.set_valign(Gtk.Align.CENTER)
         
@@ -267,7 +265,7 @@ class KernelPage(BasePage):
             remove_button = Gtk.Button.new_with_label(_("Remove"))
             remove_button.add_css_class("destructive-action")
             remove_button.add_css_class("pill")
-            remove_button.set_size_request(90, -1)
+            remove_button.set_size_request(70, -1)
             
             # Disable remove button for the running kernel (safety protection)
             if is_running:
@@ -280,7 +278,7 @@ class KernelPage(BasePage):
             install_button = Gtk.Button.new_with_label(_("Install"))
             install_button.add_css_class("suggested-action")
             install_button.add_css_class("pill")
-            install_button.set_size_request(90, -1)
+            install_button.set_size_request(70, -1)
             install_button.connect("clicked", self._on_install_clicked, kernel)
             button_box.append(install_button)
         

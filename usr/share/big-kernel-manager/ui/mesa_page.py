@@ -37,72 +37,97 @@ class MesaPage(BasePage):
         # Load available Mesa drivers (synchronous to ensure data is ready before window shows)
         self._load_mesa_drivers()
     
+    # Extended descriptions per driver id (combines old description + info)
+    DRIVER_INFO = {
+        "amber": {
+            "icon": "emblem-default-symbolic",
+            "icon_color": "warning",
+            "badge": None,  # Will be set with _() at runtime
+            "badge_color": "warning",
+            "desc": None,   # Will be set with _() at runtime
+        },
+        "stable": {
+            "icon": "emblem-ok-symbolic",
+            "icon_color": "success",
+            "badge": None,
+            "badge_color": "success",
+            "desc": None,
+        },
+        "tkg-stable": {
+            "icon": "system-run-symbolic",
+            "icon_color": "accent",
+            "badge": None,
+            "badge_color": "accent",
+            "desc": None,
+        },
+        "tkg-git": {
+            "icon": "system-software-update-symbolic",
+            "icon_color": "warning",
+            "badge": None,
+            "badge_color": "warning",
+            "desc": None,
+        },
+    }
+    
+    def _init_driver_info(self):
+        """Initialize translatable driver info strings."""
+        info = self.DRIVER_INFO
+        info["amber"]["badge"] = _("Legacy")
+        info["amber"]["desc"] = _(
+            "Classic OpenGL implementation. Ideal for older hardware "
+            "or applications that require the legacy Mesa pipeline."
+        )
+        info["stable"]["badge"] = _("Recommended")
+        info["stable"]["desc"] = _(
+            "Official stable Mesa release. Best balance of performance, "
+            "compatibility and stability. Includes Vulkan drivers for "
+            "AMD, Intel and software rendering."
+        )
+        info["tkg-stable"]["badge"] = _("Performance")
+        info["tkg-stable"]["desc"] = _(
+            "Custom build of stable Mesa with performance optimizations. "
+            "May provide better FPS in games while maintaining stability."
+        )
+        info["tkg-git"]["badge"] = "DEV"
+        info["tkg-git"]["desc"] = _(
+            "Bleeding-edge development version built from the latest source code. "
+            "Contains the newest features but may introduce instability."
+        )
+    
     def _create_content(self):
-        """Create the UI elements for Mesa drivers management with fixed layout."""
-        # Create main container as scrolled window to maintain fixed window size
+        """Create the UI elements for Mesa drivers management."""
+        self._init_driver_info()
+        
+        # Create main container as scrolled window
         main_scrolled = Gtk.ScrolledWindow()
         main_scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
         main_scrolled.set_min_content_height(550)
         main_scrolled.set_vexpand(True)
         
-        # Main content box inside scrolled window
+        # Main content box
         main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=16)
         main_box.set_margin_top(24)
         main_box.set_margin_bottom(24)
         main_box.set_margin_start(24)
         main_box.set_margin_end(24)
         
-        # Create a ClampView to constrain content width for better readability
         clamp = Adw.Clamp()
         clamp.set_maximum_size(800)
         clamp.set_tightening_threshold(600)
         
-        # Inner content container
-        content_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=16)
+        content_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=12)
         
-        # Create a preference group for the drivers
-        driver_group = Adw.PreferencesGroup()
-        driver_group.set_title(_("Video Drivers"))
-        driver_group.set_description(_("Click on a driver version to switch"))
+        # The 2x2 grid of driver cards
+        self.driver_grid = Gtk.Grid()
+        self.driver_grid.set_column_spacing(12)
+        self.driver_grid.set_row_spacing(12)
+        self.driver_grid.set_column_homogeneous(True)
         
-        # Add info button as a header suffix
-        info_button = Gtk.Button.new_from_icon_name("help-about-symbolic")
-        info_button.set_tooltip_text(_("Information about video drivers"))
-        info_button.set_valign(Gtk.Align.CENTER)
-        info_button.connect("clicked", self._on_help_clicked)
-        driver_group.set_header_suffix(info_button)
+        content_box.append(self.driver_grid)
         
-        # Create a scrolled window for drivers that will resize itself
-        self.drivers_scrolled = Gtk.ScrolledWindow()
-        self.drivers_scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
-        self.drivers_scrolled.set_vexpand(True)
-        self.drivers_scrolled.set_min_content_height(300)
-        
-        # Create a card for the driver options inside the scrolled window
-        driver_card = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=12)
-        driver_card.add_css_class("card")
-        driver_card.set_margin_top(12)
-        driver_card.set_margin_start(12)
-        driver_card.set_margin_end(12)
-        driver_card.set_margin_bottom(12)
-        driver_card.set_vexpand(False)
-        
-        self.drivers_scrolled.set_child(driver_card)
-        driver_group.add(self.drivers_scrolled)
-        self.driver_box = driver_card
-        driver_group.set_vexpand(False)
-        
-        # Add the driver group to the content
-        content_box.append(driver_group)
-        
-        # Set the clamp's child to the content box
         clamp.set_child(content_box)
         main_box.append(clamp)
-        
-        # Set the main box as the child of the scrolled window
         main_scrolled.set_child(main_box)
-        
-        # Add the main scrolled window to this widget
         self.append(main_scrolled)
     
     def _load_mesa_drivers_async(self):
@@ -126,87 +151,108 @@ class MesaPage(BasePage):
         self._update_driver_list(drivers)
     
     def _update_driver_list(self, drivers=None):
-        """Update the driver list in the main thread."""
-        # Clear existing items
+        """Update the 2x2 driver grid."""
+        # Clear grid
         while True:
-            child = self.driver_box.get_first_child()
+            child = self.driver_grid.get_first_child()
             if child is None:
                 break
-            self.driver_box.remove(child)
+            self.driver_grid.remove(child)
         
-        # If no drivers passed, fetch them directly (for synchronous calls)
         if drivers is None:
             drivers = self.mesa_manager.get_available_drivers()
         
-        for driver in drivers:
-            row = Adw.ActionRow()
-            row.set_title(driver["name"])
+        for i, driver in enumerate(drivers):
+            col = i % 2
+            row = i // 2
             
-            if "description" in driver:
-                row.set_subtitle(driver["description"])
-            
+            driver_id = driver["id"]
             is_active = driver.get("active", False)
+            info = self.DRIVER_INFO.get(driver_id, {})
             
-            # Icon based on status and type
+            # Clickable card button
+            card_button = Gtk.Button()
+            card_button.add_css_class("flat")
+            card_button.add_css_class("driver-card")
             if is_active:
-                icon = Gtk.Image.new_from_icon_name("emblem-ok-symbolic")
-                icon.add_css_class("success")
-            elif "git" in driver["id"]:
-                icon = Gtk.Image.new_from_icon_name("system-software-update-symbolic")
-            elif "amber" in driver["id"]:
-                icon = Gtk.Image.new_from_icon_name("emblem-default-symbolic")
-            else:
-                icon = Gtk.Image.new_from_icon_name("video-display-symbolic")
+                card_button.add_css_class("driver-card-active")
+            card_button.set_vexpand(False)
+            card_button.connect("clicked", self._on_card_clicked, driver)
             
-            row.add_prefix(icon)
+            # Card content
+            card_inner = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
+            card_inner.set_margin_start(14)
+            card_inner.set_margin_end(14)
+            card_inner.set_margin_top(12)
+            card_inner.set_margin_bottom(12)
             
-            # Make row clickable - activatable for direct switching
-            row.set_activatable(True)
+            # Header: icon + name + badge
+            header_row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+            header_row.set_valign(Gtk.Align.CENTER)
             
-            # Suffix container for alignment
-            suffix_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
-            suffix_box.set_halign(Gtk.Align.END)
+            icon = Gtk.Image.new_from_icon_name(info.get("icon", "video-display-symbolic"))
+            icon.set_pixel_size(18)
+            icon_color = info.get("icon_color", "accent")
+            icon.add_css_class(icon_color)
+            header_row.append(icon)
             
-            # Type badge
-            type_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=4)
-            type_box.set_size_request(80, -1)
-            type_box.set_halign(Gtk.Align.END)
+            name_label = Gtk.Label()
+            name_label.set_markup(f"<b>{driver['name']}</b>")
+            name_label.set_xalign(0)
+            name_label.set_hexpand(True)
+            header_row.append(name_label)
             
-            if "git" in driver["id"]:
-                type_badge = self._create_badge("DEV", "warning")
-                type_box.append(type_badge)
-            elif "stable" in driver["id"] and "tkg" not in driver["id"]:
-                type_badge = self._create_badge(_("STABLE"), "success")
-                type_box.append(type_badge)
+            # Badge
+            badge_text = info.get("badge", "")
+            badge_color = info.get("badge_color", "accent")
+            if badge_text:
+                badge = self._create_badge(badge_text, badge_color)
+                header_row.append(badge)
             
-            suffix_box.append(type_box)
+            card_inner.append(header_row)
             
-            # Active status
-            status_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
-            status_box.set_size_request(70, -1)
-            status_box.set_halign(Gtk.Align.END)
+            # Separator
+            sep = Gtk.Separator(orientation=Gtk.Orientation.HORIZONTAL)
+            sep.set_margin_top(2)
+            sep.set_margin_bottom(2)
+            card_inner.append(sep)
             
+            # Description
+            desc_text = info.get("desc", driver.get("description", ""))
+            desc_label = Gtk.Label(label=desc_text)
+            desc_label.set_wrap(True)
+            desc_label.set_xalign(0)
+            desc_label.add_css_class("dim-label")
+            card_inner.append(desc_label)
+            
+            # Active indicator at the bottom
             if is_active:
-                active_badge = self._create_badge(_("Active"), "accent")
-                status_box.append(active_badge)
+                active_row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=6)
+                active_row.set_margin_top(4)
+                active_row.set_halign(Gtk.Align.START)
+                
+                check_icon = Gtk.Image.new_from_icon_name("emblem-ok-symbolic")
+                check_icon.set_pixel_size(14)
+                check_icon.add_css_class("success")
+                active_row.append(check_icon)
+                
+                active_label = Gtk.Label(label=_("Active"))
+                active_label.add_css_class("success")
+                active_label.set_markup(f"<small><b>{_('Active')}</b></small>")
+                active_row.append(active_label)
+                
+                card_inner.append(active_row)
             
-            suffix_box.append(status_box)
-            row.add_suffix(suffix_box)
-            
-            # Connect row activation to driver switching
-            row.connect("activated", self._on_driver_row_activated, driver)
-            
-            self.driver_box.append(row)
+            card_button.set_child(card_inner)
+            self.driver_grid.attach(card_button, col, row, 1, 1)
     
-    def _on_driver_row_activated(self, row, driver):
-        """Handle clicking on a driver row to switch to it."""
+    def _on_card_clicked(self, button, driver):
+        """Handle clicking on a driver card to switch to it."""
         is_active = driver.get("active", False)
         
         if is_active:
-            # Already active, show toast or do nothing
             return
         
-        # Show confirmation dialog directly
         dialog = Adw.MessageDialog.new(self.get_root())
         dialog.set_heading(_("Switch Video Driver"))
         dialog.set_body(
@@ -227,177 +273,6 @@ class MesaPage(BasePage):
     def _on_refresh_clicked(self, button):
         """Callback for refresh button click."""
         self._load_mesa_drivers()
-    
-    def _on_help_clicked(self, button):
-        """Show information dialog about the drivers with cards and colors."""
-        dialog = Adw.Window()
-        dialog.set_default_size(600, 550)
-        dialog.set_modal(True)
-        dialog.set_transient_for(self.get_root())
-        dialog.set_hide_on_close(True)
-        
-        content_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
-        
-        # Header bar
-        header = Adw.HeaderBar()
-        header.set_title_widget(Adw.WindowTitle(
-            title=_("Video Drivers Information")
-        ))
-        content_box.append(header)
-        
-        # Scrollable content
-        scrolled = Gtk.ScrolledWindow()
-        scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
-        scrolled.set_vexpand(True)
-        
-        main_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=16)
-        main_box.set_margin_start(24)
-        main_box.set_margin_end(24)
-        main_box.set_margin_top(16)
-        main_box.set_margin_bottom(24)
-        
-        # Subtitle
-        subtitle = Gtk.Label()
-        subtitle.set_markup(
-            _("Different driver versions offer various features and performance characteristics:")
-        )
-        subtitle.set_wrap(True)
-        subtitle.set_xalign(0.5)
-        subtitle.add_css_class("dim-label")
-        subtitle.set_margin_bottom(8)
-        main_box.append(subtitle)
-        
-        # Driver cards data
-        drivers_info = [
-            {
-                "name": "Amber",
-                "icon": "emblem-default-symbolic",
-                "icon_color": "accent",
-                "badge": _("Legacy"),
-                "badge_color": "warning",
-                "desc": _("Classic OpenGL implementation. Ideal for older hardware "
-                         "or applications that require the legacy Mesa pipeline.")
-            },
-            {
-                "name": "Stable",
-                "icon": "emblem-ok-symbolic",
-                "icon_color": "success",
-                "badge": _("Recommended"),
-                "badge_color": "success",
-                "desc": _("Official stable Mesa release from Manjaro repositories. "
-                         "Best balance of performance, compatibility and stability. "
-                         "Includes Vulkan drivers for AMD, Intel and software rendering.")
-            },
-            {
-                "name": "TKG-Stable",
-                "icon": "system-run-symbolic",
-                "icon_color": "accent",
-                "badge": _("Performance"),
-                "badge_color": "accent",
-                "desc": _("Custom build of stable Mesa with performance optimizations. "
-                         "May provide better FPS in games while maintaining stability.")
-            },
-            {
-                "name": "TKG-Git",
-                "icon": "system-software-update-symbolic",
-                "icon_color": "warning",
-                "badge": "DEV",
-                "badge_color": "warning",
-                "desc": _("Bleeding-edge development version built from the latest source code. "
-                         "Contains the newest features and driver improvements, "
-                         "but may introduce instability or regressions.")
-            },
-        ]
-        
-        for info in drivers_info:
-            card = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
-            card.add_css_class("card")
-            card.set_margin_start(4)
-            card.set_margin_end(4)
-            
-            inner = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
-            inner.set_margin_start(16)
-            inner.set_margin_end(16)
-            inner.set_margin_top(12)
-            inner.set_margin_bottom(12)
-            
-            # Header row: icon + name + badge
-            header_row = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
-            header_row.set_valign(Gtk.Align.CENTER)
-            
-            icon = Gtk.Image.new_from_icon_name(info["icon"])
-            icon.set_pixel_size(20)
-            icon.add_css_class(info["icon_color"])
-            header_row.append(icon)
-            
-            name_label = Gtk.Label()
-            name_label.set_markup(f"<b>{info['name']}</b>")
-            name_label.set_xalign(0)
-            name_label.set_hexpand(True)
-            header_row.append(name_label)
-            
-            # Badge
-            badge_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
-            badge_box.add_css_class("badge-box")
-            badge_box.add_css_class(info["badge_color"])
-            badge_label = Gtk.Label(label=info["badge"])
-            badge_label.add_css_class("badge")
-            badge_box.append(badge_label)
-            header_row.append(badge_box)
-            
-            inner.append(header_row)
-            
-            # Description
-            desc_label = Gtk.Label(label=info["desc"])
-            desc_label.set_wrap(True)
-            desc_label.set_xalign(0)
-            desc_label.add_css_class("dim-label")
-            inner.append(desc_label)
-            
-            card.append(inner)
-            main_box.append(card)
-        
-        # Footer advice
-        advice_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
-        advice_box.set_margin_top(8)
-        
-        advice_icon = Gtk.Image.new_from_icon_name("dialog-information-symbolic")
-        advice_icon.set_pixel_size(16)
-        advice_icon.add_css_class("accent")
-        advice_icon.set_valign(Gtk.Align.START)
-        advice_box.append(advice_icon)
-        
-        advice_label = Gtk.Label()
-        advice_label.set_markup(
-            "<i>" + _("If unsure, the <b>Stable</b> driver is the safest choice for most users.") + "</i>"
-        )
-        advice_label.set_wrap(True)
-        advice_label.set_xalign(0)
-        advice_label.add_css_class("dim-label")
-        advice_box.append(advice_label)
-        
-        main_box.append(advice_box)
-        
-        scrolled.set_child(main_box)
-        content_box.append(scrolled)
-        
-        # Close button
-        button_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL)
-        button_box.set_halign(Gtk.Align.CENTER)
-        button_box.set_margin_top(8)
-        button_box.set_margin_bottom(16)
-        
-        close_btn = Gtk.Button(label=_("Close"))
-        close_btn.add_css_class("suggested-action")
-        close_btn.add_css_class("pill")
-        close_btn.set_size_request(120, -1)
-        close_btn.connect("clicked", lambda btn: dialog.close())
-        button_box.append(close_btn)
-        
-        content_box.append(button_box)
-        
-        dialog.set_content(content_box)
-        dialog.present()
     
     def _on_confirm_dialog_response(self, dialog, response, selected_driver):
         """Handle the confirmation dialog response."""

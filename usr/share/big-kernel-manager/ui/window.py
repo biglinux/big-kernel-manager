@@ -34,7 +34,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         # Set up window properties
         self.set_title(APP_NAME)
         self.set_default_size(WINDOW_DEFAULT_WIDTH, WINDOW_DEFAULT_HEIGHT)
-        self.set_resizable(False)
+        self.set_resizable(True)
         
         # Initialize settings
         self._init_settings()
@@ -87,7 +87,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         self.mesa_page = MesaPage()
         
         self.stack.add_titled(self.kernel_page, "kernel", _("Kernel"))
-        self.stack.add_titled(self.mesa_page, "mesa", _("Mesa Drivers"))
+        self.stack.add_titled(self.mesa_page, "mesa", _("Video Drivers"))
         
         # Create stack switcher
         stack_switcher = Gtk.StackSwitcher()
@@ -223,7 +223,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         self.backdrop.set_visible(True)
         
         dialog = Adw.Window()
-        dialog.set_default_size(700, 500)
+        dialog.set_default_size(750, 650)
         dialog.set_modal(True)
         dialog.set_transient_for(self)
         dialog.set_hide_on_close(True)
@@ -463,7 +463,6 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         close_button = Gtk.Button(label=_("Close"))
         close_button.add_css_class("suggested-action")
         close_button.add_css_class("pill")
-        close_button.set_size_request(100, -1)
         close_button.connect("clicked", lambda btn: self._close_dialog(dialog))
         close_button.set_halign(Gtk.Align.END)
         controls_box.append(close_button)
