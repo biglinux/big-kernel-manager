@@ -24,7 +24,7 @@ MESA_DRIVERS = [
         "id": "amber",
         "name": "Amber",
         "packages": ["mesa-amber"],
-        "conflicts": ["mesa", "mesa-git", "mesa-tkg-git"],
+        "conflicts": ["mesa", "mesa-git", "mesa-tkg-stable", "mesa-tkg-git"],
         "description": "Stable and well-tested version of Mesa"
     },
     {
@@ -37,13 +37,13 @@ MESA_DRIVERS = [
             "vulkan-swrast", "lib32-vulkan-swrast",
             "mesa-utils"
         ],
-        "conflicts": ["mesa-amber", "mesa-git", "mesa-tkg-git"],
+        "conflicts": ["mesa-amber", "mesa-git", "mesa-tkg-stable", "mesa-tkg-git"],
         "description": "Regular Mesa release (recommended)"
     },
     {
         "id": "tkg-stable",
         "name": "Tkg-Stable",
-        "packages": ["mesa-tkg"],
+        "packages": ["mesa-tkg-stable"],
         "conflicts": ["mesa", "mesa-amber", "mesa-git", "mesa-tkg-git"],
         "description": "Enhanced performance build of stable Mesa"
     },
@@ -51,7 +51,7 @@ MESA_DRIVERS = [
         "id": "tkg-git",
         "name": "Tkg-git",
         "packages": ["mesa-tkg-git"],
-        "conflicts": ["mesa", "mesa-amber", "mesa-tkg"],
+        "conflicts": ["mesa", "mesa-amber", "mesa-tkg-stable"],
         "description": "Latest development version with cutting-edge features"
     }
 ]
