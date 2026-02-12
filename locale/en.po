@@ -25,184 +25,21 @@ msgid "Terminal Output"
 msgstr "Terminal Output"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
-msgid "Installed Kernels"
-msgstr "Installed Kernels"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
-msgid "Available Kernels"
-msgstr "Available Kernels"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
-#, python-brace-format
-msgid "Version: {}"
-msgstr "Version: {}"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-msgid "In Use"
-msgstr "In Use"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-msgid "Remove"
-msgstr "Remove"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
-msgid "Cannot remove the currently running kernel"
-msgstr "Cannot remove the currently running kernel"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-msgid "Install"
-msgstr "Install"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
-msgid "Install Kernel"
-msgstr "Install Kernel"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
-#, python-brace-format
-msgid ""
-"Are you sure you want to install the <b>{}</b> kernel?\n"
-"\n"
-"This will install the kernel and its modules."
-msgstr ""
-"Are you sure you want to install the <b>{}</b> kernel?\n"
-"\n"
-"This will install the kernel and its modules."
-
-#
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 306
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 374
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 161
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 266
-msgid "Cancel"
-msgstr "Cancel"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#, python-brace-format
-msgid "Installing {}"
-msgstr "Installing {}"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
-#, python-brace-format
-msgid "Preparing to install {} kernel..."
-msgstr "Preparing to install {} kernel..."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#, python-brace-format
-msgid "Starting installation of {} kernel..."
-msgstr "Starting installation of {} kernel..."
-
-#
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
-msgid "This may take a few minutes. Please wait..."
-msgstr "This may take a few minutes. Please wait..."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
-msgid "Cannot Remove Running Kernel"
-msgstr "Cannot Remove Running Kernel"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
-msgid ""
-"The kernel you are trying to remove is currently in use.\n"
-"Please boot into a different kernel first."
-msgstr ""
-"The kernel you are trying to remove is currently in use.\n"
-"Please boot into a different kernel first."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
-msgid "Remove Kernel"
-msgstr "Remove Kernel"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
-#, python-brace-format
-msgid ""
-"Are you sure you want to remove the <b>{}</b> kernel?\n"
-"\n"
-"This will remove the kernel and its modules."
-msgstr ""
-"Are you sure you want to remove the <b>{}</b> kernel?\n"
-"\n"
-"This will remove the kernel and its modules."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#, python-brace-format
-msgid "Removing {}"
-msgstr "Removing {}"
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
-#, python-brace-format
-msgid "Preparing to remove {} kernel..."
-msgstr "Preparing to remove {} kernel..."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
-#, python-brace-format
-msgid "Starting removal of {} kernel..."
-msgstr "Starting removal of {} kernel..."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
-msgid ""
-"The kernel was installed successfully.\n"
-"You may need to reboot to use the new kernel."
-msgstr ""
-"The kernel was installed successfully.\n"
-"You may need to reboot to use the new kernel."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-msgid ""
-"The kernel installation failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"The kernel installation failed.\n"
-"Please check the terminal output for details."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
-msgid "The kernel was removed successfully."
-msgstr "The kernel was removed successfully."
-
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
-msgid ""
-"The kernel removal failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"The kernel removal failed.\n"
-"Please check the terminal output for details."
-
-#
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
 msgid "Show Terminal Output"
 msgstr "Show Terminal Output"
+
+#
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+#
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+#
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 161
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 266
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 306
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 374
+msgid "Cancel"
+msgstr "Cancel"
 
 #
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -343,6 +180,15 @@ msgstr "Preparing to apply {} driver..."
 #, python-brace-format
 msgid "Applying {} driver..."
 msgstr "Applying {} driver..."
+
+#
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+#
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
+msgid "This may take a few minutes. Please wait..."
+msgstr "This may take a few minutes. Please wait..."
 
 #
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 324
@@ -511,3 +357,157 @@ msgstr ""
 # File: usr/share/big-kernel-manager/ui/window.py, line: 485
 msgid "Show this warning on startup"
 msgstr "Show this warning on startup"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
+msgid "Installed Kernels"
+msgstr "Installed Kernels"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
+msgid "Available Kernels"
+msgstr "Available Kernels"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
+#, python-brace-format
+msgid "Version: {}"
+msgstr "Version: {}"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
+msgid "In Use"
+msgstr "In Use"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+msgid "Remove"
+msgstr "Remove"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
+msgid "Cannot remove the currently running kernel"
+msgstr "Cannot remove the currently running kernel"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+msgid "Install"
+msgstr "Install"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
+msgid "Install Kernel"
+msgstr "Install Kernel"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+#, python-brace-format
+msgid ""
+"Are you sure you want to install the <b>{}</b> kernel?\n"
+"\n"
+"This will install the kernel and its modules."
+msgstr ""
+"Are you sure you want to install the <b>{}</b> kernel?\n"
+"\n"
+"This will install the kernel and its modules."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#, python-brace-format
+msgid "Installing {}"
+msgstr "Installing {}"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
+#, python-brace-format
+msgid "Preparing to install {} kernel..."
+msgstr "Preparing to install {} kernel..."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+#, python-brace-format
+msgid "Starting installation of {} kernel..."
+msgstr "Starting installation of {} kernel..."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
+msgid "Cannot Remove Running Kernel"
+msgstr "Cannot Remove Running Kernel"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+msgid ""
+"The kernel you are trying to remove is currently in use.\n"
+"Please boot into a different kernel first."
+msgstr ""
+"The kernel you are trying to remove is currently in use.\n"
+"Please boot into a different kernel first."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+msgid "Remove Kernel"
+msgstr "Remove Kernel"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+#, python-brace-format
+msgid ""
+"Are you sure you want to remove the <b>{}</b> kernel?\n"
+"\n"
+"This will remove the kernel and its modules."
+msgstr ""
+"Are you sure you want to remove the <b>{}</b> kernel?\n"
+"\n"
+"This will remove the kernel and its modules."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#, python-brace-format
+msgid "Removing {}"
+msgstr "Removing {}"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+#, python-brace-format
+msgid "Preparing to remove {} kernel..."
+msgstr "Preparing to remove {} kernel..."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
+#, python-brace-format
+msgid "Starting removal of {} kernel..."
+msgstr "Starting removal of {} kernel..."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
+msgid ""
+"The kernel was installed successfully.\n"
+"You may need to reboot to use the new kernel."
+msgstr ""
+"The kernel was installed successfully.\n"
+"You may need to reboot to use the new kernel."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+msgid ""
+"The kernel installation failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"The kernel installation failed.\n"
+"Please check the terminal output for details."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+msgid "The kernel was removed successfully."
+msgstr "The kernel was removed successfully."
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
+msgid ""
+"The kernel removal failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"The kernel removal failed.\n"
+"Please check the terminal output for details."
