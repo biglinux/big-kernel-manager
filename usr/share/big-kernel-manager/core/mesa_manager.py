@@ -23,6 +23,7 @@ MESA_DRIVERS = [
     {
         "id": "amber",
         "name": "Amber",
+        "detect_package": "mesa-amber",
         "packages": ["mesa-amber"],
         "conflicts": ["mesa", "mesa-git", "mesa-tkg-stable", "mesa-tkg-git"],
         "description": "Stable and well-tested version of Mesa"
@@ -30,6 +31,7 @@ MESA_DRIVERS = [
     {
         "id": "stable",
         "name": "Stable",
+        "detect_package": "mesa",
         "packages": [
             "mesa", "lib32-mesa",
             "vulkan-radeon", "lib32-vulkan-radeon",
@@ -43,6 +45,7 @@ MESA_DRIVERS = [
     {
         "id": "tkg-stable",
         "name": "Tkg-Stable",
+        "detect_package": "mesa-tkg-stable",
         "packages": ["mesa-tkg-stable"],
         "conflicts": ["mesa", "mesa-amber", "mesa-git", "mesa-tkg-git"],
         "description": "Enhanced performance build of stable Mesa"
@@ -50,6 +53,7 @@ MESA_DRIVERS = [
     {
         "id": "tkg-git",
         "name": "Tkg-git",
+        "detect_package": "mesa-tkg-git",
         "packages": ["mesa-tkg-git"],
         "conflicts": ["mesa", "mesa-amber", "mesa-tkg-stable"],
         "description": "Latest development version with cutting-edge features"
@@ -88,16 +92,17 @@ class MesaManager(BaseManager):
         """
         Determine which Mesa driver is currently active.
         
+        Uses the unique 'detect_package' key from each driver config
+        to avoid false positives from shared packages (e.g. vulkan-radeon,
+        mesa-utils) that remain installed across driver switches.
+        
         Returns:
             ID of the active driver, or "stable" if not determined.
         """
-        installed_packages = self.package_manager.get_installed_packages()
-        installed_names = [pkg["name"] for pkg in installed_packages]
-        
         for driver in self.drivers:
-            for package in driver["packages"]:
-                if package in installed_names:
-                    return driver["id"]
+            detect_pkg = driver.get("detect_package", driver["packages"][0])
+            if self.package_manager.is_package_installed(detect_pkg):
+                return driver["id"]
         
         return "stable"
     
@@ -177,32 +182,31 @@ class MesaManager(BaseManager):
                     self._output(output_callback, f"Removing conflicts: {', '.join(installed_conflicts)}")
                     self._progress(progress_callback, 0.3, "Removing conflicting packages...")
                     
-                    # Remove conflicts one-by-one to handle partial failures gracefully
-                    for conflict_pkg in installed_conflicts:
-                        remove_cmd = [self.sudo_command, "pacman", "-Rdd", "--noconfirm", conflict_pkg]
-                        
-                        env = os.environ.copy()
-                        env["LANG"] = "C"
-                        
-                        process = subprocess.Popen(
-                            remove_cmd,
-                            stdout=subprocess.PIPE,
-                            stderr=subprocess.STDOUT,
-                            stdin=subprocess.DEVNULL,
-                            text=True,
-                            env=env
-                        )
-                        
-                        for line in iter(process.stdout.readline, ""):
-                            line = line.strip()
-                            if line:
-                                self._output(output_callback, line)
-                        
-                        process.wait()
-                        
-                        if process.returncode != 0:
-                            self._output(output_callback, f"⚠️ Could not remove {conflict_pkg}, skipping...")
-                            self._logger.warning(f"Failed to remove conflict package: {conflict_pkg}")
+                    # Remove all conflicts in a single pkexec call to avoid multiple password prompts
+                    remove_cmd = [self.sudo_command, "pacman", "-Rdd", "--noconfirm"] + installed_conflicts
+                    
+                    env = os.environ.copy()
+                    env["LANG"] = "C"
+                    
+                    process = subprocess.Popen(
+                        remove_cmd,
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.STDOUT,
+                        stdin=subprocess.DEVNULL,
+                        text=True,
+                        env=env
+                    )
+                    
+                    for line in iter(process.stdout.readline, ""):
+                        line = line.strip()
+                        if line:
+                            self._output(output_callback, line)
+                    
+                    process.wait()
+                    
+                    if process.returncode != 0:
+                        self._output(output_callback, f"⚠️ Some conflict packages could not be removed")
+                        self._logger.warning(f"Failed to remove conflict packages: {installed_conflicts}")
             
             # Step 2: Install the new packages
             self._progress(progress_callback, 0.5, f"Installing {driver['name']} packages...")
