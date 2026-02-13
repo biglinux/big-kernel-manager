@@ -259,7 +259,9 @@ class MesaPage(BasePage):
         dialog.set_heading(_("Change Video Driver"))
         dialog.set_body(
             _("Do you want to change to the <b>{}</b> driver?\n\n"
-              "This will modify your system's video drivers and may require a reboot.").format(driver['name'])
+              "This will modify your system's video drivers.\n"
+              "<b>A system reboot will be required</b> for the changes to take effect.\n"
+              "The active driver indicator will update after rebooting.").format(driver['name'])
         )
         dialog.set_body_use_markup(True)
         
@@ -321,7 +323,9 @@ class MesaPage(BasePage):
         if self.progress_dialog:
             if success:
                 self.progress_dialog.show_success(
-                    _("The video driver was changed successfully.\nYou may need to reboot for changes to take effect.")
+                    _("The video driver was changed successfully!\n\n"
+                      "⚠️ You must reboot your system for the new driver to become active.\n"
+                      "The 'Active' indicator will update after rebooting.")
                 )
             else:
                 self.progress_dialog.show_error(

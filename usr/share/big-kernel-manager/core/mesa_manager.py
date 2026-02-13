@@ -176,7 +176,7 @@ class MesaManager(BaseManager):
                 
                 installed_conflicts = [
                     conflict for conflict in driver["conflicts"]
-                    if self.package_manager.is_package_installed(conflict)
+                    if self._is_real_package_installed(conflict)
                 ]
                 
                 if installed_conflicts:
@@ -255,6 +255,32 @@ class MesaManager(BaseManager):
             self._output(output_callback, f"❌ Error: {str(e)}")
             if complete_callback:
                 complete_callback(False)
+    
+    def _is_real_package_installed(self, package_name: str) -> bool:
+        """
+        Check if a package is installed by its exact name, not virtual provides.
+        
+        pacman -Q resolves virtual provides (e.g. mesa-tkg-stable provides mesa),
+        which causes false positives. This method uses pacman -Qi and verifies
+        the Name field matches exactly.
+        
+        Args:
+            package_name: Exact package name to check.
+            
+        Returns:
+            True if the package is installed with that exact name.
+        """
+        import subprocess
+        cmd = ["pacman", "-Qi", package_name]
+        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        if result.returncode != 0:
+            return False
+        # Verify the Name field matches exactly
+        for line in result.stdout.splitlines():
+            if line.startswith("Name"):
+                actual_name = line.split(":", 1)[1].strip()
+                return actual_name == package_name
+        return False
     
     def _package_available(self, package_name: str) -> bool:
         """
