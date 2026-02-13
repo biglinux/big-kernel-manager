@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the big-kernel-manager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
@@ -35,7 +36,7 @@ msgstr "Show Terminal Output"
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 #
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 161
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 266
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 268
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 306
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 374
 msgid "Cancel"
@@ -152,31 +153,35 @@ msgstr "Change Video Driver"
 msgid ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and may require a reboot."
+"This will modify your system's video drivers.\n"
+"<b>A system reboot will be required</b> for the changes to take effect.\n"
+"The active driver indicator will update after rebooting."
 msgstr ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and may require a reboot."
+"This will modify your system's video drivers.\n"
+"<b>A system reboot will be required</b> for the changes to take effect.\n"
+"The active driver indicator will update after rebooting."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 269
 msgid "Apply"
 msgstr "Apply"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 290
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 292
 #, python-brace-format
 msgid "Applying {}"
 msgstr "Applying {}"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 291
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 293
 #, python-brace-format
 msgid "Preparing to apply {} driver..."
 msgstr "Preparing to apply {} driver..."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 296
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 298
 #, python-brace-format
 msgid "Applying {} driver..."
 msgstr "Applying {} driver..."
@@ -184,23 +189,27 @@ msgstr "Applying {} driver..."
 #
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 297
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 299
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
 msgid "This may take a few minutes. Please wait..."
 msgstr "This may take a few minutes. Please wait..."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 324
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 326
 msgid ""
-"The video driver was changed successfully.\n"
-"You may need to reboot for changes to take effect."
+"The video driver was changed successfully!\n"
+"\n"
+"⚠️ You must reboot your system for the new driver to become active.\n"
+"The 'Active' indicator will update after rebooting."
 msgstr ""
-"The video driver was changed successfully.\n"
-"You may need to reboot for changes to take effect."
+"The video driver was changed successfully!\n"
+"\n"
+"⚠️ You must reboot your system for the new driver to become active.\n"
+"The 'Active' indicator will update after rebooting."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 328
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 332
 msgid ""
 "The driver change failed.\n"
 "Please check the terminal output for details."
