@@ -169,7 +169,8 @@ class MesaManager(BaseManager):
         self._output(output_callback, f"Starting {driver['name']} driver installation...")
         
         try:
-            # Step 1: Remove conflicting packages
+            # Step 1: Check for conflicting packages
+            installed_conflicts = []
             if driver["conflicts"]:
                 self._progress(progress_callback, 0.2, "Checking for conflicting packages...")
                 
@@ -180,36 +181,9 @@ class MesaManager(BaseManager):
                 
                 if installed_conflicts:
                     self._output(output_callback, f"Removing conflicts: {', '.join(installed_conflicts)}")
-                    self._progress(progress_callback, 0.3, "Removing conflicting packages...")
-                    
-                    # Remove all conflicts in a single pkexec call to avoid multiple password prompts
-                    remove_cmd = [self.sudo_command, "pacman", "-Rdd", "--noconfirm"] + installed_conflicts
-                    
-                    env = os.environ.copy()
-                    env["LANG"] = "C"
-                    
-                    process = subprocess.Popen(
-                        remove_cmd,
-                        stdout=subprocess.PIPE,
-                        stderr=subprocess.STDOUT,
-                        stdin=subprocess.DEVNULL,
-                        text=True,
-                        env=env
-                    )
-                    
-                    for line in iter(process.stdout.readline, ""):
-                        line = line.strip()
-                        if line:
-                            self._output(output_callback, line)
-                    
-                    process.wait()
-                    
-                    if process.returncode != 0:
-                        self._output(output_callback, f"⚠️ Some conflict packages could not be removed")
-                        self._logger.warning(f"Failed to remove conflict packages: {installed_conflicts}")
             
-            # Step 2: Install the new packages
-            self._progress(progress_callback, 0.5, f"Installing {driver['name']} packages...")
+            # Step 2: Check available packages to install
+            self._progress(progress_callback, 0.3, f"Checking {driver['name']} packages...")
             
             # For packages with multiple items (like stable mesa), filter to those available
             packages_to_install = []
@@ -227,14 +201,23 @@ class MesaManager(BaseManager):
             
             self._output(output_callback, f"Installing: {', '.join(packages_to_install)}")
             
-            # Use --noconfirm --ask 4 to auto-resolve replace conflicts
-            install_cmd = [self.sudo_command, "pacman", "-S", "--noconfirm", "--ask", "4"] + packages_to_install
+            # Step 3: Build a single pkexec command that removes conflicts + installs packages
+            # This avoids multiple password prompts by running everything under one auth
+            cmd_parts = []
+            if installed_conflicts:
+                cmd_parts.append(f"pacman -Rdd --noconfirm {' '.join(installed_conflicts)}")
+            cmd_parts.append(f"pacman -S --noconfirm --ask 4 {' '.join(packages_to_install)}")
+            combined_cmd = " && ".join(cmd_parts)
+            
+            self._progress(progress_callback, 0.4, f"Applying {driver['name']} driver...")
+            
+            full_cmd = [self.sudo_command, "bash", "-c", combined_cmd]
             
             env = os.environ.copy()
             env["LANG"] = "C"
             
             process = subprocess.Popen(
-                install_cmd,
+                full_cmd,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 stdin=subprocess.DEVNULL,
@@ -242,7 +225,7 @@ class MesaManager(BaseManager):
                 env=env
             )
             
-            progress = 0.5
+            progress = 0.4
             for line in iter(process.stdout.readline, ""):
                 line = line.strip()
                 if line:
@@ -253,8 +236,8 @@ class MesaManager(BaseManager):
             process.wait()
             
             if process.returncode != 0:
-                self._progress(progress_callback, 0.0, "Failed to install packages.")
-                self._output(output_callback, f"❌ Installation failed (exit code: {process.returncode})")
+                self._progress(progress_callback, 0.0, "Failed to apply driver.")
+                self._output(output_callback, f"❌ Operation failed (exit code: {process.returncode})")
                 if complete_callback:
                     complete_callback(False)
                 return

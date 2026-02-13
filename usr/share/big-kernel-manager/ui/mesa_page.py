@@ -328,6 +328,7 @@ class MesaPage(BasePage):
                     _("The driver change failed.\nPlease check the terminal output for details.")
                 )
         
-        # Refresh driver list
-        self._load_mesa_drivers()
+        # Refresh driver list with a small delay to ensure pacman database is settled
+        self._show_loading()
+        GLib.timeout_add(500, self._load_mesa_drivers_async)
         return False
