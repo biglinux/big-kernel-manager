@@ -153,6 +153,13 @@ class ProgressDialog(Gtk.Box):
         self.terminal_view.set_tooltip_text(_("Command output"))
         self.terminal_buffer = self.terminal_view.get_buffer()
 
+        # Create text tags for colored output
+        self.terminal_buffer.create_tag("error", foreground="#f66151")
+        self.terminal_buffer.create_tag("success", foreground="#57e389")
+        self.terminal_buffer.create_tag("warning", foreground="#f9f06b")
+        self.terminal_buffer.create_tag("info", foreground="#99c1f1")
+        self.terminal_buffer.create_tag("dim", foreground="#9a9996")
+
         terminal_scroll.set_child(self.terminal_view)
         terminal_expander.set_child(terminal_scroll)
         content_box.append(terminal_expander)
@@ -279,11 +286,31 @@ class ProgressDialog(Gtk.Box):
 
         GLib.idle_add(self._append_terminal_idle, text)
 
+    def _get_line_tag(self, line: str) -> str | None:
+        """Determine the color tag for a terminal output line."""
+        stripped = line.strip()
+        if stripped.startswith("❌") or "error" in stripped.lower() or "failed" in stripped.lower():
+            return "error"
+        if stripped.startswith("✅") or "successfully" in stripped.lower() or "success" in stripped.lower():
+            return "success"
+        if stripped.startswith("⚠️") or "warning" in stripped.lower():
+            return "warning"
+        if stripped.startswith(("Starting", "Installing", "Removing", "Checking", "Applying", "resolving", "looking")):
+            return "info"
+        if stripped.startswith(("Package", "Total", "::")):
+            return "dim"
+        return None
+
     def _append_terminal_idle(self, text):
         """Append terminal text from main thread."""
         try:
             end_iter = self.terminal_buffer.get_end_iter()
-            self.terminal_buffer.insert(end_iter, text)
+            tag_name = self._get_line_tag(text)
+            if tag_name:
+                tag = self.terminal_buffer.get_tag_table().lookup(tag_name)
+                self.terminal_buffer.insert_with_tags(end_iter, text, tag)
+            else:
+                self.terminal_buffer.insert(end_iter, text)
 
             # Auto-scroll to bottom
             vadj = self.terminal_view.get_vadjustment()

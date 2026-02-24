@@ -116,7 +116,7 @@ msgstr ""
 #
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 321
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 397
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 166
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 173
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 274
 msgid "Cancel"
 msgstr "Cancel"
@@ -242,44 +242,44 @@ msgstr "Show Terminal Output"
 #
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 174
-# File: usr/share/big-kernel-manager/ui/window.py, line: 211
-# File: usr/share/big-kernel-manager/ui/window.py, line: 509
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 181
+# File: usr/share/big-kernel-manager/ui/window.py, line: 197
+# File: usr/share/big-kernel-manager/ui/window.py, line: 495
 msgid "Close"
 msgstr "Close"
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 224
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 231
 msgid "Please wait..."
 msgstr "Please wait..."
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 332
 msgid "Operation completed successfully!"
 msgstr "Operation completed successfully!"
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 316
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 343
 msgid "Operation failed. Check terminal output for details."
 msgstr "Operation failed. Check terminal output for details."
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 331
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 358
 msgid "Completed!"
 msgstr "Completed!"
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 361
 msgid "Failed"
 msgstr "Failed"
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 359
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 386
 msgid "Operation cancelled by user."
 msgstr "Operation cancelled by user."
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 360
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 387
 msgid "Cancelled"
 msgstr "Cancelled"
 
@@ -425,21 +425,16 @@ msgstr "Menu"
 
 #
 # File: usr/share/big-kernel-manager/ui/window.py, line: 134
-msgid "Refresh"
-msgstr "Refresh"
-
-#
-# File: usr/share/big-kernel-manager/ui/window.py, line: 135
 msgid "About"
 msgstr "About"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 199
+# File: usr/share/big-kernel-manager/ui/window.py, line: 185
 msgid "Kernel and Mesa Management"
 msgstr "Kernel and Mesa Management"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 253
+# File: usr/share/big-kernel-manager/ui/window.py, line: 239
 msgid ""
 "Changing your system's kernel or Mesa drivers can impact system stability. "
 "Please review the following recommendations:"
@@ -448,17 +443,17 @@ msgstr ""
 "Please review the following recommendations:"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 265
+# File: usr/share/big-kernel-manager/ui/window.py, line: 251
 msgid "Always keep at least one working kernel"
 msgstr "Always keep at least one working kernel"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 267
+# File: usr/share/big-kernel-manager/ui/window.py, line: 253
 msgid "installed as a fallback"
 msgstr "installed as a fallback"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 273
+# File: usr/share/big-kernel-manager/ui/window.py, line: 259
 msgid ""
 "LTS kernels offer better stability, while newer kernels provide newer "
 "hardware support"
@@ -467,12 +462,12 @@ msgstr ""
 "hardware support"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 279
+# File: usr/share/big-kernel-manager/ui/window.py, line: 265
 msgid "Test your system thoroughly after kernel changes"
 msgstr "Test your system thoroughly after kernel changes"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 285
+# File: usr/share/big-kernel-manager/ui/window.py, line: 271
 msgid ""
 "If a new kernel causes issues, you can select the previous kernel from the "
 "boot menu"
@@ -481,7 +476,7 @@ msgstr ""
 "boot menu"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 292
+# File: usr/share/big-kernel-manager/ui/window.py, line: 278
 msgid ""
 "Real-time (RT) kernels are specialized for low-latency tasks but may not be "
 "suitable for general use"
@@ -490,18 +485,18 @@ msgstr ""
 "suitable for general use"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 297
+# File: usr/share/big-kernel-manager/ui/window.py, line: 283
 msgid "Kernel Management"
 msgstr "Kernel Management"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 300
-# File: usr/share/big-kernel-manager/ui/window.py, line: 346
+# File: usr/share/big-kernel-manager/ui/window.py, line: 286
+# File: usr/share/big-kernel-manager/ui/window.py, line: 332
 msgid "Tips"
 msgstr "Tips"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 312
+# File: usr/share/big-kernel-manager/ui/window.py, line: 298
 msgid ""
 "Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some "
 "NVIDIA GPUs"
@@ -510,7 +505,7 @@ msgstr ""
 "NVIDIA GPUs"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 319
+# File: usr/share/big-kernel-manager/ui/window.py, line: 305
 msgid ""
 "Changing Mesa versions may affect graphics performance and application "
 "compatibility"
@@ -519,19 +514,19 @@ msgstr ""
 "compatibility"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 325
+# File: usr/share/big-kernel-manager/ui/window.py, line: 311
 msgid "The stable version is recommended for most users"
 msgstr "The stable version is recommended for most users"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 331
+# File: usr/share/big-kernel-manager/ui/window.py, line: 317
 msgid ""
 "Development versions may offer better performance but with less stability"
 msgstr ""
 "Development versions may offer better performance but with less stability"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 338
+# File: usr/share/big-kernel-manager/ui/window.py, line: 324
 msgid ""
 "If graphics issues occur after a change, you can switch back to the previous "
 "driver"
@@ -540,12 +535,12 @@ msgstr ""
 "driver"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 343
+# File: usr/share/big-kernel-manager/ui/window.py, line: 329
 msgid "Mesa Driver Management"
 msgstr "Mesa Driver Management"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 366
+# File: usr/share/big-kernel-manager/ui/window.py, line: 352
 msgid ""
 "If unsure, the <b>LTS kernel</b> and <b>Stable Mesa</b> drivers are the "
 "safest choices for most users."
@@ -554,8 +549,8 @@ msgstr ""
 "safest choices for most users."
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 490
-# File: usr/share/big-kernel-manager/ui/window.py, line: 499
+# File: usr/share/big-kernel-manager/ui/window.py, line: 476
+# File: usr/share/big-kernel-manager/ui/window.py, line: 485
 msgid "Show this warning on startup"
 msgstr "Show this warning on startup"
 

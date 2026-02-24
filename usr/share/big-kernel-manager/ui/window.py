@@ -131,7 +131,6 @@ class KernelManagerWindow(Adw.ApplicationWindow):
 
         # Create menu model
         menu = Gio.Menu()
-        menu.append(_("Refresh"), "app.refresh")
         menu.append(_("About"), "app.about")
 
         menu_button.set_menu_model(menu)
@@ -144,23 +143,10 @@ class KernelManagerWindow(Adw.ApplicationWindow):
 
     def _setup_actions(self):
         """Setup application actions for the menu."""
-        # Refresh action
-        refresh_action = Gio.SimpleAction.new("refresh", None)
-        refresh_action.connect("activate", self._on_refresh_activated)
-        self.get_application().add_action(refresh_action)
-
         # About action
         about_action = Gio.SimpleAction.new("about", None)
         about_action.connect("activate", self._on_about_activated)
         self.get_application().add_action(about_action)
-
-    def _on_refresh_activated(self, action, param):
-        """Handle refresh action from menu."""
-        visible = self.stack.get_visible_child_name()
-        if visible == "kernel":
-            self.kernel_page._on_refresh_clicked(None)
-        else:
-            self.mesa_page._on_refresh_clicked(None)
 
     def _on_about_activated(self, action, param):
         """Show the About dialog."""

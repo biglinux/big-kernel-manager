@@ -160,3 +160,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Project-specific
+.audit
+.mypy_cache
+.pytest_cache
+PLANNING.md
+ruff.toml
