@@ -13,7 +13,7 @@ import os
 # Application Metadata
 APP_NAME = "Big Kernel Manager"
 APP_ID = "br.com.biglinux.kernelmanager"
-APP_VERSION = "1.2.7"
+APP_VERSION = "1.2.8"
 APP_AUTHOR = "BigLinux Team"
 APP_WEBSITE = "https://github.com/communitybig/big-kernel-manager"
 
@@ -29,18 +29,18 @@ PACMAN_COMMAND = "pacman"
 
 # Kernel Patterns - True kernel packages (not modules)
 KERNEL_PATTERNS = [
-    r"^linux\d*$",               # Standard kernels (linux, linux59, etc.)
-    r"^linux-lts$",              # Long term support kernel
-    r"^linux\d*-lts$",           # LTS kernels with version number
-    r"^linux-hardened$",         # Hardened kernel
-    r"^linux-zen$",              # Zen kernel
-    r"^linux-xanmod$",           # Xanmod kernel
-    r"^linux\d*-xanmod$",        # Xanmod kernels with version number
-    r"^linux-xanmod-lts$",       # Xanmod LTS kernel
-    r"^linux\d*-xanmod-lts$",    # Xanmod LTS kernels with version number
-    r"^linux\d*-rt$",            # Real-time kernels
-    r"^linux-xanmod-x64v\d$",    # Xanmod optimized builds
-    r"^linux-xanmod-lts-x64v\d$" # Xanmod LTS optimized builds
+    r"^linux\d*$",  # Standard kernels (linux, linux59, etc.)
+    r"^linux-lts$",  # Long term support kernel
+    r"^linux\d*-lts$",  # LTS kernels with version number
+    r"^linux-hardened$",  # Hardened kernel
+    r"^linux-zen$",  # Zen kernel
+    r"^linux-xanmod$",  # Xanmod kernel
+    r"^linux\d*-xanmod$",  # Xanmod kernels with version number
+    r"^linux-xanmod-lts$",  # Xanmod LTS kernel
+    r"^linux\d*-xanmod-lts$",  # Xanmod LTS kernels with version number
+    r"^linux\d*-rt$",  # Real-time kernels
+    r"^linux-xanmod-x64v\d$",  # Xanmod optimized builds
+    r"^linux-xanmod-lts-x64v\d$",  # Xanmod LTS optimized builds
 ]
 
 # Excluded patterns (modules and other non-kernel packages)

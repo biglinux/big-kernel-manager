@@ -1,0 +1,16 @@
+Would reformat: usr/share/big-kernel-manager/core/base_manager.py
+Would reformat: usr/share/big-kernel-manager/core/constants.py
+Would reformat: usr/share/big-kernel-manager/core/exceptions.py
+Would reformat: usr/share/big-kernel-manager/core/kernel_manager.py
+Would reformat: usr/share/big-kernel-manager/core/logging_config.py
+Would reformat: usr/share/big-kernel-manager/core/mesa_manager.py
+Would reformat: usr/share/big-kernel-manager/core/package_manager.py
+Would reformat: usr/share/big-kernel-manager/main.py
+Would reformat: usr/share/big-kernel-manager/ui/application.py
+Would reformat: usr/share/big-kernel-manager/ui/base_page.py
+Would reformat: usr/share/big-kernel-manager/ui/kernel_page.py
+Would reformat: usr/share/big-kernel-manager/ui/mesa_page.py
+Would reformat: usr/share/big-kernel-manager/ui/progress_dialog.py
+Would reformat: usr/share/big-kernel-manager/ui/window.py
+Would reformat: usr/share/big-kernel-manager/utils/i18n.py
+15 files would be reformatted, 3 files already formatted
