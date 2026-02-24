@@ -91,17 +91,18 @@ class MesaManager(BaseManager):
     def _get_active_driver(self) -> str:
         """
         Determine which Mesa driver is currently active.
-        
-        Uses the unique 'detect_package' key from each driver config
-        to avoid false positives from shared packages (e.g. vulkan-radeon,
-        mesa-utils) that remain installed across driver switches.
-        
+
+        Uses _is_real_package_installed (pacman -Qi + Name check) instead
+        of pacman -Q to avoid false positives from virtual provides
+        (e.g. mesa-tkg-stable provides 'mesa', so pacman -Q mesa would
+        incorrectly match the stable driver).
+
         Returns:
             ID of the active driver, or "stable" if not determined.
         """
         for driver in self.drivers:
             detect_pkg = driver.get("detect_package", driver["packages"][0])
-            if self.package_manager.is_package_installed(detect_pkg):
+            if self._is_real_package_installed(detect_pkg):
                 return driver["id"]
         
         return "stable"
@@ -259,20 +260,27 @@ class MesaManager(BaseManager):
     def _is_real_package_installed(self, package_name: str) -> bool:
         """
         Check if a package is installed by its exact name, not virtual provides.
-        
+
         pacman -Q resolves virtual provides (e.g. mesa-tkg-stable provides mesa),
         which causes false positives. This method uses pacman -Qi and verifies
         the Name field matches exactly.
-        
+
+        LANG=C is forced so the "Name" field label is always in English,
+        regardless of the user's desktop locale.
+
         Args:
             package_name: Exact package name to check.
-            
+
         Returns:
             True if the package is installed with that exact name.
         """
-        import subprocess
+        import subprocess, os
         cmd = ["pacman", "-Qi", package_name]
-        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        env = os.environ.copy()
+        env["LANG"] = "C"
+        result = subprocess.run(
+            cmd, capture_output=True, text=True, check=False, env=env
+        )
         if result.returncode != 0:
             return False
         # Verify the Name field matches exactly
