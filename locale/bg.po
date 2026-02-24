@@ -21,15 +21,95 @@ msgstr ""
 msgid "Loading..."
 msgstr "Зареждане..."
 # 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
+#: NEEDS WORK
+msgid "Operation progress"
+msgstr "Напредък на операцията"
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
 msgstr "Терминална продукция"
 # 
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
-msgid "Show Terminal Output"
-msgstr "Показване на терминалния изход"
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
+#: NEEDS WORK
+msgid "Command output"
+msgstr "Изход на командата"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
+msgid "Installed Kernels"
+msgstr "Инсталирани ядра"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
+msgid "Available Kernels"
+msgstr "Налични ядра"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
+#, python-brace-format
+msgid "Version: {}"
+msgstr "Версия: {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
+#: NEEDS WORK
+msgid "In Use"
+msgstr "В употреба"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
+msgid "Remove"
+msgstr "Премахване"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: NEEDS WORK
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Премахни ядрото {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
+msgid "Cannot remove the currently running kernel"
+msgstr "Не може да се премахне текущо изпълняваният ядро"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
+msgid "Install"
+msgstr "Инсталиране"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#: NEEDS WORK
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Инсталирай ядро {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
+msgid "Install Kernel"
+msgstr "Инсталиране на ядро"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+#: NEEDS WORK
+#, python-brace-format
+msgid ""
+"Are you sure you want to install the <b>{}</b> kernel?\n"
+"\n"
+"This will install the kernel and its modules."
+msgstr ""
+"Сигурни ли сте, че искате да инсталирате ядрото <b>{}</b>?\n"
+"\n"
+"Това ще инсталира ядрото и неговите модули."
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -46,6 +126,128 @@ msgstr "Показване на терминалния изход"
 #. Cancel button (shown during operation)
 msgid "Cancel"
 msgstr "Отмени"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
+#, python-brace-format
+msgid "Installing {}"
+msgstr "Инсталиране {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
+#, python-brace-format
+msgid "Preparing to install {} kernel..."
+msgstr "Подготовка за инсталиране на{} ядрото..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
+#. Add initial terminal output
+#, python-brace-format
+msgid "Starting installation of {} kernel..."
+msgstr "Започва инсталирането на{}ядрото..."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
+msgid "This may take a few minutes. Please wait..."
+msgstr "Това може да отнеме няколко минути. Моля, изчакайте..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
+msgid "Cannot Remove Running Kernel"
+msgstr "Не може да се премахне работещ ядро"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
+msgid ""
+"The kernel you are trying to remove is currently in use.\n"
+"Please boot into a different kernel first."
+msgstr ""
+"Ядрото, което се опитвате да премахнете, в момента се използва.\n"
+"Моля, първо стартирайте с друго ядро."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
+msgid "Remove Kernel"
+msgstr "Премахване на ядрото"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+#: NEEDS WORK
+#, python-brace-format
+msgid ""
+"Are you sure you want to remove the <b>{}</b> kernel?\n"
+"\n"
+"This will remove the kernel and its modules."
+msgstr ""
+"Сигурни ли сте, че искате да премахнете <b>{}</b> ядрото?\n"
+"\n"
+"Това ще премахне ядрото и неговите модули."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
+#, python-brace-format
+msgid "Removing {}"
+msgstr "Премахване {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
+#, python-brace-format
+msgid "Preparing to remove {} kernel..."
+msgstr "Подготовка за премахване на{} ядрото..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
+#. Add initial terminal output
+#, python-brace-format
+msgid "Starting removal of {} kernel..."
+msgstr "Започва премахването на{}ядрото..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
+msgid ""
+"The kernel was installed successfully.\n"
+"You may need to reboot to use the new kernel."
+msgstr ""
+"Ядрото беше инсталирано успешно.\n"
+"Може да се наложи да рестартирате, за да използвате новото ядро."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
+msgid ""
+"The kernel installation failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"Инсталирането на ядрото се провали.\n"
+"Моля, проверете изхода на терминала за подробности."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
+msgid "The kernel was removed successfully."
+msgstr "Ядрото беше успешно премахнато."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
+msgid ""
+"The kernel removal failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"Премахването на ядрото се провали.\n"
+"Моля, проверете изхода на терминала за подробности."
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
+#: NEEDS WORK
+msgid "Operation in progress"
+msgstr "Операцията е в ход"
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
+msgid "Show Terminal Output"
+msgstr "Показване на терминалния изход"
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -147,6 +349,12 @@ msgstr ""
 "Версия за разработка на ръба на иновациите. Съдържа най-новите функции, но е нестабилна и може да "
 "се счупи с актуализации. Не се препоръчва за ежедневно ползване."
 # 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: NEEDS WORK
+#, python-brace-format
+msgid "Select driver: {}"
+msgstr "Изберете драйвер: {}"
+# 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
@@ -157,21 +365,19 @@ msgstr "Активен"
 msgid "Change Video Driver"
 msgstr "Смяна на видео драйвер"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
 "This will modify your system's video drivers.\n"
-"<b>A system reboot will be required</b> for the changes to take effect.\n"
-"The active driver indicator will update after rebooting."
+"<b>A system reboot will be required</b> for the changes to take effect."
 msgstr ""
 "Искате ли да промените на <b>{}</b> драйвера?\n"
 "\n"
 "Това ще модифицира видео драйверите на вашата система.\n"
-"<b>Необходимо е рестартиране на системата</b>, за да влязат промените в сила.\n"
-"Индикаторът за активен драйвер ще се обнови след рестартиране."
+"<b>Необходимо е рестартиране на системата</b>, за да влязат промените в сила."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
@@ -197,29 +403,16 @@ msgstr "Подготовка за прилагане на{} драйвер..."
 msgid "Applying {} driver..."
 msgstr "Прилагане на {}драйвер..."
 # 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
-msgid "This may take a few minutes. Please wait..."
-msgstr "Това може да отнеме няколко минути. Моля, изчакайте..."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 326
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
 #: NEEDS WORK
 msgid ""
 "The video driver was changed successfully!\n"
 "\n"
-"⚠️ You must reboot your system for the new driver to become active.\n"
-"The 'Active' indicator will update after rebooting."
+"⚠️ You must reboot your system for the new driver to become active."
 msgstr ""
 "Видеодрайверът беше променен успешно!\n"
 "\n"
-"⚠️ Трябва да рестартирате системата си, за да стане новият драйвер активен.\n"
-"Индикаторът 'Активен' ще се обнови след рестартиране."
+"⚠️ Трябва да рестартирате системата си, за да стане новият драйвер активен."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
@@ -362,160 +555,66 @@ msgstr ""
 msgid "Show this warning on startup"
 msgstr "Покажи това предупреждение при стартиране"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
-msgid "Installed Kernels"
-msgstr "Инсталирани ядра"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
-msgid "Available Kernels"
-msgstr "Налични ядра"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
-#, python-brace-format
-msgid "Version: {}"
-msgstr "Версия: {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: NEEDS WORK
-msgid "In Use"
-msgstr "В употреба"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
-msgid "Remove"
-msgstr "Премахване"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
-msgid "Cannot remove the currently running kernel"
-msgstr "Не може да се премахне текущо изпълняваният ядро"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
-msgid "Install"
-msgstr "Инсталиране"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
-msgid "Install Kernel"
-msgstr "Инсталиране на ядро"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
 #: NEEDS WORK
 #, python-brace-format
-msgid ""
-"Are you sure you want to install the <b>{}</b> kernel?\n"
-"\n"
-"This will install the kernel and its modules."
-msgstr ""
-"Сигурни ли сте, че искате да инсталирате ядрото <b>{}</b>?\n"
-"\n"
-"Това ще инсталира ядрото и неговите модули."
+msgid "Starting {}..."
+msgstr "Започване {}..."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
-#, python-brace-format
-msgid "Installing {}"
-msgstr "Инсталиране {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
-#, python-brace-format
-msgid "Preparing to install {} kernel..."
-msgstr "Подготовка за инсталиране на{} ядрото..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
-#. Add initial terminal output
-#, python-brace-format
-msgid "Starting installation of {} kernel..."
-msgstr "Започва инсталирането на{}ядрото..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
-msgid "Cannot Remove Running Kernel"
-msgstr "Не може да се премахне работещ ядро"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
-msgid ""
-"The kernel you are trying to remove is currently in use.\n"
-"Please boot into a different kernel first."
-msgstr ""
-"Ядрото, което се опитвате да премахнете, в момента се използва.\n"
-"Моля, първо стартирайте с друго ядро."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
-msgid "Remove Kernel"
-msgstr "Премахване на ядрото"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
 #: NEEDS WORK
 #, python-brace-format
-msgid ""
-"Are you sure you want to remove the <b>{}</b> kernel?\n"
-"\n"
-"This will remove the kernel and its modules."
-msgstr ""
-"Сигурни ли сте, че искате да премахнете <b>{}</b> ядрото?\n"
-"\n"
-"Това ще премахне ядрото и неговите модули."
+msgid "Command: {}"
+msgstr "Команда: {}"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
+#: NEEDS WORK
+msgid "⚠️ Operation cancelled by user."
+msgstr "⚠️ Операцията е отменена от потребителя."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: NEEDS WORK
 #, python-brace-format
-msgid "Removing {}"
-msgstr "Премахване {}"
+msgid "Still working... ({:.0%} complete)"
+msgstr "Все още работи... ({:.0%} завършено)"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: NEEDS WORK
+msgid "Operation cancelled"
+msgstr "Операцията е отменена"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: NEEDS WORK
+msgid "❌ Operation was cancelled."
+msgstr "❌ Операцията беше отменена."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: NEEDS WORK
 #, python-brace-format
-msgid "Preparing to remove {} kernel..."
-msgstr "Подготовка за премахване на{} ядрото..."
+msgid "{}  complete!"
+msgstr "{}  завършено!"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
-#. Add initial terminal output
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: NEEDS WORK
 #, python-brace-format
-msgid "Starting removal of {} kernel..."
-msgstr "Започва премахването на{}ядрото..."
+msgid "✅ {} completed successfully."
+msgstr "✅ {} завършено успешно."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
-msgid ""
-"The kernel was installed successfully.\n"
-"You may need to reboot to use the new kernel."
-msgstr ""
-"Ядрото беше инсталирано успешно.\n"
-"Може да се наложи да рестартирате, за да използвате новото ядро."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} неуспешно."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
-msgid ""
-"The kernel installation failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"Инсталирането на ядрото се провали.\n"
-"Моля, проверете изхода на терминала за подробности."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: NEEDS WORK
+#, python-brace-format
+msgid "❌ {} failed (exit code: {})"
+msgstr "❌ {} неуспешно (код на изход: {})"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
-msgid "The kernel was removed successfully."
-msgstr "Ядрото беше успешно премахнато."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
-msgid ""
-"The kernel removal failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"Премахването на ядрото се провали.\n"
-"Моля, проверете изхода на терминала за подробности."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Грешка: {}"

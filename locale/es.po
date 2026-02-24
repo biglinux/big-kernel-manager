@@ -21,15 +21,95 @@ msgstr ""
 msgid "Loading..."
 msgstr "Cargando..."
 # 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
+#: NEEDS WORK
+msgid "Operation progress"
+msgstr "Progreso de la operación"
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
 msgstr "Salida de terminal"
 # 
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
-msgid "Show Terminal Output"
-msgstr "Mostrar salida de terminal"
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
+#: NEEDS WORK
+msgid "Command output"
+msgstr "Salida del comando"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
+msgid "Installed Kernels"
+msgstr "Kernels instalados"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
+msgid "Available Kernels"
+msgstr "Núcleos disponibles"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
+#, python-brace-format
+msgid "Version: {}"
+msgstr "Versión: {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
+#: NEEDS WORK
+msgid "In Use"
+msgstr "En uso"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
+msgid "Remove"
+msgstr "Eliminar"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: NEEDS WORK
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Eliminar núcleo {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
+msgid "Cannot remove the currently running kernel"
+msgstr "No se puede eliminar el kernel que se está ejecutando actualmente."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
+msgid "Install"
+msgstr "Instalar"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#: NEEDS WORK
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Instalar núcleo {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
+msgid "Install Kernel"
+msgstr "Instalar el kernel"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+#: NEEDS WORK
+#, python-brace-format
+msgid ""
+"Are you sure you want to install the <b>{}</b> kernel?\n"
+"\n"
+"This will install the kernel and its modules."
+msgstr ""
+"¿Estás seguro de que deseas instalar el kernel <b>{}</b>?\n"
+"\n"
+"Esto instalará el kernel y sus módulos."
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -46,6 +126,128 @@ msgstr "Mostrar salida de terminal"
 #. Cancel button (shown during operation)
 msgid "Cancel"
 msgstr "Cancelar"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
+#, python-brace-format
+msgid "Installing {}"
+msgstr "Instalación {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
+#, python-brace-format
+msgid "Preparing to install {} kernel..."
+msgstr "Preparando la instalación {}del  kernel..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
+#. Add initial terminal output
+#, python-brace-format
+msgid "Starting installation of {} kernel..."
+msgstr "Iniciando la instalación del{}  kernel..."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
+msgid "This may take a few minutes. Please wait..."
+msgstr "Esto puede tardar unos minutos. Por favor, espere..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
+msgid "Cannot Remove Running Kernel"
+msgstr "No se puede eliminar el kernel en ejecución"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
+msgid ""
+"The kernel you are trying to remove is currently in use.\n"
+"Please boot into a different kernel first."
+msgstr ""
+"El núcleo que está intentando eliminar está actualmente en uso.\n"
+"Por favor, arranque primero con un núcleo diferente."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
+msgid "Remove Kernel"
+msgstr "Eliminar kernel"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+#: NEEDS WORK
+#, python-brace-format
+msgid ""
+"Are you sure you want to remove the <b>{}</b> kernel?\n"
+"\n"
+"This will remove the kernel and its modules."
+msgstr ""
+"¿Está seguro de que desea eliminar el núcleo <b>{}</b>?\n"
+"\n"
+"Esto eliminará el núcleo y sus módulos."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
+#, python-brace-format
+msgid "Removing {}"
+msgstr "Eliminar {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
+#, python-brace-format
+msgid "Preparing to remove {} kernel..."
+msgstr "Preparando la eliminación del{}  kernel..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
+#. Add initial terminal output
+#, python-brace-format
+msgid "Starting removal of {} kernel..."
+msgstr "Iniciando la eliminación del{}  kernel..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
+msgid ""
+"The kernel was installed successfully.\n"
+"You may need to reboot to use the new kernel."
+msgstr ""
+"El kernel se ha instalado correctamente.\n"
+"Es posible que tenga que reiniciar el sistema para utilizar el nuevo kernel."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
+msgid ""
+"The kernel installation failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"La instalación del kernel ha fallado.\n"
+"Compruebe la salida del terminal para obtener más detalles."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
+msgid "The kernel was removed successfully."
+msgstr "El núcleo se ha eliminado correctamente."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
+msgid ""
+"The kernel removal failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"El eliminación del kernel ha fallado.\n"
+"Comprueba la salida del terminal para obtener más detalles."
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
+#: NEEDS WORK
+msgid "Operation in progress"
+msgstr "Operación en curso"
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
+msgid "Show Terminal Output"
+msgstr "Mostrar salida de terminal"
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -147,6 +349,12 @@ msgstr ""
 "Versión de desarrollo de vanguardia. Contiene las características más nuevas, pero es inestable y "
 "puede fallar con las actualizaciones. No se recomienda para uso diario."
 # 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: NEEDS WORK
+#, python-brace-format
+msgid "Select driver: {}"
+msgstr "Seleccionar controlador: {}"
+# 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
@@ -157,21 +365,19 @@ msgstr "Activo"
 msgid "Change Video Driver"
 msgstr "Cambiar controlador de video"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
 "This will modify your system's video drivers.\n"
-"<b>A system reboot will be required</b> for the changes to take effect.\n"
-"The active driver indicator will update after rebooting."
+"<b>A system reboot will be required</b> for the changes to take effect."
 msgstr ""
 "¿Desea cambiar al controlador <b>{}</b>?\n"
 "\n"
 "Esto modificará los controladores de video de su sistema.\n"
-"<b>Se requerirá un reinicio del sistema</b> para que los cambios surtan efecto.\n"
-"El indicador del controlador activo se actualizará después del reinicio."
+"<b>Se requerirá reiniciar el sistema</b> para que los cambios surtan efecto."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
@@ -197,29 +403,16 @@ msgstr "Preparando la aplicación{}del controlador..."
 msgid "Applying {} driver..."
 msgstr "Aplicando{}  controlador..."
 # 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
-msgid "This may take a few minutes. Please wait..."
-msgstr "Esto puede tardar unos minutos. Por favor, espere..."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 326
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
 #: NEEDS WORK
 msgid ""
 "The video driver was changed successfully!\n"
 "\n"
-"⚠️ You must reboot your system for the new driver to become active.\n"
-"The 'Active' indicator will update after rebooting."
+"⚠️ You must reboot your system for the new driver to become active."
 msgstr ""
 "¡El controlador de video se cambió correctamente!\n"
 "\n"
-"⚠️ Debe reiniciar su sistema para que el nuevo controlador se active. \n"
-"El indicador 'Activo' se actualizará después de reiniciar."
+"⚠️ Debe reiniciar su sistema para que el nuevo controlador se active."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
@@ -362,160 +555,66 @@ msgstr ""
 msgid "Show this warning on startup"
 msgstr "Mostrar esta advertencia al iniciar"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
-msgid "Installed Kernels"
-msgstr "Kernels instalados"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
-msgid "Available Kernels"
-msgstr "Núcleos disponibles"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
-#, python-brace-format
-msgid "Version: {}"
-msgstr "Versión: {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: NEEDS WORK
-msgid "In Use"
-msgstr "En uso"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
-msgid "Remove"
-msgstr "Eliminar"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
-msgid "Cannot remove the currently running kernel"
-msgstr "No se puede eliminar el kernel que se está ejecutando actualmente."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
-msgid "Install"
-msgstr "Instalar"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
-msgid "Install Kernel"
-msgstr "Instalar el kernel"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
 #: NEEDS WORK
 #, python-brace-format
-msgid ""
-"Are you sure you want to install the <b>{}</b> kernel?\n"
-"\n"
-"This will install the kernel and its modules."
-msgstr ""
-"¿Estás seguro de que deseas instalar el kernel <b>{}</b>?\n"
-"\n"
-"Esto instalará el kernel y sus módulos."
+msgid "Starting {}..."
+msgstr "Iniciando {}..."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
-#, python-brace-format
-msgid "Installing {}"
-msgstr "Instalación {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
-#, python-brace-format
-msgid "Preparing to install {} kernel..."
-msgstr "Preparando la instalación {}del  kernel..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
-#. Add initial terminal output
-#, python-brace-format
-msgid "Starting installation of {} kernel..."
-msgstr "Iniciando la instalación del{}  kernel..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
-msgid "Cannot Remove Running Kernel"
-msgstr "No se puede eliminar el kernel en ejecución"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
-msgid ""
-"The kernel you are trying to remove is currently in use.\n"
-"Please boot into a different kernel first."
-msgstr ""
-"El núcleo que está intentando eliminar está actualmente en uso.\n"
-"Por favor, arranque primero con un núcleo diferente."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
-msgid "Remove Kernel"
-msgstr "Eliminar kernel"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
 #: NEEDS WORK
 #, python-brace-format
-msgid ""
-"Are you sure you want to remove the <b>{}</b> kernel?\n"
-"\n"
-"This will remove the kernel and its modules."
-msgstr ""
-"¿Está seguro de que desea eliminar el núcleo <b>{}</b>?\n"
-"\n"
-"Esto eliminará el núcleo y sus módulos."
+msgid "Command: {}"
+msgstr "Comando: {}"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
+#: NEEDS WORK
+msgid "⚠️ Operation cancelled by user."
+msgstr "⚠️ Operación cancelada por el usuario."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: NEEDS WORK
 #, python-brace-format
-msgid "Removing {}"
-msgstr "Eliminar {}"
+msgid "Still working... ({:.0%} complete)"
+msgstr "Sigue trabajando... ({:.0%} completo)"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: NEEDS WORK
+msgid "Operation cancelled"
+msgstr "Operación cancelada"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: NEEDS WORK
+msgid "❌ Operation was cancelled."
+msgstr "❌ La operación fue cancelada."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: NEEDS WORK
 #, python-brace-format
-msgid "Preparing to remove {} kernel..."
-msgstr "Preparando la eliminación del{}  kernel..."
+msgid "{}  complete!"
+msgstr "¡completo!"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
-#. Add initial terminal output
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: NEEDS WORK
 #, python-brace-format
-msgid "Starting removal of {} kernel..."
-msgstr "Iniciando la eliminación del{}  kernel..."
+msgid "✅ {} completed successfully."
+msgstr "✅ {} completado con éxito."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
-msgid ""
-"The kernel was installed successfully.\n"
-"You may need to reboot to use the new kernel."
-msgstr ""
-"El kernel se ha instalado correctamente.\n"
-"Es posible que tenga que reiniciar el sistema para utilizar el nuevo kernel."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} falló."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
-msgid ""
-"The kernel installation failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"La instalación del kernel ha fallado.\n"
-"Compruebe la salida del terminal para obtener más detalles."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: NEEDS WORK
+#, python-brace-format
+msgid "❌ {} failed (exit code: {})"
+msgstr "❌ {} falló (código de salida: {})"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
-msgid "The kernel was removed successfully."
-msgstr "El núcleo se ha eliminado correctamente."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
-msgid ""
-"The kernel removal failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"El eliminación del kernel ha fallado.\n"
-"Comprueba la salida del terminal para obtener más detalles."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Error: {}"

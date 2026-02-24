@@ -21,15 +21,95 @@ msgstr ""
 msgid "Loading..."
 msgstr "Lataaminen..."
 # 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
+#: NEEDS WORK
+msgid "Operation progress"
+msgstr "Toiminnon edistyminen"
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
 msgstr "Terminaalin lähtö"
 # 
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
-msgid "Show Terminal Output"
-msgstr "Näytä terminaalin tuloste"
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
+#: NEEDS WORK
+msgid "Command output"
+msgstr "Komenton tuloste"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
+msgid "Installed Kernels"
+msgstr "Asennetut ytimet"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
+msgid "Available Kernels"
+msgstr "Käytettävissä olevat ytimet"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
+#, python-brace-format
+msgid "Version: {}"
+msgstr "Versio: {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
+#: NEEDS WORK
+msgid "In Use"
+msgstr "Käytössä"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
+msgid "Remove"
+msgstr "Poista"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: NEEDS WORK
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Poista ydin {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
+msgid "Cannot remove the currently running kernel"
+msgstr "Käynnissä olevaa ydintä ei voi poistaa"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
+msgid "Install"
+msgstr "Asenna"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#: NEEDS WORK
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Asenna ydin {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
+msgid "Install Kernel"
+msgstr "Asenna ytimen"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+#: NEEDS WORK
+#, python-brace-format
+msgid ""
+"Are you sure you want to install the <b>{}</b> kernel?\n"
+"\n"
+"This will install the kernel and its modules."
+msgstr ""
+"Oletko varma, että haluat asentaa <b>{}</b> ytimen?\n"
+"\n"
+"Tämä asentaa ytimen ja sen moduulit."
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -46,6 +126,128 @@ msgstr "Näytä terminaalin tuloste"
 #. Cancel button (shown during operation)
 msgid "Cancel"
 msgstr "Peruuta"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
+#, python-brace-format
+msgid "Installing {}"
+msgstr "Asennus {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
+#, python-brace-format
+msgid "Preparing to install {} kernel..."
+msgstr "Ytimen {}asennuksen valmistelu..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
+#. Add initial terminal output
+#, python-brace-format
+msgid "Starting installation of {} kernel..."
+msgstr "Käynnistetään {}ytimen asennus..."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
+msgid "This may take a few minutes. Please wait..."
+msgstr "Tämä voi kestää muutaman minuutin. Odota hetki..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
+msgid "Cannot Remove Running Kernel"
+msgstr "Käynnissä olevaa ydintä ei voi poistaa"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
+msgid ""
+"The kernel you are trying to remove is currently in use.\n"
+"Please boot into a different kernel first."
+msgstr ""
+"Ydin, jonka yrität poistaa, on tällä hetkellä käytössä.\n"
+"Käynnistä ensin toinen ydin."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
+msgid "Remove Kernel"
+msgstr "Poista ydin"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+#: NEEDS WORK
+#, python-brace-format
+msgid ""
+"Are you sure you want to remove the <b>{}</b> kernel?\n"
+"\n"
+"This will remove the kernel and its modules."
+msgstr ""
+"Oletko varma, että haluat poistaa <b>{}</b> ytimen?\n"
+"\n"
+"Tämä poistaa ytimen ja sen moduulit."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
+#, python-brace-format
+msgid "Removing {}"
+msgstr "Poistaminen {}"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
+#, python-brace-format
+msgid "Preparing to remove {} kernel..."
+msgstr "Valmistautuminen ytimen {}poistamiseen..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
+#. Add initial terminal output
+#, python-brace-format
+msgid "Starting removal of {} kernel..."
+msgstr "Kernelin{} poisto aloitetaan..."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
+msgid ""
+"The kernel was installed successfully.\n"
+"You may need to reboot to use the new kernel."
+msgstr ""
+"Ydin on asennettu onnistuneesti.\n"
+"Saatat joutua käynnistämään tietokoneen uudelleen, jotta uusi ydin tulee voimaan."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
+msgid ""
+"The kernel installation failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"Ytimen asennus epäonnistui.\n"
+"Tarkista lisätietoja varten terminaalin tuloste."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
+msgid "The kernel was removed successfully."
+msgstr "Ydin poistettiin onnistuneesti."
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
+msgid ""
+"The kernel removal failed.\n"
+"Please check the terminal output for details."
+msgstr ""
+"Ytimen poisto epäonnistui.\n"
+"Tarkista lisätietoja terminaalin tulosteesta."
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
+#: NEEDS WORK
+msgid "Operation in progress"
+msgstr "Toiminto käynnissä"
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
+#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
+msgid "Show Terminal Output"
+msgstr "Näytä terminaalin tuloste"
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -147,6 +349,12 @@ msgstr ""
 "Verkkomallin kehitysversio. Sisältää uusimmat ominaisuudet, mutta on epävakaa ja saattaa rikkoutua "
 "päivitysten myötä. Ei suositella päivittäiseen käyttöön."
 # 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: NEEDS WORK
+#, python-brace-format
+msgid "Select driver: {}"
+msgstr "Valitse ohjain: {}"
+# 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
@@ -157,21 +365,19 @@ msgstr "Aktiivinen"
 msgid "Change Video Driver"
 msgstr "Vaihda näytönohjain"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
 "This will modify your system's video drivers.\n"
-"<b>A system reboot will be required</b> for the changes to take effect.\n"
-"The active driver indicator will update after rebooting."
+"<b>A system reboot will be required</b> for the changes to take effect."
 msgstr ""
 "Haluatko vaihtaa <b>{}</b> ohjaimeen?\n"
 "\n"
-"Tämä muuttaa järjestelmäsi videon ohjaimia.\n"
-"<b>Järjestelmän uudelleenkäynnistys vaaditaan</b>, jotta muutokset tulevat voimaan.\n"
-"Aktiivinen ohjainindikaattori päivittyy uudelleenkäynnistyksen jälkeen."
+"Tämä muuttaa järjestelmäsi näytönohjaimia.\n"
+"<b>Järjestelmän uudelleenkäynnistys vaaditaan</b> muutosten voimaantulemiseksi."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
@@ -197,29 +403,16 @@ msgstr "Valmistautuminen ohjaimen {}käyttöönottoon..."
 msgid "Applying {} driver..."
 msgstr "Sovelletaan  ajuria{}..."
 # 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
-msgid "This may take a few minutes. Please wait..."
-msgstr "Tämä voi kestää muutaman minuutin. Odota hetki..."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 326
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
 #: NEEDS WORK
 msgid ""
 "The video driver was changed successfully!\n"
 "\n"
-"⚠️ You must reboot your system for the new driver to become active.\n"
-"The 'Active' indicator will update after rebooting."
+"⚠️ You must reboot your system for the new driver to become active."
 msgstr ""
 "Videonäytönohjain vaihdettiin onnistuneesti!\n"
 "\n"
-"⚠️ Sinun on käynnistettävä järjestelmäsi uudelleen, jotta uusi ohjain tulee voimaan. \n"
-"'Aktiivinen' indikaattori päivittyy uudelleenkäynnistyksen jälkeen."
+"⚠️ Sinun on käynnistettävä järjestelmäsi uudelleen, jotta uusi ohjain tulee voimaan."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
@@ -360,160 +553,66 @@ msgstr ""
 msgid "Show this warning on startup"
 msgstr "Näytä tämä varoitus käynnistyksen yhteydessä"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
-msgid "Installed Kernels"
-msgstr "Asennetut ytimet"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
-msgid "Available Kernels"
-msgstr "Käytettävissä olevat ytimet"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
-#, python-brace-format
-msgid "Version: {}"
-msgstr "Versio: {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: NEEDS WORK
-msgid "In Use"
-msgstr "Käytössä"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
-msgid "Remove"
-msgstr "Poista"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
-msgid "Cannot remove the currently running kernel"
-msgstr "Käynnissä olevaa ydintä ei voi poistaa"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
-msgid "Install"
-msgstr "Asenna"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
-msgid "Install Kernel"
-msgstr "Asenna ytimen"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
 #: NEEDS WORK
 #, python-brace-format
-msgid ""
-"Are you sure you want to install the <b>{}</b> kernel?\n"
-"\n"
-"This will install the kernel and its modules."
-msgstr ""
-"Oletko varma, että haluat asentaa <b>{}</b> ytimen?\n"
-"\n"
-"Tämä asentaa ytimen ja sen moduulit."
+msgid "Starting {}..."
+msgstr "Aloitetaan {}..."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
-#, python-brace-format
-msgid "Installing {}"
-msgstr "Asennus {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
-#, python-brace-format
-msgid "Preparing to install {} kernel..."
-msgstr "Ytimen {}asennuksen valmistelu..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
-#. Add initial terminal output
-#, python-brace-format
-msgid "Starting installation of {} kernel..."
-msgstr "Käynnistetään {}ytimen asennus..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
-msgid "Cannot Remove Running Kernel"
-msgstr "Käynnissä olevaa ydintä ei voi poistaa"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
-msgid ""
-"The kernel you are trying to remove is currently in use.\n"
-"Please boot into a different kernel first."
-msgstr ""
-"Ydin, jonka yrität poistaa, on tällä hetkellä käytössä.\n"
-"Käynnistä ensin toinen ydin."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
-msgid "Remove Kernel"
-msgstr "Poista ydin"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
 #: NEEDS WORK
 #, python-brace-format
-msgid ""
-"Are you sure you want to remove the <b>{}</b> kernel?\n"
-"\n"
-"This will remove the kernel and its modules."
-msgstr ""
-"Oletko varma, että haluat poistaa <b>{}</b> ytimen?\n"
-"\n"
-"Tämä poistaa ytimen ja sen moduulit."
+msgid "Command: {}"
+msgstr "Komento: {}"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
+#: NEEDS WORK
+msgid "⚠️ Operation cancelled by user."
+msgstr "⚠️ Toiminto peruutettu käyttäjän toimesta."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: NEEDS WORK
 #, python-brace-format
-msgid "Removing {}"
-msgstr "Poistaminen {}"
+msgid "Still working... ({:.0%} complete)"
+msgstr "Työskentelee edelleen... ({:.0%} valmis)"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: NEEDS WORK
+msgid "Operation cancelled"
+msgstr "Toiminto peruutettu"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: NEEDS WORK
+msgid "❌ Operation was cancelled."
+msgstr "❌ Toiminto peruttiin."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: NEEDS WORK
 #, python-brace-format
-msgid "Preparing to remove {} kernel..."
-msgstr "Valmistautuminen ytimen {}poistamiseen..."
+msgid "{}  complete!"
+msgstr "{} valmis!"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
-#. Add initial terminal output
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: NEEDS WORK
 #, python-brace-format
-msgid "Starting removal of {} kernel..."
-msgstr "Kernelin{} poisto aloitetaan..."
+msgid "✅ {} completed successfully."
+msgstr "✅ {} valmis onnistuneesti."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
-msgid ""
-"The kernel was installed successfully.\n"
-"You may need to reboot to use the new kernel."
-msgstr ""
-"Ydin on asennettu onnistuneesti.\n"
-"Saatat joutua käynnistämään tietokoneen uudelleen, jotta uusi ydin tulee voimaan."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} epäonnistui."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
-msgid ""
-"The kernel installation failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"Ytimen asennus epäonnistui.\n"
-"Tarkista lisätietoja varten terminaalin tuloste."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: NEEDS WORK
+#, python-brace-format
+msgid "❌ {} failed (exit code: {})"
+msgstr "❌ {} epäonnistui (poistumiskoodi: {})"
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
-msgid "The kernel was removed successfully."
-msgstr "Ydin poistettiin onnistuneesti."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
-msgid ""
-"The kernel removal failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"Ytimen poisto epäonnistui.\n"
-"Tarkista lisätietoja terminaalin tulosteesta."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Virhe: {}"

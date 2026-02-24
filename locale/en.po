@@ -16,60 +16,89 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 55
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 59
 msgid "Loading..."
 msgstr "Loading..."
 
 #
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 97
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+#
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
+msgid "Operation progress"
+msgstr "Operation progress"
+
+#
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 103
 msgid "Terminal Output"
 msgstr "Terminal Output"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+#
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
+msgid "Command output"
+msgstr "Command output"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 150
 msgid "Installed Kernels"
 msgstr "Installed Kernels"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 161
 msgid "Available Kernels"
 msgstr "Available Kernels"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 218
 #, python-brace-format
 msgid "Version: {}"
 msgstr "Version: {}"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 247
 msgid "In Use"
 msgstr "In Use"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 274
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 398
 msgid "Remove"
 msgstr "Remove"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Remove kernel {}"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 284
 msgid "Cannot remove the currently running kernel"
 msgstr "Cannot remove the currently running kernel"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 290
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 322
 msgid "Install"
 msgstr "Install"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Install kernel {}"
+
+#
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 312
 msgid "Install Kernel"
 msgstr "Install Kernel"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 316
 #, python-brace-format
 msgid ""
 "Are you sure you want to install the <b>{}</b> kernel?\n"
@@ -85,27 +114,27 @@ msgstr ""
 #
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 306
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 374
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 161
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 268
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 321
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 397
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 166
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 274
 msgid "Cancel"
 msgstr "Cancel"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 341
 #, python-brace-format
 msgid "Installing {}"
 msgstr "Installing {}"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 342
 #, python-brace-format
 msgid "Preparing to install {} kernel..."
 msgstr "Preparing to install {} kernel..."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 351
 #, python-brace-format
 msgid "Starting installation of {} kernel..."
 msgstr "Starting installation of {} kernel..."
@@ -113,19 +142,19 @@ msgstr "Starting installation of {} kernel..."
 #
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 299
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 354
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 430
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 308
 msgid "This may take a few minutes. Please wait..."
 msgstr "This may take a few minutes. Please wait..."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 378
 msgid "Cannot Remove Running Kernel"
 msgstr "Cannot Remove Running Kernel"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 380
 msgid ""
 "The kernel you are trying to remove is currently in use.\n"
 "Please boot into a different kernel first."
@@ -134,12 +163,12 @@ msgstr ""
 "Please boot into a different kernel first."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 388
 msgid "Remove Kernel"
 msgstr "Remove Kernel"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 392
 #, python-brace-format
 msgid ""
 "Are you sure you want to remove the <b>{}</b> kernel?\n"
@@ -151,25 +180,25 @@ msgstr ""
 "This will remove the kernel and its modules."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 417
 #, python-brace-format
 msgid "Removing {}"
 msgstr "Removing {}"
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 418
 #, python-brace-format
 msgid "Preparing to remove {} kernel..."
 msgstr "Preparing to remove {} kernel..."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 427
 #, python-brace-format
 msgid "Starting removal of {} kernel..."
 msgstr "Starting removal of {} kernel..."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 461
 msgid ""
 "The kernel was installed successfully.\n"
 "You may need to reboot to use the new kernel."
@@ -178,7 +207,7 @@ msgstr ""
 "You may need to reboot to use the new kernel."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 467
 msgid ""
 "The kernel installation failed.\n"
 "Please check the terminal output for details."
@@ -187,12 +216,12 @@ msgstr ""
 "Please check the terminal output for details."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 482
 msgid "The kernel was removed successfully."
 msgstr "The kernel was removed successfully."
 
 #
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 487
 msgid ""
 "The kernel removal failed.\n"
 "Please check the terminal output for details."
@@ -201,60 +230,66 @@ msgstr ""
 "Please check the terminal output for details."
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
+msgid "Operation in progress"
+msgstr "Operation in progress"
+
+#
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 135
 msgid "Show Terminal Output"
 msgstr "Show Terminal Output"
 
 #
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 169
-# File: usr/share/big-kernel-manager/ui/window.py, line: 499
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 174
+# File: usr/share/big-kernel-manager/ui/window.py, line: 211
+# File: usr/share/big-kernel-manager/ui/window.py, line: 509
 msgid "Close"
 msgstr "Close"
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 200
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 224
 msgid "Please wait..."
 msgstr "Please wait..."
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
 msgid "Operation completed successfully!"
 msgstr "Operation completed successfully!"
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 316
 msgid "Operation failed. Check terminal output for details."
 msgstr "Operation failed. Check terminal output for details."
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 331
 msgid "Completed!"
 msgstr "Completed!"
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 308
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
 msgid "Failed"
 msgstr "Failed"
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 333
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 359
 msgid "Operation cancelled by user."
 msgstr "Operation cancelled by user."
 
 #
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 360
 msgid "Cancelled"
 msgstr "Cancelled"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 76
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 77
 msgid "Legacy"
 msgstr "Legacy"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 79
 msgid ""
 "Classic OpenGL implementation for very old hardware. Only use if your GPU "
 "does not support modern Mesa drivers."
@@ -263,12 +298,12 @@ msgstr ""
 "does not support modern Mesa drivers."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 81
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 82
 msgid "Recommended"
 msgstr "Recommended"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 83
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 84
 msgid ""
 "Official stable Mesa release. Best balance of performance, compatibility and "
 "stability. Includes Vulkan drivers for AMD, Intel and software rendering."
@@ -277,12 +312,12 @@ msgstr ""
 "stability. Includes Vulkan drivers for AMD, Intel and software rendering."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 87
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 88
 msgid "Performance"
 msgstr "Performance"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 90
 msgid ""
 "Custom build with performance patches. May provide better FPS in games, but "
 "can cause issues with system updates. Use with caution."
@@ -291,7 +326,7 @@ msgstr ""
 "can cause issues with system updates. Use with caution."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 95
 msgid ""
 "Bleeding-edge development version. Contains the newest features but is "
 "unstable and may break with updates. Not recommended for daily use."
@@ -300,70 +335,72 @@ msgstr ""
 "unstable and may break with updates. Not recommended for daily use."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 241
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 243
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#, python-brace-format
+msgid "Select driver: {}"
+msgstr "Select driver: {}"
+
+#
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 246
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 248
 msgid "Active"
 msgstr "Active"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 264
 msgid "Change Video Driver"
 msgstr "Change Video Driver"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #, python-brace-format
 msgid ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
 "This will modify your system's video drivers.\n"
-"<b>A system reboot will be required</b> for the changes to take effect.\n"
-"The active driver indicator will update after rebooting."
+"<b>A system reboot will be required</b> for the changes to take effect."
 msgstr ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
 "This will modify your system's video drivers.\n"
-"<b>A system reboot will be required</b> for the changes to take effect.\n"
-"The active driver indicator will update after rebooting."
+"<b>A system reboot will be required</b> for the changes to take effect."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 269
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 275
 msgid "Apply"
 msgstr "Apply"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 292
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 298
 #, python-brace-format
 msgid "Applying {}"
 msgstr "Applying {}"
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 293
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 299
 #, python-brace-format
 msgid "Preparing to apply {} driver..."
 msgstr "Preparing to apply {} driver..."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 298
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 305
 #, python-brace-format
 msgid "Applying {} driver..."
 msgstr "Applying {} driver..."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 326
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
 msgid ""
 "The video driver was changed successfully!\n"
 "\n"
-"⚠️ You must reboot your system for the new driver to become active.\n"
-"The 'Active' indicator will update after rebooting."
+"⚠️ You must reboot your system for the new driver to become active."
 msgstr ""
 "The video driver was changed successfully!\n"
 "\n"
-"⚠️ You must reboot your system for the new driver to become active.\n"
-"The 'Active' indicator will update after rebooting."
+"⚠️ You must reboot your system for the new driver to become active."
 
 #
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 332
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 344
 msgid ""
 "The driver change failed.\n"
 "Please check the terminal output for details."
@@ -372,37 +409,37 @@ msgstr ""
 "Please check the terminal output for details."
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 97
+# File: usr/share/big-kernel-manager/ui/window.py, line: 86
 msgid "Kernel"
 msgstr "Kernel"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 101
+# File: usr/share/big-kernel-manager/ui/window.py, line: 89
 msgid "Video Drivers"
 msgstr "Video Drivers"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 164
+# File: usr/share/big-kernel-manager/ui/window.py, line: 130
 msgid "Menu"
 msgstr "Menu"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 168
+# File: usr/share/big-kernel-manager/ui/window.py, line: 134
 msgid "Refresh"
 msgstr "Refresh"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 169
+# File: usr/share/big-kernel-manager/ui/window.py, line: 135
 msgid "About"
 msgstr "About"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 271
+# File: usr/share/big-kernel-manager/ui/window.py, line: 199
 msgid "Kernel and Mesa Management"
 msgstr "Kernel and Mesa Management"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 310
+# File: usr/share/big-kernel-manager/ui/window.py, line: 253
 msgid ""
 "Changing your system's kernel or Mesa drivers can impact system stability. "
 "Please review the following recommendations:"
@@ -411,17 +448,17 @@ msgstr ""
 "Please review the following recommendations:"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 318
+# File: usr/share/big-kernel-manager/ui/window.py, line: 265
 msgid "Always keep at least one working kernel"
 msgstr "Always keep at least one working kernel"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 318
+# File: usr/share/big-kernel-manager/ui/window.py, line: 267
 msgid "installed as a fallback"
 msgstr "installed as a fallback"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 320
+# File: usr/share/big-kernel-manager/ui/window.py, line: 273
 msgid ""
 "LTS kernels offer better stability, while newer kernels provide newer "
 "hardware support"
@@ -430,12 +467,12 @@ msgstr ""
 "hardware support"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 322
+# File: usr/share/big-kernel-manager/ui/window.py, line: 279
 msgid "Test your system thoroughly after kernel changes"
 msgstr "Test your system thoroughly after kernel changes"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 324
+# File: usr/share/big-kernel-manager/ui/window.py, line: 285
 msgid ""
 "If a new kernel causes issues, you can select the previous kernel from the "
 "boot menu"
@@ -444,7 +481,7 @@ msgstr ""
 "boot menu"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 326
+# File: usr/share/big-kernel-manager/ui/window.py, line: 292
 msgid ""
 "Real-time (RT) kernels are specialized for low-latency tasks but may not be "
 "suitable for general use"
@@ -453,18 +490,18 @@ msgstr ""
 "suitable for general use"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 329
+# File: usr/share/big-kernel-manager/ui/window.py, line: 297
 msgid "Kernel Management"
 msgstr "Kernel Management"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 330
-# File: usr/share/big-kernel-manager/ui/window.py, line: 349
+# File: usr/share/big-kernel-manager/ui/window.py, line: 300
+# File: usr/share/big-kernel-manager/ui/window.py, line: 346
 msgid "Tips"
 msgstr "Tips"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 337
+# File: usr/share/big-kernel-manager/ui/window.py, line: 312
 msgid ""
 "Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some "
 "NVIDIA GPUs"
@@ -473,7 +510,7 @@ msgstr ""
 "NVIDIA GPUs"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 339
+# File: usr/share/big-kernel-manager/ui/window.py, line: 319
 msgid ""
 "Changing Mesa versions may affect graphics performance and application "
 "compatibility"
@@ -482,33 +519,33 @@ msgstr ""
 "compatibility"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 341
+# File: usr/share/big-kernel-manager/ui/window.py, line: 325
 msgid "The stable version is recommended for most users"
 msgstr "The stable version is recommended for most users"
 
 #
+# File: usr/share/big-kernel-manager/ui/window.py, line: 331
+msgid ""
+"Development versions may offer better performance but with less stability"
+msgstr ""
+"Development versions may offer better performance but with less stability"
+
+#
+# File: usr/share/big-kernel-manager/ui/window.py, line: 338
+msgid ""
+"If graphics issues occur after a change, you can switch back to the previous "
+"driver"
+msgstr ""
+"If graphics issues occur after a change, you can switch back to the previous "
+"driver"
+
+#
 # File: usr/share/big-kernel-manager/ui/window.py, line: 343
-msgid ""
-"Development versions may offer better performance but with less stability"
-msgstr ""
-"Development versions may offer better performance but with less stability"
-
-#
-# File: usr/share/big-kernel-manager/ui/window.py, line: 345
-msgid ""
-"If graphics issues occur after a change, you can switch back to the previous "
-"driver"
-msgstr ""
-"If graphics issues occur after a change, you can switch back to the previous "
-"driver"
-
-#
-# File: usr/share/big-kernel-manager/ui/window.py, line: 348
 msgid "Mesa Driver Management"
 msgstr "Mesa Driver Management"
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 365
+# File: usr/share/big-kernel-manager/ui/window.py, line: 366
 msgid ""
 "If unsure, the <b>LTS kernel</b> and <b>Stable Mesa</b> drivers are the "
 "safest choices for most users."
@@ -517,6 +554,71 @@ msgstr ""
 "safest choices for most users."
 
 #
-# File: usr/share/big-kernel-manager/ui/window.py, line: 485
+# File: usr/share/big-kernel-manager/ui/window.py, line: 490
+# File: usr/share/big-kernel-manager/ui/window.py, line: 499
 msgid "Show this warning on startup"
 msgstr "Show this warning on startup"
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
+#, python-brace-format
+msgid "Starting {}..."
+msgstr "Starting {}..."
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
+#, python-brace-format
+msgid "Command: {}"
+msgstr "Command: {}"
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
+msgid "⚠️ Operation cancelled by user."
+msgstr "⚠️ Operation cancelled by user."
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#, python-brace-format
+msgid "Still working... ({:.0%} complete)"
+msgstr "Still working... ({:.0%} complete)"
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+msgid "Operation cancelled"
+msgstr "Operation cancelled"
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+msgid "❌ Operation was cancelled."
+msgstr "❌ Operation was cancelled."
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#, python-brace-format
+msgid "{}  complete!"
+msgstr "{}  complete!"
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#, python-brace-format
+msgid "✅ {} completed successfully."
+msgstr "✅ {} completed successfully."
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{}  failed."
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#, python-brace-format
+msgid "❌ {} failed (exit code: {})"
+msgstr "❌ {} failed (exit code: {})"
+
+#
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Error: {}"
