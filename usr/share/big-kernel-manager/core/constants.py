@@ -13,7 +13,7 @@ import os
 # Application Metadata
 APP_NAME = "Big Kernel Manager"
 APP_ID = "br.com.biglinux.kernelmanager"
-APP_VERSION = "1.2.8"
+APP_VERSION = "1.2.9"
 APP_AUTHOR = "BigLinux Team"
 APP_WEBSITE = "https://github.com/communitybig/big-kernel-manager"
 

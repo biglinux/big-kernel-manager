@@ -2,8 +2,8 @@
 
 /* Terminal output styling */
 .terminal {
-    background-color: @card_bg_color;
-    color: @card_fg_color;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
     padding: 12px;
     border-radius: 8px;
     font-family: "Monospace", "Consolas", monospace;
