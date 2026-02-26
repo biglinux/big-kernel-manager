@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the big-kernel-manager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
@@ -20,10 +21,26 @@ msgstr ""
 msgid "Loading..."
 msgstr "Laden..."
 # 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
+#: NEEDS WORK
+msgid "Operation progress"
+msgstr "Operatie voortgang"
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
 msgstr "Terminaluitvoer"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
+#: NEEDS WORK
+msgid "Command output"
+msgstr "Opdrachtuitvoer"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
@@ -53,6 +70,12 @@ msgstr "In gebruik"
 msgid "Remove"
 msgstr "Verwijderen"
 # 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: NEEDS WORK
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Verwijder kernel {}"
+# 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
 msgid "Cannot remove the currently running kernel"
@@ -64,6 +87,12 @@ msgstr "De momenteel actieve kernel kan niet worden verwijderd."
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
 msgid "Install"
 msgstr "Installeren"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#: NEEDS WORK
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Installeer kernel {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
@@ -210,6 +239,11 @@ msgstr ""
 "Het verwijderen van de kernel is mislukt.\n"
 "Raadpleeg de terminaloutput voor meer informatie."
 # 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
+#: NEEDS WORK
+msgid "Operation in progress"
+msgstr "Bezig met bewerking"
+# 
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Show Terminal Output"
@@ -315,6 +349,12 @@ msgstr ""
 "Bloedende rand ontwikkelingsversie. Bevat de nieuwste functies, maar is onstabiel en kan breken met "
 "updates. Niet aanbevolen voor dagelijks gebruik."
 # 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: NEEDS WORK
+#, python-brace-format
+msgid "Select driver: {}"
+msgstr "Selecteer stuurprogramma: {}"
+# 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
@@ -325,17 +365,19 @@ msgstr "Actief"
 msgid "Change Video Driver"
 msgstr "Video stuurprogramma wijzigen"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and may require a reboot."
+"This will modify your system's video drivers.\n"
+"<b>A system reboot will be required</b> for the changes to take effect."
 msgstr ""
-"Wilt u overschakelen naar de <b>{}</b> stuurprogramma? \n"
+"Wilt u overschakelen naar de <b>{}</b> stuurprogramma?\n"
 "\n"
-"Dit zal de videostuurprogramma's van uw systeem wijzigen en kan een herstart vereisen."
+"Dit zal de videostuurprogramma's van uw systeem wijzigen.\n"
+"<b>Een systeemherstart is vereist</b> om de wijzigingen van kracht te laten worden."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
@@ -361,14 +403,16 @@ msgstr "Voorbereiding voor het toepassen {}van  driver..."
 msgid "Applying {} driver..."
 msgstr "Stuurprogramma {}wordt toegepast..."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 447
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:329
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
+#: NEEDS WORK
 msgid ""
-"The video driver was changed successfully.\n"
-"You may need to reboot for changes to take effect."
+"The video driver was changed successfully!\n"
+"\n"
+"⚠️ You must reboot your system for the new driver to become active."
 msgstr ""
-"De videostuurprogramma is succesvol gewijzigd.\n"
-"U moet mogelijk opnieuw opstarten om de wijzigingen door te voeren."
+"De videostuurprogramma is succesvol gewijzigd!\n"
+"\n"
+"⚠️ U moet uw systeem opnieuw opstarten om de nieuwe stuurprogramma actief te maken."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
@@ -393,11 +437,6 @@ msgstr "Videostuurprogramma's"
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:129
 msgid "Menu"
 msgstr "Menu"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 133
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:133
-msgid "Refresh"
-msgstr "Vernieuwen"
 # 
 # File: usr/share/big-kernel-manager/ui/window.py, line: 134
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:134
@@ -512,3 +551,67 @@ msgstr ""
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:364
 msgid "Show this warning on startup"
 msgstr "Deze waarschuwing bij opstarten weergeven"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
+#: NEEDS WORK
+#, python-brace-format
+msgid "Starting {}..."
+msgstr "Startende {}..."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
+#: NEEDS WORK
+#, python-brace-format
+msgid "Command: {}"
+msgstr "Opdracht: {}"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
+#: NEEDS WORK
+msgid "⚠️ Operation cancelled by user."
+msgstr "⚠️ Bewerking geannuleerd door gebruiker."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: NEEDS WORK
+#, python-brace-format
+msgid "Still working... ({:.0%} complete)"
+msgstr "Bezig... ({:.0%} voltooid)"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: NEEDS WORK
+msgid "Operation cancelled"
+msgstr "Bewerking geannuleerd"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: NEEDS WORK
+msgid "❌ Operation was cancelled."
+msgstr "❌ Operatie is geannuleerd."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  complete!"
+msgstr "complete!"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: NEEDS WORK
+#, python-brace-format
+msgid "✅ {} completed successfully."
+msgstr "✅ {} succesvol voltooid."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} is mislukt."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: NEEDS WORK
+#, python-brace-format
+msgid "❌ {} failed (exit code: {})"
+msgstr "❌ {} mislukt (afsluitcode: {})"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Fout: {}"

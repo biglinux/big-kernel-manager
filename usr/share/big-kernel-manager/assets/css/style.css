@@ -2,8 +2,8 @@
 
 /* Terminal output styling */
 .terminal {
-    background-color: #1e1e1e;
-    color: #d4d4d4;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
     padding: 12px;
     border-radius: 8px;
     font-family: "Monospace", "Consolas", monospace;
@@ -12,28 +12,27 @@
 
 /* Status message styles */
 .success-message {
-    color: #4caf50;
+    color: @success_color;
     font-weight: bold;
 }
 
 .error-message {
-    color: #f44336;
+    color: @error_color;
     font-weight: bold;
 }
 
 .warning-message {
-    color: #ff9800;
+    color: @warning_color;
     font-weight: bold;
 }
 
 .info-message {
-    color: #2196f3;
+    color: @accent_color;
 }
 
 /* Kernel status badges */
 .badge {
     padding: 2px 8px;
-    font-size: 11px;
     font-weight: 600;
 }
 
@@ -91,13 +90,12 @@
 
 /* Section headers */
 .heading {
-    font-size: 13px;
     font-weight: 600;
 }
 
 /* Progress container */
 .progress-container {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: alpha(@window_bg_color, 0.5);
     border-radius: 8px;
     padding: 16px;
     margin: 8px 0;
@@ -136,14 +134,49 @@ button.slim-action {
 /* Section headers */
 .section-header {
     font-weight: bold;
-    font-size: 14px;
     margin-bottom: 8px;
 }
 
 /* Dimmed/secondary text */
 .dim-label {
     opacity: 0.7;
-    font-size: 12px;
+    font-weight: normal;
+}
+
+/* Progress Dialog Styles */
+.progress-dialog-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.progress-dialog-card {
+    background-color: @window_bg_color;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.success-icon {
+    color: @success_color;
+}
+
+.error-icon {
+    color: @error_color;
+}
+
+.progress-dialog-card .title-2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.progress-dialog-card .dim-label {
+    font-size: 14px;
+}
+
+.progress-dialog-card progressbar text {
+    font-size: 14px;
+}
+
+.progress-dialog-card expander title {
+    font-size: 14px;
 }
 
 /* Version text */

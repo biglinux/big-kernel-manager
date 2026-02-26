@@ -1,0 +1,8 @@
+usr/share/big-kernel-manager/core/base_manager.py:36: unused import 'signal' (90% confidence)
+usr/share/big-kernel-manager/ui/base_page.py:205: unused variable 'status' (100% confidence)
+usr/share/big-kernel-manager/ui/window.py:191: unused variable 'action' (100% confidence)
+usr/share/big-kernel-manager/ui/window.py:191: unused variable 'param' (100% confidence)
+usr/share/big-kernel-manager/ui/window.py:199: unused variable 'action' (100% confidence)
+usr/share/big-kernel-manager/ui/window.py:199: unused variable 'param' (100% confidence)
+usr/share/big-kernel-manager/ui/window.py:502: unused variable 'btn' (100% confidence)
+usr/share/big-kernel-manager/ui/window.py:519: unused variable 'param' (100% confidence)

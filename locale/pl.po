@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the big-kernel-manager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
@@ -20,10 +21,26 @@ msgstr ""
 msgid "Loading..."
 msgstr "Ładowanie..."
 # 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
+#: NEEDS WORK
+msgid "Operation progress"
+msgstr "Postęp operacji"
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 msgid "Terminal Output"
 msgstr "Wyjście terminala"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
+#: NEEDS WORK
+msgid "Command output"
+msgstr "Wynik polecenia"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
@@ -53,6 +70,12 @@ msgstr "W użyciu"
 msgid "Remove"
 msgstr "Usuń"
 # 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: NEEDS WORK
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Usuń jądro {}"
+# 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
 msgid "Cannot remove the currently running kernel"
@@ -64,6 +87,12 @@ msgstr "Nie można usunąć aktualnie uruchomionego jądra"
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
 msgid "Install"
 msgstr "Zainstaluj"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#: NEEDS WORK
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Zainstaluj jądro {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
@@ -210,6 +239,11 @@ msgstr ""
 "Usunięcie jądra nie powiodło się.\n"
 "Szczegółowe informacje można znaleźć w wynikach terminala."
 # 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
+#: NEEDS WORK
+msgid "Operation in progress"
+msgstr "Operacja w toku"
+# 
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Show Terminal Output"
@@ -315,6 +349,12 @@ msgstr ""
 "Wersja deweloperska na krawędzi. Zawiera najnowsze funkcje, ale jest niestabilna i może ulegać "
 "awariom po aktualizacjach. Nie jest zalecana do codziennego użytku."
 # 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: NEEDS WORK
+#, python-brace-format
+msgid "Select driver: {}"
+msgstr "Wybierz sterownik: {}"
+# 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 msgid "Active"
@@ -325,17 +365,19 @@ msgstr "Aktywny"
 msgid "Change Video Driver"
 msgstr "Zmień sterownik wideo"
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and may require a reboot."
+"This will modify your system's video drivers.\n"
+"<b>A system reboot will be required</b> for the changes to take effect."
 msgstr ""
 "Czy chcesz zmienić na sterownik <b>{}</b>?\n"
 "\n"
-"To zmodyfikuje sterowniki wideo w twoim systemie i może wymagać ponownego uruchomienia."
+"To zmodyfikuje sterowniki wideo twojego systemu.\n"
+"<b>Wymagane będzie ponowne uruchomienie systemu</b>, aby zmiany mogły wejść w życie."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
@@ -361,14 +403,16 @@ msgstr "Przygotowanie do zastosowania{}sterownika..."
 msgid "Applying {} driver..."
 msgstr "Łączenie{}sterownika..."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 447
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:329
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
+#: NEEDS WORK
 msgid ""
-"The video driver was changed successfully.\n"
-"You may need to reboot for changes to take effect."
+"The video driver was changed successfully!\n"
+"\n"
+"⚠️ You must reboot your system for the new driver to become active."
 msgstr ""
-"Sterownik wideo został pomyślnie zmieniony.\n"
-"Aby zmiany zaczęły obowiązywać, może być konieczne ponowne uruchomienie komputera."
+"Sterownik wideo został pomyślnie zmieniony!\n"
+"\n"
+"⚠️ Musisz ponownie uruchomić system, aby nowy sterownik stał się aktywny."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
@@ -393,11 +437,6 @@ msgstr "Sterowniki wideo"
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:129
 msgid "Menu"
 msgstr "Menu"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 133
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:133
-msgid "Refresh"
-msgstr "Odśwież"
 # 
 # File: usr/share/big-kernel-manager/ui/window.py, line: 134
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:134
@@ -508,3 +547,67 @@ msgstr ""
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:364
 msgid "Show this warning on startup"
 msgstr "Pokaż to ostrzeżenie podczas uruchamiania"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
+#: NEEDS WORK
+#, python-brace-format
+msgid "Starting {}..."
+msgstr "Rozpoczynanie {}..."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
+#: NEEDS WORK
+#, python-brace-format
+msgid "Command: {}"
+msgstr "Polecenie: {}"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
+#: NEEDS WORK
+msgid "⚠️ Operation cancelled by user."
+msgstr "⚠️ Operacja anulowana przez użytkownika."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: NEEDS WORK
+#, python-brace-format
+msgid "Still working... ({:.0%} complete)"
+msgstr "Wciąż pracuje... ({:.0%} ukończone)"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: NEEDS WORK
+msgid "Operation cancelled"
+msgstr "Operacja anulowana"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: NEEDS WORK
+msgid "❌ Operation was cancelled."
+msgstr "❌ Operacja została anulowana."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  complete!"
+msgstr "{}  zakończone!"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: NEEDS WORK
+#, python-brace-format
+msgid "✅ {} completed successfully."
+msgstr "✅ {} zakończono pomyślnie."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} nie powiodło się."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: NEEDS WORK
+#, python-brace-format
+msgid "❌ {} failed (exit code: {})"
+msgstr "❌ {} nie powiodło się (kod wyjścia: {})"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Błąd: {}"

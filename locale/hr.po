@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the big-kernel-manager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
@@ -20,11 +21,27 @@ msgstr ""
 msgid "Loading..."
 msgstr "Učitavanje..."
 # 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
+#: NEEDS WORK
+msgid "Operation progress"
+msgstr "Napredak operacije"
+# 
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
 #, fuzzy
 msgid "Terminal Output"
 msgstr "Terminal Output"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
+#: NEEDS WORK
+msgid "Command output"
+msgstr "Izlaz naredbe"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
@@ -57,6 +74,12 @@ msgstr "U upotrebi"
 msgid "Remove"
 msgstr "Remove"
 # 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: NEEDS WORK
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Ukloni jezgru {}"
+# 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
 #, fuzzy
@@ -70,6 +93,12 @@ msgstr "Cannot remove the currently running kernel"
 #, fuzzy
 msgid "Install"
 msgstr "Install"
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#: NEEDS WORK
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Instaliraj kernel {}"
 # 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
@@ -226,6 +255,11 @@ msgstr ""
 "The kernel removal failed.\n"
 "Please check the terminal output for details."
 # 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
+#: NEEDS WORK
+msgid "Operation in progress"
+msgstr "Operacija u tijeku"
+# 
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
 #, fuzzy
@@ -340,6 +374,12 @@ msgstr ""
 "Verzija za razvoj na rubu. Sadrži najnovije značajke, ali je nestabilna i može se pokvariti s "
 "ažuriranjima. Nije preporučena za svakodnevnu upotrebu."
 # 
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: NEEDS WORK
+#, python-brace-format
+msgid "Select driver: {}"
+msgstr "Odaberite upravljač: {}"
+# 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
 #, fuzzy
@@ -351,17 +391,19 @@ msgstr "Active"
 msgid "Change Video Driver"
 msgstr "Promijeni video upravljač."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 261
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
 #, python-brace-format
 msgid ""
 "Do you want to change to the <b>{}</b> driver?\n"
 "\n"
-"This will modify your system's video drivers and may require a reboot."
+"This will modify your system's video drivers.\n"
+"<b>A system reboot will be required</b> for the changes to take effect."
 msgstr ""
 "Želite li promijeniti na <b>{}</b> upravljački program?\n"
 "\n"
-"Ovo će modificirati video upravljačke programe vašeg sustava i može zahtijevati ponovno pokretanje."
+"Ovo će modificirati video upravljačke programe vašeg sustava.\n"
+"<b>Bit će potreban ponovni pokretanje sustava</b> da bi promjene stupile na snagu."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
 #: NEEDS WORK
@@ -387,15 +429,16 @@ msgstr "Preparing to apply {} driver..."
 msgid "Applying {} driver..."
 msgstr "Applying {} driver..."
 # 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 447
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:329
-#, fuzzy
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
+#: NEEDS WORK
 msgid ""
-"The video driver was changed successfully.\n"
-"You may need to reboot for changes to take effect."
+"The video driver was changed successfully!\n"
+"\n"
+"⚠️ You must reboot your system for the new driver to become active."
 msgstr ""
-"The video driver was changed successfully.\n"
-"You may need to reboot for changes to take effect."
+"Video upravljač je uspješno promijenjen!\n"
+"\n"
+"⚠️ Morate ponovo pokrenuti svoj sustav kako bi novi upravljač postao aktivan."
 # 
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
@@ -424,12 +467,6 @@ msgstr "Video Drivers"
 #, fuzzy
 msgid "Menu"
 msgstr "Menu"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 133
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:133
-#, fuzzy
-msgid "Refresh"
-msgstr "Refresh"
 # 
 # File: usr/share/big-kernel-manager/ui/window.py, line: 134
 #: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:134
@@ -551,3 +588,67 @@ msgstr ""
 #, fuzzy
 msgid "Show this warning on startup"
 msgstr "Show this warning on startup"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
+#: NEEDS WORK
+#, python-brace-format
+msgid "Starting {}..."
+msgstr "Pokreće se {}..."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
+#: NEEDS WORK
+#, python-brace-format
+msgid "Command: {}"
+msgstr "Naredba: {}"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
+#: NEEDS WORK
+msgid "⚠️ Operation cancelled by user."
+msgstr "⚠️ Operacija otkazana od strane korisnika."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: NEEDS WORK
+#, python-brace-format
+msgid "Still working... ({:.0%} complete)"
+msgstr "Još uvijek radi... ({:.0%} dovršeno)"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: NEEDS WORK
+msgid "Operation cancelled"
+msgstr "Operacija otkazana"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: NEEDS WORK
+msgid "❌ Operation was cancelled."
+msgstr "❌ Operacija je otkazana."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  complete!"
+msgstr "{}  dovršeno!"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: NEEDS WORK
+#, python-brace-format
+msgid "✅ {} completed successfully."
+msgstr "✅ {} uspješno dovršeno."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: NEEDS WORK
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} nije uspjelo."
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: NEEDS WORK
+#, python-brace-format
+msgid "❌ {} failed (exit code: {})"
+msgstr "❌ {} nije uspjelo (izlazni kod: {})"
+# 
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: NEEDS WORK
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Greška: {}"

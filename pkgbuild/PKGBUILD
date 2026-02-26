@@ -6,7 +6,6 @@ pkgdesc="Application to manage kernel and mesa drivers for BigLinux"
 depends=(
   'python>=3.6'
   'python-gobject'
-  'python-requests'
   'gtk4'
   'libadwaita'
   'polkit'

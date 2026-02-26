@@ -8,16 +8,19 @@ This module defines custom exception classes for better error handling
 throughout the application.
 """
 
+from typing import List, Optional
+
 
 class KernelManagerError(Exception):
     """Base exception for all Kernel Manager errors."""
+
     pass
 
 
 class PackageNotFoundError(KernelManagerError):
     """Raised when a package cannot be found in repositories."""
-    
-    def __init__(self, package_name: str, message: str = None):
+
+    def __init__(self, package_name: str, message: Optional[str] = None):
         self.package_name = package_name
         self.message = message or f"Package not found: {package_name}"
         super().__init__(self.message)
@@ -25,8 +28,13 @@ class PackageNotFoundError(KernelManagerError):
 
 class InstallationError(KernelManagerError):
     """Raised when package installation fails."""
-    
-    def __init__(self, package_name: str, return_code: int = None, message: str = None):
+
+    def __init__(
+        self,
+        package_name: str,
+        return_code: Optional[int] = None,
+        message: Optional[str] = None,
+    ):
         self.package_name = package_name
         self.return_code = return_code
         self.message = message or f"Failed to install package: {package_name}"
@@ -37,8 +45,13 @@ class InstallationError(KernelManagerError):
 
 class RemovalError(KernelManagerError):
     """Raised when package removal fails."""
-    
-    def __init__(self, package_name: str, return_code: int = None, message: str = None):
+
+    def __init__(
+        self,
+        package_name: str,
+        return_code: Optional[int] = None,
+        message: Optional[str] = None,
+    ):
         self.package_name = package_name
         self.return_code = return_code
         self.message = message or f"Failed to remove package: {package_name}"
@@ -49,8 +62,8 @@ class RemovalError(KernelManagerError):
 
 class PrivilegeError(KernelManagerError):
     """Raised when elevated privileges are required but not available."""
-    
-    def __init__(self, operation: str = None, message: str = None):
+
+    def __init__(self, operation: Optional[str] = None, message: Optional[str] = None):
         self.operation = operation
         self.message = message or "Elevated privileges required"
         if operation:
@@ -60,8 +73,8 @@ class PrivilegeError(KernelManagerError):
 
 class ConfigurationError(KernelManagerError):
     """Raised when there's a configuration-related error."""
-    
-    def __init__(self, config_key: str = None, message: str = None):
+
+    def __init__(self, config_key: Optional[str] = None, message: Optional[str] = None):
         self.config_key = config_key
         self.message = message or "Configuration error"
         if config_key:
@@ -71,8 +84,8 @@ class ConfigurationError(KernelManagerError):
 
 class NetworkError(KernelManagerError):
     """Raised when a network operation fails."""
-    
-    def __init__(self, url: str = None, message: str = None):
+
+    def __init__(self, url: Optional[str] = None, message: Optional[str] = None):
         self.url = url
         self.message = message or "Network error occurred"
         if url:
@@ -82,8 +95,13 @@ class NetworkError(KernelManagerError):
 
 class DependencyError(KernelManagerError):
     """Raised when there's a package dependency issue."""
-    
-    def __init__(self, package_name: str = None, dependencies: list = None, message: str = None):
+
+    def __init__(
+        self,
+        package_name: Optional[str] = None,
+        dependencies: Optional[List[str]] = None,
+        message: Optional[str] = None,
+    ):
         self.package_name = package_name
         self.dependencies = dependencies or []
         self.message = message or "Dependency error"
@@ -96,8 +114,8 @@ class DependencyError(KernelManagerError):
 
 class BootloaderError(KernelManagerError):
     """Raised when bootloader configuration fails."""
-    
-    def __init__(self, bootloader: str = None, message: str = None):
+
+    def __init__(self, bootloader: Optional[str] = None, message: Optional[str] = None):
         self.bootloader = bootloader
         self.message = message or "Bootloader configuration error"
         if bootloader:
