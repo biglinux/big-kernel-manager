@@ -13,10 +13,12 @@ import gi
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Gio, Adw, Gdk
+from gi.repository import Gdk, Gio, Gtk, Adw
 
 from core.constants import APP_ID, APP_NAME, CONFIG_DIR, SETTINGS_FILE
 from core.logging_config import init_app_logging, get_logger
+from utils import _
+from utils.style_manager import StyleManager
 from ui.window import KernelManagerWindow
 
 
@@ -59,15 +61,6 @@ class SettingsManager:
         self._settings[key] = value
         return self._save_settings()
 
-    # Backwards compatibility aliases
-    def load_setting(self, key: str, default=None):
-        """Load a setting value (alias for get)."""
-        return self.get(key, default)
-
-    def save_setting(self, key: str, value) -> bool:
-        """Save a setting value (alias for set)."""
-        return self.set(key, value)
-
 
 class KernelManagerApplication(Adw.Application):
     """Main application class for Big Kernel Manager."""
@@ -84,27 +77,18 @@ class KernelManagerApplication(Adw.Application):
         # Initialize settings manager
         self.settings_manager = SettingsManager()
 
-        # Load custom CSS
-        self._load_css()
+        # Load custom CSS via singleton StyleManager
+        style_mgr = StyleManager.get_default()
+        if not style_mgr.load_styles():
+            self._logger.warning("Failed to load application CSS")
 
-    def _load_css(self) -> None:
-        """Load custom CSS styling from file."""
-        css_provider = Gtk.CssProvider()
-
-        # Get the path to the CSS file
+        # Register custom icon search path
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        css_path = os.path.join(base_dir, "assets", "css", "style.css")
-
-        try:
-            css_provider.load_from_path(css_path)
-            Gtk.StyleContext.add_provider_for_display(
-                Gdk.Display.get_default(),
-                css_provider,
-                Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION,
-            )
-            self._logger.debug(f"Loaded CSS from {css_path}")
-        except Exception as e:
-            self._logger.warning(f"Error loading CSS: {e}")
+        icons_path = os.path.join(base_dir, "assets", "icons")
+        display = Gdk.Display.get_default()
+        if display:
+            icon_theme = Gtk.IconTheme.get_for_display(display)
+            icon_theme.add_search_path(icons_path)
 
     def on_activate(self, app) -> None:
         """
@@ -114,8 +98,38 @@ class KernelManagerApplication(Adw.Application):
             app: The application instance.
         """
         self._logger.info("Application activated")
+
+        # Register keyboard shortcuts
+        self.set_accels_for_action("app.quit", ["<Control>q"])
+        self.set_accels_for_action("app.about", ["F1"])
+
+        # Quit action
+        quit_action = Gio.SimpleAction.new("quit", None)
+        quit_action.connect("activate", lambda *_: self.quit())
+        self.add_action(quit_action)
+
+        # Restore window size from settings
+        sm = self.settings_manager
+        width = sm.get("window_width", None)
+        height = sm.get("window_height", None)
+
         win = KernelManagerWindow(application=app)
+        if width and height:
+            win.set_default_size(int(width), int(height))
+        if sm.get("window_maximized", False):
+            win.maximize()
+
+        win.connect("close-request", self._on_window_close)
         win.present()
+
+    def _on_window_close(self, window) -> bool:
+        """Persist window geometry before closing."""
+        sm = self.settings_manager
+        if not window.is_maximized():
+            sm.set("window_width", window.get_width())
+            sm.set("window_height", window.get_height())
+        sm.set("window_maximized", window.is_maximized())
+        return False  # allow close to proceed
 
     def show_error_dialog(self, message: str) -> None:
         """
@@ -125,10 +139,10 @@ class KernelManagerApplication(Adw.Application):
             message: Error message to display.
         """
         self._logger.error(f"Error dialog: {message}")
-        dialog = Adw.MessageDialog.new(self.get_active_window())
-        dialog.set_heading("Error")
+        dialog = Adw.AlertDialog()
+        dialog.set_heading(_("Error"))
         dialog.set_body(message)
         dialog.add_response("ok", "OK")
         dialog.set_default_response("ok")
         dialog.set_close_response("ok")
-        dialog.present()
+        dialog.present(self.get_active_window())

@@ -10,9 +10,10 @@ including listing, installing, and removing kernels.
 
 import platform
 import re
+import subprocess
 from urllib.request import urlopen, Request
 from xml.etree import ElementTree
-from typing import List, Dict, Optional, Callable
+from typing import Callable, TypedDict
 
 from core.base_manager import BaseManager
 from core.package_manager import PackageManager
@@ -23,6 +24,20 @@ from core.constants import (
     DEFAULT_LTS_VERSIONS,
 )
 from core.logging_config import get_logger
+
+
+class KernelInfo(TypedDict, total=False):
+    """Typed dictionary for kernel information."""
+
+    name: str
+    version: str
+    installed: bool
+    repository: str
+    rt: bool
+    lts: bool
+    xanmod: bool
+    x64v: int
+    obsolete: bool
 
 
 class KernelManager(BaseManager):
@@ -42,11 +57,11 @@ class KernelManager(BaseManager):
         self._lts_versions = None
 
     @property
-    def lts_versions(self) -> List[str]:
+    def lts_versions(self) -> list[str]:
         """Get LTS versions, fetching from kernel.org if not cached."""
         if self._lts_versions is None:
             self._lts_versions = self._get_lts_kernel_versions()
-        return self._lts_versions
+        return list(self._lts_versions)
 
     def get_running_kernel(self) -> str:
         """
@@ -87,7 +102,7 @@ class KernelManager(BaseManager):
 
         return ""
 
-    def _get_lts_kernel_versions(self) -> List[str]:
+    def _get_lts_kernel_versions(self) -> list[str]:
         """
         Get a list of current LTS kernel versions from kernel.org.
 
@@ -97,7 +112,7 @@ class KernelManager(BaseManager):
         lts_versions = []
         try:
             req = Request(KERNEL_ORG_FEED_URL)
-            with urlopen(req, timeout=1) as response:
+            with urlopen(req, timeout=5) as response:
                 content = response.read()
                 root = ElementTree.fromstring(content)
                 for item in root.findall(".//item"):
@@ -115,7 +130,7 @@ class KernelManager(BaseManager):
             self._logger.warning(f"Failed to get LTS kernel versions: {e}")
             return DEFAULT_LTS_VERSIONS.copy()
 
-    def get_installed_kernels(self) -> List[Dict]:
+    def get_installed_kernels(self) -> list[KernelInfo]:
         """
         Get a list of installed kernels.
 
@@ -137,18 +152,15 @@ class KernelManager(BaseManager):
 
         return kernels
 
-    def get_available_kernels(self) -> List[Dict]:
+    def get_available_kernels(self) -> list[KernelInfo]:
         """
         Get a list of available kernels from repositories.
 
         Returns:
             List of available kernels with their information.
         """
-        available_kernels = []
-
-        for pattern in self.kernel_patterns:
-            packages = self._search_kernel_packages(pattern)
-            available_kernels.extend(packages)
+        # Single pacman query instead of one per pattern
+        available_kernels = self._search_kernel_packages("linux")
 
         # Get installed kernels to mark them
         installed_kernels = self.get_installed_kernels()
@@ -177,7 +189,7 @@ class KernelManager(BaseManager):
 
         return sorted(filtered_kernels, key=lambda k: (k["name"], k["version"]))
 
-    def _search_kernel_packages(self, pattern: str) -> List[Dict]:
+    def _search_kernel_packages(self, pattern: str) -> list[KernelInfo]:
         """
         Search for kernel packages matching a pattern.
 
@@ -187,8 +199,6 @@ class KernelManager(BaseManager):
         Returns:
             List of matching packages.
         """
-        import subprocess
-
         cmd = ["pacman", "-Ss", f"^{pattern}"]
         result = subprocess.run(cmd, capture_output=True, text=True, check=False)
 
@@ -234,7 +244,7 @@ class KernelManager(BaseManager):
         )
         return is_kernel and not is_excluded
 
-    def _add_kernel_flags(self, kernel: Dict) -> None:
+    def _add_kernel_flags(self, kernel: KernelInfo) -> None:
         """
         Add flags to identify kernel types (RT, LTS, etc.)
 
@@ -265,7 +275,7 @@ class KernelManager(BaseManager):
             kernel["optimized"] = True
             kernel["opt_level"] = match.group(1)
 
-    def _get_kernel_modules(self, kernel_name: str) -> List[str]:
+    def _get_kernel_modules(self, kernel_name: str) -> list[str]:
         """
         Detect modules installed on the running kernel and return equivalent
         module packages for the target kernel.
@@ -309,14 +319,8 @@ class KernelManager(BaseManager):
         if headers_pkg not in modules:
             modules.insert(0, headers_pkg)
 
-        # Verify which modules exist in the repositories
-        verified_modules = []
-        for module in modules:
-            if self._package_exists_in_repos(module):
-                verified_modules.append(module)
-                self._logger.debug(f"Module verified in repos: {module}")
-            else:
-                self._logger.warning(f"Module not found in repos, skipping: {module}")
+        # Verify which modules exist in the repositories (single query)
+        verified_modules = self._filter_existing_in_repos(modules, kernel_name)
 
         if not verified_modules:
             verified_modules = [headers_pkg]
@@ -324,28 +328,55 @@ class KernelManager(BaseManager):
         self._logger.info(f"Modules to install for {kernel_name}: {verified_modules}")
         return verified_modules
 
-    def _package_exists_in_repos(self, package_name: str) -> bool:
+    def _filter_existing_in_repos(
+        self, packages: list[str], kernel_name: str
+    ) -> list[str]:
+        """Return only packages that exist in the repositories.
+
+        Uses a single ``pacman -Ssq ^<kernel>-`` call to fetch all available
+        modules for the target kernel, then filters the requested list.
         """
-        Check if a package exists in the repositories.
-
-        Args:
-            package_name: Name of the package to check.
-
-        Returns:
-            True if the package exists in repos, False otherwise.
-        """
-        import subprocess
-
-        cmd = ["pacman", "-Si", package_name]
+        if not packages:
+            return []
+        cmd = ["pacman", "-Ssq", f"^{kernel_name}-"]
         result = subprocess.run(cmd, capture_output=True, text=True, check=False)
-        return result.returncode == 0
+        if result.returncode != 0:
+            # Kernel has no modules at all — only the base package may exist
+            return []
+        available = set(result.stdout.strip().splitlines())
+        return [p for p in packages if p in available]
+
+    def get_obsolete_kernels(self) -> list[KernelInfo]:
+        """Return kernels that are installed but no longer available in repos.
+
+        These are kernels that should be removed because their packages have
+        been dropped from the repositories (e.g. EOL kernels).
+        """
+        installed = self.get_installed_kernels()
+        available = self.get_available_kernels()
+        available_names = {k["name"] for k in available}
+        running_pkg = self.get_running_kernel_package()
+
+        obsolete = []
+        for kernel in installed:
+            name = kernel["name"]
+            # Skip the running kernel — never flag it as obsolete
+            if name == running_pkg:
+                continue
+            if name not in available_names:
+                kernel["obsolete"] = True
+                obsolete.append(kernel)
+
+        self._logger.info("Obsolete kernels: %s", [k["name"] for k in obsolete])
+        return obsolete
 
     def install_kernel(
         self,
-        kernel: Dict,
-        progress_callback: Optional[Callable] = None,
-        output_callback: Optional[Callable] = None,
-        complete_callback: Optional[Callable] = None,
+        kernel: KernelInfo,
+        progress_callback: Callable | None = None,
+        output_callback: Callable | None = None,
+        complete_callback: Callable | None = None,
+        packages: list[str] | None = None,
     ) -> None:
         """
         Install a kernel and its associated modules.
@@ -355,10 +386,12 @@ class KernelManager(BaseManager):
             progress_callback: Callback function for progress updates.
             output_callback: Callback function for command output.
             complete_callback: Callback function for completion notification.
+            packages: Pre-computed package list. When provided, skips module detection.
         """
         kernel_name = kernel["name"]
-        modules = self._get_kernel_modules(kernel_name)
-        packages = [kernel_name] + modules
+        if packages is None:
+            modules = self._get_kernel_modules(kernel_name)
+            packages = [kernel_name] + modules
 
         self._logger.info(f"Installing kernel: {kernel_name}")
 
@@ -372,12 +405,25 @@ class KernelManager(BaseManager):
             operation_name=f"Installing {kernel_name}",
         )
 
+    def _get_installed_kernel_modules(self, kernel_name: str) -> list[str]:
+        """Return modules of *kernel_name* that are currently installed.
+
+        Unlike ``_get_kernel_modules`` this does NOT verify packages against
+        the repos (``pacman -Si``).  It simply lists installed packages whose
+        name starts with ``<kernel_name>-``.  This is much faster and is the
+        right approach for *remove* operations.
+        """
+        installed = self.package_manager.get_installed_packages()
+        prefix = f"{kernel_name}-"
+        return [p["name"] for p in installed if p["name"].startswith(prefix)]
+
     def remove_kernel(
         self,
-        kernel: Dict,
-        progress_callback: Optional[Callable] = None,
-        output_callback: Optional[Callable] = None,
-        complete_callback: Optional[Callable] = None,
+        kernel: KernelInfo,
+        progress_callback: Callable | None = None,
+        output_callback: Callable | None = None,
+        complete_callback: Callable | None = None,
+        packages: list[str] | None = None,
     ) -> None:
         """
         Remove a kernel and its modules.
@@ -387,17 +433,14 @@ class KernelManager(BaseManager):
             progress_callback: Callback function for progress updates.
             output_callback: Callback function for command output.
             complete_callback: Callback function for completion notification.
+            packages: Pre-computed package list. When provided, skips module detection.
         """
         kernel_name = kernel["name"]
-        modules = self._get_kernel_modules(kernel_name)
-        packages = [kernel_name] + modules
+        if packages is None:
+            modules = self._get_installed_kernel_modules(kernel_name)
+            packages = [kernel_name] + modules
 
-        # Filter for installed packages only
-        installed_packages = [
-            pkg for pkg in packages if self.package_manager.is_package_installed(pkg)
-        ]
-
-        if not installed_packages:
+        if not packages:
             self._output(output_callback, "No packages to remove.")
             if complete_callback:
                 complete_callback(True)
@@ -406,7 +449,7 @@ class KernelManager(BaseManager):
         self._logger.info(f"Removing kernel: {kernel_name}")
 
         # Use base manager's run_pacman_command
-        args = ["-R", "--noconfirm"] + installed_packages
+        args = ["-R", "--noconfirm"] + packages
         self._run_pacman_command(
             args=args,
             progress_callback=progress_callback,

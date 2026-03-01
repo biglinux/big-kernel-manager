@@ -12,7 +12,7 @@ import os
 import sys
 import logging
 from logging.handlers import RotatingFileHandler
-from typing import Optional
+
 from core.constants import LOG_DIR, LOG_FILE, APP_NAME
 
 
@@ -78,7 +78,7 @@ def setup_logging(
     return logger
 
 
-def get_logger(name: Optional[str] = None) -> logging.Logger:
+def get_logger(name: str | None = None) -> logging.Logger:
     """
     Get a logger instance.
 
