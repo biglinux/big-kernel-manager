@@ -7,13 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-01 03:05-0300\n"
 "Language-Team: Czech <cs@li.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: manual\n"
+"X-Generator: attranslate\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -266,7 +265,9 @@ msgstr "Dědictví"
 msgid ""
 "For very old graphics cards that only support OpenGL 2.1 or earlier. Only install this if newer "
 "Mesa versions don't work with your hardware."
-msgstr "Pro velmi staré grafické karty, které podporují pouze OpenGL 2.1 nebo dřívější. Toto instalujte pouze v případě, že novější verze Mesa nefungují s vaším hardwarem."
+msgstr ""
+"Pro velmi staré grafické karty, které podporují pouze OpenGL 2.1 nebo dřívější. Toto instalujte "
+"pouze v případě, že novější verze Mesa nefungují s vaším hardwarem."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py, line: 117
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:117
@@ -377,7 +378,9 @@ msgstr ""
 msgid ""
 "Your computer has an <b>NVIDIA</b> graphics card. You can install the official proprietary driver "
 "for the best performance in gaming, AI and professional applications."
-msgstr "Váš počítač má grafickou kartu <b>NVIDIA</b>. Pro nejlepší výkon ve hrách, AI a profesionálních aplikacích si můžete nainstalovat oficiální proprietární ovladač."
+msgstr ""
+"Váš počítač má grafickou kartu <b>NVIDIA</b>. Pro nejlepší výkon ve hrách, AI a profesionálních "
+"aplikacích si můžete nainstalovat oficiální proprietární ovladač."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 183
 #: usr/share/big-kernel-manager/ui/mesa_page.py:183
@@ -1181,28 +1184,31 @@ msgstr "Video / GPU"
 #: usr/share/big-kernel-manager/ui/window.py:45
 msgid "Mesa, NVIDIA, and GPU drivers."
 msgstr "Ovladače Mesa, NVIDIA a GPU."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:50
-msgid "Wi-Fi Drivers"
-msgstr "Wi-Fi ovladače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
 #: usr/share/big-kernel-manager/ui/window.py:51
 msgid "Wireless network adapter drivers."
 msgstr "Ovladače bezdrátového síťového adaptéru."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:56
-msgid "Ethernet Drivers"
-msgstr "Ethernet ovladače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
+msgid "Ethernet"
+msgstr "Ethernet"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
 #: usr/share/big-kernel-manager/ui/window.py:57
 msgid "Wired network adapter drivers."
 msgstr "Ovladače kabelového síťového adaptéru."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:62
-msgid "Bluetooth Drivers"
-msgstr "Ovladače Bluetooth"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
+msgid "Bluetooth"
+msgstr "Bluetooth"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 63
 #: usr/share/big-kernel-manager/ui/window.py:63
@@ -1223,72 +1229,65 @@ msgstr "DVB / TV"
 msgid "Digital TV tuner firmware."
 msgstr "Firmware digitálního TV tuneru."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 74
-#: usr/share/big-kernel-manager/ui/window.py:74
-msgid "Audio Firmware"
-msgstr "Audio Firmware"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
+msgid "Audio"
+msgstr "Zvuk"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 75
 #: usr/share/big-kernel-manager/ui/window.py:75
 msgid "Audio device firmware."
 msgstr "Firmware zvukového zařízení."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 80
-#: usr/share/big-kernel-manager/ui/window.py:80
-msgid "Webcam Firmware"
-msgstr "Firmware webové kamery"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
+msgid "Webcam"
+msgstr "Webová kamera"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 81
 #: usr/share/big-kernel-manager/ui/window.py:81
 msgid "Webcam device firmware."
 msgstr "Firmware zařízení webové kamery."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 86
-#: usr/share/big-kernel-manager/ui/window.py:86
-msgid "Touchscreen Firmware"
-msgstr "Firmware dotykové obrazovky"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
+msgid "Touchscreen"
+msgstr "Dotyková obrazovka"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 87
 #: usr/share/big-kernel-manager/ui/window.py:87
 msgid "Touchscreen device firmware."
 msgstr "Firmware zařízení s dotykovou obrazovkou."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:92
-msgid "Printer Drivers"
-msgstr "Ovladače tiskárny"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
+msgid "Printers"
+msgstr "Tiskárny"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 93
 #: usr/share/big-kernel-manager/ui/window.py:93
 msgid "Printer drivers and support packages."
 msgstr "Ovladače tiskárny a podpůrné balíčky."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 98
-#: usr/share/big-kernel-manager/ui/window.py:98
-msgid "3D Printer Firmware"
-msgstr "Firmware 3D tiskárny"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
+msgid "3D Printers"
+msgstr "3D tiskárny"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 99
 #: usr/share/big-kernel-manager/ui/window.py:99
 msgid "3D printer firmware."
 msgstr "Firmware 3D tiskárny."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:104
-msgid "Scanner Drivers"
-msgstr "Ovladače skeneru"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
+msgid "Scanners"
+msgstr "Skenery"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 105
 #: usr/share/big-kernel-manager/ui/window.py:105
 msgid "Scanner drivers and SANE backends."
 msgstr "Ovladače skeneru a backendy SANE."
-# 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 110
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 47
-#: usr/share/big-kernel-manager/ui/window.py:110
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
-msgid "Other Firmware"
-msgstr "Jiný firmware"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 111
 #: usr/share/big-kernel-manager/ui/window.py:111
@@ -1303,10 +1302,10 @@ msgstr "Domov"
 #: usr/share/big-kernel-manager/ui/window.py:190
 msgid "Kernel"
 msgstr "Jádro"
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:191
-msgid "Video Driver"
-msgstr "Video ovladač"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 191
+msgid "Video"
+msgstr "Video"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 218
 #: usr/share/big-kernel-manager/ui/window.py:218
@@ -1370,51 +1369,6 @@ msgstr "Spravovat"
 #: usr/share/big-kernel-manager/ui/window.py:558
 msgid "Show detected"
 msgstr "Zobrazit zjištěno"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
-msgid "Ethernet"
-msgstr "Ethernet"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
-msgid "Bluetooth"
-msgstr "Bluetooth"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
-msgid "Audio"
-msgstr "Zvuk"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
-msgid "Webcam"
-msgstr "Webová kamera"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
-msgid "Touchscreen"
-msgstr "Dotyková obrazovka"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
-msgid "Printers"
-msgstr "Tiskárny"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
-msgid "3D Printers"
-msgstr "3D tiskárny"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
-msgid "Scanners"
-msgstr "Skenery"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 93
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 329

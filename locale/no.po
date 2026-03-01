@@ -7,13 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-01 03:55-0300\n"
 "Language-Team: Norwegian <no@li.org>\n"
 "Language: no\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: manual\n"
+"X-Generator: attranslate\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -173,7 +172,9 @@ msgstr "VAAPI for AMD og NVIDIA åpen kildekode (Nouveau)"
 msgid ""
 "VDPAU for AMD/NVIDIA open-source — legacy API being replaced by VAAPI and Vulkan. Probably not "
 "needed."
-msgstr "VDPAU for AMD/NVIDIA åpen kildekode — eldre API som erstattes av VAAPI og Vulkan. Sannsynligvis ikke nødvendig."
+msgstr ""
+"VDPAU for AMD/NVIDIA åpen kildekode — eldre API som erstattes av VAAPI og Vulkan. Sannsynligvis "
+"ikke nødvendig."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 197
 #: usr/share/big-kernel-manager/ui/mesa_data.py:197
@@ -185,7 +186,9 @@ msgstr "GPU-beregning (AI / ML)"
 msgid ""
 "CUDA and OpenCL libraries for artificial intelligence, machine learning, Blender, DaVinci Resolve "
 "and other GPU-accelerated workloads."
-msgstr "CUDA- og OpenCL-biblioteker for kunstig intelligens, maskinlæring, Blender, DaVinci Resolve og andre GPU-akselererte arbeidsbelastninger."
+msgstr ""
+"CUDA- og OpenCL-biblioteker for kunstig intelligens, maskinlæring, Blender, DaVinci Resolve og "
+"andre GPU-akselererte arbeidsbelastninger."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 207
 #: usr/share/big-kernel-manager/ui/mesa_data.py:207
@@ -752,7 +755,9 @@ msgstr ""
 msgid ""
 "Driver operation failed.\n"
 "Check the terminal output for details."
-msgstr "Driveroperasjonen mislyktes.\nSjekk terminalutdataene for detaljer."
+msgstr ""
+"Driveroperasjonen mislyktes.\n"
+"Sjekk terminalutdataene for detaljer."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1146
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1146
@@ -1183,28 +1188,31 @@ msgstr "Video / GPU"
 #: usr/share/big-kernel-manager/ui/window.py:45
 msgid "Mesa, NVIDIA, and GPU drivers."
 msgstr "Mesa-, NVIDIA- og GPU-drivere."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:50
-msgid "Wi-Fi Drivers"
-msgstr "Wi-Fi-drivere"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
 #: usr/share/big-kernel-manager/ui/window.py:51
 msgid "Wireless network adapter drivers."
 msgstr "Drivere for trådløst nettverkskort."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:56
-msgid "Ethernet Drivers"
-msgstr "Ethernet-drivere"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
+msgid "Ethernet"
+msgstr "Ethernet"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
 #: usr/share/big-kernel-manager/ui/window.py:57
 msgid "Wired network adapter drivers."
 msgstr "Drivere for kablet nettverkskort."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:62
-msgid "Bluetooth Drivers"
-msgstr "Skriverdrivere"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
+msgid "Bluetooth"
+msgstr "Bluetooth"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 63
 #: usr/share/big-kernel-manager/ui/window.py:63
@@ -1225,72 +1233,65 @@ msgstr "DVB / TV"
 msgid "Digital TV tuner firmware."
 msgstr "Firmware for digital TV-tuner."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 74
-#: usr/share/big-kernel-manager/ui/window.py:74
-msgid "Audio Firmware"
-msgstr "Lydfastvare"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
+msgid "Audio"
+msgstr "Lyd"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 75
 #: usr/share/big-kernel-manager/ui/window.py:75
 msgid "Audio device firmware."
 msgstr "Firmware for lydenheten."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 80
-#: usr/share/big-kernel-manager/ui/window.py:80
-msgid "Webcam Firmware"
-msgstr "Webkamera firmware"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
+msgid "Webcam"
+msgstr "Webkamera"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 81
 #: usr/share/big-kernel-manager/ui/window.py:81
 msgid "Webcam device firmware."
 msgstr "Firmware for webkameraenhet."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 86
-#: usr/share/big-kernel-manager/ui/window.py:86
-msgid "Touchscreen Firmware"
-msgstr "Berøringsskjermfastvare"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
+msgid "Touchscreen"
+msgstr "Berøringsskjerm"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 87
 #: usr/share/big-kernel-manager/ui/window.py:87
 msgid "Touchscreen device firmware."
 msgstr "Fastvare for enhet med berøringsskjerm."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:92
-msgid "Printer Drivers"
-msgstr "Skriverdrivere"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
+msgid "Printers"
+msgstr "Skrivere"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 93
 #: usr/share/big-kernel-manager/ui/window.py:93
 msgid "Printer drivers and support packages."
 msgstr "Skriverdrivere og støttepakker."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 98
-#: usr/share/big-kernel-manager/ui/window.py:98
-msgid "3D Printer Firmware"
-msgstr "Firmware for 3D-skriver"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
+msgid "3D Printers"
+msgstr "3D-skrivere"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 99
 #: usr/share/big-kernel-manager/ui/window.py:99
 msgid "3D printer firmware."
 msgstr "Firmware for 3D-skriver."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:104
-msgid "Scanner Drivers"
-msgstr "Skannerdrivere"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
+msgid "Scanners"
+msgstr "Skannere"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 105
 #: usr/share/big-kernel-manager/ui/window.py:105
 msgid "Scanner drivers and SANE backends."
 msgstr "Skannerdrivere og SANE-backends."
-# 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 110
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 47
-#: usr/share/big-kernel-manager/ui/window.py:110
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
-msgid "Other Firmware"
-msgstr "Annen fastvare"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 111
 #: usr/share/big-kernel-manager/ui/window.py:111
@@ -1305,10 +1306,10 @@ msgstr "Hjem"
 #: usr/share/big-kernel-manager/ui/window.py:190
 msgid "Kernel"
 msgstr "Kjerne"
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:191
-msgid "Video Driver"
-msgstr "Maskinvaregjenkjenning mislyktes. Sjekk systemloggene for detaljer."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 191
+msgid "Video"
+msgstr "Video"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 218
 #: usr/share/big-kernel-manager/ui/window.py:218
@@ -1372,51 +1373,6 @@ msgstr "Administrer"
 #: usr/share/big-kernel-manager/ui/window.py:558
 msgid "Show detected"
 msgstr "Vis oppdaget"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
-msgid "Ethernet"
-msgstr "Ethernet"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
-msgid "Bluetooth"
-msgstr "Bluetooth"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
-msgid "Audio"
-msgstr "Lyd"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
-msgid "Webcam"
-msgstr "Webkamera"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
-msgid "Touchscreen"
-msgstr "Berøringsskjerm"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
-msgid "Printers"
-msgstr "Skrivere"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
-msgid "3D Printers"
-msgstr "3D-skrivere"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
-msgid "Scanners"
-msgstr "Skannere"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 93
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 329

@@ -7,13 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-01 04:00-0300\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: manual\n"
+"X-Generator: attranslate\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -623,8 +622,8 @@ msgstr "open-source"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
 #: usr/share/big-kernel-manager/ui/mesa_page.py:961
 msgid "proprietary"
-msgstr "proprietar"
-"Instalați <b>{}</b> ({} driver)?\n"
+msgstr ""
+"proprietarInstalați <b>{}</b> ({} driver)?\n"
 "\n"
 "Poate fi necesară o repornire a sistemului după instalare."
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
@@ -1192,28 +1191,31 @@ msgstr "Video / GPU"
 #: usr/share/big-kernel-manager/ui/window.py:45
 msgid "Mesa, NVIDIA, and GPU drivers."
 msgstr "Drivere Mesa, NVIDIA și GPU."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:50
-msgid "Wi-Fi Drivers"
-msgstr "Drivere Wi-Fi"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
+msgid "Wi-Fi"
+msgstr "Wifi"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
 #: usr/share/big-kernel-manager/ui/window.py:51
 msgid "Wireless network adapter drivers."
 msgstr "Drivere adaptoare de rețea fără fir."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:56
-msgid "Ethernet Drivers"
-msgstr "Drivere Ethernet"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
+msgid "Ethernet"
+msgstr "Ethernet"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
 #: usr/share/big-kernel-manager/ui/window.py:57
 msgid "Wired network adapter drivers."
 msgstr "Drivere pentru adaptor Bluetooth."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:62
-msgid "Bluetooth Drivers"
-msgstr "Drivere Bluetooth"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
+msgid "Bluetooth"
+msgstr "Bluetooth"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 63
 #: usr/share/big-kernel-manager/ui/window.py:63
@@ -1234,72 +1236,65 @@ msgstr "DVB/TV"
 msgid "Digital TV tuner firmware."
 msgstr "Firmware pentru tuner TV digital."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 74
-#: usr/share/big-kernel-manager/ui/window.py:74
-msgid "Audio Firmware"
-msgstr "Firmware audio"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
+msgid "Audio"
+msgstr "Audio"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 75
 #: usr/share/big-kernel-manager/ui/window.py:75
 msgid "Audio device firmware."
 msgstr "Firmware-ul dispozitivului audio."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 80
-#: usr/share/big-kernel-manager/ui/window.py:80
-msgid "Webcam Firmware"
-msgstr "Firmware pentru camere web"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
+msgid "Webcam"
+msgstr "Cameră web"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 81
 #: usr/share/big-kernel-manager/ui/window.py:81
 msgid "Webcam device firmware."
 msgstr "Firmware-ul dispozitivului camerei web."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 86
-#: usr/share/big-kernel-manager/ui/window.py:86
-msgid "Touchscreen Firmware"
-msgstr "Firmware pentru ecran tactil"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
+msgid "Touchscreen"
+msgstr "Imprimante"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 87
 #: usr/share/big-kernel-manager/ui/window.py:87
 msgid "Touchscreen device firmware."
 msgstr "Firmware-ul dispozitivului cu ecran tactil."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:92
-msgid "Printer Drivers"
-msgstr "Drivere de scanare"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
+msgid "Printers"
+msgstr "Imprimante"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 93
 #: usr/share/big-kernel-manager/ui/window.py:93
 msgid "Printer drivers and support packages."
 msgstr "Drivere de imprimantă și pachete de asistență."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 98
-#: usr/share/big-kernel-manager/ui/window.py:98
-msgid "3D Printer Firmware"
-msgstr "Firmware-ul imprimantei 3D"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
+msgid "3D Printers"
+msgstr "Imprimante 3D"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 99
 #: usr/share/big-kernel-manager/ui/window.py:99
 msgid "3D printer firmware."
 msgstr "Firmware-ul imprimantei 3D."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:104
-msgid "Scanner Drivers"
-msgstr "Detectarea hardware-ului a eșuat. Verificați jurnalele de sistem pentru detalii."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
+msgid "Scanners"
+msgstr "Scanere"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 105
 #: usr/share/big-kernel-manager/ui/window.py:105
 msgid "Scanner drivers and SANE backends."
 msgstr "Drivere de scanare și backend-uri SANE."
-# 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 110
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 47
-#: usr/share/big-kernel-manager/ui/window.py:110
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
-msgid "Other Firmware"
-msgstr "Alt firmware"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 111
 #: usr/share/big-kernel-manager/ui/window.py:111
@@ -1314,10 +1309,10 @@ msgstr "Acasă"
 #: usr/share/big-kernel-manager/ui/window.py:190
 msgid "Kernel"
 msgstr "Nucleu"
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:191
-msgid "Video Driver"
-msgstr "Driver video"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 191
+msgid "Video"
+msgstr "Video"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 218
 #: usr/share/big-kernel-manager/ui/window.py:218
@@ -1381,51 +1376,6 @@ msgstr "Gestionează"
 #: usr/share/big-kernel-manager/ui/window.py:558
 msgid "Show detected"
 msgstr "Afișare detectată"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
-msgid "Wi-Fi"
-msgstr "Wifi"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
-msgid "Ethernet"
-msgstr "Ethernet"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
-msgid "Bluetooth"
-msgstr "Bluetooth"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
-msgid "Audio"
-msgstr "Audio"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
-msgid "Webcam"
-msgstr "Cameră web"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
-msgid "Touchscreen"
-msgstr "Imprimante"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
-msgid "Printers"
-msgstr "Imprimante"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
-msgid "3D Printers"
-msgstr "Imprimante 3D"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
-msgid "Scanners"
-msgstr "Scanere"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 93
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 329

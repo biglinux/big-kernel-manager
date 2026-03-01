@@ -7,13 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-03-01 02:20-0300\n"
 "Language-Team: Spanish <es@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: manual\n"
+"X-Generator: attranslate\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -1190,28 +1189,31 @@ msgstr "Vídeo/GPU"
 #: usr/share/big-kernel-manager/ui/window.py:45
 msgid "Mesa, NVIDIA, and GPU drivers."
 msgstr "Controladores Mesa, NVIDIA y GPU."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:50
-msgid "Wi-Fi Drivers"
-msgstr "Controladores de Wi-Fi"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
+msgid "Wi-Fi"
+msgstr "Wifi"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
 #: usr/share/big-kernel-manager/ui/window.py:51
 msgid "Wireless network adapter drivers."
 msgstr "Controladores de adaptadores de red inalámbrica."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:56
-msgid "Ethernet Drivers"
-msgstr "Controladores Ethernet"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
+msgid "Ethernet"
+msgstr "Ethernet"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
 #: usr/share/big-kernel-manager/ui/window.py:57
 msgid "Wired network adapter drivers."
 msgstr "Controladores de adaptadores de red cableados."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:62
-msgid "Bluetooth Drivers"
-msgstr "Controladores Bluetooth"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
+msgid "Bluetooth"
+msgstr "bluetooth"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 63
 #: usr/share/big-kernel-manager/ui/window.py:63
@@ -1232,72 +1234,65 @@ msgstr "DVB/TV"
 msgid "Digital TV tuner firmware."
 msgstr "Firmware del dispositivo de audio."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 74
-#: usr/share/big-kernel-manager/ui/window.py:74
-msgid "Audio Firmware"
-msgstr "firmware de audio"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
+msgid "Audio"
+msgstr "Audio"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 75
 #: usr/share/big-kernel-manager/ui/window.py:75
 msgid "Audio device firmware."
 msgstr "Firmware del dispositivo de audio."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 80
-#: usr/share/big-kernel-manager/ui/window.py:80
-msgid "Webcam Firmware"
-msgstr "Firmware de la cámara web"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
+msgid "Webcam"
+msgstr "cámara web"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 81
 #: usr/share/big-kernel-manager/ui/window.py:81
 msgid "Webcam device firmware."
 msgstr "Firmware del dispositivo de cámara web."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 86
-#: usr/share/big-kernel-manager/ui/window.py:86
-msgid "Touchscreen Firmware"
-msgstr "Firmware de pantalla táctil"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
+msgid "Touchscreen"
+msgstr "Pantalla táctil"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 87
 #: usr/share/big-kernel-manager/ui/window.py:87
 msgid "Touchscreen device firmware."
 msgstr "Firmware del dispositivo con pantalla táctil."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:92
-msgid "Printer Drivers"
-msgstr "Controladores de impresora"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
+msgid "Printers"
+msgstr "Impresoras"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 93
 #: usr/share/big-kernel-manager/ui/window.py:93
 msgid "Printer drivers and support packages."
 msgstr "Controladores de impresora y paquetes de soporte."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 98
-#: usr/share/big-kernel-manager/ui/window.py:98
-msgid "3D Printer Firmware"
-msgstr "Firmware de impresora 3D"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
+msgid "3D Printers"
+msgstr "Impresoras 3D"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 99
 #: usr/share/big-kernel-manager/ui/window.py:99
 msgid "3D printer firmware."
 msgstr "Firmware de impresora 3D."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:104
-msgid "Scanner Drivers"
-msgstr "Controladores de escáner"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
+msgid "Scanners"
+msgstr "Escáneres"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 105
 #: usr/share/big-kernel-manager/ui/window.py:105
 msgid "Scanner drivers and SANE backends."
 msgstr "Controladores de escáner y backends SANE."
-# 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 110
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 47
-#: usr/share/big-kernel-manager/ui/window.py:110
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
-msgid "Other Firmware"
-msgstr "Otro firmware"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 111
 #: usr/share/big-kernel-manager/ui/window.py:111
@@ -1312,10 +1307,10 @@ msgstr "Hogar"
 #: usr/share/big-kernel-manager/ui/window.py:190
 msgid "Kernel"
 msgstr "Núcleo"
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:191
-msgid "Video Driver"
-msgstr "Controlador de vídeo"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 191
+msgid "Video"
+msgstr "Vídeo"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 218
 #: usr/share/big-kernel-manager/ui/window.py:218
@@ -1379,51 +1374,6 @@ msgstr "Administrar"
 #: usr/share/big-kernel-manager/ui/window.py:558
 msgid "Show detected"
 msgstr "Mostrar detectado"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
-msgid "Wi-Fi"
-msgstr "Wifi"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
-msgid "Ethernet"
-msgstr "Ethernet"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
-msgid "Bluetooth"
-msgstr "bluetooth"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
-msgid "Audio"
-msgstr "Audio"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
-msgid "Webcam"
-msgstr "cámara web"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
-msgid "Touchscreen"
-msgstr "Pantalla táctil"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
-msgid "Printers"
-msgstr "Impresoras"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
-msgid "3D Printers"
-msgstr "Impresoras 3D"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
-msgid "Scanners"
-msgstr "Escáneres"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 93
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 329
