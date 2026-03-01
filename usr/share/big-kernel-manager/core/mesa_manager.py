@@ -18,6 +18,7 @@ from core.base_manager import BaseManager
 from core.package_manager import PackageManager
 from core.logging_config import get_logger
 from core.subprocess_env import subprocess_env
+from utils.i18n import _
 
 
 def _load_mesa_drivers() -> list[dict]:
@@ -112,7 +113,7 @@ class MesaManager(BaseManager):
 
         if not selected_driver:
             self._logger.error(f"Driver not found: {driver_id}")
-            self._output(output_callback, f"Driver not found: {driver_id}")
+            self._output(output_callback, _("Driver not found: {}").format(driver_id))
             if complete_callback:
                 complete_callback(False)
             return
@@ -147,9 +148,9 @@ class MesaManager(BaseManager):
             output_callback: Callback function for command output.
             complete_callback: Callback function for completion notification.
         """
-        self._progress(progress_callback, 0.1, f"Applying {driver['name']} driver...")
+        self._progress(progress_callback, 0.1, _("Applying {} driver...").format(driver['name']))
         self._output(
-            output_callback, f"Starting {driver['name']} driver installation..."
+            output_callback, _("Starting {} driver installation...").format(driver['name'])
         )
 
         try:
@@ -157,7 +158,7 @@ class MesaManager(BaseManager):
             installed_conflicts = []
             if driver["conflicts"]:
                 self._progress(
-                    progress_callback, 0.2, "Checking for conflicting packages..."
+                    progress_callback, 0.2, _("Checking for conflicting packages...")
                 )
 
                 installed_conflicts = [
@@ -169,12 +170,12 @@ class MesaManager(BaseManager):
                 if installed_conflicts:
                     self._output(
                         output_callback,
-                        f"Removing conflicts: {', '.join(installed_conflicts)}",
+                        _("Removing conflicts: {}").format(', '.join(installed_conflicts)),
                     )
 
             # Step 2: Check available packages to install
             self._progress(
-                progress_callback, 0.3, f"Checking {driver['name']} packages..."
+                progress_callback, 0.3, _("Checking {} packages...").format(driver['name'])
             )
 
             packages_to_install = []
@@ -183,17 +184,17 @@ class MesaManager(BaseManager):
                     packages_to_install.append(pkg)
                 else:
                     self._output(
-                        output_callback, f"⚠️ Package {pkg} not available, skipping..."
+                        output_callback, _("⚠️ Package {} not available, skipping...").format(pkg)
                     )
 
             if not packages_to_install:
-                self._output(output_callback, "❌ No packages available to install.")
+                self._output(output_callback, _("❌ No packages available to install."))
                 if complete_callback:
                     complete_callback(False)
                 return
 
             self._output(
-                output_callback, f"Installing: {', '.join(packages_to_install)}"
+                output_callback, _("Installing: {}").format(', '.join(packages_to_install))
             )
 
             env = subprocess_env()
@@ -201,7 +202,7 @@ class MesaManager(BaseManager):
             # Step 3: Remove conflicting packages (if any)
             if installed_conflicts:
                 self._progress(
-                    progress_callback, 0.35, "Removing conflicting packages..."
+                    progress_callback, 0.35, _("Removing conflicting packages...")
                 )
 
                 remove_cmd = [
@@ -233,11 +234,11 @@ class MesaManager(BaseManager):
 
                 if process.returncode != 0:
                     self._progress(
-                        progress_callback, 0.0, "Failed to remove conflicting packages."
+                        progress_callback, 0.0, _("Failed to remove conflicting packages.")
                     )
                     self._output(
                         output_callback,
-                        f"❌ Failed to remove conflicts (exit code: {process.returncode})",
+                        _("❌ Failed to remove conflicts (exit code: {})").format(process.returncode),
                     )
                     if complete_callback:
                         complete_callback(False)
@@ -245,7 +246,7 @@ class MesaManager(BaseManager):
 
             # Step 4: Install the new driver packages
             self._progress(
-                progress_callback, 0.5, f"Installing {driver['name']} driver..."
+                progress_callback, 0.5, _("Installing {} driver...").format(driver['name'])
             )
 
             install_cmd = [
@@ -278,19 +279,19 @@ class MesaManager(BaseManager):
             process.wait()
 
             if process.returncode != 0:
-                self._progress(progress_callback, 0.0, "Failed to apply driver.")
+                self._progress(progress_callback, 0.0, _("Failed to apply driver."))
                 self._output(
                     output_callback,
-                    f"❌ Operation failed (exit code: {process.returncode})",
+                    _("❌ Operation failed (exit code: {})").format(process.returncode),
                 )
                 if complete_callback:
                     complete_callback(False)
                 return
 
             # Success
-            self._progress(progress_callback, 1.0, "Driver applied successfully!")
+            self._progress(progress_callback, 1.0, _("Driver applied successfully!"))
             self._output(
-                output_callback, f"✅ {driver['name']} driver applied successfully!"
+                output_callback, _("✅ {} driver applied successfully!").format(driver['name'])
             )
 
             if complete_callback:
@@ -298,8 +299,8 @@ class MesaManager(BaseManager):
 
         except Exception as e:
             self._logger.error(f"Error applying driver: {e}")
-            self._progress(progress_callback, 0.0, f"Error: {str(e)}")
-            self._output(output_callback, f"❌ Error: {str(e)}")
+            self._progress(progress_callback, 0.0, _("Error: {}").format(str(e)))
+            self._output(output_callback, _("❌ Error: {}").format(str(e)))
             if complete_callback:
                 complete_callback(False)
 

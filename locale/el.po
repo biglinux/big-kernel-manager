@@ -2,115 +2,549 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the big-kernel-manager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-01 00:54-0300\n"
 "Last-Translator: Translation Automator <auto@translator.ai>\n"
 "Language-Team: Greek <el@li.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-# 
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/driver_installer.py:57
+#: usr/share/big-kernel-manager/ui/kernel_page.py:688
+#: usr/share/big-kernel-manager/ui/mesa_page.py:985
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1211
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1222
+#: usr/share/big-kernel-manager/ui/category_page.py:587
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
+#: usr/share/big-kernel-manager/ui/home_page.py:712
+#: usr/share/big-kernel-manager/ui/home_page.py:723
+#, python-brace-format
+msgid "Installing {}"
+msgstr "Εγκατάσταση {}"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/core/driver_installer.py:85
+#: usr/share/big-kernel-manager/ui/kernel_page.py:777
+#: usr/share/big-kernel-manager/ui/kernel_page.py:847
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1063
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1249
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1260
+#: usr/share/big-kernel-manager/ui/category_page.py:625
+#, python-brace-format
+msgid "Removing {}"
+msgstr "Αφαίρεση {}"
+
+#: usr/share/big-kernel-manager/core/driver_installer.py:99
+#, python-brace-format
+msgid "pamac-installer not found. Cannot install AUR package {}."
+msgstr ""
+"Το pamac-installer δεν βρέθηκε. Δεν είναι δυνατή η εγκατάσταση του πακέτου "
+"AUR {}."
+
+#: usr/share/big-kernel-manager/core/driver_installer.py:113
+msgid "Continue the installation in the pamac window that was opened."
+msgstr "Συνεχίστε την εγκατάσταση στο παράθυρο pamac που άνοιξε."
+
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:213
+#: usr/share/big-kernel-manager/ui/mesa_page.py:951
+#, python-brace-format
+msgid "Remove the installed NVIDIA driver ({}) first."
+msgstr "Καταργήστε πρώτα το εγκατεστημένο πρόγραμμα οδήγησης NVIDIA ({})."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:310
+#: usr/share/big-kernel-manager/core/base_manager.py:178
+#, python-brace-format
+msgid "Command: {}"
+msgstr "Εντολή: {}"
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:312
+#: usr/share/big-kernel-manager/core/base_manager.py:177
+#: usr/share/big-kernel-manager/core/base_manager.py:180
+#, python-brace-format
+msgid "Starting {}..."
+msgstr "Ξεκινώντας {}..."
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
+msgid "Completed"
+msgstr "Ολοκληρώθηκε το"
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 308
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:367
+msgid "Failed"
+msgstr "Αποτυχία"
+
+#: usr/share/big-kernel-manager/core/base_manager.py:137
+#, python-brace-format
+msgid "Database locked. Retrying in {} seconds..."
+msgstr "Η βάση δεδομένων είναι κλειδωμένη. Επανάληψη σε {} δευτερόλεπτα..."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:142
+#, python-brace-format
+msgid "Waiting {} s before retry..."
+msgstr "Αναμονή {} s πριν από την επανάληψη..."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:147
+#, python-brace-format
+msgid "Retry attempt {} of {}..."
+msgstr "Επανάληψη προσπάθειας {} από {}..."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/core/base_manager.py:202
+#: usr/share/big-kernel-manager/core/mesa_manager.py:302
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Σφάλμα: {}"
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 333
+#: usr/share/big-kernel-manager/core/base_manager.py:230
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:407
+msgid "Operation cancelled by user."
+msgstr "Η λειτουργία ακυρώθηκε από τον χρήστη."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: usr/share/big-kernel-manager/core/base_manager.py:253
+#, python-brace-format
+msgid "Still working... ({:.0%} complete)"
+msgstr "Ακόμα σε επεξεργασία... ({:.0%} ολοκληρωμένο)"
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: usr/share/big-kernel-manager/core/base_manager.py:279
+msgid "Operation cancelled"
+msgstr "Η λειτουργία ακυρώθηκε"
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: usr/share/big-kernel-manager/core/base_manager.py:280
+msgid "Operation was cancelled."
+msgstr "Η λειτουργία ακυρώθηκε."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: usr/share/big-kernel-manager/core/base_manager.py:285
+#, python-brace-format
+msgid "{}  complete!"
+msgstr "{}  ολοκληρώθηκε!"
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/core/base_manager.py:289
+#, python-brace-format
+msgid "{}  completed successfully."
+msgstr "Το {} ολοκληρώθηκε με επιτυχία."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: usr/share/big-kernel-manager/core/base_manager.py:295
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} απέτυχε."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/base_manager.py:299
+#, python-brace-format
+msgid "{}  failed (exit code: {})"
+msgstr "Το {} απέτυχε (κωδικός εξόδου: {})"
+
+#: usr/share/big-kernel-manager/core/base_manager.py:310
+msgid ""
+"Package not found in repositories. The package name may have changed or been removed.\n"
+"Suggestion: Try refreshing the database with 'sudo pacman -Sy' and search for the correct name."
+msgstr ""
+"Το πακέτο δεν βρέθηκε στα αποθετήρια. Το όνομα του πακέτου μπορεί να έχει αλλάξει ή να έχει αφαιρεθεί.\n"
+"Πρόταση: Δοκιμάστε να ανανεώσετε τη βάση δεδομένων με 'sudo pacman -Sy' και αναζητήστε το σωστό όνομα."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:319
+msgid ""
+"A conflict prevented the operation from completing.\n"
+"Suggestion: Clean the cache and update with 'sudo pacman -Scc' followed by 'sudo pacman -Syyu'."
+msgstr ""
+"Μια σύγκρουση εμπόδισε την ολοκλήρωση της λειτουργίας.\n"
+"Πρόταση: Καθαρίστε την προσωρινή μνήμη και ενημερώστε το με το 'sudo pacman -Scc' ακολουθούμενο από το 'sudo pacman -Syyu'."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:327
+msgid ""
+"Some files from this package already exist on the system.\n"
+"Suggestion: Check which package owns the file with 'pacman -Qo <file_path>' and resolve the conflict."
+msgstr ""
+"Ορισμένα αρχεία από αυτό το πακέτο υπάρχουν ήδη στο σύστημα.\n"
+"Πρόταση: Ελέγξτε σε ποιο πακέτο ανήκει το αρχείο με \"pacman -Qo <file_path>\" και επιλύστε τη διένεξη."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:335
+msgid ""
+"Required dependencies could not be resolved.\n"
+"Suggestion: Update the full system first with 'sudo pacman -Syu'."
+msgstr ""
+"Δεν ήταν δυνατή η επίλυση των απαιτούμενων εξαρτήσεων.\n"
+"Πρόταση: Ενημερώστε πρώτα το πλήρες σύστημα με το 'sudo pacman -Syu'."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:342
+msgid ""
+"Package signature could not be verified.\n"
+"Suggestion: Update your keyrings with 'sudo pacman -S archlinux-keyring manjaro-keyring'."
+msgstr ""
+"Δεν ήταν δυνατή η επαλήθευση της υπογραφής του πακέτου.\n"
+"Πρόταση: Ενημερώστε τα μπρελόκ σας με το 'sudo pacman -S archlinux-keyring manjaro-keyring'."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:350
+msgid ""
+"The package database is locked by another process.\n"
+"If no other package manager is running, remove the lock with 'sudo rm /var/lib/pacman/db.lck'."
+msgstr ""
+"Η βάση δεδομένων του πακέτου κλειδώνεται από άλλη διαδικασία.\n"
+"Εάν δεν εκτελείται άλλος διαχειριστής πακέτων, αφαιρέστε το κλείδωμα με το 'sudo rm /var/lib/pacman/db.lck'."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:358
+msgid ""
+"Not enough disk space to complete the operation.\n"
+"Suggestion: Free space by clearing the package cache with 'sudo pacman -Scc'."
+msgstr ""
+"Δεν υπάρχει αρκετός χώρος στο δίσκο για την ολοκλήρωση της λειτουργίας.\n"
+"Πρόταση: Ελευθερώστε χώρο εκκαθαρίζοντας την προσωρινή μνήμη του πακέτου με το 'sudo pacman -Scc'."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:366
+msgid ""
+"Could not download required files.\n"
+"Suggestion: Check your internet connection. If the problem persists, try updating your mirror list."
+msgstr ""
+"Δεν ήταν δυνατή η λήψη των απαιτούμενων αρχείων.\n"
+"Πρόταση: Ελέγξτε τη σύνδεσή σας στο Διαδίκτυο. Εάν το πρόβλημα παραμένει, δοκιμάστε να ενημερώσετε τη λίστα καθρέφτη σας."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:374
+msgid ""
+"A downloaded package is corrupted.\n"
+"Suggestion: Clear the cache with 'sudo pacman -Scc' and try again."
+msgstr ""
+"Ένα πακέτο λήψης είναι κατεστραμμένο.\n"
+"Πρόταση: Εκκαθαρίστε την προσωρινή μνήμη με το 'sudo pacman -Scc' και δοκιμάστε ξανά."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:391
+msgid "Generating GRUB configuration..."
+msgstr "Δημιουργία διαμόρφωσης GRUB..."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:392
+msgid "Running post-transaction hooks..."
+msgstr "Εκτέλεση αγκίστρων μετά τη συναλλαγή..."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/base_manager.py:393
+msgid "Installing packages..."
+msgstr "Εγκατάσταση πακέτων..."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:394
+msgid "Removing packages..."
+msgstr "Αφαίρεση πακέτων..."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:395
+msgid "Checking for file conflicts..."
+msgstr "Συγχρονισμός βάσεων δεδομένων πακέτων..."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:396
+msgid "Checking dependencies..."
+msgstr "Έλεγχος εξαρτήσεων..."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:400
+msgid "Synchronizing package databases..."
+msgstr "Συγχρονισμός βάσεων δεδομένων πακέτων..."
+
+#: usr/share/big-kernel-manager/core/base_manager.py:423
+#: usr/share/big-kernel-manager/ui/home_page.py:643
+msgid "Downloading packages..."
+msgstr "Λήψη πακέτων..."
+
+#: usr/share/big-kernel-manager/core/mesa_manager.py:116
+#, python-brace-format
+msgid "Driver not found: {}"
+msgstr "Το πρόγραμμα οδήγησης δεν βρέθηκε: {}"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
+#: usr/share/big-kernel-manager/core/mesa_manager.py:151
+#, python-brace-format
+msgid "Applying {} driver..."
+msgstr "Εφαρμογή  {}προγράμματος οδήγησης..."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+#: usr/share/big-kernel-manager/core/mesa_manager.py:153
+#, python-brace-format
+msgid "Starting {} driver installation..."
+msgstr "Έναρξη εγκατάστασης προγράμματος οδήγησης {}..."
+
+#: usr/share/big-kernel-manager/core/mesa_manager.py:161
+msgid "Checking for conflicting packages..."
+msgstr "Έλεγχος για πακέτα σε διένεξη..."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/core/mesa_manager.py:173
+#, python-brace-format
+msgid "Removing conflicts: {}"
+msgstr "Κατάργηση διενέξεων: {}"
+
+#: usr/share/big-kernel-manager/core/mesa_manager.py:178
+#, python-brace-format
+msgid "Checking {} packages..."
+msgstr "Έλεγχος {} πακέτων..."
+
+#: usr/share/big-kernel-manager/core/mesa_manager.py:187
+#, python-brace-format
+msgid "⚠️ Package {} not available, skipping..."
+msgstr "⚠️ Το πακέτο {} δεν είναι διαθέσιμο, παράβλεψη..."
+
+#: usr/share/big-kernel-manager/core/mesa_manager.py:191
+msgid "❌ No packages available to install."
+msgstr "❌ Δεν υπάρχουν διαθέσιμα πακέτα για εγκατάσταση."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/mesa_manager.py:197
+#, python-brace-format
+msgid "Installing: {}"
+msgstr "Εγκατάσταση: {}"
+
+#: usr/share/big-kernel-manager/core/mesa_manager.py:205
+msgid "Removing conflicting packages..."
+msgstr "Κατάργηση πακέτων σε διένεξη..."
+
+#: usr/share/big-kernel-manager/core/mesa_manager.py:237
+msgid "Failed to remove conflicting packages."
+msgstr "Αποτυχία κατάργησης πακέτων σε διένεξη."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/mesa_manager.py:241
+#, python-brace-format
+msgid "❌ Failed to remove conflicts (exit code: {})"
+msgstr "❌ Αποτυχία κατάργησης διενέξεων (κωδικός εξόδου: {})"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
+#: usr/share/big-kernel-manager/core/mesa_manager.py:249
+#, python-brace-format
+msgid "Installing {} driver..."
+msgstr "Εγκατάσταση προγράμματος οδήγησης {}..."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
+#: usr/share/big-kernel-manager/core/mesa_manager.py:282
+msgid "Failed to apply driver."
+msgstr "Αποτυχία εφαρμογής προγράμματος οδήγησης."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/mesa_manager.py:285
+#, python-brace-format, fuzzy
+msgid "❌ Operation failed (exit code: {})"
+msgstr ""
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/core/mesa_manager.py:292
+msgid "Driver applied successfully!"
+msgstr "Το πρόγραμμα οδήγησης εφαρμόστηκε με επιτυχία!"
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/core/mesa_manager.py:294
+#, python-brace-format
+msgid "✅ {} driver applied successfully!"
+msgstr "✅ Το πρόγραμμα οδήγησης {} εφαρμόστηκε με επιτυχία!"
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/core/mesa_manager.py:303
+#, python-brace-format
+msgid "❌ Error: {}"
+msgstr "❌ Σφάλμα: {}"
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/ui/application.py:143
+#: usr/share/big-kernel-manager/ui/kernel_page.py:165
+#: usr/share/big-kernel-manager/ui/mesa_page.py:319
+msgid "Error"
+msgstr "Σφάλμα"
+
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
-#: NEEDS WORK
+#: usr/share/big-kernel-manager/ui/base_page.py:39
+#: usr/share/big-kernel-manager/ui/base_page.py:44
 msgid "Loading..."
 msgstr "Φόρτωση..."
-# 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
-#: NEEDS WORK
-msgid "Operation progress"
-msgstr "Πρόοδος λειτουργίας"
-# 
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py:67
-msgid "Terminal Output"
-msgstr "Τερματική έξοδος"
-# 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
-#: NEEDS WORK
-msgid "Command output"
-msgstr "Έξοδος εντολής"
-# 
+
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
+#: usr/share/big-kernel-manager/ui/base_page.py:40
+msgid "Loading"
+msgstr "Φόρτωση"
+
+#: usr/share/big-kernel-manager/ui/base_page.py:55
+msgid "Still loading… Check your network connection."
+msgstr "Ακόμα φορτώνεται… Ελέγξτε τη σύνδεσή σας στο δίκτυο."
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:146
+#: usr/share/big-kernel-manager/ui/kernel_page.py:107
 msgid "Installed Kernels"
 msgstr "Εγκατεστημένοι πυρήνες"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:155
-msgid "Available Kernels"
-msgstr "Διαθέσιμοι πυρήνες"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:211
-#, python-brace-format
-msgid "Version: {}"
-msgstr "Έκδοση: {}"
-# 
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/kernel_page.py:119
+msgid "Remove all obsolete kernels"
+msgstr "Αφαιρέστε όλους τους απαρχαιωμένους πυρήνες"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 89
+#: usr/share/big-kernel-manager/ui/kernel_page.py:261
+msgid "Kernel in use"
+msgstr "Πυρήνας σε χρήση"
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: NEEDS WORK
+#: usr/share/big-kernel-manager/ui/kernel_page.py:267
 msgid "In Use"
 msgstr "Σε Χρήση"
-# 
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:331
+msgid "Obsolete Kernels — Removal Recommended"
+msgstr "Απαρχαιωμένοι πυρήνες — Συνιστάται η αφαίρεση"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:347
+#: usr/share/big-kernel-manager/ui/home_page.py:770
+msgid "Warning"
+msgstr "Προειδοποίηση"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:360
+msgid "No longer receives security updates"
+msgstr "Δεν λαμβάνει πλέον ενημερώσεις ασφαλείας"
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:267
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:377
+#: usr/share/big-kernel-manager/ui/kernel_page.py:367
+#: usr/share/big-kernel-manager/ui/kernel_page.py:425
+#: usr/share/big-kernel-manager/ui/kernel_page.py:757
+#: usr/share/big-kernel-manager/ui/mesa_page.py:762
+#: usr/share/big-kernel-manager/ui/mesa_page.py:910
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1050
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1170
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1235
+#: usr/share/big-kernel-manager/ui/category_page.py:432
+#: usr/share/big-kernel-manager/ui/category_page.py:607
 msgid "Remove"
 msgstr "Κατάργηση"
-# 
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
-#: NEEDS WORK
+#: usr/share/big-kernel-manager/ui/kernel_page.py:372
+#: usr/share/big-kernel-manager/ui/kernel_page.py:430
 #, python-brace-format
 msgid "Remove kernel {}"
 msgstr "Αφαίρεση πυρήνα {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:275
-msgid "Cannot remove the currently running kernel"
-msgstr "Δεν είναι δυνατή η κατάργηση του πυρήνα που εκτελείται αυτήν τη στιγμή"
-# 
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:416
+msgid "Last backup"
+msgstr "Τελευταίο αντίγραφο ασφαλείας"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:420
+msgid "At least one backup kernel must remain installed"
+msgstr ""
+"Πρέπει να παραμείνει εγκατεστημένος τουλάχιστον ένας πυρήνας αντιγράφων "
+"ασφαλείας"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:439
+msgid ""
+"Recommended for most users. These kernels receive security updates for years"
+" and are thoroughly tested."
+msgstr ""
+"Συνιστάται για τους περισσότερους χρήστες. Αυτοί οι πυρήνες λαμβάνουν "
+"ενημερώσεις ασφαλείας για χρόνια και ελέγχονται διεξοδικά."
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:443
+msgid ""
+"Always up to date with the latest features and hardware support. Good if you"
+" need the newest drivers."
+msgstr ""
+"Πάντα ενημερωμένος με τις πιο πρόσφατες δυνατότητες και την υποστήριξη "
+"υλικού. Καλό αν χρειάζεστε τα νεότερα προγράμματα οδήγησης."
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:447
+msgid ""
+"Tuned for gaming and desktop responsiveness. A good option for daily use "
+"with extra performance."
+msgstr ""
+"Συντονισμένος για ανταπόκριση στα παιχνίδια και στην επιφάνεια εργασίας. Μια"
+" καλή επιλογή για καθημερινή χρήση με επιπλέον απόδοση."
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:451
+msgid ""
+"Built for audio/video production needing precise timing. May be incompatible"
+" with some drivers (e.g. NVIDIA). Only for advanced users."
+msgstr ""
+"Σχεδιασμένο για παραγωγή ήχου/βίντεο που χρειάζεται ακριβή χρονισμό. Μπορεί "
+"να μην είναι συμβατό με ορισμένα προγράμματα οδήγησης (π.χ. NVIDIA). Μόνο "
+"για προχωρημένους χρήστες."
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:492
+msgid "LTS — Long Term Support (Recommended)"
+msgstr "LTS — Μακροπρόθεσμη υποστήριξη (Συνιστάται)"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:493
+msgid "Standard"
+msgstr "Πρότυπο"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
+#: usr/share/big-kernel-manager/ui/kernel_page.py:494
+msgid "Xanmod (Performance)"
+msgstr "Απόκρυψη διαθέσιμων πυρήνων"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:495
+msgid "Real-Time (Advanced)"
+msgstr "Σε πραγματικό χρόνο (Για προχωρημένους)"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:566
+#: usr/share/big-kernel-manager/ui/kernel_page.py:591
+#, python-brace-format
+msgid "Show {} available"
+msgstr "Εμφάνιση {} διαθέσιμων"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
+#: usr/share/big-kernel-manager/ui/kernel_page.py:594
+msgid "Hide available kernels"
+msgstr "Απόκρυψη διαθέσιμων πυρήνων"
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:280
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:308
+#: usr/share/big-kernel-manager/ui/kernel_page.py:636
+#: usr/share/big-kernel-manager/ui/kernel_page.py:669
+#: usr/share/big-kernel-manager/ui/mesa_page.py:767
+#: usr/share/big-kernel-manager/ui/mesa_page.py:929
+#: usr/share/big-kernel-manager/ui/mesa_page.py:972
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1176
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1197
+#: usr/share/big-kernel-manager/ui/category_page.py:436
+#: usr/share/big-kernel-manager/ui/category_page.py:569
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:245
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:366
+#: usr/share/big-kernel-manager/ui/home_page.py:332
+#: usr/share/big-kernel-manager/ui/home_page.py:431
+#: usr/share/big-kernel-manager/ui/home_page.py:694
 msgid "Install"
 msgstr "Εγκατάσταση"
-# 
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
-#: NEEDS WORK
+#: usr/share/big-kernel-manager/ui/kernel_page.py:639
+#: usr/share/big-kernel-manager/ui/kernel_page.py:642
 #, python-brace-format
 msgid "Install kernel {}"
 msgstr "Εγκατάσταση πυρήνα {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:299
-msgid "Install Kernel"
-msgstr "Εγκατάσταση πυρήνα"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
-#: NEEDS WORK
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/kernel_page.py:660
+#: usr/share/big-kernel-manager/ui/mesa_page.py:769
+#: usr/share/big-kernel-manager/ui/category_page.py:444
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:250
+#: usr/share/big-kernel-manager/ui/home_page.py:335
+#: usr/share/big-kernel-manager/ui/home_page.py:434
 #, python-brace-format
-msgid ""
-"Are you sure you want to install the <b>{}</b> kernel?\n"
-"\n"
-"This will install the kernel and its modules."
-msgstr ""
-"Είστε σίγουροι ότι θέλετε να εγκαταστήσετε τον <b>{}</b> πυρήνα;\n"
-"\n"
-"Αυτό θα εγκαταστήσει τον πυρήνα και τα modules του."
-# 
+msgid "Install {}"
+msgstr "Εγκατάσταση {}"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:661
+msgid "The following packages will be installed:"
+msgstr "Θα εγκατασταθούν τα ακόλουθα πακέτα:"
+
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -119,136 +553,513 @@ msgstr ""
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 374
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 161
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 218
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:307
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:376
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:270
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:161
-#. Cancel button (shown during operation)
+#: usr/share/big-kernel-manager/ui/kernel_page.py:668
+#: usr/share/big-kernel-manager/ui/kernel_page.py:756
+#: usr/share/big-kernel-manager/ui/kernel_page.py:824
+#: usr/share/big-kernel-manager/ui/mesa_page.py:464
+#: usr/share/big-kernel-manager/ui/mesa_page.py:971
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1013
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1049
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1196
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1234
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:145
+#: usr/share/big-kernel-manager/ui/category_page.py:568
+#: usr/share/big-kernel-manager/ui/category_page.py:606
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:365
+#: usr/share/big-kernel-manager/ui/home_page.py:628
+#: usr/share/big-kernel-manager/ui/home_page.py:693
 msgid "Cancel"
 msgstr "Ακύρωση"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:327
-#, python-brace-format
-msgid "Installing {}"
-msgstr "Εγκατάσταση {}"
-# 
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:328
-#, python-brace-format
-msgid "Preparing to install {} kernel..."
-msgstr "Προετοιμασία για εγκατάσταση{}  πυρήνα..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:336
-#. Add initial terminal output
-#, python-brace-format
-msgid "Starting installation of {} kernel..."
-msgstr "Έναρξη εγκατάστασης του{}πυρήνα..."
-# 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:337
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:406
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:300
-msgid "This may take a few minutes. Please wait..."
-msgstr "Αυτό μπορεί να διαρκέσει μερικά λεπτά. Παρακαλώ περιμένετε..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:360
-msgid "Cannot Remove Running Kernel"
-msgstr "Δεν είναι δυνατή η κατάργηση του εκτελούμενου πυρήνα"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:361
-msgid ""
-"The kernel you are trying to remove is currently in use.\n"
-"Please boot into a different kernel first."
-msgstr ""
-"Ο πυρήνας που προσπαθείτε να καταργήσετε χρησιμοποιείται αυτήν τη στιγμή.\n"
-"Παρακαλώ εκκινήστε πρώτα έναν διαφορετικό πυρήνα."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:368
-msgid "Remove Kernel"
-msgstr "Αφαίρεση πυρήνα"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
-#: NEEDS WORK
-#, python-brace-format
-msgid ""
-"Are you sure you want to remove the <b>{}</b> kernel?\n"
-"\n"
-"This will remove the kernel and its modules."
-msgstr ""
-"Είστε σίγουροι ότι θέλετε να αφαιρέσετε τον <b>{}</b> πυρήνα;\n"
-"\n"
-"Αυτό θα αφαιρέσει τον πυρήνα και τα modules του."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:396
-#, python-brace-format
-msgid "Removing {}"
-msgstr "Αφαίρεση {}"
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:397
-#, python-brace-format
-msgid "Preparing to remove {} kernel..."
-msgstr "Προετοιμασία για την αφαίρεση{}του πυρήνα..."
-# 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:405
-#. Add initial terminal output
-#, python-brace-format
-msgid "Starting removal of {} kernel..."
-msgstr "Έναρξη αφαίρεσης του{}πυρήνα..."
-# 
+#: usr/share/big-kernel-manager/ui/kernel_page.py:689
+#: usr/share/big-kernel-manager/ui/mesa_page.py:986
+msgid "Preparing installation..."
+msgstr "Προετοιμασία εγκατάστασης..."
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:435
+#: usr/share/big-kernel-manager/ui/kernel_page.py:713
 msgid ""
-"The kernel was installed successfully.\n"
-"You may need to reboot to use the new kernel."
+"Kernel installed successfully.\n"
+"You may need to reboot to use it."
 msgstr ""
 "Ο πυρήνας εγκαταστάθηκε με επιτυχία.\n"
-"Ίσως χρειαστεί να κάνετε επανεκκίνηση για να χρησιμοποιήσετε τον νέο πυρήνα."
-# 
+"Ίσως χρειαστεί να κάνετε επανεκκίνηση για να το χρησιμοποιήσετε."
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:439
+#: usr/share/big-kernel-manager/ui/kernel_page.py:720
 msgid ""
-"The kernel installation failed.\n"
-"Please check the terminal output for details."
+"Kernel installation failed.\n"
+"Check the terminal output for details."
 msgstr ""
 "Η εγκατάσταση του πυρήνα απέτυχε.\n"
 "Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
-# 
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
+#: usr/share/big-kernel-manager/ui/kernel_page.py:734
+msgid "Cannot Remove Running Kernel"
+msgstr "Δεν είναι δυνατή η κατάργηση του εκτελούμενου πυρήνα"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+#: usr/share/big-kernel-manager/ui/kernel_page.py:736
+msgid "This kernel is currently in use. Boot into a different kernel first."
+msgstr ""
+"Αυτός ο πυρήνας χρησιμοποιείται αυτήν τη στιγμή. Εκκινήστε πρώτα σε "
+"διαφορετικό πυρήνα."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: usr/share/big-kernel-manager/ui/kernel_page.py:748
+#: usr/share/big-kernel-manager/ui/mesa_page.py:764
+#: usr/share/big-kernel-manager/ui/category_page.py:446
+#, python-brace-format
+msgid "Remove {}"
+msgstr "Αφαίρεση {}"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:749
+msgid "The following packages will be removed:"
+msgstr "Τα ακόλουθα πακέτα θα αφαιρεθούν:"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+#: usr/share/big-kernel-manager/ui/kernel_page.py:778
+msgid "Preparing removal…"
+msgstr "Προετοιμασία αφαίρεσης…"
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:453
-msgid "The kernel was removed successfully."
-msgstr "Ο πυρήνας αφαιρέθηκε με επιτυχία."
-# 
+#: usr/share/big-kernel-manager/ui/kernel_page.py:799
+msgid "Kernel removed successfully."
+msgstr "Ο πυρήνας καταργήθηκε με επιτυχία."
+
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py:457
+#: usr/share/big-kernel-manager/ui/kernel_page.py:802
 msgid ""
-"The kernel removal failed.\n"
-"Please check the terminal output for details."
+"Kernel removal failed.\n"
+"Check the terminal output for details."
 msgstr ""
 "Η αφαίρεση του πυρήνα απέτυχε.\n"
 "Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
-# 
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
-#: NEEDS WORK
-msgid "Operation in progress"
-msgstr "Διαδικασία σε εξέλιξη"
-# 
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:131
-msgid "Show Terminal Output"
-msgstr "Εμφάνιση εξόδου τερματικού"
-# 
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+#: usr/share/big-kernel-manager/ui/kernel_page.py:816
+msgid "Remove Obsolete Kernels"
+msgstr "Αφαιρέστε τους απαρχαιωμένους πυρήνες"
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:820
+#, python-brace-format
+msgid ""
+"Remove all obsolete kernels?\n"
+"\n"
+"<b>{}</b>\n"
+"\n"
+"These kernels no longer receive security updates."
+msgstr ""
+"Να καταργηθούν όλοι οι απαρχαιωμένοι πυρήνες;\n"
+"\n"
+"<b>{}</b>\n"
+"\n"
+"Αυτοί οι πυρήνες δεν λαμβάνουν πλέον ενημερώσεις ασφαλείας."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: usr/share/big-kernel-manager/ui/kernel_page.py:825
+msgid "Remove All"
+msgstr "Κατάργηση όλων"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/kernel_page.py:848
+#, python-brace-format, fuzzy
+msgid "Removing kernel {} ({}/{})..."
+msgstr ""
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:866
+#, python-brace-format
+msgid "Failed to remove {}. Stopping."
+msgstr "Η κατάργηση του {} απέτυχε. Στάθμευση."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/kernel_page.py:877
+msgid "All obsolete kernels removed successfully."
+msgstr ""
+"Εναλλαγή σε <b>{}</b>;\n"
+"\n"
+"Θα απαιτηθεί επανεκκίνηση του συστήματος για να τεθεί σε ισχύ η αλλαγή."
+
+#: usr/share/big-kernel-manager/ui/kernel_page.py:916
+#: usr/share/big-kernel-manager/ui/kernel_page.py:919
+#, python-brace-format
+msgid "What's new in Linux {}"
+msgstr "Τι νέο υπάρχει στο Linux {}"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/mesa_page.py:115
+msgid "Video Drivers"
+msgstr "Οδηγοί βίντεο"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:127
+msgid ""
+"On Linux, video drivers for AMD, Intel and NVIDIA (free software Nouveau) "
+"are built into a single project called <b>Mesa</b>. Below you can choose a "
+"Mesa variant and manage extra packages for gaming, video playback, compute "
+"and AI."
+msgstr ""
+"Στο Linux, τα προγράμματα οδήγησης βίντεο για AMD, Intel και NVIDIA "
+"(ελεύθερο λογισμικό Nouveau) είναι ενσωματωμένα σε ένα ενιαίο έργο που "
+"ονομάζεται <b>Mesa</b>. Παρακάτω μπορείτε να επιλέξετε μια παραλλαγή Mesa "
+"και να διαχειριστείτε επιπλέον πακέτα για παιχνίδια, αναπαραγωγή βίντεο, "
+"υπολογιστές και τεχνητή νοημοσύνη."
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:150
+msgid ""
+"Your computer has an <b>NVIDIA</b> graphics card. You can install the "
+"official proprietary driver for the best performance in gaming, AI and "
+"professional applications."
+msgstr ""
+"Ο υπολογιστής σας διαθέτει κάρτα γραφικών <b>NVIDIA</b>. Μπορείτε να "
+"εγκαταστήσετε το επίσημο ιδιόκτητο πρόγραμμα οδήγησης για την καλύτερη "
+"απόδοση σε παιχνίδια, τεχνητή νοημοσύνη και επαγγελματικές εφαρμογές."
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:183
+msgid "Mesa Variant"
+msgstr "Μέσα Παραλλαγή"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:194
+msgid ""
+"Choose which Mesa build to use. Only one variant can be active at a time."
+msgstr ""
+"Επιλέξτε ποια έκδοση Mesa θα χρησιμοποιήσετε. Μόνο μία παραλλαγή μπορεί να "
+"είναι ενεργή κάθε φορά."
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:282
+msgid "Detected graphics cards:"
+msgstr "Ανιχνευμένες κάρτες γραφικών:"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:289
+#, python-brace-format
+msgid "• <b>{}</b> — NVIDIA proprietary driver (not Mesa)"
+msgstr "• <b>{}</b> — ιδιόκτητο πρόγραμμα οδήγησης NVIDIA (όχι Mesa)"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:294
+#, python-brace-format
+msgid "• <b>{}</b> — Mesa driver"
+msgstr "• <b>{}</b> — Πρόγραμμα οδήγησης Mesa"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
+#: usr/share/big-kernel-manager/ui/mesa_page.py:415
+#: usr/share/big-kernel-manager/ui/mesa_page.py:422
+msgid "Active"
+msgstr "Ενεργός"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:427
+#: usr/share/big-kernel-manager/ui/mesa_page.py:916
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1014
+msgid "Switch"
+msgstr "Διακόπτης"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:431
+#, python-brace-format
+msgid "Switch to {}"
+msgstr "Εναλλαγή σε {}"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
+#: usr/share/big-kernel-manager/ui/mesa_page.py:456
+msgid "Change Video Driver"
+msgstr "Αλλαγή Οδηγού Βίντεο"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
+#: usr/share/big-kernel-manager/ui/mesa_page.py:460
+#, python-brace-format
+msgid ""
+"Switch to <b>{}</b>?\n"
+"\n"
+"A system reboot will be required for the change to take effect."
+msgstr ""
+"Εναλλαγή σε <b>{}</b>;\n"
+"\n"
+"Θα απαιτηθεί επανεκκίνηση του συστήματος για να τεθεί σε ισχύ η αλλαγή."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
+#: usr/share/big-kernel-manager/ui/mesa_page.py:465
+msgid "Apply"
+msgstr "Εφαρμογή"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
+#: usr/share/big-kernel-manager/ui/mesa_page.py:481
+#, python-brace-format
+msgid "Applying {}"
+msgstr "Εφαρμογή {}"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
+#: usr/share/big-kernel-manager/ui/mesa_page.py:482
+msgid "Preparing to apply driver..."
+msgstr "Προετοιμασία εφαρμογής προγράμματος οδήγησης..."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
+#: usr/share/big-kernel-manager/ui/mesa_page.py:503
+msgid ""
+"Video driver changed successfully!\n"
+"\n"
+"You must reboot your system for the new driver to become active."
+msgstr ""
+"Το πρόγραμμα οδήγησης βίντεο άλλαξε με επιτυχία!\n"
+"\n"
+"Πρέπει να επανεκκινήσετε το σύστημά σας για να ενεργοποιηθεί το νέο πρόγραμμα οδήγησης."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/mesa_page.py:509
+msgid ""
+"Driver change failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Η αλλαγή προγράμματος οδήγησης απέτυχε.\n"
+"Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:589
+msgid "NVIDIA Proprietary Driver"
+msgstr "NVIDIA ιδιόκτητο πρόγραμμα οδήγησης"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:601
+msgid ""
+"Official closed-source driver with the best performance for gaming, AI, and "
+"professional workloads. Only one version can be active at a time."
+msgstr ""
+"Επίσημο πρόγραμμα οδήγησης κλειστού κώδικα με την καλύτερη απόδοση για "
+"παιχνίδια, τεχνητή νοημοσύνη και επαγγελματικούς φόρτους εργασίας. Μόνο μία "
+"έκδοση μπορεί να είναι ενεργή κάθε φορά."
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:677
+#: usr/share/big-kernel-manager/ui/mesa_page.py:680
+msgid "All recommended packages installed"
+msgstr "Όλα τα προτεινόμενα πακέτα έχουν εγκατασταθεί"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:686
+#: usr/share/big-kernel-manager/ui/mesa_page.py:689
+msgid "Some packages not installed"
+msgstr "Ορισμένα πακέτα δεν έχουν εγκατασταθεί"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:747
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1163
+msgid "Included"
+msgstr "Συμπεριλαμβανομένος"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:754
+#, python-brace-format
+msgid "Already included in your Mesa version ({})"
+msgstr "Περιλαμβάνεται ήδη στην έκδοση Mesa ({})"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/mesa_page.py:796
+msgid "Other Drivers"
+msgstr "Άλλα προγράμματα οδήγησης"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:808
+msgid ""
+"Additional drivers for special hardware configurations like virtual "
+"machines."
+msgstr ""
+"Πρόσθετα προγράμματα οδήγησης για ειδικές διαμορφώσεις υλικού, όπως "
+"εικονικές μηχανές."
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: usr/share/big-kernel-manager/ui/mesa_page.py:887
+msgid "Compatible"
+msgstr "Σύμφωνος"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:888
+msgid "Open Source"
+msgstr "Ανοιχτού κώδικα"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:888
+msgid "Proprietary"
+msgstr "Ιδιόκτητος"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:895
+msgid "⚠ No Wayland support · No longer maintained"
+msgstr "⚠ Χωρίς υποστήριξη Wayland · Δεν διατηρείται πλέον"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:920
+#, python-brace-format
+msgid "Switch from {} to {}"
+msgstr "Εναλλαγή από {} σε {}"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:961
+msgid "open-source"
+msgstr "ανοιχτού κώδικα"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:961
+msgid "proprietary"
+msgstr "ιδιόκτητος"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
+#: usr/share/big-kernel-manager/ui/mesa_page.py:963
+#: usr/share/big-kernel-manager/ui/category_page.py:566
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:363
+#: usr/share/big-kernel-manager/ui/home_page.py:691
+msgid "Install Driver"
+msgstr "Εγκαταστήστε το πρόγραμμα οδήγησης"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:967
+#, python-brace-format
+msgid ""
+"Install <b>{}</b> ({} driver)?\n"
+"\n"
+"A system reboot may be required after installation."
+msgstr ""
+"Εγκατάσταση του <b>{}</b> ({} προγράμματος οδήγησης);\n"
+"\n"
+"Ενδέχεται να απαιτείται επανεκκίνηση του συστήματος μετά την εγκατάσταση."
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1001
+msgid "Switch NVIDIA Driver"
+msgstr "Εναλλαγή προγράμματος οδήγησης NVIDIA"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1005
+#, python-brace-format
+msgid ""
+"Switch from <b>{}</b> to <b>{}</b>?\n"
+"\n"
+"The current driver will be replaced automatically.\n"
+"A system reboot will be required."
+msgstr ""
+"Εναλλαγή από <b>{}</b> σε <b>{}</b>;\n"
+"\n"
+"Το τρέχον πρόγραμμα οδήγησης θα αντικατασταθεί αυτόματα.\n"
+"Θα απαιτηθεί επανεκκίνηση του συστήματος."
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1027
+#, python-brace-format
+msgid "Switching to {}"
+msgstr "Εναλλαγή σε {}"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1028
+msgid "Replacing current NVIDIA driver..."
+msgstr "Αντικατάσταση του τρέχοντος προγράμματος οδήγησης NVIDIA..."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1042
+#: usr/share/big-kernel-manager/ui/category_page.py:604
+msgid "Remove Driver"
+msgstr "Κατάργηση προγράμματος οδήγησης"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1046
+#, python-brace-format
+msgid ""
+"Remove <b>{}</b>?\n"
+"\n"
+"A system reboot may be required after removal."
+msgstr ""
+"Κατάργηση <b>{}</b>;\n"
+"\n"
+"Ενδέχεται να απαιτείται επανεκκίνηση του συστήματος μετά την αφαίρεση."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1064
+msgid "Preparing removal..."
+msgstr "Προετοιμασία αφαίρεσης..."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1084
+msgid "activated"
+msgstr "ενεργοποιήθηκε"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1086
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
+msgid "installed"
+msgstr "εγκατασταθεί"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1088
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
+msgid "removed"
+msgstr "αφαιρέθηκε"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1091
+#, python-brace-format
+msgid ""
+"{} was {} successfully!\n"
+"\n"
+"A system reboot may be required."
+msgstr ""
+"Το {} ήταν {} με επιτυχία!\n"
+"\n"
+"Ενδέχεται να απαιτείται επανεκκίνηση του συστήματος."
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1097
+msgid ""
+"Driver operation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Η λειτουργία του προγράμματος οδήγησης απέτυχε.\n"
+"Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1146
+msgid "Already included in your Mesa version"
+msgstr "Περιλαμβάνεται ήδη στην έκδοση Mesa σας"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1188
+msgid "Install Package"
+msgstr "Εγκατάσταση πακέτου"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1191
+#, python-brace-format
+msgid ""
+"Install <b>{}</b>?\n"
+"\n"
+"{}"
+msgstr ""
+"Εγκατάσταση του <b>{}</b>;\n"
+"\n"
+"{}"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1212
+#: usr/share/big-kernel-manager/ui/home_page.py:713
+msgid "Downloading package..."
+msgstr "Λήψη πακέτου..."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1229
+msgid "Remove Package"
+msgstr "Κατάργηση πακέτου"
+
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1232
+#, python-brace-format
+msgid "Remove <b>{}</b>?"
+msgstr "Κατάργηση <b>{}</b>;"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1250
+msgid "Removing package..."
+msgstr "Αφαίρεση πακέτου..."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1272
+#, python-brace-format
+msgid "{} was {} successfully!"
+msgstr "Το {} ήταν {} με επιτυχία!"
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1277
+msgid ""
+"Package operation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Η λειτουργία του πακέτου απέτυχε.\n"
+"Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
+
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:117
+msgid "Technical details"
+msgstr "Τεχνικές λεπτομέρειες"
+
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:131
+msgid "Terminal output"
+msgstr "Προγράμματα οδήγησης Wi-Fi"
+
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -256,364 +1067,1100 @@ msgstr "Εμφάνιση εξόδου τερματικού"
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 169
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 390
 # File: usr/share/big-kernel-manager/ui/window.py, line: 463
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:378
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:169
-#. Close button
-#. Close button (shown on completion)
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:151
 msgid "Close"
 msgstr "Κλείσιμο"
-# 
+
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 200
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:200
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:207
+#: usr/share/big-kernel-manager/ui/category_page.py:588
+#: usr/share/big-kernel-manager/ui/category_page.py:626
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
 msgid "Please wait..."
 msgstr "Παρακαλώ περιμένετε..."
-# 
+
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:229
+#, python-brace-format
+msgid "Step {} of {}: {}"
+msgstr "Βήμα {} από {}: {}"
+
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:231
+#, python-brace-format
+msgid "Step {} of {}"
+msgstr "Βήμα {} από {}"
+
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:279
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:333
 msgid "Operation completed successfully!"
 msgstr "Η λειτουργία ολοκληρώθηκε με επιτυχία!"
-# 
+
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:290
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:338
 msgid "Operation failed. Check terminal output for details."
-msgstr "Η λειτουργία απέτυχε. Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
-# 
+msgstr ""
+"Η λειτουργία απέτυχε. Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
+
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:305
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:364
 msgid "Completed!"
 msgstr "Ολοκληρώθηκε!"
-# 
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 308
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:308
-msgid "Failed"
-msgstr "Αποτυχία"
-# 
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 333
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:333
-msgid "Operation cancelled by user."
-msgstr "Η λειτουργία ακυρώθηκε από τον χρήστη."
-# 
+
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py:334
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:408
 msgid "Cancelled"
 msgstr "Ακυρώθηκε"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
-#: NEEDS WORK
-msgid "Legacy"
-msgstr "Κληρονομιά"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
-#: NEEDS WORK
-msgid ""
-"Classic OpenGL implementation for very old hardware. Only use if your GPU does not support modern "
-"Mesa drivers."
-msgstr ""
-"Κλασική υλοποίηση OpenGL για πολύ παλαιό υλικό. Χρησιμοποιήστε το μόνο αν η GPU σας δεν υποστηρίζει "
-"τους σύγχρονους οδηγούς Mesa."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
-#: NEEDS WORK
-msgid "Recommended"
-msgstr "Συνιστώμενο"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 82
-#: NEEDS WORK
-msgid ""
-"Official stable Mesa release. Best balance of performance, compatibility and stability. Includes "
-"Vulkan drivers for AMD, Intel and software rendering."
-msgstr ""
-"Επίσημη σταθερή έκδοση Mesa. Καλύτερη ισορροπία απόδοσης, συμβατότητας και σταθερότητας. "
-"Περιλαμβάνει οδηγούς Vulkan για AMD, Intel και λογισμικό απόδοσης."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
-#: NEEDS WORK
-msgid "Performance"
-msgstr "Απόδοση"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
-#: NEEDS WORK
-msgid ""
-"Custom build with performance patches. May provide better FPS in games, but can cause issues with "
-"system updates. Use with caution."
-msgstr ""
-"Προσαρμοσμένη έκδοση με επιδιορθώσεις απόδοσης. Μπορεί να προσφέρει καλύτερα FPS σε παιχνίδια, αλλά "
-"μπορεί να προκαλέσει προβλήματα με τις ενημερώσεις συστήματος. Χρησιμοποιήστε με προσοχή."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
-#: NEEDS WORK
-msgid ""
-"Bleeding-edge development version. Contains the newest features but is unstable and may break with "
-"updates. Not recommended for daily use."
-msgstr ""
-"Έκδοση ανάπτυξης αιχμής. Περιέχει τα πιο πρόσφατα χαρακτηριστικά αλλά είναι ασταθής και μπορεί να "
-"σπάσει με τις ενημερώσεις. Δεν συνιστάται για καθημερινή χρήση."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
-#: NEEDS WORK
-#, python-brace-format
-msgid "Select driver: {}"
-msgstr "Επιλέξτε οδηγό: {}"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:221
-msgid "Active"
-msgstr "Ενεργός"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
-#: NEEDS WORK
-msgid "Change Video Driver"
-msgstr "Αλλαγή Οδηγού Βίντεο"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
-#: NEEDS WORK
-#, python-brace-format
-msgid ""
-"Do you want to change to the <b>{}</b> driver?\n"
-"\n"
-"This will modify your system's video drivers.\n"
-"<b>A system reboot will be required</b> for the changes to take effect."
-msgstr ""
-"Θέλετε να αλλάξετε στον <b>{}</b> οδηγό;\n"
-"\n"
-"Αυτό θα τροποποιήσει τους οδηγούς βίντεο του συστήματός σας.\n"
-"<b>Θα απαιτηθεί επανεκκίνηση του συστήματος</b> για να ισχύσουν οι αλλαγές."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
-#: NEEDS WORK
-msgid "Apply"
-msgstr "Εφαρμογή"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:290
-#, python-brace-format
-msgid "Applying {}"
-msgstr "Εφαρμογή {}"
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:291
-#, python-brace-format
-msgid "Preparing to apply {} driver..."
-msgstr "Προετοιμασία για εφαρμογή{}  οδηγού..."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:299
-#. Add initial terminal output
-#, python-brace-format
-msgid "Applying {} driver..."
-msgstr "Εφαρμογή  {}προγράμματος οδήγησης..."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
-#: NEEDS WORK
-msgid ""
-"The video driver was changed successfully!\n"
-"\n"
-"⚠️ You must reboot your system for the new driver to become active."
-msgstr ""
-"Ο οδηγός βίντεο άλλαξε με επιτυχία!\n"
-"\n"
-"⚠️ Πρέπει να επανεκκινήσετε το σύστημά σας για να ενεργοποιηθεί ο νέος οδηγός."
-# 
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:333
-msgid ""
-"The driver change failed.\n"
-"Please check the terminal output for details."
-msgstr ""
-"Η αλλαγή οδηγού απέτυχε.\n"
-"Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
-# 
+
+#: usr/share/big-kernel-manager/ui/window.py:44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:36
+msgid "Video / GPU"
+msgstr "Προγράμματα οδήγησης Mesa, NVIDIA και GPU."
+
+#: usr/share/big-kernel-manager/ui/window.py:45
+msgid "Mesa, NVIDIA, and GPU drivers."
+msgstr "Προγράμματα οδήγησης Mesa, NVIDIA και GPU."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:50
+msgid "Wi-Fi Drivers"
+msgstr "Προγράμματα οδήγησης Ethernet"
+
+#: usr/share/big-kernel-manager/ui/window.py:51
+msgid "Wireless network adapter drivers."
+msgstr "Προγράμματα οδήγησης για προσαρμογείς ασύρματου δικτύου."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:56
+msgid "Ethernet Drivers"
+msgstr "Προγράμματα οδήγησης Ethernet"
+
+#: usr/share/big-kernel-manager/ui/window.py:57
+msgid "Wired network adapter drivers."
+msgstr "Προγράμματα οδήγησης προσαρμογέα ενσύρματου δικτύου."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:62
+msgid "Bluetooth Drivers"
+msgstr "Προγράμματα οδήγησης Bluetooth"
+
+#: usr/share/big-kernel-manager/ui/window.py:63
+msgid "Bluetooth adapter drivers."
+msgstr "Προγράμματα οδήγησης προσαρμογέα Bluetooth."
+
+#: usr/share/big-kernel-manager/ui/window.py:68
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:40
+msgid "DVB / TV"
+msgstr "DVB / TV"
+
+#: usr/share/big-kernel-manager/ui/window.py:69
+msgid "Digital TV tuner firmware."
+msgstr "Υλικολογισμικό δέκτη ψηφιακής τηλεόρασης."
+
+#: usr/share/big-kernel-manager/ui/window.py:74
+msgid "Audio Firmware"
+msgstr "Υλικολογισμικό ήχου"
+
+#: usr/share/big-kernel-manager/ui/window.py:75
+msgid "Audio device firmware."
+msgstr "Το υλικολογισμικό της συσκευής ήχου."
+
+#: usr/share/big-kernel-manager/ui/window.py:80
+msgid "Webcam Firmware"
+msgstr "Υλικολογισμικό κάμερας web"
+
+#: usr/share/big-kernel-manager/ui/window.py:81
+msgid "Webcam device firmware."
+msgstr "Υλικολογισμικό συσκευής webcam."
+
+#: usr/share/big-kernel-manager/ui/window.py:86
+msgid "Touchscreen Firmware"
+msgstr "Υλικολογισμικό οθόνης αφής"
+
+#: usr/share/big-kernel-manager/ui/window.py:87
+msgid "Touchscreen device firmware."
+msgstr "Υλικολογισμικό συσκευής οθόνης αφής."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:92
+msgid "Printer Drivers"
+msgstr "Προγράμματα οδήγησης εκτυπωτή"
+
+#: usr/share/big-kernel-manager/ui/window.py:93
+msgid "Printer drivers and support packages."
+msgstr "Προγράμματα οδήγησης εκτυπωτή και πακέτα υποστήριξης."
+
+#: usr/share/big-kernel-manager/ui/window.py:98
+msgid "3D Printer Firmware"
+msgstr "Υλικολογισμικό 3D εκτυπωτή."
+
+#: usr/share/big-kernel-manager/ui/window.py:99
+msgid "3D printer firmware."
+msgstr "Υλικολογισμικό 3D εκτυπωτή."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:104
+msgid "Scanner Drivers"
+msgstr "Προγράμματα οδήγησης σαρωτή"
+
+#: usr/share/big-kernel-manager/ui/window.py:105
+msgid "Scanner drivers and SANE backends."
+msgstr "Προγράμματα οδήγησης σαρωτή και συστήματα υποστήριξης SANE."
+
+#: usr/share/big-kernel-manager/ui/window.py:110
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
+msgid "Other Firmware"
+msgstr "Άλλο υλικολογισμικό"
+
+#: usr/share/big-kernel-manager/ui/window.py:111
+msgid "Additional firmware packages."
+msgstr "Πρόσθετα πακέτα υλικολογισμικού."
+
+#: usr/share/big-kernel-manager/ui/window.py:189
+msgid "Home"
+msgstr "Σπίτι"
+
 # File: usr/share/big-kernel-manager/ui/window.py, line: 89
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:89
+#: usr/share/big-kernel-manager/ui/window.py:190
 msgid "Kernel"
 msgstr "Πυρήνας"
-# 
+
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py:65
-msgid "Video Drivers"
-msgstr "Οδηγοί βίντεο"
-# 
+#: usr/share/big-kernel-manager/ui/window.py:191
+msgid "Video Driver"
+msgstr "Πρόγραμμα οδήγησης βίντεο"
+
+#: usr/share/big-kernel-manager/ui/window.py:218
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:122
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+#: usr/share/big-kernel-manager/ui/window.py:231
+msgid "A system reboot is recommended to apply changes."
+msgstr "Συνιστάται επανεκκίνηση συστήματος για την εφαρμογή αλλαγών."
+
+#: usr/share/big-kernel-manager/ui/window.py:269
+msgid "Content"
+msgstr "Περιεχόμενο"
+
 # File: usr/share/big-kernel-manager/ui/window.py, line: 129
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:129
+#: usr/share/big-kernel-manager/ui/window.py:316
 msgid "Menu"
 msgstr "Μενού"
-# 
+
+#: usr/share/big-kernel-manager/ui/window.py:318
+msgid "Application menu"
+msgstr "Μενού εφαρμογών"
+
 # File: usr/share/big-kernel-manager/ui/window.py, line: 134
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:134
+#: usr/share/big-kernel-manager/ui/window.py:321
 msgid "About"
 msgstr "Σχετικά"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 235
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:235
-msgid "Kernel and Mesa Management"
-msgstr "Διαχείριση πυρήνα και Mesa"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 274
-#: NEEDS WORK
+
+#: usr/share/big-kernel-manager/ui/window.py:326
+#: usr/share/big-kernel-manager/ui/window.py:558
+msgid "Show all"
+msgstr "Εμφάνιση όλων"
+
+#: usr/share/big-kernel-manager/ui/window.py:327
+#: usr/share/big-kernel-manager/ui/window.py:329
+msgid "Show all drivers"
+msgstr "Εμφάνιση όλων των προγραμμάτων οδήγησης"
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/window.py:454
+msgid "Hardware detection failed. Check system logs for details."
+msgstr ""
+"Ο εντοπισμός υλικού απέτυχε. Ελέγξτε τα αρχεία καταγραφής συστήματος για "
+"λεπτομέρειες."
+
+#: usr/share/big-kernel-manager/ui/window.py:534
+#, python-brace-format, fuzzy
+msgid "Obsolete kernel: {} — no longer receives security updates"
+msgstr ""
+
+#: usr/share/big-kernel-manager/ui/window.py:538
+msgid "Manage"
+msgstr "Διαχειρίζομαι"
+
+#: usr/share/big-kernel-manager/ui/window.py:558
+msgid "Show detected"
+msgstr "Εμφάνιση εντοπίστηκε"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:67
+#: usr/share/big-kernel-manager/ui/category_page.py:277
+msgid "Other"
+msgstr "Αλλος"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:128
+msgid "Search drivers..."
+msgstr "Αναζήτηση προγραμμάτων οδήγησης..."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: usr/share/big-kernel-manager/ui/category_page.py:132
+msgid "Search drivers"
+msgstr "Αναζήτηση προγραμμάτων οδήγησης"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:162
+msgid "No more automatically detected compatible drivers in this category."
+msgstr ""
+"Δεν υπάρχουν άλλα αυτόματα εντοπισμένα συμβατά προγράμματα οδήγησης σε αυτήν"
+" την κατηγορία."
+
+#: usr/share/big-kernel-manager/ui/category_page.py:173
+#: usr/share/big-kernel-manager/ui/category_page.py:200
+msgid "Show drivers without confirmed compatibility"
+msgstr "Εμφάνιση προγραμμάτων οδήγησης χωρίς επιβεβαιωμένη συμβατότητα"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:187
+#: usr/share/big-kernel-manager/ui/category_page.py:260
+msgid "No drivers needed for this category"
+msgstr "Δεν χρειάζονται προγράμματα οδήγησης για αυτήν την κατηγορία"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:191
 msgid ""
-"Changing your system's kernel or Mesa drivers can impact system stability. Please review the "
-"following recommendations:"
+"No drivers in this category were automatically detected as compatible with "
+"your hardware."
 msgstr ""
-"Η αλλαγή του πυρήνα του συστήματός σας ή των οδηγών Mesa μπορεί να επηρεάσει τη σταθερότητα του "
-"συστήματος. Παρακαλώ αναθεωρήστε τις παρακάτω συστάσεις:"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 282
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:297
-msgid "Always keep at least one working kernel"
-msgstr "Διατηρείτε πάντα τουλάχιστον έναν λειτουργικό πυρήνα"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 282
-#: NEEDS WORK
-msgid "installed as a fallback"
-msgstr "εγκατεστημένο ως εναλλακτική λύση"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 284
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:298
-msgid "LTS kernels offer better stability, while newer kernels provide newer hardware support"
-msgstr ""
-"Οι πυρήνες LTS προσφέρουν καλύτερη σταθερότητα, ενώ οι νεότεροι πυρήνες παρέχουν υποστήριξη για "
-"νεότερο υλικό."
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 286
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:299
-msgid "Test your system thoroughly after kernel changes"
-msgstr "Ελέγξτε διεξοδικά το σύστημά σας μετά από αλλαγές στον πυρήνα"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 288
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:300
-msgid "If a new kernel causes issues, you can select the previous kernel from the boot menu"
-msgstr ""
-"Εάν ένας νέος πυρήνας προκαλεί προβλήματα, μπορείτε να επιλέξετε τον προηγούμενο πυρήνα από το "
-"μενού εκκίνησης."
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 290
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:301
-msgid "Real-time (RT) kernels are specialized for low-latency tasks but may not be suitable for general use"
-msgstr ""
-"Οι πυρήνες πραγματικού χρόνου (RT) είναι εξειδικευμένοι για εργασίες χαμηλής καθυστέρησης, αλλά "
-"ενδέχεται να μην είναι κατάλληλοι για γενική χρήση."
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 293
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:296
-#. Kernel section
-msgid "Kernel Management"
-msgstr "Διαχείριση πυρήνα"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 294
-# File: usr/share/big-kernel-manager/ui/window.py, line: 313
-#: NEEDS WORK
-msgid "Tips"
-msgstr "Συμβουλές"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 301
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:306
-msgid "Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some NVIDIA GPUs"
-msgstr "Οι οδηγοί Mesa παρέχουν επιτάχυνση γραφικών 3D για AMD, Intel και ορισμένες GPU NVIDIA."
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 303
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:307
-msgid "Changing Mesa versions may affect graphics performance and application compatibility"
-msgstr ""
-"Η αλλαγή των εκδόσεων Mesa μπορεί να επηρεάσει την απόδοση των γραφικών και τη συμβατότητα των "
-"εφαρμογών."
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 305
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:308
-msgid "The stable version is recommended for most users"
-msgstr "Η σταθερή έκδοση συνιστάται για τους περισσότερους χρήστες."
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 307
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:309
-msgid "Development versions may offer better performance but with less stability"
-msgstr "Οι εκδόσεις ανάπτυξης μπορεί να προσφέρουν καλύτερη απόδοση, αλλά με λιγότερη σταθερότητα."
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 309
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:310
-msgid "If graphics issues occur after a change, you can switch back to the previous driver"
-msgstr ""
-"Εάν μετά από μια αλλαγή εμφανιστούν προβλήματα με τα γραφικά, μπορείτε να επιστρέψετε στο "
-"προηγούμενο πρόγραμμα οδήγησης."
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 312
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:305
-#. Mesa section
-msgid "Mesa Driver Management"
-msgstr "Διαχείριση οδηγών Mesa"
-# 
-# File: usr/share/big-kernel-manager/ui/window.py, line: 329
-#: NEEDS WORK
+"Κανένα πρόγραμμα οδήγησης σε αυτήν την κατηγορία δεν εντοπίστηκε αυτόματα ως"
+" συμβατό με το υλικό σας."
+
+#: usr/share/big-kernel-manager/ui/category_page.py:238
+msgid "Detection Error"
+msgstr "Σφάλμα ανίχνευσης"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:264
 msgid ""
-"If unsure, the <b>LTS kernel</b> and <b>Stable Mesa</b> drivers are the safest choices for most "
+"No drivers in this category were detected as necessary for your hardware."
+msgstr ""
+"Δεν εντοπίστηκαν προγράμματα οδήγησης σε αυτήν την κατηγορία ως απαραίτητα "
+"για το υλικό σας."
+
+#: usr/share/big-kernel-manager/ui/category_page.py:339
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:283
+msgid "1 driver"
+msgstr "1 οδηγός"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/category_page.py:339
+#, python-brace-format
+msgid "{} drivers"
+msgstr "{} προγράμματα οδήγησης"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:341
+#, python-brace-format
+msgid "{} detected"
+msgstr "{} εντοπίστηκε"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:343
+#, python-brace-format
+msgid "{} installed"
+msgstr "{} εγκατεστημένο"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:405
+msgid "Detected"
+msgstr "Εντοπίστηκε"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:407
+#: usr/share/big-kernel-manager/ui/home_page.py:487
+#: usr/share/big-kernel-manager/ui/home_page.py:503
+#: usr/share/big-kernel-manager/ui/home_page.py:734
+msgid "Installed"
+msgstr "Δεν έχει εγκατασταθεί"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:409
+msgid "Not installed"
+msgstr "Δεν έχει εγκατασταθεί"
+
+#: usr/share/big-kernel-manager/ui/category_page.py:503
+#, python-brace-format
+msgid "{total} drivers · {detected} detected · {installed} installed"
+msgstr ""
+"{total} προγράμματα οδήγησης · ​​{detected} εντοπίστηκαν · {installed} "
+"εγκαταστάθηκαν"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/category_page.py:567
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:364
+#: usr/share/big-kernel-manager/ui/home_page.py:692
+#, python-brace-format
+msgid "Install {}?"
+msgstr "Εγκατάσταση του {};"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/ui/category_page.py:605
+#, python-brace-format
+msgid "Remove {}?"
+msgstr "Κατάργηση του {};"
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/ui/category_page.py:653
+msgid "Operation completed successfully."
+msgstr "Η λειτουργία ολοκληρώθηκε με επιτυχία."
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/category_page.py:657
+msgid "Operation failed. Check logs for details."
+msgstr "1 εγκατεστημένο"
+
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:40
+msgid "Stable, long-term support"
+msgstr "Σταθερή, μακροχρόνια υποστήριξη"
+
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:43
+msgid ""
+"Receives security updates for years. Best choice for most users — reliable "
+"and well-tested."
+msgstr ""
+"Λαμβάνει ενημερώσεις ασφαλείας για χρόνια. Η καλύτερη επιλογή για τους "
+"περισσότερους χρήστες — αξιόπιστη και καλά δοκιμασμένη."
+
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:49
+msgid "Low-latency, real-time"
+msgstr "Χαμηλή καθυστέρηση, σε πραγματικό χρόνο"
+
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:52
+msgid ""
+"Designed for audio/video production and tasks needing precise timing. May be"
+" incompatible with some drivers (e.g. NVIDIA). Only recommended for advanced"
+" users."
+msgstr ""
+"Σχεδιασμένο για παραγωγή ήχου/βίντεο και εργασίες που απαιτούν ακριβή "
+"χρονισμό. Μπορεί να μην είναι συμβατό με ορισμένα προγράμματα οδήγησης (π.χ."
+" NVIDIA). Συνιστάται μόνο για προχωρημένους χρήστες."
+
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:59
+msgid "Gaming & performance optimized"
+msgstr "Βελτιστοποιημένο παιχνίδι και απόδοση"
+
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:62
+msgid ""
+"Tuned for faster gaming and a more responsive desktop. Great for daily use "
+"if you want extra performance."
+msgstr ""
+"Συντονισμένος για ταχύτερο gaming και επιτραπέζιο υπολογιστή με μεγαλύτερη "
+"απόκριση. Ιδανικό για καθημερινή χρήση αν θέλετε επιπλέον απόδοση."
+
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:68
+msgid "Latest features & drivers"
+msgstr "Τελευταία χαρακτηριστικά και προγράμματα οδήγησης"
+
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:72
+msgid "Always up to date with the newest features and hardware support."
+msgstr ""
+"Πάντα ενημερωμένος με τις πιο πρόσφατες δυνατότητες και υποστήριξη υλικού."
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
+msgid "Ethernet"
+msgstr "Ethernet"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
+msgid "Audio"
+msgstr "Ήχος"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
+msgid "Webcam"
+msgstr "Webcam"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
+msgid "Touchscreen"
+msgstr "Οθόνη αφής"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
+msgid "Printers"
+msgstr "Εκτυπωτές"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
+msgid "3D Printers"
+msgstr "Εκτυπωτές 3D"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
+msgid "Scanners"
+msgstr "Σαρωτές"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:93
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:329
+msgid "All drivers are installed"
+msgstr "Όλα τα προγράμματα οδήγησης είναι εγκατεστημένα"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:95
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:331
+msgid "All necessary drivers are already installed on your system."
+msgstr ""
+"Όλα τα απαραίτητα προγράμματα οδήγησης είναι ήδη εγκατεστημένα στο σύστημά "
+"σας."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:105
+#: usr/share/big-kernel-manager/ui/mesa_data.py:275
+msgid "Recommended"
+msgstr "Συνιστώμενο"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:152
+msgid "Detecting hardware"
+msgstr "Ανίχνευση υλικού"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:155
+msgid "Detecting hardware..."
+msgstr "Ανίχνευση υλικού..."
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:285
+#, python-brace-format
+msgid "{n} drivers"
+msgstr "{n} προγράμματα οδήγησης"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:288
+msgid "1 installed"
+msgstr "1 εγκατεστημένο"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:290
+#, python-brace-format
+msgid "{n} installed"
+msgstr "{n} εγκατεστημένο"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:320
+#, python-brace-format
+msgid "{n} drivers available to install"
+msgstr "{n} προγράμματα οδήγησης διαθέσιμα προς εγκατάσταση"
+
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:323
+msgid "Install recommended drivers for better hardware support."
+msgstr "Τι είναι ο πυρήνας;"
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:411
+msgid "Driver installed successfully."
+msgstr "Το πρόγραμμα οδήγησης εγκαταστάθηκε με επιτυχία."
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:415
+msgid "Installation failed. Check logs for details."
+msgstr "Η εγκατάσταση απέτυχε. Ελέγξτε τα αρχεία καταγραφής για λεπτομέρειες."
+
+#: usr/share/big-kernel-manager/ui/home_page.py:70
+msgid "What is Kernel?"
+msgstr "Τι είναι ο πυρήνας;"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:72
+msgid ""
+"The kernel is the heart of your operating system. It controls your "
+"processor, memory, and all hardware. Most drivers already come built-in with"
+" the kernel."
+msgstr ""
+"Ο πυρήνας είναι η καρδιά του λειτουργικού σας συστήματος. Ελέγχει τον "
+"επεξεργαστή, τη μνήμη και όλο το υλικό. Τα περισσότερα προγράμματα οδήγησης "
+"είναι ήδη ενσωματωμένα με τον πυρήνα."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
+#: usr/share/big-kernel-manager/ui/home_page.py:83
+msgid "What are Drivers?"
+msgstr "Τι είναι τα προγράμματα οδήγησης;"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:85
+msgid ""
+"Drivers allow each device — like your video card, Wi-Fi, or sound — to "
+"communicate with the system. If everything is already working, you probably "
+"don't need to change anything."
+msgstr ""
+"Τα προγράμματα οδήγησης επιτρέπουν σε κάθε συσκευή — όπως η κάρτα γραφικών, "
+"το Wi-Fi ή ο ήχος σας — να επικοινωνεί με το σύστημα. Εάν όλα λειτουργούν "
+"ήδη, πιθανότατα δεν χρειάζεται να αλλάξετε τίποτα."
+
+#: usr/share/big-kernel-manager/ui/home_page.py:113
+msgid "Checking your system…"
+msgstr "Έλεγχος του συστήματός σας…"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:119
+msgid "Detecting hardware and installed drivers."
+msgstr "Ανίχνευση υλικού και εγκατεστημένων προγραμμάτων οδήγησης."
+
+#: usr/share/big-kernel-manager/ui/home_page.py:149
+msgid "Recommended for your hardware"
+msgstr "Συνιστάται για το υλικό σας"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: usr/share/big-kernel-manager/ui/home_page.py:197
+msgid "Install recommended"
+msgstr "Συνιστάται η εγκατάσταση"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:227
+msgid "Compatible drivers available"
+msgstr "Συμβατά προγράμματα οδήγησης διαθέσιμα"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:273
+#, python-brace-format
+msgid "{} — no driver loaded, install {} for this device"
+msgstr ""
+"{} — δεν έχει φορτωθεί πρόγραμμα οδήγησης, εγκαταστήστε το {} για αυτήν τη "
+"συσκευή"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/home_page.py:277
+msgid "Go to drivers"
+msgstr "Πηγαίνετε στους οδηγούς"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:287
+msgid ""
+"These drivers are compatible with your hardware. Your devices are working, "
+"but these may improve performance or add features."
+msgstr ""
+"Αυτά τα προγράμματα οδήγησης είναι συμβατά με το υλικό σας. Οι συσκευές σας "
+"λειτουργούν, αλλά ενδέχεται να βελτιώσουν την απόδοση ή να προσθέσουν "
+"λειτουργίες."
+
+#: usr/share/big-kernel-manager/ui/home_page.py:376
+#, python-brace-format
+msgid "All {} recommended video packages for your {} hardware are installed."
+msgstr ""
+"Όλα τα {} προτεινόμενα πακέτα βίντεο για το υλικό σας {} έχουν εγκατασταθεί."
+
+#: usr/share/big-kernel-manager/ui/home_page.py:386
+#, python-brace-format
+msgid "{} of {} recommended packages are not installed."
+msgstr "{} από {} προτεινόμενα πακέτα δεν έχουν εγκατασταθεί."
+
+#: usr/share/big-kernel-manager/ui/home_page.py:396
+#, python-brace-format
+msgid "Install all {} recommended"
+msgstr "Εγκαταστήστε όλα τα προτεινόμενα {}"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:457
+#, python-brace-format, fuzzy
+msgid "Already installed ({})"
+msgstr ""
+
+#: usr/share/big-kernel-manager/ui/home_page.py:469
+#: usr/share/big-kernel-manager/ui/home_page.py:472
+#: usr/share/big-kernel-manager/ui/home_page.py:608
+msgid "Show installed packages"
+msgstr "Εμφάνιση εγκατεστημένων πακέτων"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:605
+msgid "Hide installed packages"
+msgstr "Απόκρυψη εγκατεστημένων πακέτων"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:620
+msgid "Install Recommended Packages"
+msgstr ""
+"Εγκατάσταση πακέτων <b>{}</b>;\n"
+"\n"
+"{}"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:623
+#, python-brace-format
+msgid ""
+"Install <b>{}</b> packages?\n"
+"\n"
+"{}"
+msgstr ""
+"Εγκατάσταση πακέτων <b>{}</b>;\n"
+"\n"
+"{}"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/home_page.py:629
+msgid "Install All"
+msgstr "Εγκατάσταση όλων"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/home_page.py:642
+#, python-brace-format
+msgid "Installing {} packages"
+msgstr "Εγκατάσταση πακέτων {}"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:653
+msgid "Installing recommended packages"
+msgstr "Εγκατάσταση προτεινόμενων πακέτων"
+
+#: usr/share/big-kernel-manager/ui/home_page.py:670
+msgid "All recommended packages installed successfully!"
+msgstr "Πληροφορίες"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+#: usr/share/big-kernel-manager/ui/home_page.py:680
+msgid ""
+"Package installation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Η εγκατάσταση του πακέτου απέτυχε.\n"
+"Ελέγξτε την έξοδο του τερματικού για λεπτομέρειες."
+
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/ui/home_page.py:732
+#, python-brace-format
+msgid "{} installed successfully!"
+msgstr "Το {} εγκαταστάθηκε με επιτυχία!"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+#: usr/share/big-kernel-manager/ui/home_page.py:740
+#, python-brace-format
+msgid "Installation of {} failed."
+msgstr "Η εγκατάσταση του {} απέτυχε."
+
+#: usr/share/big-kernel-manager/ui/home_page.py:770
+msgid "Information"
+msgstr "Πληροφορίες"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:37
+msgid "Latest NVIDIA driver — best performance and newest features"
+msgstr ""
+"Τελευταίο πρόγραμμα οδήγησης NVIDIA — καλύτερη απόδοση και νεότερες "
+"δυνατότητες"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:40
+msgid "NVIDIA 575 series — use if the latest driver causes issues"
+msgstr ""
+"NVIDIA 575 series — χρησιμοποιήστε το εάν το πιο πρόσφατο πρόγραμμα οδήγησης"
+" προκαλεί προβλήματα"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:43
+msgid "NVIDIA 570 series — use if the latest driver causes issues"
+msgstr ""
+"NVIDIA 570 series — χρησιμοποιήστε το εάν το πιο πρόσφατο πρόγραμμα οδήγησης"
+" προκαλεί προβλήματα"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:47
+msgid "For Intel + NVIDIA laptops — switches between GPUs to save battery"
+msgstr ""
+"Για φορητούς υπολογιστές Intel + NVIDIA — εναλλάσσεται μεταξύ των GPU για "
+"εξοικονόμηση μπαταρίας"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:50
+msgid "For Intel + NVIDIA laptops — NVIDIA 575 series"
+msgstr "Για φορητούς υπολογιστές Intel + NVIDIA — NVIDIA 575 series"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:53
+msgid "For Intel + NVIDIA laptops — NVIDIA 570 series"
+msgstr "Για φορητούς υπολογιστές Intel + NVIDIA — NVIDIA 570 series"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:56
+msgid "For Intel + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
+msgstr ""
+"Για φορητούς υπολογιστές Intel + NVIDIA — NVIDIA 470 (παλαιού τύπου, χωρίς "
+"Wayland)"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:59
+msgid "For Intel + NVIDIA laptops — NVIDIA 390 (very old GPUs only)"
+msgstr ""
+"Για φορητούς υπολογιστές Intel + NVIDIA — NVIDIA 390 (μόνο πολύ παλιές GPU)"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:63
+msgid "For AMD + NVIDIA laptops — switches between GPUs to save battery"
+msgstr ""
+"Για φορητούς υπολογιστές AMD + NVIDIA — εναλλάσσεται μεταξύ των GPU για "
+"εξοικονόμηση μπαταρίας"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:66
+msgid "For AMD + NVIDIA laptops — NVIDIA 575 series"
+msgstr "Για φορητούς υπολογιστές AMD + NVIDIA — NVIDIA 575 series"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:69
+msgid "For AMD + NVIDIA laptops — NVIDIA 570 series"
+msgstr "Για φορητούς υπολογιστές AMD + NVIDIA — NVIDIA 570 series"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:72
+msgid "For AMD + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
+msgstr ""
+"Για φορητούς υπολογιστές AMD + NVIDIA — NVIDIA 470 (παλαιού τύπου, χωρίς "
+"Wayland)"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:76
+msgid "Optimized display for virtual machines (VirtualBox, VMware, QEMU/KVM)"
+msgstr ""
+"Βελτιστοποιημένη οθόνη για εικονικές μηχανές (VirtualBox, VMware, QEMU/KVM)"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:90
+msgid "Gaming & 3D Graphics"
+msgstr "Παιχνίδια και τρισδιάστατα γραφικά"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:93
+msgid ""
+"Vulkan and OpenGL libraries essential for games, Steam, Wine/Proton and 3D "
+"applications."
+msgstr ""
+"Οι βιβλιοθήκες Vulkan και OpenGL είναι απαραίτητες για παιχνίδια, Steam, "
+"Wine/Proton και εφαρμογές 3D."
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:99
+msgid "Vulkan for AMD Radeon GPUs"
+msgstr "Vulkan για AMD Radeon GPU"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:106
+msgid "32-bit Vulkan (AMD) — needed by Steam, Wine/Proton and older games"
+msgstr ""
+"32-bit Vulkan (AMD) — απαιτείται από το Steam, το Wine/Proton και παλαιότερα"
+" παιχνίδια"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:114
+msgid "Vulkan for Intel GPUs"
+msgstr "Vulkan για επεξεργαστές Intel GPU"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:121
+msgid "32-bit Vulkan (Intel) — needed by Steam, Wine/Proton and older games"
+msgstr ""
+"32-bit Vulkan (Intel) — απαιτείται από το Steam, το Wine/Proton και "
+"παλαιότερα παιχνίδια"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:130
+msgid "Open-source Vulkan for NVIDIA (Nouveau) — no proprietary driver needed"
+msgstr ""
+"Vulkan ανοιχτού κώδικα για NVIDIA (Nouveau) — δεν χρειάζεται ιδιόκτητο "
+"πρόγραμμα οδήγησης"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:139
+msgid "32-bit OpenGL — needed by Steam, Wine/Proton and older 32-bit games"
+msgstr ""
+"OpenGL 32 bit — απαιτείται από Steam, Wine/Proton και παλαιότερα παιχνίδια "
+"32 bit"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:149
+msgid "Video Playback"
+msgstr "Αναπαραγωγή βίντεο"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:152
+msgid ""
+"Hardware-accelerated video decoding (VAAPI/VDPAU). Makes videos, streaming "
+"and video calls smoother while reducing CPU and power usage."
+msgstr ""
+"Αποκωδικοποίηση βίντεο με επιτάχυνση υλικού (VAAPI/VDPAU). Κάνει τα βίντεο, "
+"τη ροή και τις βιντεοκλήσεις πιο ομαλά, ενώ μειώνει τη χρήση της CPU και της"
+" ενέργειας."
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:159
+msgid "VAAPI for NVIDIA proprietary driver"
+msgstr "VAAPI για ιδιόκτητο πρόγραμμα οδήγησης NVIDIA"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:165
+msgid "VAAPI for Intel (Broadwell / Gen 8 and newer)"
+msgstr "VAAPI για Intel (Broadwell / Gen 8 και νεότερη έκδοση)"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:172
+msgid "VAAPI for older Intel (Haswell to Coffee Lake / Gen 4–9)"
+msgstr "VAAPI για παλαιότερη Intel (Haswell to Coffee Lake / Gen 4–9)"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:179
+msgid "VAAPI for AMD and NVIDIA open-source (Nouveau)"
+msgstr "VAAPI για AMD και NVIDIA ανοιχτού κώδικα (Nouveau)"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:186
+msgid ""
+"VDPAU for AMD/NVIDIA open-source — legacy API being replaced by VAAPI and "
+"Vulkan. Probably not needed."
+msgstr ""
+"VDPAU για AMD/NVIDIA ανοιχτού κώδικα — το παλαιού τύπου API αντικαθίσταται "
+"από το VAAPI και το Vulkan. Μάλλον δεν χρειάζεται."
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:197
+msgid "GPU Compute (AI / ML)"
+msgstr "Υπολογισμός GPU (AI / ML)"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:200
+msgid ""
+"CUDA and OpenCL libraries for artificial intelligence, machine learning, "
+"Blender, DaVinci Resolve and other GPU-accelerated workloads."
+msgstr ""
+"Βιβλιοθήκες CUDA και OpenCL για τεχνητή νοημοσύνη, μηχανική μάθηση, Blender,"
+" DaVinci Resolve και άλλους φόρτους εργασίας με επιτάχυνση GPU."
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:207
+msgid "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
+msgstr "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:213
+msgid "OpenCL for NVIDIA — Blender, DaVinci, Darktable"
+msgstr "OpenCL για NVIDIA — Blender, DaVinci, Darktable"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:219
+msgid "OpenCL for AMD — Blender, GIMP, DaVinci"
+msgstr "OpenCL για AMD — Blender, GIMP, DaVinci"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:225
+msgid "OpenCL for Intel — Blender, DaVinci"
+msgstr "OpenCL για Intel — Blender, DaVinci"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:270
+msgid "Stable"
+msgstr "Σταθερός"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:272
+msgid ""
+"Officially tested by the Mesa team. The safest and most reliable choice for "
+"everyday use, gaming, and video playback."
+msgstr ""
+"Δοκιμασμένο επίσημα από την ομάδα Μέσα. Η ασφαλέστερη και πιο αξιόπιστη "
+"επιλογή για καθημερινή χρήση, gaming και αναπαραγωγή βίντεο."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
+#: usr/share/big-kernel-manager/ui/mesa_data.py:279
+#: usr/share/big-kernel-manager/ui/mesa_data.py:285
+msgid "Performance"
+msgstr "Απόδοση"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:281
+msgid ""
+"Modified version with gaming optimizations for extra performance. Reliable "
+"for most users but may rarely cause instabilities."
+msgstr ""
+"Τροποποιημένη έκδοση με βελτιστοποιήσεις παιχνιδιών για επιπλέον απόδοση. "
+"Αξιόπιστο για τους περισσότερους χρήστες, αλλά σπάνια μπορεί να προκαλέσει "
+"αστάθειες."
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:289
+msgid "Development"
+msgstr "Ανάπτυξη"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:291
+msgid ""
+"Built from the very latest source code with cutting-edge features. Offers "
+"the best gaming performance but is the least tested — only for advanced "
 "users."
 msgstr ""
-"Αν δεν είστε σίγουροι, οι <b>LTS kernel</b> και <b>Stable Mesa</b> οδηγοί είναι οι ασφαλέστερες "
-"επιλογές για τους περισσότερους χρήστες."
+"Κατασκευασμένο από τον πιο πρόσφατο πηγαίο κώδικα με δυνατότητες αιχμής. "
+"Προσφέρει την καλύτερη απόδοση παιχνιδιού, αλλά είναι η λιγότερο δοκιμασμένη"
+" — μόνο για προχωρημένους χρήστες."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
+#: usr/share/big-kernel-manager/ui/mesa_data.py:299
+#: usr/share/big-kernel-manager/ui/mesa_data.py:305
+msgid "Legacy"
+msgstr "Κληρονομιά"
+
+#: usr/share/big-kernel-manager/ui/mesa_data.py:301
+msgid ""
+"For very old graphics cards that only support OpenGL 2.1 or earlier. Only "
+"install this if newer Mesa versions don't work with your hardware."
+msgstr ""
+"Για πολύ παλιές κάρτες γραφικών που υποστηρίζουν μόνο OpenGL 2.1 ή "
+"παλαιότερη έκδοση. Εγκαταστήστε το μόνο εάν οι νεότερες εκδόσεις Mesa δεν "
+"λειτουργούν με το υλικό σας."
+
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
+#~ msgid "Operation progress"
+#~ msgstr "Πρόοδος λειτουργίας"
+
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
+#~ msgid "Command output"
+#~ msgstr "Έξοδος εντολής"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
+#, python-brace-format
+#~ msgid "Version: {}"
+#~ msgstr "Έκδοση: {}"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
+#~ msgid "Cannot remove the currently running kernel"
+#~ msgstr ""
+#~ "Δεν είναι δυνατή η κατάργηση του πυρήνα που εκτελείται αυτήν τη στιγμή"
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+#, python-brace-format
+#~ msgid ""
+#~ "Are you sure you want to install the <b>{}</b> kernel?\n"
+#~ "\n"
+#~ "This will install the kernel and its modules."
+#~ msgstr ""
+#~ "Είστε σίγουροι ότι θέλετε να εγκαταστήσετε τον <b>{}</b> πυρήνα;\n"
+#~ "\n"
+#~ "Αυτό θα εγκαταστήσει τον πυρήνα και τα modules του."
+
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
+#~ msgid "This may take a few minutes. Please wait..."
+#~ msgstr "Αυτό μπορεί να διαρκέσει μερικά λεπτά. Παρακαλώ περιμένετε..."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+#, python-brace-format
+#~ msgid ""
+#~ "Are you sure you want to remove the <b>{}</b> kernel?\n"
+#~ "\n"
+#~ "This will remove the kernel and its modules."
+#~ msgstr ""
+#~ "Είστε σίγουροι ότι θέλετε να αφαιρέσετε τον <b>{}</b> πυρήνα;\n"
+#~ "\n"
+#~ "Αυτό θα αφαιρέσει τον πυρήνα και τα modules του."
+
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
+#, python-brace-format
+#~ msgid "Starting removal of {} kernel..."
+#~ msgstr "Έναρξη αφαίρεσης του{}πυρήνα..."
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
+#~ msgid "Operation in progress"
+#~ msgstr "Διαδικασία σε εξέλιξη"
+
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
+#~ msgid "Show Terminal Output"
+#~ msgstr "Εμφάνιση εξόδου τερματικού"
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
+#~ msgid ""
+#~ "Classic OpenGL implementation for very old hardware. Only use if your GPU "
+#~ "does not support modern Mesa drivers."
+#~ msgstr ""
+#~ "Κλασική υλοποίηση OpenGL για πολύ παλαιό υλικό. Χρησιμοποιήστε το μόνο αν η "
+#~ "GPU σας δεν υποστηρίζει τους σύγχρονους οδηγούς Mesa."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 82
+#~ msgid ""
+#~ "Official stable Mesa release. Best balance of performance, compatibility and"
+#~ " stability. Includes Vulkan drivers for AMD, Intel and software rendering."
+#~ msgstr ""
+#~ "Επίσημη σταθερή έκδοση Mesa. Καλύτερη ισορροπία απόδοσης, συμβατότητας και "
+#~ "σταθερότητας. Περιλαμβάνει οδηγούς Vulkan για AMD, Intel και λογισμικό "
+#~ "απόδοσης."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
+#~ msgid ""
+#~ "Custom build with performance patches. May provide better FPS in games, but "
+#~ "can cause issues with system updates. Use with caution."
+#~ msgstr ""
+#~ "Προσαρμοσμένη έκδοση με επιδιορθώσεις απόδοσης. Μπορεί να προσφέρει καλύτερα"
+#~ " FPS σε παιχνίδια, αλλά μπορεί να προκαλέσει προβλήματα με τις ενημερώσεις "
+#~ "συστήματος. Χρησιμοποιήστε με προσοχή."
+
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
+#~ msgid ""
+#~ "Bleeding-edge development version. Contains the newest features but is "
+#~ "unstable and may break with updates. Not recommended for daily use."
+#~ msgstr ""
+#~ "Έκδοση ανάπτυξης αιχμής. Περιέχει τα πιο πρόσφατα χαρακτηριστικά αλλά είναι "
+#~ "ασταθής και μπορεί να σπάσει με τις ενημερώσεις. Δεν συνιστάται για "
+#~ "καθημερινή χρήση."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 235
+#~ msgid "Kernel and Mesa Management"
+#~ msgstr "Διαχείριση πυρήνα και Mesa"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 274
+#~ msgid ""
+#~ "Changing your system's kernel or Mesa drivers can impact system stability. "
+#~ "Please review the following recommendations:"
+#~ msgstr ""
+#~ "Η αλλαγή του πυρήνα του συστήματός σας ή των οδηγών Mesa μπορεί να επηρεάσει"
+#~ " τη σταθερότητα του συστήματος. Παρακαλώ αναθεωρήστε τις παρακάτω συστάσεις:"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 282
+#~ msgid "Always keep at least one working kernel"
+#~ msgstr "Διατηρείτε πάντα τουλάχιστον έναν λειτουργικό πυρήνα"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 282
+#~ msgid "installed as a fallback"
+#~ msgstr "εγκατεστημένο ως εναλλακτική λύση"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 284
+#~ msgid ""
+#~ "LTS kernels offer better stability, while newer kernels provide newer "
+#~ "hardware support"
+#~ msgstr ""
+#~ "Οι πυρήνες LTS προσφέρουν καλύτερη σταθερότητα, ενώ οι νεότεροι πυρήνες "
+#~ "παρέχουν υποστήριξη για νεότερο υλικό."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 286
+#~ msgid "Test your system thoroughly after kernel changes"
+#~ msgstr "Ελέγξτε διεξοδικά το σύστημά σας μετά από αλλαγές στον πυρήνα"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 288
+#~ msgid ""
+#~ "If a new kernel causes issues, you can select the previous kernel from the "
+#~ "boot menu"
+#~ msgstr ""
+#~ "Εάν ένας νέος πυρήνας προκαλεί προβλήματα, μπορείτε να επιλέξετε τον "
+#~ "προηγούμενο πυρήνα από το μενού εκκίνησης."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 290
+#~ msgid ""
+#~ "Real-time (RT) kernels are specialized for low-latency tasks but may not be "
+#~ "suitable for general use"
+#~ msgstr ""
+#~ "Οι πυρήνες πραγματικού χρόνου (RT) είναι εξειδικευμένοι για εργασίες χαμηλής"
+#~ " καθυστέρησης, αλλά ενδέχεται να μην είναι κατάλληλοι για γενική χρήση."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 293
+#~ msgid "Kernel Management"
+#~ msgstr "Διαχείριση πυρήνα"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 294
+# File: usr/share/big-kernel-manager/ui/window.py, line: 313
+#~ msgid "Tips"
+#~ msgstr "Συμβουλές"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 301
+#~ msgid ""
+#~ "Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some "
+#~ "NVIDIA GPUs"
+#~ msgstr ""
+#~ "Οι οδηγοί Mesa παρέχουν επιτάχυνση γραφικών 3D για AMD, Intel και ορισμένες "
+#~ "GPU NVIDIA."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 303
+#~ msgid ""
+#~ "Changing Mesa versions may affect graphics performance and application "
+#~ "compatibility"
+#~ msgstr ""
+#~ "Η αλλαγή των εκδόσεων Mesa μπορεί να επηρεάσει την απόδοση των γραφικών και "
+#~ "τη συμβατότητα των εφαρμογών."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 305
+#~ msgid "The stable version is recommended for most users"
+#~ msgstr "Η σταθερή έκδοση συνιστάται για τους περισσότερους χρήστες."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 307
+#~ msgid ""
+#~ "Development versions may offer better performance but with less stability"
+#~ msgstr ""
+#~ "Οι εκδόσεις ανάπτυξης μπορεί να προσφέρουν καλύτερη απόδοση, αλλά με "
+#~ "λιγότερη σταθερότητα."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 309
+#~ msgid ""
+#~ "If graphics issues occur after a change, you can switch back to the previous"
+#~ " driver"
+#~ msgstr ""
+#~ "Εάν μετά από μια αλλαγή εμφανιστούν προβλήματα με τα γραφικά, μπορείτε να "
+#~ "επιστρέψετε στο προηγούμενο πρόγραμμα οδήγησης."
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 312
+#~ msgid "Mesa Driver Management"
+#~ msgstr "Διαχείριση οδηγών Mesa"
+
+# File: usr/share/big-kernel-manager/ui/window.py, line: 329
+#~ msgid ""
+#~ "If unsure, the <b>LTS kernel</b> and <b>Stable Mesa</b> drivers are the "
+#~ "safest choices for most users."
+#~ msgstr ""
+#~ "Αν δεν είστε σίγουροι, οι <b>LTS kernel</b> και <b>Stable Mesa</b> οδηγοί "
+#~ "είναι οι ασφαλέστερες επιλογές για τους περισσότερους χρήστες."
+
 # File: usr/share/big-kernel-manager/ui/window.py, line: 449
-#: /home/talesam/Servidor/GitHub/big-kernel-manager/usr/share/big-kernel-manager/ui/window.py:364
-msgid "Show this warning on startup"
-msgstr "Εμφάνιση αυτής της προειδοποίησης κατά την εκκίνηση"
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
-#: NEEDS WORK
-#, python-brace-format
-msgid "Starting {}..."
-msgstr "Ξεκινώντας {}..."
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
-#: NEEDS WORK
-#, python-brace-format
-msgid "Command: {}"
-msgstr "Εντολή: {}"
-# 
+#~ msgid "Show this warning on startup"
+#~ msgstr "Εμφάνιση αυτής της προειδοποίησης κατά την εκκίνηση"
+
 # File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
-#: NEEDS WORK
-msgid "⚠️ Operation cancelled by user."
-msgstr "⚠️ Η λειτουργία ακυρώθηκε από τον χρήστη."
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
-#: NEEDS WORK
-#, python-brace-format
-msgid "Still working... ({:.0%} complete)"
-msgstr "Ακόμα σε επεξεργασία... ({:.0%} ολοκληρωμένο)"
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
-#: NEEDS WORK
-msgid "Operation cancelled"
-msgstr "Η λειτουργία ακυρώθηκε"
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
-#: NEEDS WORK
-msgid "❌ Operation was cancelled."
-msgstr "❌ Η λειτουργία ακυρώθηκε."
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
-#: NEEDS WORK
-#, python-brace-format
-msgid "{}  complete!"
-msgstr "{}  ολοκληρώθηκε!"
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
-#: NEEDS WORK
-#, python-brace-format
-msgid "✅ {} completed successfully."
-msgstr "✅ {} ολοκληρώθηκε με επιτυχία."
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
-#: NEEDS WORK
-#, python-brace-format
-msgid "{}  failed."
-msgstr "{} απέτυχε."
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
-#: NEEDS WORK
-#, python-brace-format
-msgid "❌ {} failed (exit code: {})"
-msgstr "❌ {} απέτυχε (κωδικός εξόδου: {})"
-# 
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
-#: NEEDS WORK
-#, python-brace-format
-msgid "Error: {}"
-msgstr "Σφάλμα: {}"
+#~ msgid "⚠️ Operation cancelled by user."
+#~ msgstr "⚠️ Η λειτουργία ακυρώθηκε από τον χρήστη."
