@@ -8,104 +8,26 @@ This module provides functionality for managing Mesa drivers
 including listing, installing, and switching between different versions.
 """
 
-from typing import List, Dict, Optional, Callable
+import json
+import subprocess
+import threading
+from pathlib import Path
+from typing import Callable
 
 from core.base_manager import BaseManager
 from core.package_manager import PackageManager
 from core.logging_config import get_logger
+from core.subprocess_env import subprocess_env
 
 
-# Mesa driver configurations
-# Note: stable mesa includes all complementary packages that Manjaro separates,
-# while mesa-tkg bundles everything together.
-MESA_DRIVERS = [
-    {
-        "id": "amber",
-        "name": "Amber",
-        "detect_package": "mesa-amber",
-        "packages": ["mesa-amber"],
-        "conflicts": [
-            "mesa",
-            "lib32-mesa",
-            "mesa-git",
-            "mesa-tkg-stable",
-            "mesa-tkg-git",
-            "vulkan-intel",
-            "lib32-vulkan-intel",
-            "vulkan-radeon",
-            "lib32-vulkan-radeon",
-            "vulkan-swrast",
-            "lib32-vulkan-swrast",
-            "vulkan-mesa-implicit-layers",
-            "lib32-vulkan-mesa-implicit-layers",
-            "mesa-utils",
-        ],
-        "description": "Stable and well-tested version of Mesa",
-    },
-    {
-        "id": "stable",
-        "name": "Stable",
-        "detect_package": "mesa",
-        "packages": [
-            "mesa",
-            "lib32-mesa",
-            "vulkan-radeon",
-            "lib32-vulkan-radeon",
-            "vulkan-intel",
-            "lib32-vulkan-intel",
-            "vulkan-swrast",
-            "lib32-vulkan-swrast",
-            "mesa-utils",
-        ],
-        "conflicts": ["mesa-amber", "mesa-git", "mesa-tkg-stable", "mesa-tkg-git"],
-        "description": "Regular Mesa release (recommended)",
-    },
-    {
-        "id": "tkg-stable",
-        "name": "Tkg-Stable",
-        "detect_package": "mesa-tkg-stable",
-        "packages": ["mesa-tkg-stable"],
-        "conflicts": [
-            "mesa",
-            "lib32-mesa",
-            "mesa-amber",
-            "mesa-git",
-            "mesa-tkg-git",
-            "vulkan-intel",
-            "lib32-vulkan-intel",
-            "vulkan-radeon",
-            "lib32-vulkan-radeon",
-            "vulkan-swrast",
-            "lib32-vulkan-swrast",
-            "vulkan-mesa-implicit-layers",
-            "lib32-vulkan-mesa-implicit-layers",
-            "mesa-utils",
-        ],
-        "description": "Enhanced performance build of stable Mesa",
-    },
-    {
-        "id": "tkg-git",
-        "name": "Tkg-git",
-        "detect_package": "mesa-tkg-git",
-        "packages": ["mesa-tkg-git"],
-        "conflicts": [
-            "mesa",
-            "lib32-mesa",
-            "mesa-amber",
-            "mesa-tkg-stable",
-            "vulkan-intel",
-            "lib32-vulkan-intel",
-            "vulkan-radeon",
-            "lib32-vulkan-radeon",
-            "vulkan-swrast",
-            "lib32-vulkan-swrast",
-            "vulkan-mesa-implicit-layers",
-            "lib32-vulkan-mesa-implicit-layers",
-            "mesa-utils",
-        ],
-        "description": "Latest development version with cutting-edge features",
-    },
-]
+def _load_mesa_drivers() -> list[dict]:
+    """Load Mesa driver definitions from external JSON data file."""
+    data_path = Path(__file__).resolve().parent.parent / "assets" / "mesa_drivers.json"
+    with open(data_path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+MESA_DRIVERS: list[dict] = _load_mesa_drivers()
 
 
 class MesaManager(BaseManager):
@@ -118,14 +40,20 @@ class MesaManager(BaseManager):
         self.package_manager = PackageManager()
         self.drivers = MESA_DRIVERS.copy()
 
-    def get_available_drivers(self) -> List[Dict]:
+    def get_available_drivers(
+        self, installed_set: set[str] | None = None
+    ) -> list[dict]:
         """
         Get a list of available Mesa drivers.
+
+        Args:
+            installed_set: Pre-fetched set of installed package names
+                (from ``pacman -Qq``). Avoids subprocess calls.
 
         Returns:
             List of available Mesa drivers with their information.
         """
-        active_driver = self._get_active_driver()
+        active_driver = self._get_active_driver(installed_set)
 
         drivers = []
         for driver in self.drivers:
@@ -135,31 +63,36 @@ class MesaManager(BaseManager):
 
         return drivers
 
-    def _get_active_driver(self) -> str:
+    def _get_active_driver(self, installed_set: set[str] | None = None) -> str:
         """
         Determine which Mesa driver is currently active.
 
-        Uses _is_real_package_installed (pacman -Qi + Name check) instead
-        of pacman -Q to avoid false positives from virtual provides
-        (e.g. mesa-tkg-stable provides 'mesa', so pacman -Q mesa would
-        incorrectly match the stable driver).
+        When *installed_set* (from ``pacman -Qq``) is provided, avoids
+        per-package ``pacman -Qi`` calls.  ``pacman -Qq`` always returns
+        real package names, so virtual provides cannot cause false positives.
 
         Returns:
             ID of the active driver, or "stable" if not determined.
         """
-        for driver in self.drivers:
-            detect_pkg = driver.get("detect_package", driver["packages"][0])
-            if self._is_real_package_installed(detect_pkg):
-                return driver["id"]
+        if installed_set is not None:
+            for driver in self.drivers:
+                detect_pkg = driver.get("detect_package", driver["packages"][0])
+                if detect_pkg in installed_set:
+                    return driver["id"]
+        else:
+            for driver in self.drivers:
+                detect_pkg = driver.get("detect_package", driver["packages"][0])
+                if self._is_real_package_installed(detect_pkg):
+                    return driver["id"]
 
         return "stable"
 
     def apply_driver(
         self,
         driver_id: str,
-        progress_callback: Optional[Callable] = None,
-        output_callback: Optional[Callable] = None,
-        complete_callback: Optional[Callable] = None,
+        progress_callback: Callable | None = None,
+        output_callback: Callable | None = None,
+        complete_callback: Callable | None = None,
     ) -> None:
         """
         Apply a Mesa driver configuration.
@@ -187,8 +120,6 @@ class MesaManager(BaseManager):
         self._logger.info(f"Applying Mesa driver: {selected_driver['name']}")
 
         # Start thread for applying driver
-        import threading
-
         threading.Thread(
             target=self._apply_driver_thread,
             args=(
@@ -202,10 +133,10 @@ class MesaManager(BaseManager):
 
     def _apply_driver_thread(
         self,
-        driver: Dict,
-        progress_callback: Optional[Callable],
-        output_callback: Optional[Callable],
-        complete_callback: Optional[Callable],
+        driver: dict,
+        progress_callback: Callable | None,
+        output_callback: Callable | None,
+        complete_callback: Callable | None,
     ) -> None:
         """
         Thread function for applying a driver.
@@ -216,9 +147,6 @@ class MesaManager(BaseManager):
             output_callback: Callback function for command output.
             complete_callback: Callback function for completion notification.
         """
-        import subprocess
-        import os
-
         self._progress(progress_callback, 0.1, f"Applying {driver['name']} driver...")
         self._output(
             output_callback, f"Starting {driver['name']} driver installation..."
@@ -249,7 +177,6 @@ class MesaManager(BaseManager):
                 progress_callback, 0.3, f"Checking {driver['name']} packages..."
             )
 
-            # For packages with multiple items (like stable mesa), filter to those available
             packages_to_install = []
             for pkg in driver["packages"]:
                 if self._package_available(pkg):
@@ -269,29 +196,69 @@ class MesaManager(BaseManager):
                 output_callback, f"Installing: {', '.join(packages_to_install)}"
             )
 
-            # Step 3: Build a single pkexec command that removes conflicts + installs packages
-            # This avoids multiple password prompts by running everything under one auth
-            cmd_parts = []
+            env = subprocess_env()
+
+            # Step 3: Remove conflicting packages (if any)
             if installed_conflicts:
-                cmd_parts.append(
-                    f"pacman -Rdd --noconfirm {' '.join(installed_conflicts)}"
+                self._progress(
+                    progress_callback, 0.35, "Removing conflicting packages..."
                 )
-            cmd_parts.append(
-                f"pacman -S --noconfirm --ask 4 {' '.join(packages_to_install)}"
-            )
-            combined_cmd = " && ".join(cmd_parts)
 
+                remove_cmd = [
+                    self.sudo_command,
+                    "pacman",
+                    "-Rdd",
+                    "--noconfirm",
+                ] + installed_conflicts
+
+                process = subprocess.Popen(
+                    remove_cmd,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    stdin=subprocess.DEVNULL,
+                    text=True,
+                    env=env,
+                )
+
+                progress = 0.35
+                if process.stdout:
+                    for line in iter(process.stdout.readline, ""):
+                        line = line.strip()
+                        if line:
+                            self._output(output_callback, line)
+                            progress, _status = self._parse_progress(line, progress)
+                            self._progress(progress_callback, progress, _status)
+
+                process.wait()
+
+                if process.returncode != 0:
+                    self._progress(
+                        progress_callback, 0.0, "Failed to remove conflicting packages."
+                    )
+                    self._output(
+                        output_callback,
+                        f"❌ Failed to remove conflicts (exit code: {process.returncode})",
+                    )
+                    if complete_callback:
+                        complete_callback(False)
+                    return
+
+            # Step 4: Install the new driver packages
             self._progress(
-                progress_callback, 0.4, f"Applying {driver['name']} driver..."
+                progress_callback, 0.5, f"Installing {driver['name']} driver..."
             )
 
-            full_cmd = [self.sudo_command, "bash", "-c", combined_cmd]
-
-            env = os.environ.copy()
-            env["LANG"] = "C"
+            install_cmd = [
+                self.sudo_command,
+                "pacman",
+                "-S",
+                "--noconfirm",
+                "--ask",
+                "4",
+            ] + packages_to_install
 
             process = subprocess.Popen(
-                full_cmd,
+                install_cmd,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 stdin=subprocess.DEVNULL,
@@ -299,14 +266,14 @@ class MesaManager(BaseManager):
                 env=env,
             )
 
-            progress = 0.4
+            progress = 0.5
             if process.stdout:
                 for line in iter(process.stdout.readline, ""):
                     line = line.strip()
                     if line:
                         self._output(output_callback, line)
-                        progress = self._parse_progress(line, progress)
-                        self._progress(progress_callback, progress, None)
+                        progress, _status = self._parse_progress(line, progress)
+                        self._progress(progress_callback, progress, _status)
 
             process.wait()
 
@@ -353,14 +320,9 @@ class MesaManager(BaseManager):
         Returns:
             True if the package is installed with that exact name.
         """
-        import os
-        import subprocess
-
         cmd = ["pacman", "-Qi", package_name]
-        env = os.environ.copy()
-        env["LANG"] = "C"
         result = subprocess.run(
-            cmd, capture_output=True, text=True, check=False, env=env
+            cmd, capture_output=True, text=True, check=False, env=subprocess_env()
         )
         if result.returncode != 0:
             return False
@@ -381,8 +343,6 @@ class MesaManager(BaseManager):
         Returns:
             True if the package exists in repos, False otherwise.
         """
-        import subprocess
-
         cmd = ["pacman", "-Si", package_name]
         result = subprocess.run(cmd, capture_output=True, text=True, check=False)
         return result.returncode == 0

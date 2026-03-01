@@ -16,13 +16,22 @@ import subprocess
 class PackageManager:
     """Interface for querying the pacman package manager."""
 
-    def __init__(self):
-        """Initialize the package manager."""
-        pass
+    def __init__(self) -> None:
+        self._installed_cache: list[dict[str, str]] | None = None
+        self._installed_names: set[str] | None = None
 
-    def get_installed_packages(self, pattern=None):
+    def invalidate_cache(self) -> None:
+        """Clear the installed-packages cache (call after install/remove)."""
+        self._installed_cache = None
+        self._installed_names = None
+
+    def get_installed_packages(
+        self, pattern: str | None = None
+    ) -> list[dict[str, str]]:
         """
         Get a list of installed packages.
+
+        Results are cached until ``invalidate_cache()`` is called.
 
         Args:
             pattern: Optional regex pattern to filter packages.
@@ -30,75 +39,33 @@ class PackageManager:
         Returns:
             list: List of installed packages.
         """
-        cmd = ["pacman", "-Q"]
-        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
+        if self._installed_cache is None:
+            cmd = ["pacman", "-Q"]
+            result = subprocess.run(cmd, capture_output=True, text=True, check=False)
 
-        if result.returncode != 0:
-            return []
+            if result.returncode != 0:
+                return []
 
-        packages = []
-        for line in result.stdout.strip().split("\n"):
-            if not line:
-                continue
-
-            parts = line.split()
-            if len(parts) >= 2:
-                package_name = parts[0]
-                package_version = parts[1]
-
-                if pattern and not re.search(pattern, package_name):
+            packages = []
+            for line in result.stdout.strip().split("\n"):
+                if not line:
                     continue
+                parts = line.split()
+                if len(parts) >= 2:
+                    packages.append({"name": parts[0], "version": parts[1]})
+            self._installed_cache = packages
+            self._installed_names = {p["name"] for p in packages}
 
-                packages.append({"name": package_name, "version": package_version})
-
-        return packages
-
-    def get_available_packages(self, pattern=None):
-        """
-        Get a list of available packages from repositories.
-
-        Args:
-            pattern: Optional regex pattern to filter packages.
-
-        Returns:
-            list: List of available packages.
-        """
-        cmd = ["pacman", "-Ss"]
         if pattern:
-            cmd.append(pattern)
-
-        result = subprocess.run(cmd, capture_output=True, text=True, check=False)
-
-        if result.returncode != 0:
-            return []
-
-        packages = []
-
-        for line in result.stdout.strip().split("\n"):
-            if not line:
-                continue
-
-            if line.startswith(" "):
-                continue
-
-            match = re.match(r"([^\s]+)/([^\s]+)\s+([^\s]+)", line)
-            if match:
-                packages.append(
-                    {
-                        "name": match.group(2),
-                        "version": match.group(3),
-                        "repository": match.group(1),
-                    }
-                )
-
-        return packages
+            return [p for p in self._installed_cache if re.search(pattern, p["name"])]
+        return list(self._installed_cache)
 
     def is_package_installed(self, package_name):
         """
         Check if a package is installed.
 
-        Note: pacman -Q resolves virtual 'provides'. If you need to check
-        the exact real package name, use MesaManager._is_real_package_installed.
+        Uses the cached installed-packages list when available, falling back
+        to a single ``pacman -Q`` lookup when the cache is unset.
 
         Args:
             package_name: Name of the package.
@@ -106,6 +73,8 @@ class PackageManager:
         Returns:
             bool: True if the package is installed, False otherwise.
         """
+        if self._installed_cache is not None:
+            return package_name in self._installed_names
         cmd = ["pacman", "-Q", package_name]
         result = subprocess.run(cmd, capture_output=True, text=True, check=False)
         return result.returncode == 0

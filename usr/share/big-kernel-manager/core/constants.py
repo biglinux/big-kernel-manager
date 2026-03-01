@@ -27,6 +27,10 @@ LOG_FILE = os.path.join(LOG_DIR, "app.log")
 SUDO_COMMAND = "pkexec"
 PACMAN_COMMAND = "pacman"
 
+# UI Icon Sizes (pixels)
+ICON_SIZE_HEADER = 40  # Section/card headers
+ICON_SIZE_ITEM = 32  # Row items inside cards
+
 # Kernel Patterns - True kernel packages (not modules)
 KERNEL_PATTERNS = [
     r"^linux\d*$",  # Standard kernels (linux, linux59, etc.)
@@ -70,7 +74,7 @@ PROGRESS_UPDATE_INTERVAL = 0.5
 STATUS_UPDATE_INTERVAL = 5.0
 
 # UI Settings
-WINDOW_DEFAULT_WIDTH = 900
-WINDOW_DEFAULT_HEIGHT = 700
+WINDOW_DEFAULT_WIDTH = 1280
+WINDOW_DEFAULT_HEIGHT = 720
 WINDOW_MIN_WIDTH = 600
 WINDOW_MIN_HEIGHT = 400
