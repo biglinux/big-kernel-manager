@@ -2,545 +2,284 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the big-kernel-manager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 00:54-0300\n"
 "Last-Translator: Translation Automator <auto@translator.ai>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/core/driver_installer.py:57
-#: usr/share/big-kernel-manager/ui/kernel_page.py:688
-#: usr/share/big-kernel-manager/ui/mesa_page.py:985
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1211
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1222
-#: usr/share/big-kernel-manager/ui/category_page.py:587
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
-#: usr/share/big-kernel-manager/ui/home_page.py:712
-#: usr/share/big-kernel-manager/ui/home_page.py:723
-#, python-brace-format
-msgid "Installing {}"
-msgstr "Inštalácia {}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: usr/share/big-kernel-manager/core/driver_installer.py:85
-#: usr/share/big-kernel-manager/ui/kernel_page.py:777
-#: usr/share/big-kernel-manager/ui/kernel_page.py:847
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1063
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1249
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1260
-#: usr/share/big-kernel-manager/ui/category_page.py:625
-#, python-brace-format
-msgid "Removing {}"
-msgstr "Odstránenie {}"
-
-#: usr/share/big-kernel-manager/core/driver_installer.py:99
-#, python-brace-format, fuzzy
-msgid "pamac-installer not found. Cannot install AUR package {}."
-msgstr ""
-
-#: usr/share/big-kernel-manager/core/driver_installer.py:113
-msgid "Continue the installation in the pamac window that was opened."
-msgstr "Databáza uzamknutá. Opakovaný pokus o {} sekúnd..."
-
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:213
-#: usr/share/big-kernel-manager/ui/mesa_page.py:951
-#, python-brace-format
-msgid "Remove the installed NVIDIA driver ({}) first."
-msgstr "Najprv odstráňte nainštalovaný ovládač NVIDIA ({})."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:310
-#: usr/share/big-kernel-manager/core/base_manager.py:178
-#, python-brace-format
-msgid "Command: {}"
-msgstr "Príkaz: {}"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:312
-#: usr/share/big-kernel-manager/core/base_manager.py:177
-#: usr/share/big-kernel-manager/core/base_manager.py:180
-#, python-brace-format
-msgid "Starting {}..."
-msgstr "Spúšťam {}..."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
-msgid "Completed"
-msgstr "Dokončené"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 308
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:367
-msgid "Failed"
-msgstr "Neúspešný"
-
-#: usr/share/big-kernel-manager/core/base_manager.py:137
-#, python-brace-format
-msgid "Database locked. Retrying in {} seconds..."
-msgstr "Databáza uzamknutá. Opakovaný pokus o {} sekúnd..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:142
-#, python-brace-format
-msgid "Waiting {} s before retry..."
-msgstr "Pred opätovným pokusom sa čaká {} s..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:147
-#, python-brace-format
-msgid "Retry attempt {} of {}..."
-msgstr "Opakovať pokus {} z {}..."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
-#: usr/share/big-kernel-manager/core/base_manager.py:202
-#: usr/share/big-kernel-manager/core/mesa_manager.py:302
-#, python-brace-format
-msgid "Error: {}"
-msgstr "Chyba: {}"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 333
-#: usr/share/big-kernel-manager/core/base_manager.py:230
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:407
-msgid "Operation cancelled by user."
-msgstr "Operácia zrušená používateľom."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
-#: usr/share/big-kernel-manager/core/base_manager.py:253
-#, python-brace-format
-msgid "Still working... ({:.0%} complete)"
-msgstr "Ešte pracujem... ({:.0%} dokončené)"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
-#: usr/share/big-kernel-manager/core/base_manager.py:279
-msgid "Operation cancelled"
-msgstr "Operácia zrušená"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
-#: usr/share/big-kernel-manager/core/base_manager.py:280
-msgid "Operation was cancelled."
-msgstr "Operácia bola zrušená."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
-#: usr/share/big-kernel-manager/core/base_manager.py:285
-#, python-brace-format
-msgid "{}  complete!"
-msgstr "{}  hotovo!"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
-#: usr/share/big-kernel-manager/core/base_manager.py:289
-#, python-brace-format
-msgid "{}  completed successfully."
-msgstr "{} úspešne dokončené."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
-#: usr/share/big-kernel-manager/core/base_manager.py:295
-#, python-brace-format
-msgid "{}  failed."
-msgstr "{} zlyhalo."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
-#: usr/share/big-kernel-manager/core/base_manager.py:299
-#, python-brace-format
-msgid "{}  failed (exit code: {})"
-msgstr "{} zlyhalo (kód ukončenia: {})"
-
-#: usr/share/big-kernel-manager/core/base_manager.py:310
-msgid ""
-"Package not found in repositories. The package name may have changed or been removed.\n"
-"Suggestion: Try refreshing the database with 'sudo pacman -Sy' and search for the correct name."
-msgstr ""
-"Balík sa nenašiel v úložiskách. Názov balíka mohol byť zmenený alebo odstránený.\n"
-"Návrh: Skúste obnoviť databázu pomocou 'sudo pacman -Sy' a vyhľadajte správny názov."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:319
-msgid ""
-"A conflict prevented the operation from completing.\n"
-"Suggestion: Clean the cache and update with 'sudo pacman -Scc' followed by 'sudo pacman -Syyu'."
-msgstr ""
-"Konflikt zabránil dokončeniu operácie.\n"
-"Návrh: Vyčistite vyrovnávaciu pamäť a aktualizujte ju pomocou „sudo pacman -Scc“ a následne „sudo pacman -Syyu“."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:327
-msgid ""
-"Some files from this package already exist on the system.\n"
-"Suggestion: Check which package owns the file with 'pacman -Qo <file_path>' and resolve the conflict."
-msgstr ""
-"Niektoré súbory z tohto balíka už v systéme existujú.\n"
-"Návrh: Skontrolujte, ktorý balík vlastní súbor pomocou 'pacman -Qo <cesta_súboru>' a vyriešte konflikt."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:335
-msgid ""
-"Required dependencies could not be resolved.\n"
-"Suggestion: Update the full system first with 'sudo pacman -Syu'."
-msgstr ""
-"Požadované závislosti sa nepodarilo vyriešiť.\n"
-"Návrh: Najprv aktualizujte celý systém pomocou 'sudo pacman -Syu'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:342
-msgid ""
-"Package signature could not be verified.\n"
-"Suggestion: Update your keyrings with 'sudo pacman -S archlinux-keyring manjaro-keyring'."
-msgstr ""
-"Podpis balíka sa nepodarilo overiť.\n"
-"Návrh: Aktualizujte svoje kľúčenky pomocou 'sudo pacman -S archlinux-kľúčenka manjaro-keyring'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:350
-msgid ""
-"The package database is locked by another process.\n"
-"If no other package manager is running, remove the lock with 'sudo rm /var/lib/pacman/db.lck'."
-msgstr ""
-"Databáza balíkov je uzamknutá iným procesom.\n"
-"Ak nie je spustený žiadny iný správca balíkov, odstráňte zámok pomocou 'sudo rm /var/lib/pacman/db.lck'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:358
-msgid ""
-"Not enough disk space to complete the operation.\n"
-"Suggestion: Free space by clearing the package cache with 'sudo pacman -Scc'."
-msgstr ""
-"Na dokončenie operácie nie je dostatok miesta na disku.\n"
-"Návrh: Uvoľnite miesto vymazaním vyrovnávacej pamäte balíka pomocou 'sudo pacman -Scc'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:366
-msgid ""
-"Could not download required files.\n"
-"Suggestion: Check your internet connection. If the problem persists, try updating your mirror list."
-msgstr ""
-"Nepodarilo sa stiahnuť požadované súbory.\n"
-"Návrh: Skontrolujte svoje internetové pripojenie. Ak problém pretrváva, skúste aktualizovať zoznam zrkadiel."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:374
-msgid ""
-"A downloaded package is corrupted.\n"
-"Suggestion: Clear the cache with 'sudo pacman -Scc' and try again."
-msgstr ""
-"Stiahnutý balík je poškodený.\n"
-"Návrh: Vymažte vyrovnávaciu pamäť pomocou „sudo pacman -Scc“ a skúste to znova."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:391
-msgid "Generating GRUB configuration..."
-msgstr "Generuje sa konfigurácia GRUB..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:392
-msgid "Running post-transaction hooks..."
-msgstr "Spúšťajú sa háky po transakcii..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/core/base_manager.py:393
-msgid "Installing packages..."
-msgstr "Inštaluje sa balíky..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:394
-msgid "Removing packages..."
-msgstr "Odstraňujú sa balíky..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:395
-msgid "Checking for file conflicts..."
-msgstr "Kontrolujú sa konflikty súborov..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:396
-msgid "Checking dependencies..."
-msgstr "Kontrolujú sa závislosti..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:400
-msgid "Synchronizing package databases..."
-msgstr "Synchronizácia databáz balíkov..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:423
-#: usr/share/big-kernel-manager/ui/home_page.py:643
-msgid "Downloading packages..."
-msgstr "Ovládač sa nenašiel: {}"
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:116
-#, python-brace-format
-msgid "Driver not found: {}"
-msgstr "Ovládač sa nenašiel: {}"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
-#: usr/share/big-kernel-manager/core/mesa_manager.py:151
-#, python-brace-format
-msgid "Applying {} driver..."
-msgstr "Inštalácia{}ovládača..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#: usr/share/big-kernel-manager/core/mesa_manager.py:153
-#, python-brace-format
-msgid "Starting {} driver installation..."
-msgstr "Spúšťa sa inštalácia ovládača {}..."
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:161
-msgid "Checking for conflicting packages..."
-msgstr "Kontrolujú sa konfliktné balíky..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: usr/share/big-kernel-manager/core/mesa_manager.py:173
-#, python-brace-format
-msgid "Removing conflicts: {}"
-msgstr "Odstraňujú sa konflikty: {}"
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:178
-#, python-brace-format
-msgid "Checking {} packages..."
-msgstr "Kontroluje sa {} balíkov..."
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:187
-#, python-brace-format
-msgid "⚠️ Package {} not available, skipping..."
-msgstr "⚠️ Balíček {} nie je k dispozícii, preskakuje sa..."
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:191
-msgid "❌ No packages available to install."
-msgstr "❌ Nie sú dostupné žiadne balíčky na inštaláciu."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/core/mesa_manager.py:197
-#, python-brace-format
-msgid "Installing: {}"
-msgstr "Inštaluje sa: {}"
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:205
-msgid "Removing conflicting packages..."
-msgstr "Odstraňujú sa konfliktné balíky..."
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:237
-msgid "Failed to remove conflicting packages."
-msgstr "Nepodarilo sa odstrániť konfliktné balíky."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
-#: usr/share/big-kernel-manager/core/mesa_manager.py:241
-#, python-brace-format
-msgid "❌ Failed to remove conflicts (exit code: {})"
-msgstr "❌ Nepodarilo sa odstrániť konflikty (kód ukončenia: {})"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
-#: usr/share/big-kernel-manager/core/mesa_manager.py:249
-#, python-brace-format
-msgid "Installing {} driver..."
-msgstr "Inštaluje sa ovládač {}..."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
-#: usr/share/big-kernel-manager/core/mesa_manager.py:282
-msgid "Failed to apply driver."
-msgstr "Nepodarilo sa použiť ovládač."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
-#: usr/share/big-kernel-manager/core/mesa_manager.py:285
-#, python-brace-format
-msgid "❌ Operation failed (exit code: {})"
-msgstr "❌ Operácia zlyhala (kód ukončenia: {})"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: usr/share/big-kernel-manager/core/mesa_manager.py:292
-msgid "Driver applied successfully!"
-msgstr "✅ {} vodič bol úspešne použitý!"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
-#: usr/share/big-kernel-manager/core/mesa_manager.py:294
-#, python-brace-format
-msgid "✅ {} driver applied successfully!"
-msgstr "✅ {} vodič bol úspešne použitý!"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
-#: usr/share/big-kernel-manager/core/mesa_manager.py:303
-#, python-brace-format
-msgid "❌ Error: {}"
-msgstr "❌ Chyba: {}"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
-#: usr/share/big-kernel-manager/ui/application.py:143
-#: usr/share/big-kernel-manager/ui/kernel_page.py:165
-#: usr/share/big-kernel-manager/ui/mesa_page.py:319
-msgid "Error"
-msgstr "Chyba"
-
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
 msgid "Loading..."
 msgstr "Načítanie..."
-
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:40
 msgid "Loading"
 msgstr "Načítava sa"
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py, line: 55
 #: usr/share/big-kernel-manager/ui/base_page.py:55
 msgid "Still loading… Check your network connection."
 msgstr "Stále sa načítava... Skontrolujte pripojenie k sieti."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
-#: usr/share/big-kernel-manager/ui/kernel_page.py:107
-msgid "Installed Kernels"
-msgstr "Inštalované jadrá"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
-#: usr/share/big-kernel-manager/ui/kernel_page.py:119
-msgid "Remove all obsolete kernels"
-msgstr "Odstráňte všetky zastarané jadrá"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 89
-#: usr/share/big-kernel-manager/ui/kernel_page.py:261
-msgid "Kernel in use"
-msgstr "Používa sa jadro"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: usr/share/big-kernel-manager/ui/kernel_page.py:267
-msgid "In Use"
-msgstr "V použití"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:331
-msgid "Obsolete Kernels — Removal Recommended"
-msgstr "Zastarané jadrá – odporúčané odstránenie"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:347
-#: usr/share/big-kernel-manager/ui/home_page.py:770
-msgid "Warning"
-msgstr "POZOR"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:360
-msgid "No longer receives security updates"
-msgstr "Už nedostáva bezpečnostné aktualizácie"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-#: usr/share/big-kernel-manager/ui/kernel_page.py:367
-#: usr/share/big-kernel-manager/ui/kernel_page.py:425
-#: usr/share/big-kernel-manager/ui/kernel_page.py:757
-#: usr/share/big-kernel-manager/ui/mesa_page.py:762
-#: usr/share/big-kernel-manager/ui/mesa_page.py:910
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1050
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1170
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1235
-#: usr/share/big-kernel-manager/ui/category_page.py:432
-#: usr/share/big-kernel-manager/ui/category_page.py:607
-msgid "Remove"
-msgstr "Odstrániť"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
-#: usr/share/big-kernel-manager/ui/kernel_page.py:372
-#: usr/share/big-kernel-manager/ui/kernel_page.py:430
-#, python-brace-format
-msgid "Remove kernel {}"
-msgstr "Odstrániť jadro {}"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:416
-msgid "Last backup"
-msgstr "Posledná záloha"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:420
-msgid "At least one backup kernel must remain installed"
-msgstr "Aspoň jedno záložné jadro musí zostať nainštalované"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:439
-msgid ""
-"Recommended for most users. These kernels receive security updates for years"
-" and are thoroughly tested."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 37
+#: usr/share/big-kernel-manager/ui/mesa_data.py:37
+msgid "Latest NVIDIA driver — best performance and newest features"
+msgstr "Najnovší ovládač NVIDIA – najlepší výkon a najnovšie funkcie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 40
+#: usr/share/big-kernel-manager/ui/mesa_data.py:40
+msgid "NVIDIA 575 series — use if the latest driver causes issues"
+msgstr "Séria NVIDIA 575 – použite, ak najnovší ovládač spôsobuje problémy"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 43
+#: usr/share/big-kernel-manager/ui/mesa_data.py:43
+msgid "NVIDIA 570 series — use if the latest driver causes issues"
+msgstr "NVIDIA 570 series – použite, ak najnovší ovládač spôsobuje problémy"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 47
+#: usr/share/big-kernel-manager/ui/mesa_data.py:47
+msgid "For Intel + NVIDIA laptops — switches between GPUs to save battery"
+msgstr "Pre notebooky Intel + NVIDIA – prepína medzi GPU, aby sa šetrila batéria"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 50
+#: usr/share/big-kernel-manager/ui/mesa_data.py:50
+msgid "For Intel + NVIDIA laptops — NVIDIA 575 series"
+msgstr "Pre notebooky Intel + NVIDIA — séria NVIDIA 575"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 53
+#: usr/share/big-kernel-manager/ui/mesa_data.py:53
+msgid "For Intel + NVIDIA laptops — NVIDIA 570 series"
+msgstr "Pre notebooky Intel + NVIDIA — séria NVIDIA 570"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 56
+#: usr/share/big-kernel-manager/ui/mesa_data.py:56
+msgid "For Intel + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
+msgstr "Pre notebooky Intel + NVIDIA — NVIDIA 470 (staršia verzia, žiadny Wayland)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 59
+#: usr/share/big-kernel-manager/ui/mesa_data.py:59
+msgid "For Intel + NVIDIA laptops — NVIDIA 390 (very old GPUs only)"
+msgstr "Pre notebooky Intel + NVIDIA — NVIDIA 390 (iba veľmi staré GPU)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 63
+#: usr/share/big-kernel-manager/ui/mesa_data.py:63
+msgid "For AMD + NVIDIA laptops — switches between GPUs to save battery"
+msgstr "Pre notebooky AMD + NVIDIA — prepína medzi GPU, aby sa šetrila batéria"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 66
+#: usr/share/big-kernel-manager/ui/mesa_data.py:66
+msgid "For AMD + NVIDIA laptops — NVIDIA 575 series"
+msgstr "Pre notebooky AMD + NVIDIA — séria NVIDIA 575"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 69
+#: usr/share/big-kernel-manager/ui/mesa_data.py:69
+msgid "For AMD + NVIDIA laptops — NVIDIA 570 series"
+msgstr "Pre notebooky AMD + NVIDIA — séria NVIDIA 570"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 72
+#: usr/share/big-kernel-manager/ui/mesa_data.py:72
+msgid "For AMD + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
+msgstr "Pre notebooky AMD + NVIDIA — NVIDIA 470 (staršia verzia, žiadny Wayland)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 76
+#: usr/share/big-kernel-manager/ui/mesa_data.py:76
+msgid "Optimized display for virtual machines (VirtualBox, VMware, QEMU/KVM)"
+msgstr "Optimalizované zobrazenie pre virtuálne stroje (VirtualBox, VMware, QEMU/KVM)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 90
+#: usr/share/big-kernel-manager/ui/mesa_data.py:90
+msgid "Gaming & 3D Graphics"
+msgstr "Hry a 3D grafika"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 93
+#: usr/share/big-kernel-manager/ui/mesa_data.py:93
+msgid "Vulkan and OpenGL libraries essential for games, Steam, Wine/Proton and 3D applications."
+msgstr "Knižnice Vulkan a OpenGL nevyhnutné pre hry, Steam, Wine/Proton a 3D aplikácie."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 99
+#: usr/share/big-kernel-manager/ui/mesa_data.py:99
+msgid "Vulkan for AMD Radeon GPUs"
+msgstr "Vulkan pre GPU AMD Radeon"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 106
+#: usr/share/big-kernel-manager/ui/mesa_data.py:106
+msgid "32-bit Vulkan (AMD) — needed by Steam, Wine/Proton and older games"
+msgstr "32-bitový Vulkan (AMD) — potrebný pre Steam, Wine/Proton a staršie hry"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 114
+#: usr/share/big-kernel-manager/ui/mesa_data.py:114
+msgid "Vulkan for Intel GPUs"
+msgstr "Vulkan pre GPU Intel"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 121
+#: usr/share/big-kernel-manager/ui/mesa_data.py:121
+msgid "32-bit Vulkan (Intel) — needed by Steam, Wine/Proton and older games"
+msgstr "32-bitový Vulkan (Intel) — potrebný pre Steam, Wine/Proton a staršie hry"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 130
+#: usr/share/big-kernel-manager/ui/mesa_data.py:130
+msgid "Open-source Vulkan for NVIDIA (Nouveau) — no proprietary driver needed"
 msgstr ""
-"Odporúčané pre väčšinu používateľov. Tieto jadrá dostávajú bezpečnostné "
-"aktualizácie už roky a sú dôkladne testované."
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:443
+"Vulkan s otvoreným zdrojovým kódom pre NVIDIA (Nouveau) — nie je potrebný žiadny proprietárny "
+"ovládač"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 139
+#: usr/share/big-kernel-manager/ui/mesa_data.py:139
+msgid "32-bit OpenGL — needed by Steam, Wine/Proton and older 32-bit games"
+msgstr "32-bitové OpenGL – potrebné pre Steam, Wine/Proton a staršie 32-bitové hry"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 149
+#: usr/share/big-kernel-manager/ui/mesa_data.py:149
+msgid "Video Playback"
+msgstr "Prehrávanie videa"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 152
+#: usr/share/big-kernel-manager/ui/mesa_data.py:152
 msgid ""
-"Always up to date with the latest features and hardware support. Good if you"
-" need the newest drivers."
+"Hardware-accelerated video decoding (VAAPI/VDPAU). Makes videos, streaming and video calls smoother "
+"while reducing CPU and power usage."
 msgstr ""
-"Vždy aktuálne s najnovšími funkciami a podporou hardvéru. Dobré, ak "
-"potrebujete najnovšie ovládače."
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:447
+"Hardvérovo akcelerované dekódovanie videa (VAAPI/VDPAU). Umožňuje plynulejšie videá, streamovanie a "
+"videohovory a zároveň znižuje spotrebu procesora a energie."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 159
+#: usr/share/big-kernel-manager/ui/mesa_data.py:159
+msgid "VAAPI for NVIDIA proprietary driver"
+msgstr "VAAPI pre proprietárny ovládač NVIDIA"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 165
+#: usr/share/big-kernel-manager/ui/mesa_data.py:165
+msgid "VAAPI for Intel (Broadwell / Gen 8 and newer)"
+msgstr "VAAPI pre Intel (Broadwell / Gen 8 a novšie)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 172
+#: usr/share/big-kernel-manager/ui/mesa_data.py:172
+msgid "VAAPI for older Intel (Haswell to Coffee Lake / Gen 4–9)"
+msgstr "VAAPI pre starší Intel (Haswell to Coffee Lake / Gen 4–9)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 179
+#: usr/share/big-kernel-manager/ui/mesa_data.py:179
+msgid "VAAPI for AMD and NVIDIA open-source (Nouveau)"
+msgstr "VAAPI pre AMD a NVIDIA s otvoreným zdrojom (Nouveau)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 186
+#: usr/share/big-kernel-manager/ui/mesa_data.py:186
 msgid ""
-"Tuned for gaming and desktop responsiveness. A good option for daily use "
-"with extra performance."
-msgstr ""
-"Vyladené pre hranie hier a odozvu pracovnej plochy. Dobrá voľba pre "
-"každodenné použitie s extra výkonom."
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:451
+"VDPAU for AMD/NVIDIA open-source — legacy API being replaced by VAAPI and Vulkan. Probably not "
+"needed."
+msgstr "VDPAU pre AMD/NVIDIA open-source – staršie API nahradené VAAPI a Vulkan. Asi netreba."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 197
+#: usr/share/big-kernel-manager/ui/mesa_data.py:197
+msgid "GPU Compute (AI / ML)"
+msgstr "Výpočet GPU (AI / ML)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 200
+#: usr/share/big-kernel-manager/ui/mesa_data.py:200
 msgid ""
-"Built for audio/video production needing precise timing. May be incompatible"
-" with some drivers (e.g. NVIDIA). Only for advanced users."
+"CUDA and OpenCL libraries for artificial intelligence, machine learning, Blender, DaVinci Resolve "
+"and other GPU-accelerated workloads."
 msgstr ""
-"Postavené pre audio/video produkciu vyžadujúcu presné načasovanie. Môže byť "
-"nekompatibilný s niektorými ovládačmi (napr. NVIDIA). Len pre pokročilých "
-"používateľov."
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:492
-msgid "LTS — Long Term Support (Recommended)"
-msgstr "LTS – dlhodobá podpora (odporúča sa)"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:493
-msgid "Standard"
-msgstr "Štandardné"
-
+"Knižnice CUDA a OpenCL pre umelú inteligenciu, strojové učenie, Blender, DaVinci Resolve a ďalšie "
+"úlohy s akceleráciou GPU."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 207
+#: usr/share/big-kernel-manager/ui/mesa_data.py:207
+msgid "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
+msgstr "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 213
+#: usr/share/big-kernel-manager/ui/mesa_data.py:213
+msgid "OpenCL for NVIDIA — Blender, DaVinci, Darktable"
+msgstr "OpenCL pre NVIDIA — Blender, DaVinci, Darktable"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 219
+#: usr/share/big-kernel-manager/ui/mesa_data.py:219
+msgid "OpenCL for AMD — Blender, GIMP, DaVinci"
+msgstr "OpenCL pre Intel — Blender, DaVinci"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 225
+#: usr/share/big-kernel-manager/ui/mesa_data.py:225
+msgid "OpenCL for Intel — Blender, DaVinci"
+msgstr "OpenCL pre Intel — Blender, DaVinci"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 270
+#: usr/share/big-kernel-manager/ui/mesa_data.py:270
+msgid "Stable"
+msgstr "Stabilný"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 272
+#: usr/share/big-kernel-manager/ui/mesa_data.py:272
+msgid ""
+"Officially tested by the Mesa team. The safest and most reliable choice for everyday use, gaming, "
+"and video playback."
+msgstr ""
+"Upravená verzia s hernými optimalizáciami pre extra výkon. Spoľahlivý pre väčšinu používateľov, ale "
+"zriedkavo môže spôsobiť nestabilitu."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:105
+#: usr/share/big-kernel-manager/ui/mesa_data.py:275
+msgid "Recommended"
+msgstr "Odporúčané"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
-#: usr/share/big-kernel-manager/ui/kernel_page.py:494
-msgid "Xanmod (Performance)"
-msgstr "Xanmod (výkon)"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:495
-msgid "Real-Time (Advanced)"
-msgstr "V reálnom čase (pokročilé)"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:566
-#: usr/share/big-kernel-manager/ui/kernel_page.py:591
-#, python-brace-format
-msgid "Show {} available"
-msgstr "Zobraziť {} k dispozícii"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
-#: usr/share/big-kernel-manager/ui/kernel_page.py:594
-msgid "Hide available kernels"
-msgstr "Skryť dostupné jadrá"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/kernel_page.py:636
-#: usr/share/big-kernel-manager/ui/kernel_page.py:669
-#: usr/share/big-kernel-manager/ui/mesa_page.py:767
-#: usr/share/big-kernel-manager/ui/mesa_page.py:929
-#: usr/share/big-kernel-manager/ui/mesa_page.py:972
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1176
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1197
-#: usr/share/big-kernel-manager/ui/category_page.py:436
-#: usr/share/big-kernel-manager/ui/category_page.py:569
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:245
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:366
-#: usr/share/big-kernel-manager/ui/home_page.py:332
-#: usr/share/big-kernel-manager/ui/home_page.py:431
-#: usr/share/big-kernel-manager/ui/home_page.py:694
-msgid "Install"
-msgstr "Inštalácia"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
-#: usr/share/big-kernel-manager/ui/kernel_page.py:639
-#: usr/share/big-kernel-manager/ui/kernel_page.py:642
-#, python-brace-format
-msgid "Install kernel {}"
-msgstr "Nainštalovať jadro {}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/ui/kernel_page.py:660
-#: usr/share/big-kernel-manager/ui/mesa_page.py:769
-#: usr/share/big-kernel-manager/ui/category_page.py:444
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:250
-#: usr/share/big-kernel-manager/ui/home_page.py:335
-#: usr/share/big-kernel-manager/ui/home_page.py:434
-#, python-brace-format
-msgid "Install {}"
-msgstr "Inštalovať {}"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:661
-msgid "The following packages will be installed:"
-msgstr "Nainštalujú sa nasledujúce balíky:"
-
+#: usr/share/big-kernel-manager/ui/mesa_data.py:279
+#: usr/share/big-kernel-manager/ui/mesa_data.py:285
+msgid "Performance"
+msgstr "Výkon"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 281
+#: usr/share/big-kernel-manager/ui/mesa_data.py:281
+msgid ""
+"Modified version with gaming optimizations for extra performance. Reliable for most users but may "
+"rarely cause instabilities."
+msgstr ""
+"Upravená verzia s hernými optimalizáciami pre extra výkon. Spoľahlivý pre väčšinu používateľov, ale "
+"zriedkavo môže spôsobiť nestabilitu."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 289
+#: usr/share/big-kernel-manager/ui/mesa_data.py:289
+msgid "Development"
+msgstr "rozvoj"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 291
+#: usr/share/big-kernel-manager/ui/mesa_data.py:291
+msgid ""
+"Built from the very latest source code with cutting-edge features. Offers the best gaming "
+"performance but is the least tested — only for advanced users."
+msgstr ""
+"Pre veľmi staré grafické karty, ktoré podporujú iba OpenGL 2.1 alebo staršie. Nainštalujte ho iba v "
+"prípade, že novšie verzie Mesa nefungujú s vaším hardvérom."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
+#: usr/share/big-kernel-manager/ui/mesa_data.py:299
+#: usr/share/big-kernel-manager/ui/mesa_data.py:305
+msgid "Legacy"
+msgstr "Dedičstvo"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 301
+#: usr/share/big-kernel-manager/ui/mesa_data.py:301
+msgid ""
+"For very old graphics cards that only support OpenGL 2.1 or earlier. Only install this if newer "
+"Mesa versions don't work with your hardware."
+msgstr ""
+"Pre veľmi staré grafické karty, ktoré podporujú iba OpenGL 2.1 alebo staršie. Nainštalujte ho iba v "
+"prípade, že novšie verzie Mesa nefungujú s vaším hardvérom."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py, line: 117
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:117
+msgid "Technical details"
+msgstr "Technické detaily"
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:131
+msgid "Terminal output"
+msgstr "Ethernetové ovládače"
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -566,41 +305,237 @@ msgstr "Nainštalujú sa nasledujúce balíky:"
 #: usr/share/big-kernel-manager/ui/home_page.py:693
 msgid "Cancel"
 msgstr "Zrušiť"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
-#: usr/share/big-kernel-manager/ui/kernel_page.py:689
-#: usr/share/big-kernel-manager/ui/mesa_page.py:986
-msgid "Preparing installation..."
-msgstr "Príprava inštalácie..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
-#: usr/share/big-kernel-manager/ui/kernel_page.py:713
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 169
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 390
+# File: usr/share/big-kernel-manager/ui/window.py, line: 463
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:151
+msgid "Close"
+msgstr "Zatvoriť"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 200
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:207
+#: usr/share/big-kernel-manager/ui/category_page.py:588
+#: usr/share/big-kernel-manager/ui/category_page.py:626
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
+msgid "Please wait..."
+msgstr "Čakajte, prosím..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py, line: 229
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:229
+#, python-brace-format
+msgid "Step {} of {}: {}"
+msgstr "Krok {} z {}: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py, line: 231
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:231
+#, python-brace-format
+msgid "Step {} of {}"
+msgstr "Krok {} z {}"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:333
+msgid "Operation completed successfully!"
+msgstr "Operácia bola úspešne dokončená!"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:338
+msgid "Operation failed. Check terminal output for details."
+msgstr "Operácia sa nepodarila. Podrobnosti nájdete vo výstupe terminálu."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:364
+msgid "Completed!"
+msgstr "Hotovo!"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 308
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:367
+msgid "Failed"
+msgstr "Neúspešný"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 333
+#: usr/share/big-kernel-manager/core/base_manager.py:230
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:407
+msgid "Operation cancelled by user."
+msgstr "Operácia zrušená používateľom."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:408
+msgid "Cancelled"
+msgstr "Zrušené"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/mesa_page.py:115
+msgid "Video Drivers"
+msgstr "Ovládače videa"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 127
+#: usr/share/big-kernel-manager/ui/mesa_page.py:127
 msgid ""
-"Kernel installed successfully.\n"
-"You may need to reboot to use it."
+"On Linux, video drivers for AMD, Intel and NVIDIA (free software Nouveau) are built into a single "
+"project called <b>Mesa</b>. Below you can choose a Mesa variant and manage extra packages for "
+"gaming, video playback, compute and AI."
 msgstr ""
-"Jadro úspešne nainštalované.\n"
-"Možno budete musieť reštartovať, aby ste ho mohli použiť."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-#: usr/share/big-kernel-manager/ui/kernel_page.py:720
+"V systéme Linux sú ovládače videa pre AMD, Intel a NVIDIA (slobodný softvér Nouveau) zabudované do "
+"jedného projektu s názvom <b>Mesa</b>. Nižšie si môžete vybrať variant Mesa a spravovať extra "
+"balíčky pre hranie hier, prehrávanie videa, výpočty a AI."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 150
+#: usr/share/big-kernel-manager/ui/mesa_page.py:150
 msgid ""
-"Kernel installation failed.\n"
+"Your computer has an <b>NVIDIA</b> graphics card. You can install the official proprietary driver "
+"for the best performance in gaming, AI and professional applications."
+msgstr ""
+"Váš počítač má grafickú kartu <b>NVIDIA</b>. Môžete si nainštalovať oficiálny proprietárny ovládač "
+"pre najlepší výkon v hrách, AI a profesionálnych aplikáciách."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 183
+#: usr/share/big-kernel-manager/ui/mesa_page.py:183
+msgid "Mesa Variant"
+msgstr "Mesa Variant"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 194
+#: usr/share/big-kernel-manager/ui/mesa_page.py:194
+msgid "Choose which Mesa build to use. Only one variant can be active at a time."
+msgstr "Vyberte, ktorú zostavu Mesa chcete použiť. Naraz môže byť aktívny iba jeden variant."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 282
+#: usr/share/big-kernel-manager/ui/mesa_page.py:282
+msgid "Detected graphics cards:"
+msgstr "Zistené grafické karty:"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 289
+msgid "\\u2022 <b>{}</b> \\u2014 NVIDIA proprietary driver (not Mesa)"
+msgstr "\\u2022 <b>{}</b> \\u2014 vlastný ovládač NVIDIA (nie Mesa)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 294
+msgid "\\u2022 <b>{}</b> \\u2014 Mesa driver"
+msgstr "\\u2022 <b>{}</b> \\u2014 Ovládač Mesa"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/ui/application.py:143
+#: usr/share/big-kernel-manager/ui/kernel_page.py:165
+#: usr/share/big-kernel-manager/ui/mesa_page.py:319
+msgid "Error"
+msgstr "Chyba"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
+#: usr/share/big-kernel-manager/ui/mesa_page.py:415
+#: usr/share/big-kernel-manager/ui/mesa_page.py:422
+msgid "Active"
+msgstr "Aktívny"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 427
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 916
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1014
+#: usr/share/big-kernel-manager/ui/mesa_page.py:427
+#: usr/share/big-kernel-manager/ui/mesa_page.py:916
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1014
+msgid "Switch"
+msgstr "Prepínač"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 431
+#: usr/share/big-kernel-manager/ui/mesa_page.py:431
+#, python-brace-format
+msgid "Switch to {}"
+msgstr "Prepnúť na {}"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
+#: usr/share/big-kernel-manager/ui/mesa_page.py:456
+msgid "Change Video Driver"
+msgstr "Zmeniť ovládač videa"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
+#: usr/share/big-kernel-manager/ui/mesa_page.py:460
+#, python-brace-format
+msgid ""
+"Switch to <b>{}</b>?\n"
+"\n"
+"A system reboot will be required for the change to take effect."
+msgstr ""
+"Prepnúť na <b>{}</b>?\n"
+"\n"
+"Aby sa zmena prejavila, bude potrebný reštart systému."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
+#: usr/share/big-kernel-manager/ui/mesa_page.py:465
+msgid "Apply"
+msgstr "Použiť"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
+#: usr/share/big-kernel-manager/ui/mesa_page.py:481
+#, python-brace-format
+msgid "Applying {}"
+msgstr "Uplatňovanie {}"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
+#: usr/share/big-kernel-manager/ui/mesa_page.py:482
+msgid "Preparing to apply driver..."
+msgstr "Pripravuje sa aplikácia ovládača..."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
+#: usr/share/big-kernel-manager/ui/mesa_page.py:503
+msgid ""
+"Video driver changed successfully!\n"
+"\n"
+"You must reboot your system for the new driver to become active."
+msgstr ""
+"Ovládač videa bol úspešne zmenený!\n"
+"\n"
+"Aby sa nový ovládač stal aktívnym, musíte reštartovať systém."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/mesa_page.py:509
+msgid ""
+"Driver change failed.\n"
 "Check the terminal output for details."
 msgstr ""
-"Inštalácia jadra zlyhala.\n"
+"Zmena ovládača zlyhala.\n"
 "Podrobnosti skontrolujte na výstupe terminálu."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
-#: usr/share/big-kernel-manager/ui/kernel_page.py:734
-msgid "Cannot Remove Running Kernel"
-msgstr "Nie je možné odstrániť spustené jadro"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
-#: usr/share/big-kernel-manager/ui/kernel_page.py:736
-msgid "This kernel is currently in use. Boot into a different kernel first."
-msgstr "Toto jadro sa momentálne používa. Najprv nabootujte do iného jadra."
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 589
+#: usr/share/big-kernel-manager/ui/mesa_page.py:589
+msgid "NVIDIA Proprietary Driver"
+msgstr ""
+"Oficiálny ovládač s uzavretým zdrojom s najlepším výkonom pre hranie hier, AI a profesionálnu "
+"záťaž. Naraz môže byť aktívna iba jedna verzia."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 601
+#: usr/share/big-kernel-manager/ui/mesa_page.py:601
+msgid ""
+"Official closed-source driver with the best performance for gaming, AI, and professional workloads. "
+"Only one version can be active at a time."
+msgstr ""
+"Oficiálny ovládač s uzavretým zdrojom s najlepším výkonom pre hranie hier, AI a profesionálnu "
+"záťaž. Naraz môže byť aktívna iba jedna verzia."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 677
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 680
+#: usr/share/big-kernel-manager/ui/mesa_page.py:677
+#: usr/share/big-kernel-manager/ui/mesa_page.py:680
+msgid "All recommended packages installed"
+msgstr "Všetky odporúčané balíky nainštalované"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 686
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 689
+#: usr/share/big-kernel-manager/ui/mesa_page.py:686
+#: usr/share/big-kernel-manager/ui/mesa_page.py:689
+msgid "Some packages not installed"
+msgstr "Niektoré balíky nie sú nainštalované"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 747
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1163
+#: usr/share/big-kernel-manager/ui/mesa_page.py:747
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1163
+msgid "Included"
+msgstr "Zahrnuté"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 754
+#: usr/share/big-kernel-manager/ui/mesa_page.py:754
+#, python-brace-format
+msgid "Already included in your Mesa version ({})"
+msgstr "Už zahrnuté vo vašej verzii Mesa ({})"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: usr/share/big-kernel-manager/ui/kernel_page.py:367
+#: usr/share/big-kernel-manager/ui/kernel_page.py:425
+#: usr/share/big-kernel-manager/ui/kernel_page.py:757
+#: usr/share/big-kernel-manager/ui/mesa_page.py:762
+#: usr/share/big-kernel-manager/ui/mesa_page.py:910
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1050
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1170
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1235
+#: usr/share/big-kernel-manager/ui/category_page.py:432
+#: usr/share/big-kernel-manager/ui/category_page.py:607
+msgid "Remove"
+msgstr "Odstrániť"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
 #: usr/share/big-kernel-manager/ui/kernel_page.py:748
@@ -609,21 +544,1092 @@ msgstr "Toto jadro sa momentálne používa. Najprv nabootujte do iného jadra."
 #, python-brace-format
 msgid "Remove {}"
 msgstr "Odstrániť {}"
-
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/kernel_page.py:636
+#: usr/share/big-kernel-manager/ui/kernel_page.py:669
+#: usr/share/big-kernel-manager/ui/mesa_page.py:767
+#: usr/share/big-kernel-manager/ui/mesa_page.py:929
+#: usr/share/big-kernel-manager/ui/mesa_page.py:972
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1176
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1197
+#: usr/share/big-kernel-manager/ui/category_page.py:436
+#: usr/share/big-kernel-manager/ui/category_page.py:569
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:245
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:366
+#: usr/share/big-kernel-manager/ui/home_page.py:332
+#: usr/share/big-kernel-manager/ui/home_page.py:431
+#: usr/share/big-kernel-manager/ui/home_page.py:694
+msgid "Install"
+msgstr "Inštalácia"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/kernel_page.py:660
+#: usr/share/big-kernel-manager/ui/mesa_page.py:769
+#: usr/share/big-kernel-manager/ui/category_page.py:444
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:250
+#: usr/share/big-kernel-manager/ui/home_page.py:335
+#: usr/share/big-kernel-manager/ui/home_page.py:434
+#, python-brace-format
+msgid "Install {}"
+msgstr "Inštalovať {}"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/mesa_page.py:796
+msgid "Other Drivers"
+msgstr "Iné ovládače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 808
+#: usr/share/big-kernel-manager/ui/mesa_page.py:808
+msgid "Additional drivers for special hardware configurations like virtual machines."
+msgstr "Ďalšie ovládače pre špeciálne hardvérové ​​konfigurácie, ako sú virtuálne stroje."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: usr/share/big-kernel-manager/ui/mesa_page.py:887
+msgid "Compatible"
+msgstr "Kompatibilné"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 888
+#: usr/share/big-kernel-manager/ui/mesa_page.py:888
+msgid "Open Source"
+msgstr "Open Source"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 888
+#: usr/share/big-kernel-manager/ui/mesa_page.py:888
+msgid "Proprietary"
+msgstr "Vlastnícky"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 895
+#: usr/share/big-kernel-manager/ui/mesa_page.py:895
+msgid "⚠ No Wayland support · No longer maintained"
+msgstr "⚠ Žiadna podpora Wayland · Už sa neudržiava"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 920
+#: usr/share/big-kernel-manager/ui/mesa_page.py:920
+#, python-brace-format
+msgid "Switch from {} to {}"
+msgstr "Prepnúť z {} na {}"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 951
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mhwd_manager.py, line: 213
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:213
+#: usr/share/big-kernel-manager/ui/mesa_page.py:951
+#, python-brace-format
+msgid "Remove the installed NVIDIA driver ({}) first."
+msgstr "Najprv odstráňte nainštalovaný ovládač NVIDIA ({})."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
+#: usr/share/big-kernel-manager/ui/mesa_page.py:961
+msgid "open-source"
+msgstr "vlastnícky"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
+#: usr/share/big-kernel-manager/ui/mesa_page.py:961
+msgid "proprietary"
+msgstr "vlastnícky"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
+#: usr/share/big-kernel-manager/ui/mesa_page.py:963
+#: usr/share/big-kernel-manager/ui/category_page.py:566
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:363
+#: usr/share/big-kernel-manager/ui/home_page.py:691
+msgid "Install Driver"
+msgstr "Nainštalujte ovládač"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 967
+#: usr/share/big-kernel-manager/ui/mesa_page.py:967
+#, python-brace-format, fuzzy
+msgid ""
+"Install <b>{}</b> ({} driver)?\n"
+"\n"
+"A system reboot may be required after installation."
+msgstr ""
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/driver_installer.py:57
+#: usr/share/big-kernel-manager/ui/kernel_page.py:688
+#: usr/share/big-kernel-manager/ui/mesa_page.py:985
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1211
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1222
+#: usr/share/big-kernel-manager/ui/category_page.py:587
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
+#: usr/share/big-kernel-manager/ui/home_page.py:712
+#: usr/share/big-kernel-manager/ui/home_page.py:723
+#, python-brace-format
+msgid "Installing {}"
+msgstr "Inštalácia {}"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
+#: usr/share/big-kernel-manager/ui/kernel_page.py:689
+#: usr/share/big-kernel-manager/ui/mesa_page.py:986
+msgid "Preparing installation..."
+msgstr "Príprava inštalácie..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1001
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1001
+msgid "Switch NVIDIA Driver"
+msgstr "Prepnite ovládač NVIDIA"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1005
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1005
+#, python-brace-format
+msgid ""
+"Switch from <b>{}</b> to <b>{}</b>?\n"
+"\n"
+"The current driver will be replaced automatically.\n"
+"A system reboot will be required."
+msgstr ""
+"Prepnúť z <b>{}</b> na <b>{}</b>?\n"
+"\n"
+"Aktuálny ovládač sa automaticky nahradí.\n"
+"Bude potrebný reštart systému."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1027
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1027
+#, python-brace-format
+msgid "Switching to {}"
+msgstr "Prepínam na {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1028
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1028
+msgid "Replacing current NVIDIA driver..."
+msgstr "Výmena aktuálneho ovládača NVIDIA..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1042
+#: usr/share/big-kernel-manager/ui/category_page.py:604
+msgid "Remove Driver"
+msgstr "Odstráňte ovládač"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1046
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1046
+#, python-brace-format
+msgid ""
+"Remove <b>{}</b>?\n"
+"\n"
+"A system reboot may be required after removal."
+msgstr ""
+"Odstrániť <b>{}</b>?\n"
+"\n"
+"Po odstránení môže byť potrebné reštartovať systém."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/core/driver_installer.py:85
+#: usr/share/big-kernel-manager/ui/kernel_page.py:777
+#: usr/share/big-kernel-manager/ui/kernel_page.py:847
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1063
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1249
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1260
+#: usr/share/big-kernel-manager/ui/category_page.py:625
+#, python-brace-format
+msgid "Removing {}"
+msgstr "Odstránenie {}"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1064
+msgid "Preparing removal..."
+msgstr "Pripravuje sa odstránenie..."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1084
+msgid "activated"
+msgstr "aktivovaný"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1086
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
+msgid "installed"
+msgstr "nainštalovaný"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1088
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
+msgid "removed"
+msgstr "odstránené"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1091
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1091
+#, python-brace-format, fuzzy
+msgid ""
+"{} was {} successfully!\n"
+"\n"
+"A system reboot may be required."
+msgstr ""
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1097
+msgid ""
+"Driver operation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Operácia ovládača zlyhala.\n"
+"Podrobnosti skontrolujte na výstupe terminálu."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1146
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1146
+msgid "Already included in your Mesa version"
+msgstr "Už zahrnuté vo vašej verzii Mesa"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1188
+msgid "Install Package"
+msgstr "Nainštalujte balík"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1191
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1191
+#, python-brace-format
+msgid ""
+"Install <b>{}</b>?\n"
+"\n"
+"{}"
+msgstr ""
+"Inštalovať <b>{}</b>?\n"
+"\n"
+"{}"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1212
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 713
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1212
+#: usr/share/big-kernel-manager/ui/home_page.py:713
+msgid "Downloading package..."
+msgstr "Sťahuje sa balík..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1229
+msgid "Remove Package"
+msgstr "Odstrániť balík"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1232
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1232
+#, python-brace-format
+msgid "Remove <b>{}</b>?"
+msgstr "Odstrániť <b>{}</b>?"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1250
+msgid "Removing package..."
+msgstr "Odstraňuje sa balík..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1272
+#, python-brace-format
+msgid "{} was {} successfully!"
+msgstr "{} bolo úspešne {}!"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1277
+msgid ""
+"Package operation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Operácia balíka zlyhala.\n"
+"Podrobnosti skontrolujte na výstupe terminálu."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 40
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:40
+msgid "Stable, long-term support"
+msgstr "Stabilná, dlhodobá podpora"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 43
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:43
+msgid "Receives security updates for years. Best choice for most users — reliable and well-tested."
+msgstr ""
+"Dostáva bezpečnostné aktualizácie po celé roky. Najlepšia voľba pre väčšinu používateľov – "
+"spoľahlivá a dobre otestovaná."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 49
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:49
+msgid "Low-latency, real-time"
+msgstr "Nízka latencia, v reálnom čase"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 52
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:52
+msgid ""
+"Designed for audio/video production and tasks needing precise timing. May be incompatible with some "
+"drivers (e.g. NVIDIA). Only recommended for advanced users."
+msgstr ""
+"Navrhnuté pre audio/video produkciu a úlohy vyžadujúce presné načasovanie. Môže byť nekompatibilný "
+"s niektorými ovládačmi (napr. NVIDIA). Odporúča sa len pre pokročilých používateľov."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 59
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:59
+msgid "Gaming & performance optimized"
+msgstr "Optimalizované hry a výkon"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 62
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:62
+msgid ""
+"Tuned for faster gaming and a more responsive desktop. Great for daily use if you want extra "
+"performance."
+msgstr ""
+"Vyladené pre rýchlejšie hranie a citlivejšiu pracovnú plochu. Skvelé na každodenné použitie, ak "
+"chcete extra výkon."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 68
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:68
+msgid "Latest features & drivers"
+msgstr "Najnovšie funkcie a ovládače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 72
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:72
+msgid "Always up to date with the newest features and hardware support."
+msgstr "Vždy aktuálne s najnovšími funkciami a podporou hardvéru."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 67
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 277
+#: usr/share/big-kernel-manager/ui/category_page.py:67
+#: usr/share/big-kernel-manager/ui/category_page.py:277
+msgid "Other"
+msgstr "Iné"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 128
+#: usr/share/big-kernel-manager/ui/category_page.py:128
+msgid "Search drivers..."
+msgstr "Vyhľadať ovládače..."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: usr/share/big-kernel-manager/ui/category_page.py:132
+msgid "Search drivers"
+msgstr "Vyhľadajte ovládače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 162
+#: usr/share/big-kernel-manager/ui/category_page.py:162
+msgid "No more automatically detected compatible drivers in this category."
+msgstr "V tejto kategórii už žiadne automaticky detekované kompatibilné ovládače."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 173
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 200
+#: usr/share/big-kernel-manager/ui/category_page.py:173
+#: usr/share/big-kernel-manager/ui/category_page.py:200
+msgid "Show drivers without confirmed compatibility"
+msgstr "Zobraziť ovládače bez potvrdenej kompatibility"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 187
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 260
+#: usr/share/big-kernel-manager/ui/category_page.py:187
+#: usr/share/big-kernel-manager/ui/category_page.py:260
+msgid "No drivers needed for this category"
+msgstr "Pre túto kategóriu nie sú potrebné žiadne ovládače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 191
+#: usr/share/big-kernel-manager/ui/category_page.py:191
+msgid "No drivers in this category were automatically detected as compatible with your hardware."
+msgstr "Žiadne ovládače v tejto kategórii neboli automaticky rozpoznané ako kompatibilné s vaším hardvérom."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 238
+#: usr/share/big-kernel-manager/ui/category_page.py:238
+msgid "Detection Error"
+msgstr "Chyba detekcie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 264
+#: usr/share/big-kernel-manager/ui/category_page.py:264
+msgid "No drivers in this category were detected as necessary for your hardware."
+msgstr "V tejto kategórii neboli zistené žiadne ovládače potrebné pre váš hardvér."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 339
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 283
+#: usr/share/big-kernel-manager/ui/category_page.py:339
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:283
+msgid "1 driver"
+msgstr "1 vodič"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/category_page.py:339
+#, python-brace-format
+msgid "{} drivers"
+msgstr "{} vodičov"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 341
+#: usr/share/big-kernel-manager/ui/category_page.py:341
+#, python-brace-format
+msgid "{} detected"
+msgstr "Zistilo sa {}"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:343
+#, python-brace-format
+msgid "{} installed"
+msgstr "{} nainštalovaný"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 405
+#: usr/share/big-kernel-manager/ui/category_page.py:405
+msgid "Detected"
+msgstr "Zistené"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:407
+#: usr/share/big-kernel-manager/ui/home_page.py:487
+#: usr/share/big-kernel-manager/ui/home_page.py:503
+#: usr/share/big-kernel-manager/ui/home_page.py:734
+msgid "Installed"
+msgstr "Nainštalované"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:409
+msgid "Not installed"
+msgstr "Nie je nainštalované"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 503
+#: usr/share/big-kernel-manager/ui/category_page.py:503
+#, python-brace-format
+msgid "{total} drivers · {detected} detected · {installed} installed"
+msgstr "{total} ovládačov · {detected} detekovaných · {installed} nainštalovaných"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/category_page.py:567
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:364
+#: usr/share/big-kernel-manager/ui/home_page.py:692
+#, python-brace-format
+msgid "Install {}?"
+msgstr "Inštalovať {}?"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/ui/category_page.py:605
+#, python-brace-format
+msgid "Remove {}?"
+msgstr "Odstrániť {}?"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/ui/category_page.py:653
+msgid "Operation completed successfully."
+msgstr "Operácia bola úspešne dokončená."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/category_page.py:657
+msgid "Operation failed. Check logs for details."
+msgstr "Operácia zlyhala. Podrobnosti nájdete v protokoloch."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 70
+#: usr/share/big-kernel-manager/ui/home_page.py:70
+msgid "What is Kernel?"
+msgstr "Čo je jadro?"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 72
+#: usr/share/big-kernel-manager/ui/home_page.py:72
+msgid ""
+"The kernel is the heart of your operating system. It controls your processor, memory, and all "
+"hardware. Most drivers already come built-in with the kernel."
+msgstr ""
+"Jadro je srdcom vášho operačného systému. Ovláda váš procesor, pamäť a všetok hardvér. Väčšina "
+"ovládačov je už zabudovaná v jadre."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
+#: usr/share/big-kernel-manager/ui/home_page.py:83
+msgid "What are Drivers?"
+msgstr "Čo sú to ovládače?"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 85
+#: usr/share/big-kernel-manager/ui/home_page.py:85
+msgid ""
+"Drivers allow each device — like your video card, Wi-Fi, or sound — to communicate with the system. "
+"If everything is already working, you probably don't need to change anything."
+msgstr ""
+"Ovládače umožňujú každému zariadeniu – napríklad grafickej karte, Wi-Fi alebo zvuku – komunikovať "
+"so systémom. Ak už všetko funguje, pravdepodobne netreba nič meniť."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 113
+#: usr/share/big-kernel-manager/ui/home_page.py:113
+msgid "Checking your system…"
+msgstr "Kontroluje sa váš systém…"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 119
+#: usr/share/big-kernel-manager/ui/home_page.py:119
+msgid "Detecting hardware and installed drivers."
+msgstr "Detekcia hardvéru a nainštalovaných ovládačov."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 149
+#: usr/share/big-kernel-manager/ui/home_page.py:149
+msgid "Recommended for your hardware"
+msgstr "Odporúčané pre váš hardvér"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: usr/share/big-kernel-manager/ui/home_page.py:197
+msgid "Install recommended"
+msgstr "Odporúča sa nainštalovať"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 227
+#: usr/share/big-kernel-manager/ui/home_page.py:227
+msgid "Compatible drivers available"
+msgstr "K dispozícii sú kompatibilné ovládače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 273
+#: usr/share/big-kernel-manager/ui/home_page.py:273
+#, python-brace-format
+msgid "{} — no driver loaded, install {} for this device"
+msgstr "{} — nenačítal sa žiadny ovládač, nainštalujte si {} pre toto zariadenie"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/home_page.py:277
+msgid "Go to drivers"
+msgstr "Inštaluje sa {} balíkov"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 287
+#: usr/share/big-kernel-manager/ui/home_page.py:287
+msgid ""
+"These drivers are compatible with your hardware. Your devices are working, but these may improve "
+"performance or add features."
+msgstr ""
+"Tieto ovládače sú kompatibilné s vaším hardvérom. Vaše zariadenia fungujú, ale môžu zlepšiť výkon "
+"alebo pridať funkcie."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 376
+#: usr/share/big-kernel-manager/ui/home_page.py:376
+#, python-brace-format
+msgid "All {} recommended video packages for your {} hardware are installed."
+msgstr "Všetky {} odporúčané video balíky pre váš hardvér {} sú nainštalované."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 386
+#: usr/share/big-kernel-manager/ui/home_page.py:386
+#, python-brace-format, fuzzy
+msgid "{} of {} recommended packages are not installed."
+msgstr ""
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 396
+#: usr/share/big-kernel-manager/ui/home_page.py:396
+#, python-brace-format
+msgid "Install all {} recommended"
+msgstr "Nainštalujte všetky odporúčané {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 457
+#: usr/share/big-kernel-manager/ui/home_page.py:457
+#, python-brace-format
+msgid "Already installed ({})"
+msgstr "Už nainštalované ({})"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 469
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 472
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 608
+#: usr/share/big-kernel-manager/ui/home_page.py:469
+#: usr/share/big-kernel-manager/ui/home_page.py:472
+#: usr/share/big-kernel-manager/ui/home_page.py:608
+msgid "Show installed packages"
+msgstr "Zobraziť nainštalované balíky"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 605
+#: usr/share/big-kernel-manager/ui/home_page.py:605
+msgid "Hide installed packages"
+msgstr "Skryť nainštalované balíčky"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 620
+#: usr/share/big-kernel-manager/ui/home_page.py:620
+msgid "Install Recommended Packages"
+msgstr "Nainštalujte odporúčané balíčky"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 623
+#: usr/share/big-kernel-manager/ui/home_page.py:623
+#, python-brace-format
+msgid ""
+"Install <b>{}</b> packages?\n"
+"\n"
+"{}"
+msgstr ""
+"Chcete nainštalovať <b>{}</b> balíkov?\n"
+"\n"
+"{}"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/home_page.py:629
+msgid "Install All"
+msgstr "Inštalovať všetko"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/home_page.py:642
+#, python-brace-format
+msgid "Installing {} packages"
+msgstr "Inštaluje sa {} balíkov"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 643
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 423
+#: usr/share/big-kernel-manager/core/base_manager.py:423
+#: usr/share/big-kernel-manager/ui/home_page.py:643
+msgid "Downloading packages..."
+msgstr "Ovládač sa nenašiel: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 653
+#: usr/share/big-kernel-manager/ui/home_page.py:653
+msgid "Installing recommended packages"
+msgstr "Inštalácia odporúčaných balíkov"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 670
+#: usr/share/big-kernel-manager/ui/home_page.py:670
+msgid "All recommended packages installed successfully!"
+msgstr "Všetky odporúčané balíky boli úspešne nainštalované!"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+#: usr/share/big-kernel-manager/ui/home_page.py:680
+msgid ""
+"Package installation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Inštalácia balíka zlyhala.\n"
+"Podrobnosti skontrolujte na výstupe terminálu."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/ui/home_page.py:732
+#, python-brace-format
+msgid "{} installed successfully!"
+msgstr "Aplikácia {} bola úspešne nainštalovaná!"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+#: usr/share/big-kernel-manager/ui/home_page.py:740
+#, python-brace-format
+msgid "Installation of {} failed."
+msgstr "Inštalácia {} zlyhala."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 770
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 347
+#: usr/share/big-kernel-manager/ui/kernel_page.py:347
+#: usr/share/big-kernel-manager/ui/home_page.py:770
+msgid "Warning"
+msgstr "POZOR"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 770
+#: usr/share/big-kernel-manager/ui/home_page.py:770
+msgid "Information"
+msgstr "Informácie"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 44
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 36
+#: usr/share/big-kernel-manager/ui/window.py:44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:36
+msgid "Video / GPU"
+msgstr "Video / GPU"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 45
+#: usr/share/big-kernel-manager/ui/window.py:45
+msgid "Mesa, NVIDIA, and GPU drivers."
+msgstr "Mesa, NVIDIA a ovládače GPU."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:50
+msgid "Wi-Fi Drivers"
+msgstr "Ethernetové ovládače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
+#: usr/share/big-kernel-manager/ui/window.py:51
+msgid "Wireless network adapter drivers."
+msgstr "Ovládače bezdrôtového sieťového adaptéra."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:56
+msgid "Ethernet Drivers"
+msgstr "Ethernetové ovládače"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
+#: usr/share/big-kernel-manager/ui/window.py:57
+msgid "Wired network adapter drivers."
+msgstr "Ovládače káblového sieťového adaptéra."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:62
+msgid "Bluetooth Drivers"
+msgstr "Ovládače Bluetooth"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 63
+#: usr/share/big-kernel-manager/ui/window.py:63
+msgid "Bluetooth adapter drivers."
+msgstr "Ovládače adaptéra Bluetooth."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 68
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 40
+#: usr/share/big-kernel-manager/ui/window.py:68
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:40
+msgid "DVB / TV"
+msgstr "Firmvér digitálneho TV tunera."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 69
+#: usr/share/big-kernel-manager/ui/window.py:69
+msgid "Digital TV tuner firmware."
+msgstr "Firmvér digitálneho TV tunera."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 74
+#: usr/share/big-kernel-manager/ui/window.py:74
+msgid "Audio Firmware"
+msgstr "Zvukový firmvér"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 75
+#: usr/share/big-kernel-manager/ui/window.py:75
+msgid "Audio device firmware."
+msgstr "Firmvér zvukového zariadenia."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 80
+#: usr/share/big-kernel-manager/ui/window.py:80
+msgid "Webcam Firmware"
+msgstr "Firmvér webovej kamery"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 81
+#: usr/share/big-kernel-manager/ui/window.py:81
+msgid "Webcam device firmware."
+msgstr "Firmvér zariadenia webovej kamery."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 86
+#: usr/share/big-kernel-manager/ui/window.py:86
+msgid "Touchscreen Firmware"
+msgstr "Firmvér dotykovej obrazovky"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 87
+#: usr/share/big-kernel-manager/ui/window.py:87
+msgid "Touchscreen device firmware."
+msgstr "Firmvér zariadenia s dotykovou obrazovkou."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:92
+msgid "Printer Drivers"
+msgstr "Ovládače tlačiarne"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 93
+#: usr/share/big-kernel-manager/ui/window.py:93
+msgid "Printer drivers and support packages."
+msgstr "Ovládače tlačiarne a balíky podpory."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 98
+#: usr/share/big-kernel-manager/ui/window.py:98
+msgid "3D Printer Firmware"
+msgstr "Firmvér 3D tlačiarne"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 99
+#: usr/share/big-kernel-manager/ui/window.py:99
+msgid "3D printer firmware."
+msgstr "Firmvér 3D tlačiarne."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:104
+msgid "Scanner Drivers"
+msgstr "Ovládače skenerov"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 105
+#: usr/share/big-kernel-manager/ui/window.py:105
+msgid "Scanner drivers and SANE backends."
+msgstr "Ovládače skenerov a backendy SANE."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 110
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 47
+#: usr/share/big-kernel-manager/ui/window.py:110
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
+msgid "Other Firmware"
+msgstr "Iný firmvér"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 111
+#: usr/share/big-kernel-manager/ui/window.py:111
+msgid "Additional firmware packages."
+msgstr "Ďalšie balíky firmvéru."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 189
+#: usr/share/big-kernel-manager/ui/window.py:189
+msgid "Home"
+msgstr "Domov"
+# File: usr/share/big-kernel-manager/ui/window.py, line: 89
+#: usr/share/big-kernel-manager/ui/window.py:190
+msgid "Kernel"
+msgstr "Jadro"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:191
+msgid "Video Driver"
+msgstr "Video ovládač"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 218
+#: usr/share/big-kernel-manager/ui/window.py:218
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:122
+msgid "Categories"
+msgstr "kategórie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 231
+#: usr/share/big-kernel-manager/ui/window.py:231
+msgid "A system reboot is recommended to apply changes."
+msgstr "Obsah"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 269
+#: usr/share/big-kernel-manager/ui/window.py:269
+msgid "Content"
+msgstr "Obsah"
+# File: usr/share/big-kernel-manager/ui/window.py, line: 129
+#: usr/share/big-kernel-manager/ui/window.py:316
+msgid "Menu"
+msgstr "Ponuka"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 318
+#: usr/share/big-kernel-manager/ui/window.py:318
+msgid "Application menu"
+msgstr "Ponuka aplikácií"
+# File: usr/share/big-kernel-manager/ui/window.py, line: 134
+#: usr/share/big-kernel-manager/ui/window.py:321
+msgid "About"
+msgstr "O nás"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 326
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 558
+#: usr/share/big-kernel-manager/ui/window.py:326
+#: usr/share/big-kernel-manager/ui/window.py:558
+msgid "Show all"
+msgstr "Zobraziť všetky"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 327
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 329
+#: usr/share/big-kernel-manager/ui/window.py:327
+#: usr/share/big-kernel-manager/ui/window.py:329
+msgid "Show all drivers"
+msgstr "Zobraziť všetkých ovládačov"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/window.py:454
+msgid "Hardware detection failed. Check system logs for details."
+msgstr "Detekcia hardvéru zlyhala. Podrobnosti nájdete v systémových denníkoch."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 534
+#: usr/share/big-kernel-manager/ui/window.py:534
+#, python-brace-format
+msgid "Obsolete kernel: {} — no longer receives security updates"
+msgstr "Zastarané jadro: {} – už nedostáva bezpečnostné aktualizácie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 538
+#: usr/share/big-kernel-manager/ui/window.py:538
+msgid "Manage"
+msgstr "Spravovať"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 558
+#: usr/share/big-kernel-manager/ui/window.py:558
+msgid "Show detected"
+msgstr "Zobraziť zistené"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
+msgid "Wi-Fi"
+msgstr "Wi-Fi"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
+msgid "Ethernet"
+msgstr "Ethernet"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
+msgid "Bluetooth"
+msgstr "Bluetooth"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
+msgid "Audio"
+msgstr "Zvuk"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
+msgid "Webcam"
+msgstr "Webová kamera"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
+msgid "Touchscreen"
+msgstr "Tlačiarne"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
+msgid "Printers"
+msgstr "Tlačiarne"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
+msgid "3D Printers"
+msgstr "3D tlačiarne"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
+msgid "Scanners"
+msgstr "Skenery"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 93
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 329
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:93
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:329
+msgid "All drivers are installed"
+msgstr "Všetky ovládače sú nainštalované"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 95
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 331
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:95
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:331
+msgid "All necessary drivers are already installed on your system."
+msgstr "Všetky potrebné ovládače sú už nainštalované vo vašom systéme."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 152
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:152
+msgid "Detecting hardware"
+msgstr "Detekcia hardvéru"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 155
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:155
+msgid "Detecting hardware..."
+msgstr "{n} vodičov"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 285
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:285
+#, python-brace-format
+msgid "{n} drivers"
+msgstr "{n} vodičov"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:288
+msgid "1 installed"
+msgstr "1 nainštalovaný"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:290
+#, python-brace-format
+msgid "{n} installed"
+msgstr "{n} nainštalovaný"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 320
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:320
+#, python-brace-format
+msgid "{n} drivers available to install"
+msgstr "{n} ovládačov dostupných na inštaláciu"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 323
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:323
+msgid "Install recommended drivers for better hardware support."
+msgstr "Nainštalujte odporúčané ovládače pre lepšiu podporu hardvéru."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:411
+msgid "Driver installed successfully."
+msgstr "Ovládač úspešne nainštalovaný."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:415
+msgid "Installation failed. Check logs for details."
+msgstr "Čo sú to ovládače?"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
+#: usr/share/big-kernel-manager/ui/kernel_page.py:107
+msgid "Installed Kernels"
+msgstr "Inštalované jadrá"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/kernel_page.py:119
+msgid "Remove all obsolete kernels"
+msgstr "Odstráňte všetky zastarané jadrá"
+# File: usr/share/big-kernel-manager/ui/window.py, line: 89
+#: usr/share/big-kernel-manager/ui/kernel_page.py:261
+msgid "Kernel in use"
+msgstr "Používa sa jadro"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
+#: usr/share/big-kernel-manager/ui/kernel_page.py:267
+msgid "In Use"
+msgstr "V použití"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 331
+#: usr/share/big-kernel-manager/ui/kernel_page.py:331
+msgid "Obsolete Kernels — Removal Recommended"
+msgstr "Zastarané jadrá – odporúčané odstránenie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+#: usr/share/big-kernel-manager/ui/kernel_page.py:360
+msgid "No longer receives security updates"
+msgstr "Už nedostáva bezpečnostné aktualizácie"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/kernel_page.py:372
+#: usr/share/big-kernel-manager/ui/kernel_page.py:430
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Odstrániť jadro {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 416
+#: usr/share/big-kernel-manager/ui/kernel_page.py:416
+msgid "Last backup"
+msgstr "Posledná záloha"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 420
+#: usr/share/big-kernel-manager/ui/kernel_page.py:420
+msgid "At least one backup kernel must remain installed"
+msgstr "Aspoň jedno záložné jadro musí zostať nainštalované"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 439
+#: usr/share/big-kernel-manager/ui/kernel_page.py:439
+msgid ""
+"Recommended for most users. These kernels receive security updates for years and are thoroughly "
+"tested."
+msgstr ""
+"Odporúčané pre väčšinu používateľov. Tieto jadrá dostávajú bezpečnostné aktualizácie už roky a sú "
+"dôkladne testované."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 443
+#: usr/share/big-kernel-manager/ui/kernel_page.py:443
+msgid ""
+"Always up to date with the latest features and hardware support. Good if you need the newest "
+"drivers."
+msgstr "Vždy aktuálne s najnovšími funkciami a podporou hardvéru. Dobré, ak potrebujete najnovšie ovládače."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 447
+#: usr/share/big-kernel-manager/ui/kernel_page.py:447
+msgid "Tuned for gaming and desktop responsiveness. A good option for daily use with extra performance."
+msgstr ""
+"Vyladené pre hranie hier a odozvu pracovnej plochy. Dobrá voľba pre každodenné použitie s extra "
+"výkonom."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/kernel_page.py:451
+msgid ""
+"Built for audio/video production needing precise timing. May be incompatible with some drivers "
+"(e.g. NVIDIA). Only for advanced users."
+msgstr ""
+"Postavené pre audio/video produkciu vyžadujúcu presné načasovanie. Môže byť nekompatibilný s "
+"niektorými ovládačmi (napr. NVIDIA). Len pre pokročilých používateľov."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 492
+#: usr/share/big-kernel-manager/ui/kernel_page.py:492
+msgid "LTS — Long Term Support (Recommended)"
+msgstr "LTS – dlhodobá podpora (odporúča sa)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 493
+#: usr/share/big-kernel-manager/ui/kernel_page.py:493
+msgid "Standard"
+msgstr "Štandardné"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
+#: usr/share/big-kernel-manager/ui/kernel_page.py:494
+msgid "Xanmod (Performance)"
+msgstr "Xanmod (výkon)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 495
+#: usr/share/big-kernel-manager/ui/kernel_page.py:495
+msgid "Real-Time (Advanced)"
+msgstr "V reálnom čase (pokročilé)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 566
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 591
+#: usr/share/big-kernel-manager/ui/kernel_page.py:566
+#: usr/share/big-kernel-manager/ui/kernel_page.py:591
+#, python-brace-format
+msgid "Show {} available"
+msgstr "Zobraziť {} k dispozícii"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
+#: usr/share/big-kernel-manager/ui/kernel_page.py:594
+msgid "Hide available kernels"
+msgstr "Skryť dostupné jadrá"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#: usr/share/big-kernel-manager/ui/kernel_page.py:639
+#: usr/share/big-kernel-manager/ui/kernel_page.py:642
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Nainštalovať jadro {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 661
+#: usr/share/big-kernel-manager/ui/kernel_page.py:661
+msgid "The following packages will be installed:"
+msgstr "Nainštalujú sa nasledujúce balíky:"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
+#: usr/share/big-kernel-manager/ui/kernel_page.py:713
+msgid ""
+"Kernel installed successfully.\n"
+"You may need to reboot to use it."
+msgstr ""
+"Jadro úspešne nainštalované.\n"
+"Možno budete musieť reštartovať, aby ste ho mohli použiť."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+#: usr/share/big-kernel-manager/ui/kernel_page.py:720
+msgid ""
+"Kernel installation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Inštalácia jadra zlyhala.\n"
+"Podrobnosti skontrolujte na výstupe terminálu."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
+#: usr/share/big-kernel-manager/ui/kernel_page.py:734
+msgid "Cannot Remove Running Kernel"
+msgstr "Nie je možné odstrániť spustené jadro"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+#: usr/share/big-kernel-manager/ui/kernel_page.py:736
+msgid "This kernel is currently in use. Boot into a different kernel first."
+msgstr "Toto jadro sa momentálne používa. Najprv nabootujte do iného jadra."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 749
 #: usr/share/big-kernel-manager/ui/kernel_page.py:749
 msgid "The following packages will be removed:"
 msgstr "Nasledujúce balíky budú odstránené:"
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
 #: usr/share/big-kernel-manager/ui/kernel_page.py:778
 msgid "Preparing removal…"
 msgstr "Pripravuje sa odstránenie…"
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
 #: usr/share/big-kernel-manager/ui/kernel_page.py:799
 msgid "Kernel removed successfully."
 msgstr "Jadro bolo úspešne odstránené."
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
 #: usr/share/big-kernel-manager/ui/kernel_page.py:802
 msgid ""
@@ -632,12 +1638,12 @@ msgid ""
 msgstr ""
 "Odstránenie jadra zlyhalo.\n"
 "Podrobnosti skontrolujte na výstupe terminálu."
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
 #: usr/share/big-kernel-manager/ui/kernel_page.py:816
 msgid "Remove Obsolete Kernels"
 msgstr "Odstráňte zastarané jadrá"
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 820
 #: usr/share/big-kernel-manager/ui/kernel_page.py:820
 #, python-brace-format
 msgid ""
@@ -652,1467 +1658,328 @@ msgstr ""
 "<b>{}</b>\n"
 "\n"
 "Tieto jadrá už nedostávajú bezpečnostné aktualizácie."
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
 #: usr/share/big-kernel-manager/ui/kernel_page.py:825
 msgid "Remove All"
 msgstr "Odstrániť všetko"
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
 #: usr/share/big-kernel-manager/ui/kernel_page.py:848
 #, python-brace-format
 msgid "Removing kernel {} ({}/{})..."
 msgstr "Odstraňuje sa jadro {} ({}/{})..."
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 866
 #: usr/share/big-kernel-manager/ui/kernel_page.py:866
 #, python-brace-format
 msgid "Failed to remove {}. Stopping."
 msgstr "Nepodarilo sa odstrániť {}. Zastavenie."
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
 #: usr/share/big-kernel-manager/ui/kernel_page.py:877
 msgid "All obsolete kernels removed successfully."
 msgstr "Všetky zastarané jadrá boli úspešne odstránené."
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 916
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 919
 #: usr/share/big-kernel-manager/ui/kernel_page.py:916
 #: usr/share/big-kernel-manager/ui/kernel_page.py:919
 #, python-brace-format
 msgid "What's new in Linux {}"
 msgstr "Čo je nové v systéme Linux {}"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/mesa_page.py:115
-msgid "Video Drivers"
-msgstr "Ovládače videa"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:127
-msgid ""
-"On Linux, video drivers for AMD, Intel and NVIDIA (free software Nouveau) "
-"are built into a single project called <b>Mesa</b>. Below you can choose a "
-"Mesa variant and manage extra packages for gaming, video playback, compute "
-"and AI."
-msgstr ""
-"V systéme Linux sú ovládače videa pre AMD, Intel a NVIDIA (slobodný softvér "
-"Nouveau) zabudované do jedného projektu s názvom <b>Mesa</b>. Nižšie si "
-"môžete vybrať variant Mesa a spravovať extra balíčky pre hranie hier, "
-"prehrávanie videa, výpočty a AI."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:150
-msgid ""
-"Your computer has an <b>NVIDIA</b> graphics card. You can install the "
-"official proprietary driver for the best performance in gaming, AI and "
-"professional applications."
-msgstr ""
-"Váš počítač má grafickú kartu <b>NVIDIA</b>. Môžete si nainštalovať "
-"oficiálny proprietárny ovládač pre najlepší výkon v hrách, AI a "
-"profesionálnych aplikáciách."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:183
-msgid "Mesa Variant"
-msgstr "Mesa Variant"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:194
-msgid ""
-"Choose which Mesa build to use. Only one variant can be active at a time."
-msgstr ""
-"Vyberte, ktorú zostavu Mesa chcete použiť. Naraz môže byť aktívny iba jeden "
-"variant."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:282
-msgid "Detected graphics cards:"
-msgstr "Zistené grafické karty:"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:289
-#, python-brace-format
-msgid "• <b>{}</b> — NVIDIA proprietary driver (not Mesa)"
-msgstr "• <b>{}</b> – proprietárny ovládač NVIDIA (nie Mesa)"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:294
-#, python-brace-format
-msgid "• <b>{}</b> — Mesa driver"
-msgstr "• <b>{}</b> — Mesa ovládač"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
-#: usr/share/big-kernel-manager/ui/mesa_page.py:415
-#: usr/share/big-kernel-manager/ui/mesa_page.py:422
-msgid "Active"
-msgstr "Aktívny"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:427
-#: usr/share/big-kernel-manager/ui/mesa_page.py:916
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1014
-msgid "Switch"
-msgstr "Prepínač"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:431
-#, python-brace-format
-msgid "Switch to {}"
-msgstr "Prepnúť na {}"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
-#: usr/share/big-kernel-manager/ui/mesa_page.py:456
-msgid "Change Video Driver"
-msgstr "Zmeniť ovládač videa"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
-#: usr/share/big-kernel-manager/ui/mesa_page.py:460
-#, python-brace-format
-msgid ""
-"Switch to <b>{}</b>?\n"
-"\n"
-"A system reboot will be required for the change to take effect."
-msgstr ""
-"Prepnúť na <b>{}</b>?\n"
-"\n"
-"Aby sa zmena prejavila, bude potrebný reštart systému."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
-#: usr/share/big-kernel-manager/ui/mesa_page.py:465
-msgid "Apply"
-msgstr "Použiť"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
-#: usr/share/big-kernel-manager/ui/mesa_page.py:481
-#, python-brace-format
-msgid "Applying {}"
-msgstr "Uplatňovanie {}"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
-#: usr/share/big-kernel-manager/ui/mesa_page.py:482
-msgid "Preparing to apply driver..."
-msgstr "Pripravuje sa aplikácia ovládača..."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
-#: usr/share/big-kernel-manager/ui/mesa_page.py:503
-msgid ""
-"Video driver changed successfully!\n"
-"\n"
-"You must reboot your system for the new driver to become active."
-msgstr ""
-"Ovládač videa bol úspešne zmenený!\n"
-"\n"
-"Aby sa nový ovládač stal aktívnym, musíte reštartovať systém."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
-#: usr/share/big-kernel-manager/ui/mesa_page.py:509
-msgid ""
-"Driver change failed.\n"
-"Check the terminal output for details."
-msgstr ""
-"Zmena ovládača zlyhala.\n"
-"Podrobnosti skontrolujte na výstupe terminálu."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:589
-msgid "NVIDIA Proprietary Driver"
-msgstr ""
-"Oficiálny ovládač s uzavretým zdrojom s najlepším výkonom pre hranie hier, "
-"AI a profesionálnu záťaž. Naraz môže byť aktívna iba jedna verzia."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:601
-msgid ""
-"Official closed-source driver with the best performance for gaming, AI, and "
-"professional workloads. Only one version can be active at a time."
-msgstr ""
-"Oficiálny ovládač s uzavretým zdrojom s najlepším výkonom pre hranie hier, "
-"AI a profesionálnu záťaž. Naraz môže byť aktívna iba jedna verzia."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:677
-#: usr/share/big-kernel-manager/ui/mesa_page.py:680
-msgid "All recommended packages installed"
-msgstr "Všetky odporúčané balíky nainštalované"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:686
-#: usr/share/big-kernel-manager/ui/mesa_page.py:689
-msgid "Some packages not installed"
-msgstr "Niektoré balíky nie sú nainštalované"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:747
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1163
-msgid "Included"
-msgstr "Zahrnuté"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:754
-#, python-brace-format
-msgid "Already included in your Mesa version ({})"
-msgstr "Už zahrnuté vo vašej verzii Mesa ({})"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/mesa_page.py:796
-msgid "Other Drivers"
-msgstr "Iné ovládače"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:808
-msgid ""
-"Additional drivers for special hardware configurations like virtual "
-"machines."
-msgstr ""
-"Ďalšie ovládače pre špeciálne hardvérové ​​konfigurácie, ako sú virtuálne "
-"stroje."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
-#: usr/share/big-kernel-manager/ui/mesa_page.py:887
-msgid "Compatible"
-msgstr "Kompatibilné"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:888
-msgid "Open Source"
-msgstr "Open Source"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:888
-msgid "Proprietary"
-msgstr "Vlastnícky"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:895
-msgid "⚠ No Wayland support · No longer maintained"
-msgstr "⚠ Žiadna podpora Wayland · Už sa neudržiava"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:920
-#, python-brace-format
-msgid "Switch from {} to {}"
-msgstr "Prepnúť z {} na {}"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:961
-msgid "open-source"
-msgstr "vlastnícky"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:961
-msgid "proprietary"
-msgstr "vlastnícky"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
-#: usr/share/big-kernel-manager/ui/mesa_page.py:963
-#: usr/share/big-kernel-manager/ui/category_page.py:566
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:363
-#: usr/share/big-kernel-manager/ui/home_page.py:691
-msgid "Install Driver"
-msgstr "Nainštalujte ovládač"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:967
-#, python-brace-format, fuzzy
-msgid ""
-"Install <b>{}</b> ({} driver)?\n"
-"\n"
-"A system reboot may be required after installation."
-msgstr ""
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1001
-msgid "Switch NVIDIA Driver"
-msgstr "Prepnite ovládač NVIDIA"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1005
-#, python-brace-format
-msgid ""
-"Switch from <b>{}</b> to <b>{}</b>?\n"
-"\n"
-"The current driver will be replaced automatically.\n"
-"A system reboot will be required."
-msgstr ""
-"Prepnúť z <b>{}</b> na <b>{}</b>?\n"
-"\n"
-"Aktuálny ovládač sa automaticky nahradí.\n"
-"Bude potrebný reštart systému."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1027
-#, python-brace-format
-msgid "Switching to {}"
-msgstr "Prepínam na {}"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1028
-msgid "Replacing current NVIDIA driver..."
-msgstr "Výmena aktuálneho ovládača NVIDIA..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1042
-#: usr/share/big-kernel-manager/ui/category_page.py:604
-msgid "Remove Driver"
-msgstr "Odstráňte ovládač"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1046
-#, python-brace-format
-msgid ""
-"Remove <b>{}</b>?\n"
-"\n"
-"A system reboot may be required after removal."
-msgstr ""
-"Odstrániť <b>{}</b>?\n"
-"\n"
-"Po odstránení môže byť potrebné reštartovať systém."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1064
-msgid "Preparing removal..."
-msgstr "Pripravuje sa odstránenie..."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1084
-msgid "activated"
-msgstr "aktivovaný"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1086
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
-msgid "installed"
-msgstr "nainštalovaný"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1088
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
-msgid "removed"
-msgstr "odstránené"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1091
-#, python-brace-format, fuzzy
-msgid ""
-"{} was {} successfully!\n"
-"\n"
-"A system reboot may be required."
-msgstr ""
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1097
-msgid ""
-"Driver operation failed.\n"
-"Check the terminal output for details."
-msgstr ""
-"Operácia ovládača zlyhala.\n"
-"Podrobnosti skontrolujte na výstupe terminálu."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1146
-msgid "Already included in your Mesa version"
-msgstr "Už zahrnuté vo vašej verzii Mesa"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1188
-msgid "Install Package"
-msgstr "Nainštalujte balík"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1191
-#, python-brace-format
-msgid ""
-"Install <b>{}</b>?\n"
-"\n"
-"{}"
-msgstr ""
-"Inštalovať <b>{}</b>?\n"
-"\n"
-"{}"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1212
-#: usr/share/big-kernel-manager/ui/home_page.py:713
-msgid "Downloading package..."
-msgstr "Sťahuje sa balík..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1229
-msgid "Remove Package"
-msgstr "Odstrániť balík"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1232
-#, python-brace-format
-msgid "Remove <b>{}</b>?"
-msgstr "Odstrániť <b>{}</b>?"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1250
-msgid "Removing package..."
-msgstr "Odstraňuje sa balík..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1272
-#, python-brace-format
-msgid "{} was {} successfully!"
-msgstr "{} bolo úspešne {}!"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1277
-msgid ""
-"Package operation failed.\n"
-"Check the terminal output for details."
-msgstr ""
-"Operácia balíka zlyhala.\n"
-"Podrobnosti skontrolujte na výstupe terminálu."
-
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:117
-msgid "Technical details"
-msgstr "Technické detaily"
-
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:131
-msgid "Terminal output"
-msgstr "Ethernetové ovládače"
-
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-# 
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 169
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 390
-# File: usr/share/big-kernel-manager/ui/window.py, line: 463
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:151
-msgid "Close"
-msgstr "Zatvoriť"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 200
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:207
-#: usr/share/big-kernel-manager/ui/category_page.py:588
-#: usr/share/big-kernel-manager/ui/category_page.py:626
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
-msgid "Please wait..."
-msgstr "Čakajte, prosím..."
-
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:229
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 116
+#: usr/share/big-kernel-manager/core/mesa_manager.py:116
 #, python-brace-format
-msgid "Step {} of {}: {}"
-msgstr "Krok {} z {}: {}"
-
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:231
+msgid "Driver not found: {}"
+msgstr "Ovládač sa nenašiel: {}"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
+#: usr/share/big-kernel-manager/core/mesa_manager.py:151
 #, python-brace-format
-msgid "Step {} of {}"
-msgstr "Krok {} z {}"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:333
-msgid "Operation completed successfully!"
-msgstr "Operácia bola úspešne dokončená!"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:338
-msgid "Operation failed. Check terminal output for details."
-msgstr "Operácia sa nepodarila. Podrobnosti nájdete vo výstupe terminálu."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:364
-msgid "Completed!"
-msgstr "Hotovo!"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:408
-msgid "Cancelled"
-msgstr "Zrušené"
-
-#: usr/share/big-kernel-manager/ui/window.py:44
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:36
-msgid "Video / GPU"
-msgstr "Video / GPU"
-
-#: usr/share/big-kernel-manager/ui/window.py:45
-msgid "Mesa, NVIDIA, and GPU drivers."
-msgstr "Mesa, NVIDIA a ovládače GPU."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:50
-msgid "Wi-Fi Drivers"
-msgstr "Ethernetové ovládače"
-
-#: usr/share/big-kernel-manager/ui/window.py:51
-msgid "Wireless network adapter drivers."
-msgstr "Ovládače bezdrôtového sieťového adaptéra."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:56
-msgid "Ethernet Drivers"
-msgstr "Ethernetové ovládače"
-
-#: usr/share/big-kernel-manager/ui/window.py:57
-msgid "Wired network adapter drivers."
-msgstr "Ovládače káblového sieťového adaptéra."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:62
-msgid "Bluetooth Drivers"
-msgstr "Ovládače Bluetooth"
-
-#: usr/share/big-kernel-manager/ui/window.py:63
-msgid "Bluetooth adapter drivers."
-msgstr "Ovládače adaptéra Bluetooth."
-
-#: usr/share/big-kernel-manager/ui/window.py:68
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:40
-msgid "DVB / TV"
-msgstr "Firmvér digitálneho TV tunera."
-
-#: usr/share/big-kernel-manager/ui/window.py:69
-msgid "Digital TV tuner firmware."
-msgstr "Firmvér digitálneho TV tunera."
-
-#: usr/share/big-kernel-manager/ui/window.py:74
-msgid "Audio Firmware"
-msgstr "Zvukový firmvér"
-
-#: usr/share/big-kernel-manager/ui/window.py:75
-msgid "Audio device firmware."
-msgstr "Firmvér zvukového zariadenia."
-
-#: usr/share/big-kernel-manager/ui/window.py:80
-msgid "Webcam Firmware"
-msgstr "Firmvér webovej kamery"
-
-#: usr/share/big-kernel-manager/ui/window.py:81
-msgid "Webcam device firmware."
-msgstr "Firmvér zariadenia webovej kamery."
-
-#: usr/share/big-kernel-manager/ui/window.py:86
-msgid "Touchscreen Firmware"
-msgstr "Firmvér dotykovej obrazovky"
-
-#: usr/share/big-kernel-manager/ui/window.py:87
-msgid "Touchscreen device firmware."
-msgstr "Firmvér zariadenia s dotykovou obrazovkou."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:92
-msgid "Printer Drivers"
-msgstr "Ovládače tlačiarne"
-
-#: usr/share/big-kernel-manager/ui/window.py:93
-msgid "Printer drivers and support packages."
-msgstr "Ovládače tlačiarne a balíky podpory."
-
-#: usr/share/big-kernel-manager/ui/window.py:98
-msgid "3D Printer Firmware"
-msgstr "Firmvér 3D tlačiarne"
-
-#: usr/share/big-kernel-manager/ui/window.py:99
-msgid "3D printer firmware."
-msgstr "Firmvér 3D tlačiarne."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:104
-msgid "Scanner Drivers"
-msgstr "Ovládače skenerov"
-
-#: usr/share/big-kernel-manager/ui/window.py:105
-msgid "Scanner drivers and SANE backends."
-msgstr "Ovládače skenerov a backendy SANE."
-
-#: usr/share/big-kernel-manager/ui/window.py:110
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
-msgid "Other Firmware"
-msgstr "Iný firmvér"
-
-#: usr/share/big-kernel-manager/ui/window.py:111
-msgid "Additional firmware packages."
-msgstr "Ďalšie balíky firmvéru."
-
-#: usr/share/big-kernel-manager/ui/window.py:189
-msgid "Home"
-msgstr "Domov"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 89
-#: usr/share/big-kernel-manager/ui/window.py:190
-msgid "Kernel"
-msgstr "Jadro"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:191
-msgid "Video Driver"
-msgstr "Video ovládač"
-
-#: usr/share/big-kernel-manager/ui/window.py:218
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:122
-msgid "Categories"
-msgstr "kategórie"
-
-#: usr/share/big-kernel-manager/ui/window.py:231
-msgid "A system reboot is recommended to apply changes."
-msgstr "Obsah"
-
-#: usr/share/big-kernel-manager/ui/window.py:269
-msgid "Content"
-msgstr "Obsah"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 129
-#: usr/share/big-kernel-manager/ui/window.py:316
-msgid "Menu"
-msgstr "Ponuka"
-
-#: usr/share/big-kernel-manager/ui/window.py:318
-msgid "Application menu"
-msgstr "Ponuka aplikácií"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 134
-#: usr/share/big-kernel-manager/ui/window.py:321
-msgid "About"
-msgstr "O nás"
-
-#: usr/share/big-kernel-manager/ui/window.py:326
-#: usr/share/big-kernel-manager/ui/window.py:558
-msgid "Show all"
-msgstr "Zobraziť všetky"
-
-#: usr/share/big-kernel-manager/ui/window.py:327
-#: usr/share/big-kernel-manager/ui/window.py:329
-msgid "Show all drivers"
-msgstr "Zobraziť všetkých ovládačov"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/window.py:454
-msgid "Hardware detection failed. Check system logs for details."
-msgstr ""
-"Detekcia hardvéru zlyhala. Podrobnosti nájdete v systémových denníkoch."
-
-#: usr/share/big-kernel-manager/ui/window.py:534
-#, python-brace-format
-msgid "Obsolete kernel: {} — no longer receives security updates"
-msgstr "Zastarané jadro: {} – už nedostáva bezpečnostné aktualizácie"
-
-#: usr/share/big-kernel-manager/ui/window.py:538
-msgid "Manage"
-msgstr "Spravovať"
-
-#: usr/share/big-kernel-manager/ui/window.py:558
-msgid "Show detected"
-msgstr "Zobraziť zistené"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:67
-#: usr/share/big-kernel-manager/ui/category_page.py:277
-msgid "Other"
-msgstr "Iné"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:128
-msgid "Search drivers..."
-msgstr "Vyhľadať ovládače..."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
-#: usr/share/big-kernel-manager/ui/category_page.py:132
-msgid "Search drivers"
-msgstr "Vyhľadajte ovládače"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:162
-msgid "No more automatically detected compatible drivers in this category."
-msgstr ""
-"V tejto kategórii už žiadne automaticky detekované kompatibilné ovládače."
-
-#: usr/share/big-kernel-manager/ui/category_page.py:173
-#: usr/share/big-kernel-manager/ui/category_page.py:200
-msgid "Show drivers without confirmed compatibility"
-msgstr "Zobraziť ovládače bez potvrdenej kompatibility"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:187
-#: usr/share/big-kernel-manager/ui/category_page.py:260
-msgid "No drivers needed for this category"
-msgstr "Pre túto kategóriu nie sú potrebné žiadne ovládače"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:191
-msgid ""
-"No drivers in this category were automatically detected as compatible with "
-"your hardware."
-msgstr ""
-"Žiadne ovládače v tejto kategórii neboli automaticky rozpoznané ako "
-"kompatibilné s vaším hardvérom."
-
-#: usr/share/big-kernel-manager/ui/category_page.py:238
-msgid "Detection Error"
-msgstr "Chyba detekcie"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:264
-msgid ""
-"No drivers in this category were detected as necessary for your hardware."
-msgstr ""
-"V tejto kategórii neboli zistené žiadne ovládače potrebné pre váš hardvér."
-
-#: usr/share/big-kernel-manager/ui/category_page.py:339
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:283
-msgid "1 driver"
-msgstr "1 vodič"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/category_page.py:339
-#, python-brace-format
-msgid "{} drivers"
-msgstr "{} vodičov"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:341
-#, python-brace-format
-msgid "{} detected"
-msgstr "Zistilo sa {}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/category_page.py:343
-#, python-brace-format
-msgid "{} installed"
-msgstr "{} nainštalovaný"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:405
-msgid "Detected"
-msgstr "Zistené"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/category_page.py:407
-#: usr/share/big-kernel-manager/ui/home_page.py:487
-#: usr/share/big-kernel-manager/ui/home_page.py:503
-#: usr/share/big-kernel-manager/ui/home_page.py:734
-msgid "Installed"
-msgstr "Nainštalované"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/category_page.py:409
-msgid "Not installed"
-msgstr "Nie je nainštalované"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:503
-#, python-brace-format
-msgid "{total} drivers · {detected} detected · {installed} installed"
-msgstr ""
-"{total} ovládačov · {detected} detekovaných · {installed} nainštalovaných"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/ui/category_page.py:567
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:364
-#: usr/share/big-kernel-manager/ui/home_page.py:692
-#, python-brace-format
-msgid "Install {}?"
-msgstr "Inštalovať {}?"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: usr/share/big-kernel-manager/ui/category_page.py:605
-#, python-brace-format
-msgid "Remove {}?"
-msgstr "Odstrániť {}?"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: usr/share/big-kernel-manager/ui/category_page.py:653
-msgid "Operation completed successfully."
-msgstr "Operácia bola úspešne dokončená."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/category_page.py:657
-msgid "Operation failed. Check logs for details."
-msgstr "Operácia zlyhala. Podrobnosti nájdete v protokoloch."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:40
-msgid "Stable, long-term support"
-msgstr "Stabilná, dlhodobá podpora"
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:43
-msgid ""
-"Receives security updates for years. Best choice for most users — reliable "
-"and well-tested."
-msgstr ""
-"Dostáva bezpečnostné aktualizácie po celé roky. Najlepšia voľba pre väčšinu "
-"používateľov – spoľahlivá a dobre otestovaná."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:49
-msgid "Low-latency, real-time"
-msgstr "Nízka latencia, v reálnom čase"
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:52
-msgid ""
-"Designed for audio/video production and tasks needing precise timing. May be"
-" incompatible with some drivers (e.g. NVIDIA). Only recommended for advanced"
-" users."
-msgstr ""
-"Navrhnuté pre audio/video produkciu a úlohy vyžadujúce presné načasovanie. "
-"Môže byť nekompatibilný s niektorými ovládačmi (napr. NVIDIA). Odporúča sa "
-"len pre pokročilých používateľov."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:59
-msgid "Gaming & performance optimized"
-msgstr "Optimalizované hry a výkon"
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:62
-msgid ""
-"Tuned for faster gaming and a more responsive desktop. Great for daily use "
-"if you want extra performance."
-msgstr ""
-"Vyladené pre rýchlejšie hranie a citlivejšiu pracovnú plochu. Skvelé na "
-"každodenné použitie, ak chcete extra výkon."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:68
-msgid "Latest features & drivers"
-msgstr "Najnovšie funkcie a ovládače"
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:72
-msgid "Always up to date with the newest features and hardware support."
-msgstr "Vždy aktuálne s najnovšími funkciami a podporou hardvéru."
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
-msgid "Wi-Fi"
-msgstr "Wi-Fi"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
-msgid "Ethernet"
-msgstr "Ethernet"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
-msgid "Audio"
-msgstr "Zvuk"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
-msgid "Webcam"
-msgstr "Webová kamera"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
-msgid "Touchscreen"
-msgstr "Tlačiarne"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
-msgid "Printers"
-msgstr "Tlačiarne"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
-msgid "3D Printers"
-msgstr "3D tlačiarne"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
-msgid "Scanners"
-msgstr "Skenery"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:93
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:329
-msgid "All drivers are installed"
-msgstr "Všetky ovládače sú nainštalované"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:95
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:331
-msgid "All necessary drivers are already installed on your system."
-msgstr "Všetky potrebné ovládače sú už nainštalované vo vašom systéme."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:105
-#: usr/share/big-kernel-manager/ui/mesa_data.py:275
-msgid "Recommended"
-msgstr "Odporúčané"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:152
-msgid "Detecting hardware"
-msgstr "Detekcia hardvéru"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:155
-msgid "Detecting hardware..."
-msgstr "{n} vodičov"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:285
-#, python-brace-format
-msgid "{n} drivers"
-msgstr "{n} vodičov"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:288
-msgid "1 installed"
-msgstr "1 nainštalovaný"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:290
-#, python-brace-format
-msgid "{n} installed"
-msgstr "{n} nainštalovaný"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:320
-#, python-brace-format
-msgid "{n} drivers available to install"
-msgstr "{n} ovládačov dostupných na inštaláciu"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:323
-msgid "Install recommended drivers for better hardware support."
-msgstr "Nainštalujte odporúčané ovládače pre lepšiu podporu hardvéru."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:411
-msgid "Driver installed successfully."
-msgstr "Ovládač úspešne nainštalovaný."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:415
-msgid "Installation failed. Check logs for details."
-msgstr "Čo sú to ovládače?"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:70
-msgid "What is Kernel?"
-msgstr "Čo je jadro?"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:72
-msgid ""
-"The kernel is the heart of your operating system. It controls your "
-"processor, memory, and all hardware. Most drivers already come built-in with"
-" the kernel."
-msgstr ""
-"Jadro je srdcom vášho operačného systému. Ovláda váš procesor, pamäť a "
-"všetok hardvér. Väčšina ovládačov je už zabudovaná v jadre."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
-#: usr/share/big-kernel-manager/ui/home_page.py:83
-msgid "What are Drivers?"
-msgstr "Čo sú to ovládače?"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:85
-msgid ""
-"Drivers allow each device — like your video card, Wi-Fi, or sound — to "
-"communicate with the system. If everything is already working, you probably "
-"don't need to change anything."
-msgstr ""
-"Ovládače umožňujú každému zariadeniu – napríklad grafickej karte, Wi-Fi "
-"alebo zvuku – komunikovať so systémom. Ak už všetko funguje, pravdepodobne "
-"netreba nič meniť."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:113
-msgid "Checking your system…"
-msgstr "Kontroluje sa váš systém…"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:119
-msgid "Detecting hardware and installed drivers."
-msgstr "Detekcia hardvéru a nainštalovaných ovládačov."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:149
-msgid "Recommended for your hardware"
-msgstr "Odporúčané pre váš hardvér"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
-#: usr/share/big-kernel-manager/ui/home_page.py:197
-msgid "Install recommended"
-msgstr "Odporúča sa nainštalovať"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:227
-msgid "Compatible drivers available"
-msgstr "K dispozícii sú kompatibilné ovládače"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:273
-#, python-brace-format
-msgid "{} — no driver loaded, install {} for this device"
-msgstr ""
-"{} — nenačítal sa žiadny ovládač, nainštalujte si {} pre toto zariadenie"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/home_page.py:277
-msgid "Go to drivers"
-msgstr "Inštaluje sa {} balíkov"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:287
-msgid ""
-"These drivers are compatible with your hardware. Your devices are working, "
-"but these may improve performance or add features."
-msgstr ""
-"Tieto ovládače sú kompatibilné s vaším hardvérom. Vaše zariadenia fungujú, "
-"ale môžu zlepšiť výkon alebo pridať funkcie."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:376
-#, python-brace-format
-msgid "All {} recommended video packages for your {} hardware are installed."
-msgstr ""
-"Všetky {} odporúčané video balíky pre váš hardvér {} sú nainštalované."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:386
-#, python-brace-format, fuzzy
-msgid "{} of {} recommended packages are not installed."
-msgstr ""
-
-#: usr/share/big-kernel-manager/ui/home_page.py:396
-#, python-brace-format
-msgid "Install all {} recommended"
-msgstr "Nainštalujte všetky odporúčané {}"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:457
-#, python-brace-format
-msgid "Already installed ({})"
-msgstr "Už nainštalované ({})"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:469
-#: usr/share/big-kernel-manager/ui/home_page.py:472
-#: usr/share/big-kernel-manager/ui/home_page.py:608
-msgid "Show installed packages"
-msgstr "Zobraziť nainštalované balíky"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:605
-msgid "Hide installed packages"
-msgstr "Skryť nainštalované balíčky"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:620
-msgid "Install Recommended Packages"
-msgstr "Nainštalujte odporúčané balíčky"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:623
-#, python-brace-format
-msgid ""
-"Install <b>{}</b> packages?\n"
-"\n"
-"{}"
-msgstr ""
-"Chcete nainštalovať <b>{}</b> balíkov?\n"
-"\n"
-"{}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/home_page.py:629
-msgid "Install All"
-msgstr "Inštalovať všetko"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/ui/home_page.py:642
-#, python-brace-format
-msgid "Installing {} packages"
-msgstr "Inštaluje sa {} balíkov"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:653
-msgid "Installing recommended packages"
-msgstr "Inštalácia odporúčaných balíkov"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:670
-msgid "All recommended packages installed successfully!"
-msgstr "Všetky odporúčané balíky boli úspešne nainštalované!"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-#: usr/share/big-kernel-manager/ui/home_page.py:680
-msgid ""
-"Package installation failed.\n"
-"Check the terminal output for details."
-msgstr ""
-"Inštalácia balíka zlyhala.\n"
-"Podrobnosti skontrolujte na výstupe terminálu."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
-#: usr/share/big-kernel-manager/ui/home_page.py:732
-#, python-brace-format
-msgid "{} installed successfully!"
-msgstr "Aplikácia {} bola úspešne nainštalovaná!"
-
+msgid "Applying {} driver..."
+msgstr "Inštalácia{}ovládača..."
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#: usr/share/big-kernel-manager/ui/home_page.py:740
+#: usr/share/big-kernel-manager/core/mesa_manager.py:153
 #, python-brace-format
-msgid "Installation of {} failed."
-msgstr "Inštalácia {} zlyhala."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:770
-msgid "Information"
-msgstr "Informácie"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:37
-msgid "Latest NVIDIA driver — best performance and newest features"
-msgstr "Najnovší ovládač NVIDIA – najlepší výkon a najnovšie funkcie"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:40
-msgid "NVIDIA 575 series — use if the latest driver causes issues"
-msgstr "Séria NVIDIA 575 – použite, ak najnovší ovládač spôsobuje problémy"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:43
-msgid "NVIDIA 570 series — use if the latest driver causes issues"
-msgstr "NVIDIA 570 series – použite, ak najnovší ovládač spôsobuje problémy"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:47
-msgid "For Intel + NVIDIA laptops — switches between GPUs to save battery"
-msgstr ""
-"Pre notebooky Intel + NVIDIA – prepína medzi GPU, aby sa šetrila batéria"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:50
-msgid "For Intel + NVIDIA laptops — NVIDIA 575 series"
-msgstr "Pre notebooky Intel + NVIDIA — séria NVIDIA 575"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:53
-msgid "For Intel + NVIDIA laptops — NVIDIA 570 series"
-msgstr "Pre notebooky Intel + NVIDIA — séria NVIDIA 570"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:56
-msgid "For Intel + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
-msgstr ""
-"Pre notebooky Intel + NVIDIA — NVIDIA 470 (staršia verzia, žiadny Wayland)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:59
-msgid "For Intel + NVIDIA laptops — NVIDIA 390 (very old GPUs only)"
-msgstr "Pre notebooky Intel + NVIDIA — NVIDIA 390 (iba veľmi staré GPU)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:63
-msgid "For AMD + NVIDIA laptops — switches between GPUs to save battery"
-msgstr ""
-"Pre notebooky AMD + NVIDIA — prepína medzi GPU, aby sa šetrila batéria"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:66
-msgid "For AMD + NVIDIA laptops — NVIDIA 575 series"
-msgstr "Pre notebooky AMD + NVIDIA — séria NVIDIA 575"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:69
-msgid "For AMD + NVIDIA laptops — NVIDIA 570 series"
-msgstr "Pre notebooky AMD + NVIDIA — séria NVIDIA 570"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:72
-msgid "For AMD + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
-msgstr ""
-"Pre notebooky AMD + NVIDIA — NVIDIA 470 (staršia verzia, žiadny Wayland)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:76
-msgid "Optimized display for virtual machines (VirtualBox, VMware, QEMU/KVM)"
-msgstr ""
-"Optimalizované zobrazenie pre virtuálne stroje (VirtualBox, VMware, "
-"QEMU/KVM)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:90
-msgid "Gaming & 3D Graphics"
-msgstr "Hry a 3D grafika"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:93
-msgid ""
-"Vulkan and OpenGL libraries essential for games, Steam, Wine/Proton and 3D "
-"applications."
-msgstr ""
-"Knižnice Vulkan a OpenGL nevyhnutné pre hry, Steam, Wine/Proton a 3D "
-"aplikácie."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:99
-msgid "Vulkan for AMD Radeon GPUs"
-msgstr "Vulkan pre GPU AMD Radeon"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:106
-msgid "32-bit Vulkan (AMD) — needed by Steam, Wine/Proton and older games"
-msgstr ""
-"32-bitový Vulkan (AMD) — potrebný pre Steam, Wine/Proton a staršie hry"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:114
-msgid "Vulkan for Intel GPUs"
-msgstr "Vulkan pre GPU Intel"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:121
-msgid "32-bit Vulkan (Intel) — needed by Steam, Wine/Proton and older games"
-msgstr ""
-"32-bitový Vulkan (Intel) — potrebný pre Steam, Wine/Proton a staršie hry"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:130
-msgid "Open-source Vulkan for NVIDIA (Nouveau) — no proprietary driver needed"
-msgstr ""
-"Vulkan s otvoreným zdrojovým kódom pre NVIDIA (Nouveau) — nie je potrebný "
-"žiadny proprietárny ovládač"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:139
-msgid "32-bit OpenGL — needed by Steam, Wine/Proton and older 32-bit games"
-msgstr ""
-"32-bitové OpenGL – potrebné pre Steam, Wine/Proton a staršie 32-bitové hry"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:149
-msgid "Video Playback"
-msgstr "Prehrávanie videa"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:152
-msgid ""
-"Hardware-accelerated video decoding (VAAPI/VDPAU). Makes videos, streaming "
-"and video calls smoother while reducing CPU and power usage."
-msgstr ""
-"Hardvérovo akcelerované dekódovanie videa (VAAPI/VDPAU). Umožňuje "
-"plynulejšie videá, streamovanie a videohovory a zároveň znižuje spotrebu "
-"procesora a energie."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:159
-msgid "VAAPI for NVIDIA proprietary driver"
-msgstr "VAAPI pre proprietárny ovládač NVIDIA"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:165
-msgid "VAAPI for Intel (Broadwell / Gen 8 and newer)"
-msgstr "VAAPI pre Intel (Broadwell / Gen 8 a novšie)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:172
-msgid "VAAPI for older Intel (Haswell to Coffee Lake / Gen 4–9)"
-msgstr "VAAPI pre starší Intel (Haswell to Coffee Lake / Gen 4–9)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:179
-msgid "VAAPI for AMD and NVIDIA open-source (Nouveau)"
-msgstr "VAAPI pre AMD a NVIDIA s otvoreným zdrojom (Nouveau)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:186
-msgid ""
-"VDPAU for AMD/NVIDIA open-source — legacy API being replaced by VAAPI and "
-"Vulkan. Probably not needed."
-msgstr ""
-"VDPAU pre AMD/NVIDIA open-source – staršie API nahradené VAAPI a Vulkan. Asi"
-" netreba."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:197
-msgid "GPU Compute (AI / ML)"
-msgstr "Výpočet GPU (AI / ML)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:200
-msgid ""
-"CUDA and OpenCL libraries for artificial intelligence, machine learning, "
-"Blender, DaVinci Resolve and other GPU-accelerated workloads."
-msgstr ""
-"Knižnice CUDA a OpenCL pre umelú inteligenciu, strojové učenie, Blender, "
-"DaVinci Resolve a ďalšie úlohy s akceleráciou GPU."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:207
-msgid "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
-msgstr "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:213
-msgid "OpenCL for NVIDIA — Blender, DaVinci, Darktable"
-msgstr "OpenCL pre NVIDIA — Blender, DaVinci, Darktable"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:219
-msgid "OpenCL for AMD — Blender, GIMP, DaVinci"
-msgstr "OpenCL pre Intel — Blender, DaVinci"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:225
-msgid "OpenCL for Intel — Blender, DaVinci"
-msgstr "OpenCL pre Intel — Blender, DaVinci"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:270
-msgid "Stable"
-msgstr "Stabilný"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:272
-msgid ""
-"Officially tested by the Mesa team. The safest and most reliable choice for "
-"everyday use, gaming, and video playback."
-msgstr ""
-"Upravená verzia s hernými optimalizáciami pre extra výkon. Spoľahlivý pre "
-"väčšinu používateľov, ale zriedkavo môže spôsobiť nestabilitu."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
-#: usr/share/big-kernel-manager/ui/mesa_data.py:279
-#: usr/share/big-kernel-manager/ui/mesa_data.py:285
-msgid "Performance"
-msgstr "Výkon"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:281
-msgid ""
-"Modified version with gaming optimizations for extra performance. Reliable "
-"for most users but may rarely cause instabilities."
-msgstr ""
-"Upravená verzia s hernými optimalizáciami pre extra výkon. Spoľahlivý pre "
-"väčšinu používateľov, ale zriedkavo môže spôsobiť nestabilitu."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:289
-msgid "Development"
-msgstr "rozvoj"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:291
-msgid ""
-"Built from the very latest source code with cutting-edge features. Offers "
-"the best gaming performance but is the least tested — only for advanced "
-"users."
-msgstr ""
-"Pre veľmi staré grafické karty, ktoré podporujú iba OpenGL 2.1 alebo "
-"staršie. Nainštalujte ho iba v prípade, že novšie verzie Mesa nefungujú s "
-"vaším hardvérom."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
-#: usr/share/big-kernel-manager/ui/mesa_data.py:299
-#: usr/share/big-kernel-manager/ui/mesa_data.py:305
-msgid "Legacy"
-msgstr "Dedičstvo"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:301
-msgid ""
-"For very old graphics cards that only support OpenGL 2.1 or earlier. Only "
-"install this if newer Mesa versions don't work with your hardware."
-msgstr ""
-"Pre veľmi staré grafické karty, ktoré podporujú iba OpenGL 2.1 alebo "
-"staršie. Nainštalujte ho iba v prípade, že novšie verzie Mesa nefungujú s "
-"vaším hardvérom."
-
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+msgid "Starting {} driver installation..."
+msgstr "Spúšťa sa inštalácia ovládača {}..."
 # 
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
-#~ msgid "Operation progress"
-#~ msgstr "Pokrok operácie"
-
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 161
+#: usr/share/big-kernel-manager/core/mesa_manager.py:161
+msgid "Checking for conflicting packages..."
+msgstr "Kontrolujú sa konfliktné balíky..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/core/mesa_manager.py:173
+#, python-brace-format
+msgid "Removing conflicts: {}"
+msgstr "Odstraňujú sa konflikty: {}"
 # 
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
-#~ msgid "Command output"
-#~ msgstr "Výstup príkazu"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 178
+#: usr/share/big-kernel-manager/core/mesa_manager.py:178
 #, python-brace-format
-#~ msgid "Version: {}"
-#~ msgstr "Verzia: {}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
-#~ msgid "Cannot remove the currently running kernel"
-#~ msgstr "Nie je možné odstrániť aktuálne spustené jadro"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
-#, python-brace-format
-#~ msgid ""
-#~ "Are you sure you want to install the <b>{}</b> kernel?\n"
-#~ "\n"
-#~ "This will install the kernel and its modules."
-#~ msgstr ""
-#~ "Ste si istí, že chcete nainštalovať <b>{}</b> jadro?\n"
-#~ "\n"
-#~ "Týmto sa nainštaluje jadro a jeho moduly."
-
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+msgid "Checking {} packages..."
+msgstr "Kontroluje sa {} balíkov..."
 # 
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
-#~ msgid "This may take a few minutes. Please wait..."
-#~ msgstr "To môže trvať niekoľko minút. Prosím, čakajte..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 187
+#: usr/share/big-kernel-manager/core/mesa_manager.py:187
 #, python-brace-format
-#~ msgid ""
-#~ "Are you sure you want to remove the <b>{}</b> kernel?\n"
-#~ "\n"
-#~ "This will remove the kernel and its modules."
-#~ msgstr ""
-#~ "Ste si istí, že chcete odstrániť <b>{}</b> jadro?\n"
-#~ "\n"
-#~ "Týmto sa odstráni jadro a jeho moduly."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
+msgid "⚠️ Package {} not available, skipping..."
+msgstr "⚠️ Balíček {} nie je k dispozícii, preskakuje sa..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 191
+#: usr/share/big-kernel-manager/core/mesa_manager.py:191
+msgid "❌ No packages available to install."
+msgstr "❌ Nie sú dostupné žiadne balíčky na inštaláciu."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/mesa_manager.py:197
 #, python-brace-format
-#~ msgid "Starting removal of {} kernel..."
-#~ msgstr "Začínam odstraňovať jadro{}..."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
-#~ msgid "Operation in progress"
-#~ msgstr "Operácia prebieha"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
-#~ msgid "Show Terminal Output"
-#~ msgstr "Zobraziť výstup terminálu"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
-#~ msgid ""
-#~ "Classic OpenGL implementation for very old hardware. Only use if your GPU "
-#~ "does not support modern Mesa drivers."
-#~ msgstr ""
-#~ "Klasická implementácia OpenGL pre veľmi starý hardvér. Používajte iba v "
-#~ "prípade, že vaša GPU nepodporuje moderné ovládače Mesa."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 82
-#~ msgid ""
-#~ "Official stable Mesa release. Best balance of performance, compatibility and"
-#~ " stability. Includes Vulkan drivers for AMD, Intel and software rendering."
-#~ msgstr ""
-#~ "Oficiálna stabilná verzia Mesa. Najlepšia rovnováha medzi výkonom, "
-#~ "kompatibilitou a stabilitou. Obsahuje ovládače Vulkan pre AMD, Intel a "
-#~ "softvérové vykresľovanie."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
-#~ msgid ""
-#~ "Custom build with performance patches. May provide better FPS in games, but "
-#~ "can cause issues with system updates. Use with caution."
-#~ msgstr ""
-#~ "Vlastná zostava s výkonnostnými záplatami. Môže poskytnúť lepšie FPS v "
-#~ "hrách, ale môže spôsobiť problémy s aktualizáciami systému. Používajte "
-#~ "opatrne."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
-#~ msgid ""
-#~ "Bleeding-edge development version. Contains the newest features but is "
-#~ "unstable and may break with updates. Not recommended for daily use."
-#~ msgstr ""
-#~ "Verzia vývoja na hrane. Obsahuje najnovšie funkcie, ale je nestabilná a môže"
-#~ " sa pri aktualizáciách rozbiť. Nie je odporúčaná na každodenné používanie."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 235
-#~ msgid "Kernel and Mesa Management"
-#~ msgstr "Správa jadra a Mesa"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 274
-#~ msgid ""
-#~ "Changing your system's kernel or Mesa drivers can impact system stability. "
-#~ "Please review the following recommendations:"
-#~ msgstr ""
-#~ "Zmena jadra vášho systému alebo ovládačov Mesa môže ovplyvniť stabilitu "
-#~ "systému. Prosím, prečítajte si nasledujúce odporúčania:"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 282
-#~ msgid "Always keep at least one working kernel"
-#~ msgstr "Vždy majte aspoň jedno funkčné jadro"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 282
-#~ msgid "installed as a fallback"
-#~ msgstr "nainštalované ako záloha"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 284
-#~ msgid ""
-#~ "LTS kernels offer better stability, while newer kernels provide newer "
-#~ "hardware support"
-#~ msgstr ""
-#~ "Jadrá LTS ponúkajú lepšiu stabilitu, zatiaľ čo novšie jadrá poskytujú "
-#~ "podporu pre novší hardvér."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 286
-#~ msgid "Test your system thoroughly after kernel changes"
-#~ msgstr "Po zmenách jadra dôkladne otestujte svoj systém."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 288
-#~ msgid ""
-#~ "If a new kernel causes issues, you can select the previous kernel from the "
-#~ "boot menu"
-#~ msgstr ""
-#~ "Ak nové jadro spôsobuje problémy, môžete z bootovacieho menu vybrať "
-#~ "predchádzajúce jadro."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 290
-#~ msgid ""
-#~ "Real-time (RT) kernels are specialized for low-latency tasks but may not be "
-#~ "suitable for general use"
-#~ msgstr ""
-#~ "Jadrá v reálnom čase (RT) sú špecializované na úlohy s nízkou latenciou, ale"
-#~ " nemusia byť vhodné na všeobecné použitie."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 293
-#~ msgid "Kernel Management"
-#~ msgstr "Správa jadra"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 294
-# File: usr/share/big-kernel-manager/ui/window.py, line: 313
-#~ msgid "Tips"
-#~ msgstr "Tipy"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 301
-#~ msgid ""
-#~ "Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some "
-#~ "NVIDIA GPUs"
-#~ msgstr ""
-#~ "Ovládače Mesa poskytujú 3D grafickú akceleráciu pre grafické procesory AMD, "
-#~ "Intel a niektoré grafické procesory NVIDIA."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 303
-#~ msgid ""
-#~ "Changing Mesa versions may affect graphics performance and application "
-#~ "compatibility"
-#~ msgstr ""
-#~ "Zmena verzií Mesa môže ovplyvniť grafický výkon a kompatibilitu aplikácií."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 305
-#~ msgid "The stable version is recommended for most users"
-#~ msgstr "Pre väčšinu používateľov sa odporúča stabilná verzia."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 307
-#~ msgid ""
-#~ "Development versions may offer better performance but with less stability"
-#~ msgstr "Vývojové verzie môžu ponúkať lepší výkon, ale s menšou stabilitou."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 309
-#~ msgid ""
-#~ "If graphics issues occur after a change, you can switch back to the previous"
-#~ " driver"
-#~ msgstr ""
-#~ "Ak po zmene nastanú problémy s grafikou, môžete sa vrátiť k predchádzajúcemu"
-#~ " ovládaču."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 312
-#~ msgid "Mesa Driver Management"
-#~ msgstr "Správa ovládačov Mesa"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 329
-#~ msgid ""
-#~ "If unsure, the <b>LTS kernel</b> and <b>Stable Mesa</b> drivers are the "
-#~ "safest choices for most users."
-#~ msgstr ""
-#~ "Ak si nie ste istí, <b>jadro LTS</b> a <b>stabilné ovládače Mesa</b> sú "
-#~ "najbezpečnejšie voľby pre väčšinu používateľov."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 449
-#~ msgid "Show this warning on startup"
-#~ msgstr "Zobraziť toto varovanie pri spustení"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
-#~ msgid "⚠️ Operation cancelled by user."
-#~ msgstr "⚠️ Operácia zrušená používateľom."
+msgid "Installing: {}"
+msgstr "Inštaluje sa: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 205
+#: usr/share/big-kernel-manager/core/mesa_manager.py:205
+msgid "Removing conflicting packages..."
+msgstr "Odstraňujú sa konfliktné balíky..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 237
+#: usr/share/big-kernel-manager/core/mesa_manager.py:237
+msgid "Failed to remove conflicting packages."
+msgstr "Nepodarilo sa odstrániť konfliktné balíky."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/mesa_manager.py:241
+#, python-brace-format
+msgid "❌ Failed to remove conflicts (exit code: {})"
+msgstr "❌ Nepodarilo sa odstrániť konflikty (kód ukončenia: {})"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
+#: usr/share/big-kernel-manager/core/mesa_manager.py:249
+#, python-brace-format
+msgid "Installing {} driver..."
+msgstr "Inštaluje sa ovládač {}..."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
+#: usr/share/big-kernel-manager/core/mesa_manager.py:282
+msgid "Failed to apply driver."
+msgstr "Nepodarilo sa použiť ovládač."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/mesa_manager.py:285
+#, python-brace-format
+msgid "❌ Operation failed (exit code: {})"
+msgstr "❌ Operácia zlyhala (kód ukončenia: {})"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/core/mesa_manager.py:292
+msgid "Driver applied successfully!"
+msgstr "✅ {} vodič bol úspešne použitý!"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/core/mesa_manager.py:294
+#, python-brace-format
+msgid "✅ {} driver applied successfully!"
+msgstr "✅ {} vodič bol úspešne použitý!"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/core/base_manager.py:202
+#: usr/share/big-kernel-manager/core/mesa_manager.py:302
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Chyba: {}"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/core/mesa_manager.py:303
+#, python-brace-format
+msgid "❌ Error: {}"
+msgstr "❌ Chyba: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 137
+#: usr/share/big-kernel-manager/core/base_manager.py:137
+#, python-brace-format
+msgid "Database locked. Retrying in {} seconds..."
+msgstr "Databáza uzamknutá. Opakovaný pokus o {} sekúnd..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 142
+#: usr/share/big-kernel-manager/core/base_manager.py:142
+#, python-brace-format
+msgid "Waiting {} s before retry..."
+msgstr "Pred opätovným pokusom sa čaká {} s..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 147
+#: usr/share/big-kernel-manager/core/base_manager.py:147
+#, python-brace-format
+msgid "Retry attempt {} of {}..."
+msgstr "Opakovať pokus {} z {}..."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:312
+#: usr/share/big-kernel-manager/core/base_manager.py:177
+#: usr/share/big-kernel-manager/core/base_manager.py:180
+#, python-brace-format
+msgid "Starting {}..."
+msgstr "Spúšťam {}..."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:310
+#: usr/share/big-kernel-manager/core/base_manager.py:178
+#, python-brace-format
+msgid "Command: {}"
+msgstr "Príkaz: {}"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: usr/share/big-kernel-manager/core/base_manager.py:253
+#, python-brace-format
+msgid "Still working... ({:.0%} complete)"
+msgstr "Ešte pracujem... ({:.0%} dokončené)"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: usr/share/big-kernel-manager/core/base_manager.py:279
+msgid "Operation cancelled"
+msgstr "Operácia zrušená"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: usr/share/big-kernel-manager/core/base_manager.py:280
+msgid "Operation was cancelled."
+msgstr "Operácia bola zrušená."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: usr/share/big-kernel-manager/core/base_manager.py:285
+#, python-brace-format
+msgid "{}  complete!"
+msgstr "{}  hotovo!"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/core/base_manager.py:289
+#, python-brace-format
+msgid "{}  completed successfully."
+msgstr "{} úspešne dokončené."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: usr/share/big-kernel-manager/core/base_manager.py:295
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} zlyhalo."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/base_manager.py:299
+#, python-brace-format
+msgid "{}  failed (exit code: {})"
+msgstr "{} zlyhalo (kód ukončenia: {})"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 310
+#: usr/share/big-kernel-manager/core/base_manager.py:310
+msgid ""
+"Package not found in repositories. The package name may have changed or been removed.\n"
+"Suggestion: Try refreshing the database with 'sudo pacman -Sy' and search for the correct name."
+msgstr ""
+"Balík sa nenašiel v úložiskách. Názov balíka mohol byť zmenený alebo odstránený.\n"
+"Návrh: Skúste obnoviť databázu pomocou 'sudo pacman -Sy' a vyhľadajte správny názov."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 319
+#: usr/share/big-kernel-manager/core/base_manager.py:319
+msgid ""
+"A conflict prevented the operation from completing.\n"
+"Suggestion: Clean the cache and update with 'sudo pacman -Scc' followed by 'sudo pacman -Syyu'."
+msgstr ""
+"Konflikt zabránil dokončeniu operácie.\n"
+"Návrh: Vyčistite vyrovnávaciu pamäť a aktualizujte ju pomocou „sudo pacman -Scc“ a následne „sudo "
+"pacman -Syyu“."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 327
+#: usr/share/big-kernel-manager/core/base_manager.py:327
+msgid ""
+"Some files from this package already exist on the system.\n"
+"Suggestion: Check which package owns the file with 'pacman -Qo <file_path>' and resolve the "
+"conflict."
+msgstr ""
+"Niektoré súbory z tohto balíka už v systéme existujú.\n"
+"Návrh: Skontrolujte, ktorý balík vlastní súbor pomocou 'pacman -Qo <cesta_súboru>' a vyriešte "
+"konflikt."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 335
+#: usr/share/big-kernel-manager/core/base_manager.py:335
+msgid ""
+"Required dependencies could not be resolved.\n"
+"Suggestion: Update the full system first with 'sudo pacman -Syu'."
+msgstr ""
+"Požadované závislosti sa nepodarilo vyriešiť.\n"
+"Návrh: Najprv aktualizujte celý systém pomocou 'sudo pacman -Syu'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 342
+#: usr/share/big-kernel-manager/core/base_manager.py:342
+msgid ""
+"Package signature could not be verified.\n"
+"Suggestion: Update your keyrings with 'sudo pacman -S archlinux-keyring manjaro-keyring'."
+msgstr ""
+"Podpis balíka sa nepodarilo overiť.\n"
+"Návrh: Aktualizujte svoje kľúčenky pomocou 'sudo pacman -S archlinux-kľúčenka manjaro-keyring'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 350
+#: usr/share/big-kernel-manager/core/base_manager.py:350
+msgid ""
+"The package database is locked by another process.\n"
+"If no other package manager is running, remove the lock with 'sudo rm /var/lib/pacman/db.lck'."
+msgstr ""
+"Databáza balíkov je uzamknutá iným procesom.\n"
+"Ak nie je spustený žiadny iný správca balíkov, odstráňte zámok pomocou 'sudo rm "
+"/var/lib/pacman/db.lck'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 358
+#: usr/share/big-kernel-manager/core/base_manager.py:358
+msgid ""
+"Not enough disk space to complete the operation.\n"
+"Suggestion: Free space by clearing the package cache with 'sudo pacman -Scc'."
+msgstr ""
+"Na dokončenie operácie nie je dostatok miesta na disku.\n"
+"Návrh: Uvoľnite miesto vymazaním vyrovnávacej pamäte balíka pomocou 'sudo pacman -Scc'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 366
+#: usr/share/big-kernel-manager/core/base_manager.py:366
+msgid ""
+"Could not download required files.\n"
+"Suggestion: Check your internet connection. If the problem persists, try updating your mirror list."
+msgstr ""
+"Nepodarilo sa stiahnuť požadované súbory.\n"
+"Návrh: Skontrolujte svoje internetové pripojenie. Ak problém pretrváva, skúste aktualizovať zoznam "
+"zrkadiel."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 374
+#: usr/share/big-kernel-manager/core/base_manager.py:374
+msgid ""
+"A downloaded package is corrupted.\n"
+"Suggestion: Clear the cache with 'sudo pacman -Scc' and try again."
+msgstr ""
+"Stiahnutý balík je poškodený.\n"
+"Návrh: Vymažte vyrovnávaciu pamäť pomocou „sudo pacman -Scc“ a skúste to znova."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 391
+#: usr/share/big-kernel-manager/core/base_manager.py:391
+msgid "Generating GRUB configuration..."
+msgstr "Generuje sa konfigurácia GRUB..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 392
+#: usr/share/big-kernel-manager/core/base_manager.py:392
+msgid "Running post-transaction hooks..."
+msgstr "Spúšťajú sa háky po transakcii..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/base_manager.py:393
+msgid "Installing packages..."
+msgstr "Inštaluje sa balíky..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 394
+#: usr/share/big-kernel-manager/core/base_manager.py:394
+msgid "Removing packages..."
+msgstr "Odstraňujú sa balíky..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 395
+#: usr/share/big-kernel-manager/core/base_manager.py:395
+msgid "Checking for file conflicts..."
+msgstr "Kontrolujú sa konflikty súborov..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 396
+#: usr/share/big-kernel-manager/core/base_manager.py:396
+msgid "Checking dependencies..."
+msgstr "Kontrolujú sa závislosti..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 400
+#: usr/share/big-kernel-manager/core/base_manager.py:400
+msgid "Synchronizing package databases..."
+msgstr "Synchronizácia databáz balíkov..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/driver_installer.py, line: 99
+#: usr/share/big-kernel-manager/core/driver_installer.py:99
+#, python-brace-format, fuzzy
+msgid "pamac-installer not found. Cannot install AUR package {}."
+msgstr ""
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/driver_installer.py, line: 113
+#: usr/share/big-kernel-manager/core/driver_installer.py:113
+msgid "Continue the installation in the pamac window that was opened."
+msgstr "Databáza uzamknutá. Opakovaný pokus o {} sekúnd..."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
+msgid "Completed"
+msgstr "Dokončené"

@@ -2,564 +2,290 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the big-kernel-manager package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-01 00:54-0300\n"
 "Last-Translator: Translation Automator <auto@translator.ai>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: attranslate\n"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/core/driver_installer.py:57
-#: usr/share/big-kernel-manager/ui/kernel_page.py:688
-#: usr/share/big-kernel-manager/ui/mesa_page.py:985
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1211
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1222
-#: usr/share/big-kernel-manager/ui/category_page.py:587
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
-#: usr/share/big-kernel-manager/ui/home_page.py:712
-#: usr/share/big-kernel-manager/ui/home_page.py:723
-#, python-brace-format
-msgid "Installing {}"
-msgstr "Installeren {}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: usr/share/big-kernel-manager/core/driver_installer.py:85
-#: usr/share/big-kernel-manager/ui/kernel_page.py:777
-#: usr/share/big-kernel-manager/ui/kernel_page.py:847
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1063
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1249
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1260
-#: usr/share/big-kernel-manager/ui/category_page.py:625
-#, python-brace-format
-msgid "Removing {}"
-msgstr "Verwijderen {}"
-
-#: usr/share/big-kernel-manager/core/driver_installer.py:99
-#, python-brace-format
-msgid "pamac-installer not found. Cannot install AUR package {}."
-msgstr ""
-
-#: usr/share/big-kernel-manager/core/driver_installer.py:113
-msgid "Continue the installation in the pamac window that was opened."
-msgstr "Ga door met de installatie in het geopende pamac-venster."
-
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:213
-#: usr/share/big-kernel-manager/ui/mesa_page.py:951
-#, python-brace-format
-msgid "Remove the installed NVIDIA driver ({}) first."
-msgstr "Verwijder eerst het geïnstalleerde NVIDIA-stuurprogramma ({})."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:310
-#: usr/share/big-kernel-manager/core/base_manager.py:178
-#, python-brace-format
-msgid "Command: {}"
-msgstr "Opdracht: {}"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:312
-#: usr/share/big-kernel-manager/core/base_manager.py:177
-#: usr/share/big-kernel-manager/core/base_manager.py:180
-#, python-brace-format
-msgid "Starting {}..."
-msgstr "Startende {}..."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
-msgid "Completed"
-msgstr "Voltooid"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 308
-#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:367
-msgid "Failed"
-msgstr "Mislukt"
-
-#: usr/share/big-kernel-manager/core/base_manager.py:137
-#, python-brace-format
-msgid "Database locked. Retrying in {} seconds..."
-msgstr "Database vergrendeld. Opnieuw proberen over {} seconden..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:142
-#, python-brace-format
-msgid "Waiting {} s before retry..."
-msgstr "Wacht {} s voordat het opnieuw wordt geprobeerd..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:147
-#, python-brace-format
-msgid "Retry attempt {} of {}..."
-msgstr ""
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
-#: usr/share/big-kernel-manager/core/base_manager.py:202
-#: usr/share/big-kernel-manager/core/mesa_manager.py:302
-#, python-brace-format
-msgid "Error: {}"
-msgstr "Fout: {}"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 333
-#: usr/share/big-kernel-manager/core/base_manager.py:230
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:407
-msgid "Operation cancelled by user."
-msgstr "Operatie geannuleerd door gebruiker."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
-#: usr/share/big-kernel-manager/core/base_manager.py:253
-#, python-brace-format
-msgid "Still working... ({:.0%} complete)"
-msgstr "Bezig... ({:.0%} voltooid)"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
-#: usr/share/big-kernel-manager/core/base_manager.py:279
-msgid "Operation cancelled"
-msgstr "Bewerking geannuleerd"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
-#: usr/share/big-kernel-manager/core/base_manager.py:280
-msgid "Operation was cancelled."
-msgstr "De operatie is geannuleerd."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
-#: usr/share/big-kernel-manager/core/base_manager.py:285
-#, python-brace-format
-msgid "{}  complete!"
-msgstr ""
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
-#: usr/share/big-kernel-manager/core/base_manager.py:289
-#, python-brace-format
-msgid "{}  completed successfully."
-msgstr "{} is succesvol voltooid."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
-#: usr/share/big-kernel-manager/core/base_manager.py:295
-#, python-brace-format
-msgid "{}  failed."
-msgstr "{} is mislukt."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
-#: usr/share/big-kernel-manager/core/base_manager.py:299
-#, python-brace-format
-msgid "{}  failed (exit code: {})"
-msgstr "{} mislukt (afsluitcode: {})"
-
-#: usr/share/big-kernel-manager/core/base_manager.py:310
-msgid ""
-"Package not found in repositories. The package name may have changed or been "
-"removed.\n"
-"Suggestion: Try refreshing the database with 'sudo pacman -Sy' and search "
-"for the correct name."
-msgstr ""
-"Pakket niet gevonden in repository's. De pakketnaam is mogelijk gewijzigd of "
-"verwijderd.\n"
-"Suggestie: Probeer de database te vernieuwen met 'sudo pacman -Sy' en zoek "
-"naar de juiste naam."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:319
-msgid ""
-"A conflict prevented the operation from completing.\n"
-"Suggestion: Clean the cache and update with 'sudo pacman -Scc' followed by "
-"'sudo pacman -Syyu'."
-msgstr ""
-"Een conflict verhinderde dat de operatie kon worden voltooid.\n"
-"Suggestie: Maak de cache schoon en update met 'sudo pacman -Scc' gevolgd "
-"door 'sudo pacman -Syyu'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:327
-msgid ""
-"Some files from this package already exist on the system.\n"
-"Suggestion: Check which package owns the file with 'pacman -Qo <file_path>' "
-"and resolve the conflict."
-msgstr ""
-"Sommige bestanden uit dit pakket bestaan ​​al op het systeem.\n"
-"Suggestie: Controleer welk pakket eigenaar is van het bestand met 'pacman "
-"-Qo <file_path>' en los het conflict op."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:335
-msgid ""
-"Required dependencies could not be resolved.\n"
-"Suggestion: Update the full system first with 'sudo pacman -Syu'."
-msgstr ""
-"Vereiste afhankelijkheden konden niet worden opgelost.\n"
-"Suggestie: Update eerst het volledige systeem met 'sudo pacman -Syu'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:342
-msgid ""
-"Package signature could not be verified.\n"
-"Suggestion: Update your keyrings with 'sudo pacman -S archlinux-keyring "
-"manjaro-keyring'."
-msgstr ""
-"Pakkethandtekening kan niet worden geverifieerd.\n"
-"Suggestie: Update je sleutelhangers met 'sudo pacman -S archlinux-keyring "
-"manjaro-keyring'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:350
-msgid ""
-"The package database is locked by another process.\n"
-"If no other package manager is running, remove the lock with 'sudo rm /var/"
-"lib/pacman/db.lck'."
-msgstr ""
-"De pakketdatabase is vergrendeld door een ander proces.\n"
-"Als er geen andere pakketbeheerder actief is, verwijder dan de vergrendeling "
-"met 'sudo rm /var/lib/pacman/db.lck'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:358
-msgid ""
-"Not enough disk space to complete the operation.\n"
-"Suggestion: Free space by clearing the package cache with 'sudo pacman -Scc'."
-msgstr ""
-"Onvoldoende schijfruimte om de bewerking te voltooien.\n"
-"Suggestie: Maak ruimte vrij door de pakketcache te wissen met 'sudo pacman "
-"-Scc'."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:366
-msgid ""
-"Could not download required files.\n"
-"Suggestion: Check your internet connection. If the problem persists, try "
-"updating your mirror list."
-msgstr ""
-"Kon de vereiste bestanden niet downloaden.\n"
-"Suggestie: Controleer uw internetverbinding. Als het probleem zich blijft "
-"voordoen, probeer dan uw mirrorlijst bij te werken."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:374
-msgid ""
-"A downloaded package is corrupted.\n"
-"Suggestion: Clear the cache with 'sudo pacman -Scc' and try again."
-msgstr ""
-"Een gedownload pakket is beschadigd.\n"
-"Suggestie: Wis de cache met 'sudo pacman -Scc' en probeer het opnieuw."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:391
-msgid "Generating GRUB configuration..."
-msgstr "Post-transactiehooks uitvoeren..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:392
-msgid "Running post-transaction hooks..."
-msgstr "Post-transactiehooks uitvoeren..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/core/base_manager.py:393
-msgid "Installing packages..."
-msgstr "Pakketten installeren..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:394
-msgid "Removing packages..."
-msgstr "Pakketten verwijderen..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:395
-msgid "Checking for file conflicts..."
-msgstr "Controleren op bestandsconflicten..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:396
-msgid "Checking dependencies..."
-msgstr "Afhankelijkheden controleren..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:400
-msgid "Synchronizing package databases..."
-msgstr "Pakketdatabases synchroniseren..."
-
-#: usr/share/big-kernel-manager/core/base_manager.py:423
-#: usr/share/big-kernel-manager/ui/home_page.py:643
-msgid "Downloading packages..."
-msgstr "Stuurprogramma niet gevonden: {}"
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:116
-#, python-brace-format
-msgid "Driver not found: {}"
-msgstr "Stuurprogramma niet gevonden: {}"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
-#: usr/share/big-kernel-manager/core/mesa_manager.py:151
-#, python-brace-format
-msgid "Applying {} driver..."
-msgstr "Stuurprogramma {}wordt toegepast..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#: usr/share/big-kernel-manager/core/mesa_manager.py:153
-#, python-brace-format
-msgid "Starting {} driver installation..."
-msgstr "Installatie van {} stuurprogramma starten..."
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:161
-msgid "Checking for conflicting packages..."
-msgstr "{} pakketten controleren..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: usr/share/big-kernel-manager/core/mesa_manager.py:173
-#, python-brace-format
-msgid "Removing conflicts: {}"
-msgstr "Conflicten verwijderen: {}"
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:178
-#, python-brace-format
-msgid "Checking {} packages..."
-msgstr "⚠️ Pakket {} niet beschikbaar, overslaan..."
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:187
-#, python-brace-format
-msgid "⚠️ Package {} not available, skipping..."
-msgstr "⚠️ Pakket {} niet beschikbaar, overslaan..."
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:191
-msgid "❌ No packages available to install."
-msgstr "Conflicterende pakketten verwijderen..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/core/mesa_manager.py:197
-#, python-brace-format
-msgid "Installing: {}"
-msgstr "Installeren: {}"
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:205
-msgid "Removing conflicting packages..."
-msgstr "Conflicterende pakketten verwijderen..."
-
-#: usr/share/big-kernel-manager/core/mesa_manager.py:237
-msgid "Failed to remove conflicting packages."
-msgstr "Kan conflicterende pakketten niet verwijderen."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
-#: usr/share/big-kernel-manager/core/mesa_manager.py:241
-#, python-brace-format
-msgid "❌ Failed to remove conflicts (exit code: {})"
-msgstr "❌ Kan conflicten niet verwijderen (afsluitcode: {})"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
-#: usr/share/big-kernel-manager/core/mesa_manager.py:249
-#, python-brace-format
-msgid "Installing {} driver..."
-msgstr "{} stuurprogramma installeren..."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
-#: usr/share/big-kernel-manager/core/mesa_manager.py:282
-msgid "Failed to apply driver."
-msgstr "Kan stuurprogramma niet toepassen."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
-#: usr/share/big-kernel-manager/core/mesa_manager.py:285
-#, python-brace-format
-msgid "❌ Operation failed (exit code: {})"
-msgstr "❌ Bewerking mislukt (afsluitcode: {})"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: usr/share/big-kernel-manager/core/mesa_manager.py:292
-msgid "Driver applied successfully!"
-msgstr "Chauffeur succesvol toegepast!"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
-#: usr/share/big-kernel-manager/core/mesa_manager.py:294
-#, python-brace-format
-msgid "✅ {} driver applied successfully!"
-msgstr "✅ {} chauffeur succesvol toegepast!"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
-#: usr/share/big-kernel-manager/core/mesa_manager.py:303
-#, python-brace-format
-msgid "❌ Error: {}"
-msgstr "❌ Fout: {}"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
-#: usr/share/big-kernel-manager/ui/application.py:143
-#: usr/share/big-kernel-manager/ui/kernel_page.py:165
-#: usr/share/big-kernel-manager/ui/mesa_page.py:319
-msgid "Error"
-msgstr "Fout"
-
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
 msgid "Loading..."
 msgstr "Laden..."
-
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:40
 msgid "Loading"
 msgstr "Laden"
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/base_page.py, line: 55
 #: usr/share/big-kernel-manager/ui/base_page.py:55
 msgid "Still loading… Check your network connection."
 msgstr "Nog aan het laden… Controleer uw netwerkverbinding."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
-#: usr/share/big-kernel-manager/ui/kernel_page.py:107
-msgid "Installed Kernels"
-msgstr "Geïnstalleerde kernels"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
-#: usr/share/big-kernel-manager/ui/kernel_page.py:119
-msgid "Remove all obsolete kernels"
-msgstr "Verwijder alle verouderde kernels"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 89
-#: usr/share/big-kernel-manager/ui/kernel_page.py:261
-msgid "Kernel in use"
-msgstr "Kernel in gebruik"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
-#: usr/share/big-kernel-manager/ui/kernel_page.py:267
-msgid "In Use"
-msgstr "In gebruik"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:331
-msgid "Obsolete Kernels — Removal Recommended"
-msgstr "Verouderde kernels – verwijdering aanbevolen"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:347
-#: usr/share/big-kernel-manager/ui/home_page.py:770
-msgid "Warning"
-msgstr "Waarschuwing"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:360
-msgid "No longer receives security updates"
-msgstr "Ontvangt geen beveiligingsupdates meer"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-#: usr/share/big-kernel-manager/ui/kernel_page.py:367
-#: usr/share/big-kernel-manager/ui/kernel_page.py:425
-#: usr/share/big-kernel-manager/ui/kernel_page.py:757
-#: usr/share/big-kernel-manager/ui/mesa_page.py:762
-#: usr/share/big-kernel-manager/ui/mesa_page.py:910
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1050
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1170
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1235
-#: usr/share/big-kernel-manager/ui/category_page.py:432
-#: usr/share/big-kernel-manager/ui/category_page.py:607
-msgid "Remove"
-msgstr "Verwijderen"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
-#: usr/share/big-kernel-manager/ui/kernel_page.py:372
-#: usr/share/big-kernel-manager/ui/kernel_page.py:430
-#, python-brace-format
-msgid "Remove kernel {}"
-msgstr "Verwijder kernel {}"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:416
-msgid "Last backup"
-msgstr "Laatste back-up"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:420
-msgid "At least one backup kernel must remain installed"
-msgstr "Er moet ten minste één back-upkernel geïnstalleerd blijven"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:439
-msgid ""
-"Recommended for most users. These kernels receive security updates for years "
-"and are thoroughly tested."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 37
+#: usr/share/big-kernel-manager/ui/mesa_data.py:37
+msgid "Latest NVIDIA driver — best performance and newest features"
+msgstr "Nieuwste NVIDIA-driver: beste prestaties en nieuwste functies"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 40
+#: usr/share/big-kernel-manager/ui/mesa_data.py:40
+msgid "NVIDIA 575 series — use if the latest driver causes issues"
+msgstr "NVIDIA 575-serie: gebruik deze als het nieuwste stuurprogramma problemen veroorzaakt"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 43
+#: usr/share/big-kernel-manager/ui/mesa_data.py:43
+msgid "NVIDIA 570 series — use if the latest driver causes issues"
+msgstr "NVIDIA 570-serie: gebruik deze als het nieuwste stuurprogramma problemen veroorzaakt"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 47
+#: usr/share/big-kernel-manager/ui/mesa_data.py:47
+msgid "For Intel + NVIDIA laptops — switches between GPUs to save battery"
+msgstr "Voor Intel + NVIDIA-laptops: schakelt tussen GPU's om de batterij te sparen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 50
+#: usr/share/big-kernel-manager/ui/mesa_data.py:50
+msgid "For Intel + NVIDIA laptops — NVIDIA 575 series"
+msgstr "Voor Intel + NVIDIA-laptops — NVIDIA 575-serie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 53
+#: usr/share/big-kernel-manager/ui/mesa_data.py:53
+msgid "For Intel + NVIDIA laptops — NVIDIA 570 series"
+msgstr "Voor Intel + NVIDIA-laptops — NVIDIA 570-serie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 56
+#: usr/share/big-kernel-manager/ui/mesa_data.py:56
+msgid "For Intel + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
+msgstr "Voor Intel + NVIDIA-laptops — NVIDIA 470 (verouderd, geen Wayland)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 59
+#: usr/share/big-kernel-manager/ui/mesa_data.py:59
+msgid "For Intel + NVIDIA laptops — NVIDIA 390 (very old GPUs only)"
+msgstr "Voor AMD + NVIDIA-laptops: schakelt tussen GPU's om de batterij te sparen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 63
+#: usr/share/big-kernel-manager/ui/mesa_data.py:63
+msgid "For AMD + NVIDIA laptops — switches between GPUs to save battery"
+msgstr "Voor AMD + NVIDIA-laptops: schakelt tussen GPU's om de batterij te sparen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 66
+#: usr/share/big-kernel-manager/ui/mesa_data.py:66
+msgid "For AMD + NVIDIA laptops — NVIDIA 575 series"
+msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 575-serie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 69
+#: usr/share/big-kernel-manager/ui/mesa_data.py:69
+msgid "For AMD + NVIDIA laptops — NVIDIA 570 series"
+msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 470 (verouderd, geen Wayland)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 72
+#: usr/share/big-kernel-manager/ui/mesa_data.py:72
+msgid "For AMD + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
+msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 470 (verouderd, geen Wayland)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 76
+#: usr/share/big-kernel-manager/ui/mesa_data.py:76
+msgid "Optimized display for virtual machines (VirtualBox, VMware, QEMU/KVM)"
+msgstr "Geoptimaliseerde weergave voor virtuele machines (VirtualBox, VMware, QEMU/KVM)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 90
+#: usr/share/big-kernel-manager/ui/mesa_data.py:90
+msgid "Gaming & 3D Graphics"
+msgstr "Gamen en 3D-graphics"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 93
+#: usr/share/big-kernel-manager/ui/mesa_data.py:93
+msgid "Vulkan and OpenGL libraries essential for games, Steam, Wine/Proton and 3D applications."
 msgstr ""
-"Aanbevolen voor de meeste gebruikers. Deze kernels krijgen jarenlang "
-"beveiligingsupdates en worden uitvoerig getest."
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:443
+"Vulkan- en OpenGL-bibliotheken die essentieel zijn voor games, Steam, Wine/Proton en "
+"3D-toepassingen."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 99
+#: usr/share/big-kernel-manager/ui/mesa_data.py:99
+msgid "Vulkan for AMD Radeon GPUs"
+msgstr "Vulkan voor AMD Radeon GPU's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 106
+#: usr/share/big-kernel-manager/ui/mesa_data.py:106
+msgid "32-bit Vulkan (AMD) — needed by Steam, Wine/Proton and older games"
+msgstr "32-bit Vulkan (AMD) — nodig voor Steam, Wine/Proton en oudere games"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 114
+#: usr/share/big-kernel-manager/ui/mesa_data.py:114
+msgid "Vulkan for Intel GPUs"
+msgstr "32-bit Vulkan (Intel) — nodig voor Steam, Wine/Proton en oudere games"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 121
+#: usr/share/big-kernel-manager/ui/mesa_data.py:121
+msgid "32-bit Vulkan (Intel) — needed by Steam, Wine/Proton and older games"
+msgstr "32-bit Vulkan (Intel) — nodig voor Steam, Wine/Proton en oudere games"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 130
+#: usr/share/big-kernel-manager/ui/mesa_data.py:130
+msgid "Open-source Vulkan for NVIDIA (Nouveau) — no proprietary driver needed"
+msgstr "Open-source Vulkan voor NVIDIA (Nouveau) — geen eigen stuurprogramma nodig"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 139
+#: usr/share/big-kernel-manager/ui/mesa_data.py:139
+msgid "32-bit OpenGL — needed by Steam, Wine/Proton and older 32-bit games"
+msgstr "32-bit OpenGL — nodig voor Steam, Wine/Proton en oudere 32-bit-games"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 149
+#: usr/share/big-kernel-manager/ui/mesa_data.py:149
+msgid "Video Playback"
+msgstr "Video afspelen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 152
+#: usr/share/big-kernel-manager/ui/mesa_data.py:152
 msgid ""
-"Always up to date with the latest features and hardware support. Good if you "
-"need the newest drivers."
+"Hardware-accelerated video decoding (VAAPI/VDPAU). Makes videos, streaming and video calls smoother "
+"while reducing CPU and power usage."
 msgstr ""
-"Altijd up-to-date met de nieuwste functies en hardware-ondersteuning. Goed "
-"als je de nieuwste stuurprogramma's nodig hebt."
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:447
+"Hardwareversnelde videodecodering (VAAPI/VDPAU). Maakt video's, streaming en videogesprekken "
+"vloeiender terwijl het CPU- en energieverbruik wordt verminderd."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 159
+#: usr/share/big-kernel-manager/ui/mesa_data.py:159
+msgid "VAAPI for NVIDIA proprietary driver"
+msgstr "VAAPI voor NVIDIA eigen stuurprogramma"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 165
+#: usr/share/big-kernel-manager/ui/mesa_data.py:165
+msgid "VAAPI for Intel (Broadwell / Gen 8 and newer)"
+msgstr "VAAPI voor Intel (Broadwell/Gen 8 en nieuwer)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 172
+#: usr/share/big-kernel-manager/ui/mesa_data.py:172
+msgid "VAAPI for older Intel (Haswell to Coffee Lake / Gen 4–9)"
+msgstr "VAAPI voor oudere Intel (Haswell tot Coffee Lake / Gen 4–9)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 179
+#: usr/share/big-kernel-manager/ui/mesa_data.py:179
+msgid "VAAPI for AMD and NVIDIA open-source (Nouveau)"
+msgstr "VAAPI voor AMD en NVIDIA open source (Nouveau)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 186
+#: usr/share/big-kernel-manager/ui/mesa_data.py:186
 msgid ""
-"Tuned for gaming and desktop responsiveness. A good option for daily use "
-"with extra performance."
+"VDPAU for AMD/NVIDIA open-source — legacy API being replaced by VAAPI and Vulkan. Probably not "
+"needed."
 msgstr ""
-"Afgestemd op gaming en desktopresponsiviteit. Een goede optie voor dagelijks "
-"gebruik met extra prestaties."
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:451
+"VDPAU voor AMD/NVIDIA open-source: verouderde API wordt vervangen door VAAPI en Vulkan. "
+"Waarschijnlijk niet nodig."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 197
+#: usr/share/big-kernel-manager/ui/mesa_data.py:197
+msgid "GPU Compute (AI / ML)"
+msgstr "GPU-rekenkracht (AI / ML)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 200
+#: usr/share/big-kernel-manager/ui/mesa_data.py:200
 msgid ""
-"Built for audio/video production needing precise timing. May be incompatible "
-"with some drivers (e.g. NVIDIA). Only for advanced users."
+"CUDA and OpenCL libraries for artificial intelligence, machine learning, Blender, DaVinci Resolve "
+"and other GPU-accelerated workloads."
 msgstr ""
-"Gebouwd voor audio-/videoproductie waarvoor een nauwkeurige timing nodig is. "
-"Mogelijk incompatibel met sommige stuurprogramma's (bijvoorbeeld NVIDIA). "
-"Alleen voor gevorderde gebruikers."
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:492
-msgid "LTS — Long Term Support (Recommended)"
-msgstr "LTS — Ondersteuning op lange termijn (aanbevolen)"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:493
-msgid "Standard"
-msgstr "Standaard"
-
+"CUDA- en OpenCL-bibliotheken voor kunstmatige intelligentie, machine learning, Blender, DaVinci "
+"Resolve en andere GPU-versnelde workloads."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 207
+#: usr/share/big-kernel-manager/ui/mesa_data.py:207
+msgid "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
+msgstr "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 213
+#: usr/share/big-kernel-manager/ui/mesa_data.py:213
+msgid "OpenCL for NVIDIA — Blender, DaVinci, Darktable"
+msgstr "OpenCL voor NVIDIA — Blender, DaVinci, Darktable"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 219
+#: usr/share/big-kernel-manager/ui/mesa_data.py:219
+msgid "OpenCL for AMD — Blender, GIMP, DaVinci"
+msgstr "OpenCL voor AMD — Blender, GIMP, DaVinci"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 225
+#: usr/share/big-kernel-manager/ui/mesa_data.py:225
+msgid "OpenCL for Intel — Blender, DaVinci"
+msgstr "OpenCL voor Intel — Blender, DaVinci"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 270
+#: usr/share/big-kernel-manager/ui/mesa_data.py:270
+msgid "Stable"
+msgstr "Stabiel"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 272
+#: usr/share/big-kernel-manager/ui/mesa_data.py:272
+msgid ""
+"Officially tested by the Mesa team. The safest and most reliable choice for everyday use, gaming, "
+"and video playback."
+msgstr ""
+"Officieel getest door het Mesa-team. De veiligste en meest betrouwbare keuze voor dagelijks "
+"gebruik, gaming en videoweergave."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:105
+#: usr/share/big-kernel-manager/ui/mesa_data.py:275
+msgid "Recommended"
+msgstr "Aanbevolen"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
-#: usr/share/big-kernel-manager/ui/kernel_page.py:494
-msgid "Xanmod (Performance)"
-msgstr "Xanmod (prestaties)"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:495
-msgid "Real-Time (Advanced)"
-msgstr "Realtime (geavanceerd)"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:566
-#: usr/share/big-kernel-manager/ui/kernel_page.py:591
-#, python-brace-format
-msgid "Show {} available"
-msgstr "Toon {} beschikbaar"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
-#: usr/share/big-kernel-manager/ui/kernel_page.py:594
-msgid "Hide available kernels"
-msgstr "Verberg beschikbare kernels"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/kernel_page.py:636
-#: usr/share/big-kernel-manager/ui/kernel_page.py:669
-#: usr/share/big-kernel-manager/ui/mesa_page.py:767
-#: usr/share/big-kernel-manager/ui/mesa_page.py:929
-#: usr/share/big-kernel-manager/ui/mesa_page.py:972
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1176
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1197
-#: usr/share/big-kernel-manager/ui/category_page.py:436
-#: usr/share/big-kernel-manager/ui/category_page.py:569
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:245
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:366
-#: usr/share/big-kernel-manager/ui/home_page.py:332
-#: usr/share/big-kernel-manager/ui/home_page.py:431
-#: usr/share/big-kernel-manager/ui/home_page.py:694
-msgid "Install"
-msgstr "Installeren"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
-#: usr/share/big-kernel-manager/ui/kernel_page.py:639
-#: usr/share/big-kernel-manager/ui/kernel_page.py:642
-#, python-brace-format
-msgid "Install kernel {}"
-msgstr "Installeer kernel {}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/ui/kernel_page.py:660
-#: usr/share/big-kernel-manager/ui/mesa_page.py:769
-#: usr/share/big-kernel-manager/ui/category_page.py:444
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:250
-#: usr/share/big-kernel-manager/ui/home_page.py:335
-#: usr/share/big-kernel-manager/ui/home_page.py:434
-#, python-brace-format
-msgid "Install {}"
-msgstr "Installeer {}"
-
-#: usr/share/big-kernel-manager/ui/kernel_page.py:661
-msgid "The following packages will be installed:"
-msgstr "De volgende pakketten worden geïnstalleerd:"
-
+#: usr/share/big-kernel-manager/ui/mesa_data.py:279
+#: usr/share/big-kernel-manager/ui/mesa_data.py:285
+msgid "Performance"
+msgstr "Prestatie"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 281
+#: usr/share/big-kernel-manager/ui/mesa_data.py:281
+msgid ""
+"Modified version with gaming optimizations for extra performance. Reliable for most users but may "
+"rarely cause instabilities."
+msgstr ""
+"Aangepaste versie met gaming-optimalisaties voor extra prestaties. Betrouwbaar voor de meeste "
+"gebruikers, maar kan zelden instabiliteiten veroorzaken."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 289
+#: usr/share/big-kernel-manager/ui/mesa_data.py:289
+msgid "Development"
+msgstr "Ontwikkeling"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 291
+#: usr/share/big-kernel-manager/ui/mesa_data.py:291
+msgid ""
+"Built from the very latest source code with cutting-edge features. Offers the best gaming "
+"performance but is the least tested — only for advanced users."
+msgstr ""
+"Gebouwd op basis van de allernieuwste broncode met geavanceerde functies. Biedt de beste "
+"spelprestaties, maar is het minst getest – alleen voor gevorderde gebruikers."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
+#: usr/share/big-kernel-manager/ui/mesa_data.py:299
+#: usr/share/big-kernel-manager/ui/mesa_data.py:305
+msgid "Legacy"
+msgstr "Erfgoed"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 301
+#: usr/share/big-kernel-manager/ui/mesa_data.py:301
+msgid ""
+"For very old graphics cards that only support OpenGL 2.1 or earlier. Only install this if newer "
+"Mesa versions don't work with your hardware."
+msgstr ""
+"Voor zeer oude grafische kaarten die alleen OpenGL 2.1 of eerder ondersteunen. Installeer dit "
+"alleen als nieuwere Mesa-versies niet werken met uw hardware."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py, line: 117
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:117
+msgid "Technical details"
+msgstr "Technische details"
+# File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:131
+msgid "Terminal output"
+msgstr "Ethernet-stuurprogramma's"
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
+# 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
+# 
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 306
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 374
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 161
@@ -581,44 +307,232 @@ msgstr "De volgende pakketten worden geïnstalleerd:"
 #: usr/share/big-kernel-manager/ui/home_page.py:693
 msgid "Cancel"
 msgstr "Annuleren"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
-#: usr/share/big-kernel-manager/ui/kernel_page.py:689
-#: usr/share/big-kernel-manager/ui/mesa_page.py:986
-msgid "Preparing installation..."
-msgstr ""
-"Kernel is succesvol geïnstalleerd.\n"
-"Mogelijk moet u opnieuw opstarten om het te gebruiken."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
-#: usr/share/big-kernel-manager/ui/kernel_page.py:713
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 169
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 390
+# File: usr/share/big-kernel-manager/ui/window.py, line: 463
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:151
+msgid "Close"
+msgstr "Sluiten"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 200
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:207
+#: usr/share/big-kernel-manager/ui/category_page.py:588
+#: usr/share/big-kernel-manager/ui/category_page.py:626
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
+msgid "Please wait..."
+msgstr "Even geduld a.u.b..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py, line: 229
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:229
+#, python-brace-format
+msgid "Step {} of {}: {}"
+msgstr "Stap {} van {}: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py, line: 231
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:231
+#, python-brace-format
+msgid "Step {} of {}"
+msgstr "Stap {} van {}"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:333
+msgid "Operation completed successfully!"
+msgstr "Operatie succesvol voltooid!"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:338
+msgid "Operation failed. Check terminal output for details."
+msgstr "De bewerking is mislukt. Controleer de terminaluitvoer voor meer informatie."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:364
+msgid "Completed!"
+msgstr "Voltooid!"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 308
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:367
+msgid "Failed"
+msgstr "Mislukt"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 333
+#: usr/share/big-kernel-manager/core/base_manager.py:230
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:407
+msgid "Operation cancelled by user."
+msgstr "Operatie geannuleerd door gebruiker."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
+#: usr/share/big-kernel-manager/ui/progress_dialog.py:408
+msgid "Cancelled"
+msgstr "Geannuleerd"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/mesa_page.py:115
+msgid "Video Drivers"
+msgstr "Videostuurprogramma's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 127
+#: usr/share/big-kernel-manager/ui/mesa_page.py:127
 msgid ""
-"Kernel installed successfully.\n"
-"You may need to reboot to use it."
+"On Linux, video drivers for AMD, Intel and NVIDIA (free software Nouveau) are built into a single "
+"project called <b>Mesa</b>. Below you can choose a Mesa variant and manage extra packages for "
+"gaming, video playback, compute and AI."
 msgstr ""
-"Kernel is succesvol geïnstalleerd.\n"
-"Mogelijk moet u opnieuw opstarten om het te gebruiken."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-#: usr/share/big-kernel-manager/ui/kernel_page.py:720
+"Op Linux zijn videostuurprogramma's voor AMD, Intel en NVIDIA (gratis software Nouveau) ingebouwd "
+"in één enkel project genaamd <b>Mesa</b>. Hieronder kunt u een Mesa-variant kiezen en extra "
+"pakketten beheren voor gaming, video afspelen, rekenkracht en AI."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 150
+#: usr/share/big-kernel-manager/ui/mesa_page.py:150
 msgid ""
-"Kernel installation failed.\n"
+"Your computer has an <b>NVIDIA</b> graphics card. You can install the official proprietary driver "
+"for the best performance in gaming, AI and professional applications."
+msgstr ""
+"Uw computer heeft een <b>NVIDIA</b> grafische kaart. U kunt het officiële eigen stuurprogramma "
+"installeren voor de beste prestaties bij gaming, AI en professionele toepassingen."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 183
+#: usr/share/big-kernel-manager/ui/mesa_page.py:183
+msgid "Mesa Variant"
+msgstr "Mesa-variant"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 194
+#: usr/share/big-kernel-manager/ui/mesa_page.py:194
+msgid "Choose which Mesa build to use. Only one variant can be active at a time."
+msgstr "Kies welke Mesa-build je wilt gebruiken. Er kan slechts één variant tegelijk actief zijn."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 282
+#: usr/share/big-kernel-manager/ui/mesa_page.py:282
+msgid "Detected graphics cards:"
+msgstr "Gedetecteerde grafische kaarten:"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 289
+msgid "\\u2022 <b>{}</b> \\u2014 NVIDIA proprietary driver (not Mesa)"
+msgstr "\\u2022 <b>{}</b> \\u2014 NVIDIA eigen driver (geen Mesa)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 294
+msgid "\\u2022 <b>{}</b> \\u2014 Mesa driver"
+msgstr "\\u2022 <b>{}</b> \\u2014 Mesa-stuurprogramma"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/ui/application.py:143
+#: usr/share/big-kernel-manager/ui/kernel_page.py:165
+#: usr/share/big-kernel-manager/ui/mesa_page.py:319
+msgid "Error"
+msgstr "Fout"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
+#: usr/share/big-kernel-manager/ui/mesa_page.py:415
+#: usr/share/big-kernel-manager/ui/mesa_page.py:422
+msgid "Active"
+msgstr "Actief"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 427
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 916
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1014
+#: usr/share/big-kernel-manager/ui/mesa_page.py:427
+#: usr/share/big-kernel-manager/ui/mesa_page.py:916
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1014
+msgid "Switch"
+msgstr "Schakelaar"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 431
+#: usr/share/big-kernel-manager/ui/mesa_page.py:431
+#, python-brace-format
+msgid "Switch to {}"
+msgstr "Schakel over naar {}"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
+#: usr/share/big-kernel-manager/ui/mesa_page.py:456
+msgid "Change Video Driver"
+msgstr "Video stuurprogramma wijzigen"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
+#: usr/share/big-kernel-manager/ui/mesa_page.py:460
+#, python-brace-format
+msgid ""
+"Switch to <b>{}</b>?\n"
+"\n"
+"A system reboot will be required for the change to take effect."
+msgstr ""
+"Overschakelen naar <b>{}</b>?\n"
+"\n"
+"Om de wijziging door te voeren, is een herstart van het systeem vereist."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
+#: usr/share/big-kernel-manager/ui/mesa_page.py:465
+msgid "Apply"
+msgstr "Toepassen"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
+#: usr/share/big-kernel-manager/ui/mesa_page.py:481
+#, python-brace-format
+msgid "Applying {}"
+msgstr "Toepassen {}"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
+#: usr/share/big-kernel-manager/ui/mesa_page.py:482
+msgid "Preparing to apply driver..."
+msgstr "Klaar om te solliciteren als chauffeur..."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
+#: usr/share/big-kernel-manager/ui/mesa_page.py:503
+msgid ""
+"Video driver changed successfully!\n"
+"\n"
+"You must reboot your system for the new driver to become active."
+msgstr "Andere chauffeurs"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/mesa_page.py:509
+msgid ""
+"Driver change failed.\n"
 "Check the terminal output for details."
 msgstr ""
-"Kernelinstallatie mislukt.\n"
+"Het wijzigen van het stuurprogramma is mislukt.\n"
 "Controleer de terminaluitvoer voor details."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
-#: usr/share/big-kernel-manager/ui/kernel_page.py:734
-msgid "Cannot Remove Running Kernel"
-msgstr "Kan actieve kernel niet verwijderen"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
-#: usr/share/big-kernel-manager/ui/kernel_page.py:736
-msgid "This kernel is currently in use. Boot into a different kernel first."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 589
+#: usr/share/big-kernel-manager/ui/mesa_page.py:589
+msgid "NVIDIA Proprietary Driver"
+msgstr "NVIDIA-eigen stuurprogramma"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 601
+#: usr/share/big-kernel-manager/ui/mesa_page.py:601
+msgid ""
+"Official closed-source driver with the best performance for gaming, AI, and professional workloads. "
+"Only one version can be active at a time."
 msgstr ""
-"Deze kernel is momenteel in gebruik. Start eerst op in een andere kernel."
-
+"Officiële closed-source driver met de beste prestaties voor gaming, AI en professionele workloads. "
+"Er kan slechts één versie tegelijk actief zijn."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 677
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 680
+#: usr/share/big-kernel-manager/ui/mesa_page.py:677
+#: usr/share/big-kernel-manager/ui/mesa_page.py:680
+msgid "All recommended packages installed"
+msgstr "Alle aanbevolen pakketten zijn geïnstalleerd"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 686
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 689
+#: usr/share/big-kernel-manager/ui/mesa_page.py:686
+#: usr/share/big-kernel-manager/ui/mesa_page.py:689
+msgid "Some packages not installed"
+msgstr "Sommige pakketten zijn niet geïnstalleerd"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 747
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1163
+#: usr/share/big-kernel-manager/ui/mesa_page.py:747
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1163
+msgid "Included"
+msgstr "Inbegrepen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 754
+#: usr/share/big-kernel-manager/ui/mesa_page.py:754
+#, python-brace-format
+msgid "Already included in your Mesa version ({})"
+msgstr "Al opgenomen in uw Mesa-versie ({})"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: usr/share/big-kernel-manager/ui/kernel_page.py:367
+#: usr/share/big-kernel-manager/ui/kernel_page.py:425
+#: usr/share/big-kernel-manager/ui/kernel_page.py:757
+#: usr/share/big-kernel-manager/ui/mesa_page.py:762
+#: usr/share/big-kernel-manager/ui/mesa_page.py:910
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1050
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1170
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1235
+#: usr/share/big-kernel-manager/ui/category_page.py:432
+#: usr/share/big-kernel-manager/ui/category_page.py:607
+msgid "Remove"
+msgstr "Verwijderen"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
 #: usr/share/big-kernel-manager/ui/kernel_page.py:748
@@ -627,21 +541,1106 @@ msgstr ""
 #, python-brace-format
 msgid "Remove {}"
 msgstr ""
-
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/kernel_page.py:636
+#: usr/share/big-kernel-manager/ui/kernel_page.py:669
+#: usr/share/big-kernel-manager/ui/mesa_page.py:767
+#: usr/share/big-kernel-manager/ui/mesa_page.py:929
+#: usr/share/big-kernel-manager/ui/mesa_page.py:972
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1176
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1197
+#: usr/share/big-kernel-manager/ui/category_page.py:436
+#: usr/share/big-kernel-manager/ui/category_page.py:569
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:245
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:366
+#: usr/share/big-kernel-manager/ui/home_page.py:332
+#: usr/share/big-kernel-manager/ui/home_page.py:431
+#: usr/share/big-kernel-manager/ui/home_page.py:694
+msgid "Install"
+msgstr "Installeren"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/kernel_page.py:660
+#: usr/share/big-kernel-manager/ui/mesa_page.py:769
+#: usr/share/big-kernel-manager/ui/category_page.py:444
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:250
+#: usr/share/big-kernel-manager/ui/home_page.py:335
+#: usr/share/big-kernel-manager/ui/home_page.py:434
+#, python-brace-format
+msgid "Install {}"
+msgstr "Installeer {}"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/mesa_page.py:796
+msgid "Other Drivers"
+msgstr "Andere chauffeurs"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 808
+#: usr/share/big-kernel-manager/ui/mesa_page.py:808
+msgid "Additional drivers for special hardware configurations like virtual machines."
+msgstr "Extra stuurprogramma's voor speciale hardwareconfiguraties zoals virtuele machines."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: usr/share/big-kernel-manager/ui/mesa_page.py:887
+msgid "Compatible"
+msgstr "Verenigbaar"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 888
+#: usr/share/big-kernel-manager/ui/mesa_page.py:888
+msgid "Open Source"
+msgstr "Open bron"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 888
+#: usr/share/big-kernel-manager/ui/mesa_page.py:888
+msgid "Proprietary"
+msgstr "Eigendom"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 895
+#: usr/share/big-kernel-manager/ui/mesa_page.py:895
+msgid "⚠ No Wayland support · No longer maintained"
+msgstr "⚠ Geen Wayland-ondersteuning · Niet langer onderhouden"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 920
+#: usr/share/big-kernel-manager/ui/mesa_page.py:920
+#, python-brace-format
+msgid "Switch from {} to {}"
+msgstr "Schakel over van {} naar {}"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 951
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mhwd_manager.py, line: 213
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:213
+#: usr/share/big-kernel-manager/ui/mesa_page.py:951
+#, python-brace-format
+msgid "Remove the installed NVIDIA driver ({}) first."
+msgstr "Verwijder eerst het geïnstalleerde NVIDIA-stuurprogramma ({})."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
+#: usr/share/big-kernel-manager/ui/mesa_page.py:961
+msgid "open-source"
+msgstr "open source"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
+#: usr/share/big-kernel-manager/ui/mesa_page.py:961
+msgid "proprietary"
+msgstr "eigen"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
+#: usr/share/big-kernel-manager/ui/mesa_page.py:963
+#: usr/share/big-kernel-manager/ui/category_page.py:566
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:363
+#: usr/share/big-kernel-manager/ui/home_page.py:691
+msgid "Install Driver"
+msgstr "Installeer stuurprogramma"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 967
+#: usr/share/big-kernel-manager/ui/mesa_page.py:967
+#, python-brace-format
+msgid ""
+"Install <b>{}</b> ({} driver)?\n"
+"\n"
+"A system reboot may be required after installation."
+msgstr ""
+"<b>{}</b> ({} stuurprogramma) installeren?\n"
+"\n"
+"Na de installatie kan het nodig zijn het systeem opnieuw op te starten."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/driver_installer.py:57
+#: usr/share/big-kernel-manager/ui/kernel_page.py:688
+#: usr/share/big-kernel-manager/ui/mesa_page.py:985
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1211
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1222
+#: usr/share/big-kernel-manager/ui/category_page.py:587
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
+#: usr/share/big-kernel-manager/ui/home_page.py:712
+#: usr/share/big-kernel-manager/ui/home_page.py:723
+#, python-brace-format
+msgid "Installing {}"
+msgstr "Installeren {}"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
+#: usr/share/big-kernel-manager/ui/kernel_page.py:689
+#: usr/share/big-kernel-manager/ui/mesa_page.py:986
+msgid "Preparing installation..."
+msgstr ""
+"Kernel is succesvol geïnstalleerd.\n"
+"Mogelijk moet u opnieuw opstarten om het te gebruiken."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1001
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1001
+msgid "Switch NVIDIA Driver"
+msgstr "Schakel over naar NVIDIA-stuurprogramma"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1005
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1005
+#, python-brace-format
+msgid ""
+"Switch from <b>{}</b> to <b>{}</b>?\n"
+"\n"
+"The current driver will be replaced automatically.\n"
+"A system reboot will be required."
+msgstr ""
+"Overstappen van <b>{}</b> naar <b>{}</b>?\n"
+"\n"
+"De huidige driver wordt automatisch vervangen.\n"
+"Een herstart van het systeem is vereist."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1027
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1027
+#, python-brace-format
+msgid "Switching to {}"
+msgstr "Overstappen naar {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1028
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1028
+msgid "Replacing current NVIDIA driver..."
+msgstr "Huidig ​​NVIDIA-stuurprogramma vervangen..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1042
+#: usr/share/big-kernel-manager/ui/category_page.py:604
+msgid "Remove Driver"
+msgstr "Stuurprogramma verwijderen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1046
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1046
+#, python-brace-format
+msgid ""
+"Remove <b>{}</b>?\n"
+"\n"
+"A system reboot may be required after removal."
+msgstr ""
+"<b>{}</b> verwijderen?\n"
+"\n"
+"Na verwijdering kan het nodig zijn het systeem opnieuw op te starten."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/core/driver_installer.py:85
+#: usr/share/big-kernel-manager/ui/kernel_page.py:777
+#: usr/share/big-kernel-manager/ui/kernel_page.py:847
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1063
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1249
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1260
+#: usr/share/big-kernel-manager/ui/category_page.py:625
+#, python-brace-format
+msgid "Removing {}"
+msgstr "Verwijderen {}"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1064
+msgid "Preparing removal..."
+msgstr "Verwijdering voorbereiden..."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1084
+msgid "activated"
+msgstr "geactiveerd"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1086
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
+msgid "installed"
+msgstr "geïnstalleerd"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1088
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
+msgid "removed"
+msgstr "VERWIJDERD"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1091
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1091
+#, python-brace-format
+msgid ""
+"{} was {} successfully!\n"
+"\n"
+"A system reboot may be required."
+msgstr ""
+"{} is {} succesvol geweest!\n"
+"\n"
+"Mogelijk is een herstart van het systeem vereist."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1097
+msgid ""
+"Driver operation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Bediening van het stuurprogramma is mislukt.\n"
+"Controleer de terminaluitvoer voor details."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1146
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1146
+msgid "Already included in your Mesa version"
+msgstr "Al opgenomen in uw Mesa-versie"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1188
+msgid "Install Package"
+msgstr "Pakket installeren"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1191
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1191
+#, python-brace-format
+msgid ""
+"Install <b>{}</b>?\n"
+"\n"
+"{}"
+msgstr ""
+"<b>{}</b> installeren?\n"
+"\n"
+"{}"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1212
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 713
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1212
+#: usr/share/big-kernel-manager/ui/home_page.py:713
+msgid "Downloading package..."
+msgstr "Pakket downloaden..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1229
+msgid "Remove Package"
+msgstr "Pakket verwijderen..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1232
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1232
+#, python-brace-format
+msgid "Remove <b>{}</b>?"
+msgstr ""
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1250
+msgid "Removing package..."
+msgstr "Pakket verwijderen..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1272
+#, python-brace-format
+msgid "{} was {} successfully!"
+msgstr "{} is {} succesvol geweest!"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/mesa_page.py:1277
+msgid ""
+"Package operation failed.\n"
+"Check the terminal output for details."
+msgstr "Wi-Fi-stuurprogramma's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 40
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:40
+msgid "Stable, long-term support"
+msgstr "Stabiele, langdurige ondersteuning"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 43
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:43
+msgid "Receives security updates for years. Best choice for most users — reliable and well-tested."
+msgstr ""
+"Ontvangt jarenlang beveiligingsupdates. Beste keuze voor de meeste gebruikers: betrouwbaar en goed "
+"getest."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 49
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:49
+msgid "Low-latency, real-time"
+msgstr ""
+"Ontworpen voor audio-/videoproductie en taken die een nauwkeurige timing vereisen. Mogelijk "
+"incompatibel met sommige stuurprogramma's (bijvoorbeeld NVIDIA). Alleen aanbevolen voor gevorderde "
+"gebruikers."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 52
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:52
+msgid ""
+"Designed for audio/video production and tasks needing precise timing. May be incompatible with some "
+"drivers (e.g. NVIDIA). Only recommended for advanced users."
+msgstr ""
+"Ontworpen voor audio-/videoproductie en taken die een nauwkeurige timing vereisen. Mogelijk "
+"incompatibel met sommige stuurprogramma's (bijvoorbeeld NVIDIA). Alleen aanbevolen voor gevorderde "
+"gebruikers."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 59
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:59
+msgid "Gaming & performance optimized"
+msgstr "Gaming en prestaties geoptimaliseerd"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 62
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:62
+msgid ""
+"Tuned for faster gaming and a more responsive desktop. Great for daily use if you want extra "
+"performance."
+msgstr ""
+"Afgestemd voor sneller gamen en een responsievere desktop. Ideaal voor dagelijks gebruik als je "
+"extra prestaties wilt."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 68
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:68
+msgid "Latest features & drivers"
+msgstr "Nieuwste functies en stuurprogramma's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 72
+#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:72
+msgid "Always up to date with the newest features and hardware support."
+msgstr "Altijd up-to-date met de nieuwste functies en hardware-ondersteuning."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 67
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 277
+#: usr/share/big-kernel-manager/ui/category_page.py:67
+#: usr/share/big-kernel-manager/ui/category_page.py:277
+msgid "Other"
+msgstr "Ander"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 128
+#: usr/share/big-kernel-manager/ui/category_page.py:128
+msgid "Search drivers..."
+msgstr "Stuurprogramma's zoeken..."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
+#: usr/share/big-kernel-manager/ui/category_page.py:132
+msgid "Search drivers"
+msgstr "Zoek chauffeurs"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 162
+#: usr/share/big-kernel-manager/ui/category_page.py:162
+msgid "No more automatically detected compatible drivers in this category."
+msgstr "Geen automatisch gedetecteerde compatibele stuurprogramma's meer in deze categorie."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 173
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 200
+#: usr/share/big-kernel-manager/ui/category_page.py:173
+#: usr/share/big-kernel-manager/ui/category_page.py:200
+msgid "Show drivers without confirmed compatibility"
+msgstr "Toon stuurprogramma's zonder bevestigde compatibiliteit"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 187
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 260
+#: usr/share/big-kernel-manager/ui/category_page.py:187
+#: usr/share/big-kernel-manager/ui/category_page.py:260
+msgid "No drivers needed for this category"
+msgstr "Voor deze categorie zijn geen stuurprogramma's nodig"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 191
+#: usr/share/big-kernel-manager/ui/category_page.py:191
+msgid "No drivers in this category were automatically detected as compatible with your hardware."
+msgstr ""
+"Er zijn geen stuurprogramma's in deze categorie automatisch gedetecteerd als compatibel met uw "
+"hardware."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 238
+#: usr/share/big-kernel-manager/ui/category_page.py:238
+msgid "Detection Error"
+msgstr "Detectiefout"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 264
+#: usr/share/big-kernel-manager/ui/category_page.py:264
+msgid "No drivers in this category were detected as necessary for your hardware."
+msgstr "Er zijn geen stuurprogramma's in deze categorie gedetecteerd die nodig zijn voor uw hardware."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 339
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 283
+#: usr/share/big-kernel-manager/ui/category_page.py:339
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:283
+msgid "1 driver"
+msgstr "1 bestuurder"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/category_page.py:339
+#, python-brace-format
+msgid "{} drivers"
+msgstr "{} chauffeurs"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 341
+#: usr/share/big-kernel-manager/ui/category_page.py:341
+#, python-brace-format
+msgid "{} detected"
+msgstr "{} gedetecteerd"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:343
+#, python-brace-format
+msgid "{} installed"
+msgstr "{} geïnstalleerd"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 405
+#: usr/share/big-kernel-manager/ui/category_page.py:405
+msgid "Detected"
+msgstr "Gedetecteerd"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:407
+#: usr/share/big-kernel-manager/ui/home_page.py:487
+#: usr/share/big-kernel-manager/ui/home_page.py:503
+#: usr/share/big-kernel-manager/ui/home_page.py:734
+msgid "Installed"
+msgstr "{} installeren?"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/category_page.py:409
+msgid "Not installed"
+msgstr "Niet geïnstalleerd"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 503
+#: usr/share/big-kernel-manager/ui/category_page.py:503
+#, python-brace-format
+msgid "{total} drivers · {detected} detected · {installed} installed"
+msgstr "{total} stuurprogramma's · {gedetecteerd} gedetecteerd · {geïnstalleerd} geïnstalleerd"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/category_page.py:567
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:364
+#: usr/share/big-kernel-manager/ui/home_page.py:692
+#, python-brace-format
+msgid "Install {}?"
+msgstr "{} installeren?"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/ui/category_page.py:605
+#, python-brace-format
+msgid "Remove {}?"
+msgstr "Verwijderen {}?"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/ui/category_page.py:653
+msgid "Operation completed successfully."
+msgstr "Operatie succesvol afgerond."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/category_page.py:657
+msgid "Operation failed. Check logs for details."
+msgstr "Operatie mislukt. Controleer de logboeken voor details."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 70
+#: usr/share/big-kernel-manager/ui/home_page.py:70
+msgid "What is Kernel?"
+msgstr "Wat is Kernel?"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 72
+#: usr/share/big-kernel-manager/ui/home_page.py:72
+msgid ""
+"The kernel is the heart of your operating system. It controls your processor, memory, and all "
+"hardware. Most drivers already come built-in with the kernel."
+msgstr ""
+"De kernel is het hart van uw besturingssysteem. Het bestuurt uw processor, geheugen en alle "
+"hardware. De meeste stuurprogramma's zijn al ingebouwd in de kernel."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
+#: usr/share/big-kernel-manager/ui/home_page.py:83
+msgid "What are Drivers?"
+msgstr "Wat zijn stuurprogramma's?"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 85
+#: usr/share/big-kernel-manager/ui/home_page.py:85
+msgid ""
+"Drivers allow each device — like your video card, Wi-Fi, or sound — to communicate with the system. "
+"If everything is already working, you probably don't need to change anything."
+msgstr ""
+"Dankzij stuurprogramma's kan elk apparaat (zoals uw videokaart, Wi-Fi of geluid) met het systeem "
+"communiceren. Als alles al werkt, hoeft u waarschijnlijk niets te wijzigen."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 113
+#: usr/share/big-kernel-manager/ui/home_page.py:113
+msgid "Checking your system…"
+msgstr "Uw systeem controleren..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 119
+#: usr/share/big-kernel-manager/ui/home_page.py:119
+msgid "Detecting hardware and installed drivers."
+msgstr "Hardware en geïnstalleerde stuurprogramma's detecteren."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 149
+#: usr/share/big-kernel-manager/ui/home_page.py:149
+msgid "Recommended for your hardware"
+msgstr "Aanbevolen voor uw hardware"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
+#: usr/share/big-kernel-manager/ui/home_page.py:197
+msgid "Install recommended"
+msgstr "Installeren aanbevolen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 227
+#: usr/share/big-kernel-manager/ui/home_page.py:227
+msgid "Compatible drivers available"
+msgstr "Compatibele stuurprogramma's beschikbaar"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 273
+#: usr/share/big-kernel-manager/ui/home_page.py:273
+#, python-brace-format
+msgid "{} — no driver loaded, install {} for this device"
+msgstr "{} — geen stuurprogramma geladen, installeer {} voor dit apparaat"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/home_page.py:277
+msgid "Go to drivers"
+msgstr "Ga naar chauffeurs"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 287
+#: usr/share/big-kernel-manager/ui/home_page.py:287
+msgid ""
+"These drivers are compatible with your hardware. Your devices are working, but these may improve "
+"performance or add features."
+msgstr ""
+"Deze stuurprogramma's zijn compatibel met uw hardware. Uw apparaten werken, maar deze kunnen de "
+"prestaties verbeteren of functies toevoegen."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 376
+#: usr/share/big-kernel-manager/ui/home_page.py:376
+#, python-brace-format
+msgid "All {} recommended video packages for your {} hardware are installed."
+msgstr "Alle door {} aanbevolen videopakketten voor uw {} hardware zijn geïnstalleerd."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 386
+#: usr/share/big-kernel-manager/ui/home_page.py:386
+#, python-brace-format
+msgid "{} of {} recommended packages are not installed."
+msgstr "{} van {} aanbevolen pakketten zijn niet geïnstalleerd."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 396
+#: usr/share/big-kernel-manager/ui/home_page.py:396
+#, python-brace-format
+msgid "Install all {} recommended"
+msgstr "Installeer alle {} aanbevolen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 457
+#: usr/share/big-kernel-manager/ui/home_page.py:457
+#, python-brace-format
+msgid "Already installed ({})"
+msgstr "Al geïnstalleerd ({})"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 469
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 472
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 608
+#: usr/share/big-kernel-manager/ui/home_page.py:469
+#: usr/share/big-kernel-manager/ui/home_page.py:472
+#: usr/share/big-kernel-manager/ui/home_page.py:608
+msgid "Show installed packages"
+msgstr "Toon geïnstalleerde pakketten"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 605
+#: usr/share/big-kernel-manager/ui/home_page.py:605
+msgid "Hide installed packages"
+msgstr "Geïnstalleerde pakketten verbergen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 620
+#: usr/share/big-kernel-manager/ui/home_page.py:620
+msgid "Install Recommended Packages"
+msgstr "Installeer aanbevolen pakketten"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 623
+#: usr/share/big-kernel-manager/ui/home_page.py:623
+#, python-brace-format
+msgid ""
+"Install <b>{}</b> packages?\n"
+"\n"
+"{}"
+msgstr ""
+"<b>{}</b> pakketten installeren?\n"
+"\n"
+"{}"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/home_page.py:629
+msgid "Install All"
+msgstr "Installeer alles"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/ui/home_page.py:642
+#, python-brace-format
+msgid "Installing {} packages"
+msgstr "{} pakketten installeren"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 643
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 423
+#: usr/share/big-kernel-manager/core/base_manager.py:423
+#: usr/share/big-kernel-manager/ui/home_page.py:643
+msgid "Downloading packages..."
+msgstr "Stuurprogramma niet gevonden: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 653
+#: usr/share/big-kernel-manager/ui/home_page.py:653
+msgid "Installing recommended packages"
+msgstr "Aanbevolen pakketten installeren"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 670
+#: usr/share/big-kernel-manager/ui/home_page.py:670
+msgid "All recommended packages installed successfully!"
+msgstr "Alle aanbevolen pakketten zijn succesvol geïnstalleerd!"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+#: usr/share/big-kernel-manager/ui/home_page.py:680
+msgid ""
+"Package installation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Installatie van pakket mislukt.\n"
+"Controleer de terminaluitvoer voor details."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/ui/home_page.py:732
+#, python-brace-format
+msgid "{} installed successfully!"
+msgstr "{} is succesvol geïnstalleerd!"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
+#: usr/share/big-kernel-manager/ui/home_page.py:740
+#, python-brace-format
+msgid "Installation of {} failed."
+msgstr "Installatie van {} is mislukt."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 770
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 347
+#: usr/share/big-kernel-manager/ui/kernel_page.py:347
+#: usr/share/big-kernel-manager/ui/home_page.py:770
+msgid "Warning"
+msgstr "Waarschuwing"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 770
+#: usr/share/big-kernel-manager/ui/home_page.py:770
+msgid "Information"
+msgstr "Informatie"
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 44
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 36
+#: usr/share/big-kernel-manager/ui/window.py:44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:36
+msgid "Video / GPU"
+msgstr "Video/GPU"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 45
+#: usr/share/big-kernel-manager/ui/window.py:45
+msgid "Mesa, NVIDIA, and GPU drivers."
+msgstr "Mesa-, NVIDIA- en GPU-stuurprogramma's."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:50
+msgid "Wi-Fi Drivers"
+msgstr "Bluetooth-stuurprogramma's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
+#: usr/share/big-kernel-manager/ui/window.py:51
+msgid "Wireless network adapter drivers."
+msgstr "Stuurprogramma voor draadloze netwerkadapter."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:56
+msgid "Ethernet Drivers"
+msgstr "Ethernet-stuurprogramma's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
+#: usr/share/big-kernel-manager/ui/window.py:57
+msgid "Wired network adapter drivers."
+msgstr "Stuurprogramma voor bekabelde netwerkadapters."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:62
+msgid "Bluetooth Drivers"
+msgstr "Bluetooth-stuurprogramma's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 63
+#: usr/share/big-kernel-manager/ui/window.py:63
+msgid "Bluetooth adapter drivers."
+msgstr "Stuurprogramma voor Bluetooth-adapter."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 68
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 40
+#: usr/share/big-kernel-manager/ui/window.py:68
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:40
+msgid "DVB / TV"
+msgstr "DVB/TV"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 69
+#: usr/share/big-kernel-manager/ui/window.py:69
+msgid "Digital TV tuner firmware."
+msgstr "Webcamfirmware"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 74
+#: usr/share/big-kernel-manager/ui/window.py:74
+msgid "Audio Firmware"
+msgstr "Audiofirmware"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 75
+#: usr/share/big-kernel-manager/ui/window.py:75
+msgid "Audio device firmware."
+msgstr "Webcamfirmware"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 80
+#: usr/share/big-kernel-manager/ui/window.py:80
+msgid "Webcam Firmware"
+msgstr "Webcamfirmware"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 81
+#: usr/share/big-kernel-manager/ui/window.py:81
+msgid "Webcam device firmware."
+msgstr "Firmware van webcamapparaat."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 86
+#: usr/share/big-kernel-manager/ui/window.py:86
+msgid "Touchscreen Firmware"
+msgstr "Touchscreen-firmware"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 87
+#: usr/share/big-kernel-manager/ui/window.py:87
+msgid "Touchscreen device firmware."
+msgstr "Firmware voor touchscreen-apparaat."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:92
+msgid "Printer Drivers"
+msgstr "Printerstuurprogramma's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 93
+#: usr/share/big-kernel-manager/ui/window.py:93
+msgid "Printer drivers and support packages."
+msgstr "Printerdrivers en ondersteuningspakketten."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 98
+#: usr/share/big-kernel-manager/ui/window.py:98
+msgid "3D Printer Firmware"
+msgstr "3D-printerfirmware"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 99
+#: usr/share/big-kernel-manager/ui/window.py:99
+msgid "3D printer firmware."
+msgstr "3D-printerfirmware."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:104
+msgid "Scanner Drivers"
+msgstr "Scannerstuurprogramma's"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 105
+#: usr/share/big-kernel-manager/ui/window.py:105
+msgid "Scanner drivers and SANE backends."
+msgstr "Scannerstuurprogramma's en SANE-backends."
+# 
+# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 110
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 47
+#: usr/share/big-kernel-manager/ui/window.py:110
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
+msgid "Other Firmware"
+msgstr "Extra firmwarepakketten."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 111
+#: usr/share/big-kernel-manager/ui/window.py:111
+msgid "Additional firmware packages."
+msgstr "Extra firmwarepakketten."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 189
+#: usr/share/big-kernel-manager/ui/window.py:189
+msgid "Home"
+msgstr "Thuis"
+# File: usr/share/big-kernel-manager/ui/window.py, line: 89
+#: usr/share/big-kernel-manager/ui/window.py:190
+msgid "Kernel"
+msgstr "Kernel"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+#: usr/share/big-kernel-manager/ui/window.py:191
+msgid "Video Driver"
+msgstr "Videostuurprogramma"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 218
+#: usr/share/big-kernel-manager/ui/window.py:218
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:122
+msgid "Categories"
+msgstr "Categorieën"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 231
+#: usr/share/big-kernel-manager/ui/window.py:231
+msgid "A system reboot is recommended to apply changes."
+msgstr "Het wordt aanbevolen om het systeem opnieuw op te starten om de wijzigingen door te voeren."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 269
+#: usr/share/big-kernel-manager/ui/window.py:269
+msgid "Content"
+msgstr "Inhoud"
+# File: usr/share/big-kernel-manager/ui/window.py, line: 129
+#: usr/share/big-kernel-manager/ui/window.py:316
+msgid "Menu"
+msgstr "Menu"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 318
+#: usr/share/big-kernel-manager/ui/window.py:318
+msgid "Application menu"
+msgstr "Applicatiemenu"
+# File: usr/share/big-kernel-manager/ui/window.py, line: 134
+#: usr/share/big-kernel-manager/ui/window.py:321
+msgid "About"
+msgstr "Over"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 326
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 558
+#: usr/share/big-kernel-manager/ui/window.py:326
+#: usr/share/big-kernel-manager/ui/window.py:558
+msgid "Show all"
+msgstr "Verouderde kernel: {} — ontvangt geen beveiligingsupdates meer"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 327
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 329
+#: usr/share/big-kernel-manager/ui/window.py:327
+#: usr/share/big-kernel-manager/ui/window.py:329
+msgid "Show all drivers"
+msgstr "Verouderde kernel: {} — ontvangt geen beveiligingsupdates meer"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/window.py:454
+msgid "Hardware detection failed. Check system logs for details."
+msgstr "Hardwaredetectie mislukt. Controleer de systeemlogboeken voor details."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 534
+#: usr/share/big-kernel-manager/ui/window.py:534
+#, python-brace-format
+msgid "Obsolete kernel: {} — no longer receives security updates"
+msgstr "Verouderde kernel: {} — ontvangt geen beveiligingsupdates meer"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 538
+#: usr/share/big-kernel-manager/ui/window.py:538
+msgid "Manage"
+msgstr "Beheren"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 558
+#: usr/share/big-kernel-manager/ui/window.py:558
+msgid "Show detected"
+msgstr "Ander"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
+msgid "Wi-Fi"
+msgstr "Wifi"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
+msgid "Ethernet"
+msgstr "Ethernet"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
+msgid "Bluetooth"
+msgstr "Bluetooth"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
+msgid "Audio"
+msgstr "Audio"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
+msgid "Webcam"
+msgstr "Webcam"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
+msgid "Touchscreen"
+msgstr "Touchscreen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
+msgid "Printers"
+msgstr "Printers"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
+msgid "3D Printers"
+msgstr "3D-printers"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 46
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
+msgid "Scanners"
+msgstr "Scanners"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 93
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 329
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:93
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:329
+msgid "All drivers are installed"
+msgstr "Alle stuurprogramma's zijn geïnstalleerd"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 95
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 331
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:95
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:331
+msgid "All necessary drivers are already installed on your system."
+msgstr "Alle benodigde stuurprogramma's zijn al op uw systeem geïnstalleerd."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 152
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:152
+msgid "Detecting hardware"
+msgstr "Hardware detecteren"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 155
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:155
+msgid "Detecting hardware..."
+msgstr "Hardware detecteren..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 285
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:285
+#, python-brace-format
+msgid "{n} drivers"
+msgstr "{n} chauffeurs"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:288
+msgid "1 installed"
+msgstr "1 geïnstalleerd"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:290
+#, python-brace-format
+msgid "{n} installed"
+msgstr "{n} geïnstalleerd"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 320
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:320
+#, python-brace-format
+msgid "{n} drivers available to install"
+msgstr "{n} stuurprogramma's beschikbaar om te installeren"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 323
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:323
+msgid "Install recommended drivers for better hardware support."
+msgstr "Installeer aanbevolen stuurprogramma's voor betere hardwareondersteuning."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:411
+msgid "Driver installed successfully."
+msgstr "Stuurprogramma succesvol geïnstalleerd."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:415
+msgid "Installation failed. Check logs for details."
+msgstr "Installatie mislukt. Controleer de logboeken voor details."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 146
+#: usr/share/big-kernel-manager/ui/kernel_page.py:107
+msgid "Installed Kernels"
+msgstr "Geïnstalleerde kernels"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/kernel_page.py:119
+msgid "Remove all obsolete kernels"
+msgstr "Verwijder alle verouderde kernels"
+# File: usr/share/big-kernel-manager/ui/window.py, line: 89
+#: usr/share/big-kernel-manager/ui/kernel_page.py:261
+msgid "Kernel in use"
+msgstr "Kernel in gebruik"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 240
+#: usr/share/big-kernel-manager/ui/kernel_page.py:267
+msgid "In Use"
+msgstr "In gebruik"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 331
+#: usr/share/big-kernel-manager/ui/kernel_page.py:331
+msgid "Obsolete Kernels — Removal Recommended"
+msgstr "Verouderde kernels – verwijdering aanbevolen"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+#: usr/share/big-kernel-manager/ui/kernel_page.py:360
+msgid "No longer receives security updates"
+msgstr "Ontvangt geen beveiligingsupdates meer"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
+#: usr/share/big-kernel-manager/ui/kernel_page.py:372
+#: usr/share/big-kernel-manager/ui/kernel_page.py:430
+#, python-brace-format
+msgid "Remove kernel {}"
+msgstr "Verwijder kernel {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 416
+#: usr/share/big-kernel-manager/ui/kernel_page.py:416
+msgid "Last backup"
+msgstr "Laatste back-up"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 420
+#: usr/share/big-kernel-manager/ui/kernel_page.py:420
+msgid "At least one backup kernel must remain installed"
+msgstr "Er moet ten minste één back-upkernel geïnstalleerd blijven"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 439
+#: usr/share/big-kernel-manager/ui/kernel_page.py:439
+msgid ""
+"Recommended for most users. These kernels receive security updates for years and are thoroughly "
+"tested."
+msgstr ""
+"Aanbevolen voor de meeste gebruikers. Deze kernels krijgen jarenlang beveiligingsupdates en worden "
+"uitvoerig getest."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 443
+#: usr/share/big-kernel-manager/ui/kernel_page.py:443
+msgid ""
+"Always up to date with the latest features and hardware support. Good if you need the newest "
+"drivers."
+msgstr ""
+"Altijd up-to-date met de nieuwste functies en hardware-ondersteuning. Goed als je de nieuwste "
+"stuurprogramma's nodig hebt."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 447
+#: usr/share/big-kernel-manager/ui/kernel_page.py:447
+msgid "Tuned for gaming and desktop responsiveness. A good option for daily use with extra performance."
+msgstr ""
+"Afgestemd op gaming en desktopresponsiviteit. Een goede optie voor dagelijks gebruik met extra "
+"prestaties."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
+#: usr/share/big-kernel-manager/ui/kernel_page.py:451
+msgid ""
+"Built for audio/video production needing precise timing. May be incompatible with some drivers "
+"(e.g. NVIDIA). Only for advanced users."
+msgstr ""
+"Gebouwd voor audio-/videoproductie waarvoor een nauwkeurige timing nodig is. Mogelijk incompatibel "
+"met sommige stuurprogramma's (bijvoorbeeld NVIDIA). Alleen voor gevorderde gebruikers."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 492
+#: usr/share/big-kernel-manager/ui/kernel_page.py:492
+msgid "LTS — Long Term Support (Recommended)"
+msgstr "LTS — Ondersteuning op lange termijn (aanbevolen)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 493
+#: usr/share/big-kernel-manager/ui/kernel_page.py:493
+msgid "Standard"
+msgstr "Standaard"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
+#: usr/share/big-kernel-manager/ui/kernel_page.py:494
+msgid "Xanmod (Performance)"
+msgstr "Xanmod (prestaties)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 495
+#: usr/share/big-kernel-manager/ui/kernel_page.py:495
+msgid "Real-Time (Advanced)"
+msgstr "Realtime (geavanceerd)"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 566
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 591
+#: usr/share/big-kernel-manager/ui/kernel_page.py:566
+#: usr/share/big-kernel-manager/ui/kernel_page.py:591
+#, python-brace-format
+msgid "Show {} available"
+msgstr "Toon {} beschikbaar"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 155
+#: usr/share/big-kernel-manager/ui/kernel_page.py:594
+msgid "Hide available kernels"
+msgstr "Verberg beschikbare kernels"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 295
+#: usr/share/big-kernel-manager/ui/kernel_page.py:639
+#: usr/share/big-kernel-manager/ui/kernel_page.py:642
+#, python-brace-format
+msgid "Install kernel {}"
+msgstr "Installeer kernel {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 661
+#: usr/share/big-kernel-manager/ui/kernel_page.py:661
+msgid "The following packages will be installed:"
+msgstr "De volgende pakketten worden geïnstalleerd:"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 433
+#: usr/share/big-kernel-manager/ui/kernel_page.py:713
+msgid ""
+"Kernel installed successfully.\n"
+"You may need to reboot to use it."
+msgstr ""
+"Kernel is succesvol geïnstalleerd.\n"
+"Mogelijk moet u opnieuw opstarten om het te gebruiken."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
+#: usr/share/big-kernel-manager/ui/kernel_page.py:720
+msgid ""
+"Kernel installation failed.\n"
+"Check the terminal output for details."
+msgstr ""
+"Kernelinstallatie mislukt.\n"
+"Controleer de terminaluitvoer voor details."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 359
+#: usr/share/big-kernel-manager/ui/kernel_page.py:734
+msgid "Cannot Remove Running Kernel"
+msgstr "Kan actieve kernel niet verwijderen"
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 360
+#: usr/share/big-kernel-manager/ui/kernel_page.py:736
+msgid "This kernel is currently in use. Boot into a different kernel first."
+msgstr "Deze kernel is momenteel in gebruik. Start eerst op in een andere kernel."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 749
 #: usr/share/big-kernel-manager/ui/kernel_page.py:749
 msgid "The following packages will be removed:"
 msgstr "De volgende pakketten worden verwijderd:"
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
 #: usr/share/big-kernel-manager/ui/kernel_page.py:778
 msgid "Preparing removal…"
 msgstr "Verwijdering voorbereiden…"
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
 #: usr/share/big-kernel-manager/ui/kernel_page.py:799
 msgid "Kernel removed successfully."
 msgstr "Kernel is succesvol verwijderd."
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 455
 #: usr/share/big-kernel-manager/ui/kernel_page.py:802
 msgid ""
@@ -650,12 +1649,12 @@ msgid ""
 msgstr ""
 "Het verwijderen van de kernel is mislukt.\n"
 "Controleer de terminaluitvoer voor details."
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
 #: usr/share/big-kernel-manager/ui/kernel_page.py:816
 msgid "Remove Obsolete Kernels"
 msgstr "Verwijder verouderde kernels"
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 820
 #: usr/share/big-kernel-manager/ui/kernel_page.py:820
 #, python-brace-format
 msgid ""
@@ -670,1482 +1669,327 @@ msgstr ""
 "<b>{}</b>\n"
 "\n"
 "Deze kernels ontvangen geen beveiligingsupdates meer."
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
 #: usr/share/big-kernel-manager/ui/kernel_page.py:825
 msgid "Remove All"
 msgstr "Alles verwijderen"
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
 #: usr/share/big-kernel-manager/ui/kernel_page.py:848
 #, python-brace-format
 msgid "Removing kernel {} ({}/{})..."
 msgstr "Kernel {} ({}/{}) verwijderen..."
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 866
 #: usr/share/big-kernel-manager/ui/kernel_page.py:866
 #, python-brace-format
 msgid "Failed to remove {}. Stopping."
 msgstr "Kan {} niet verwijderen. Stoppen."
-
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
 #: usr/share/big-kernel-manager/ui/kernel_page.py:877
 msgid "All obsolete kernels removed successfully."
 msgstr "Alle verouderde kernels zijn succesvol verwijderd."
-
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 916
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 919
 #: usr/share/big-kernel-manager/ui/kernel_page.py:916
 #: usr/share/big-kernel-manager/ui/kernel_page.py:919
 #, python-brace-format
 msgid "What's new in Linux {}"
 msgstr "Wat is er nieuw in Linux {}"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/mesa_page.py:115
-msgid "Video Drivers"
-msgstr "Videostuurprogramma's"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:127
-msgid ""
-"On Linux, video drivers for AMD, Intel and NVIDIA (free software Nouveau) "
-"are built into a single project called <b>Mesa</b>. Below you can choose a "
-"Mesa variant and manage extra packages for gaming, video playback, compute "
-"and AI."
-msgstr ""
-"Op Linux zijn videostuurprogramma's voor AMD, Intel en NVIDIA (gratis "
-"software Nouveau) ingebouwd in één enkel project genaamd <b>Mesa</b>. "
-"Hieronder kunt u een Mesa-variant kiezen en extra pakketten beheren voor "
-"gaming, video afspelen, rekenkracht en AI."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:150
-msgid ""
-"Your computer has an <b>NVIDIA</b> graphics card. You can install the "
-"official proprietary driver for the best performance in gaming, AI and "
-"professional applications."
-msgstr ""
-"Uw computer heeft een <b>NVIDIA</b> grafische kaart. U kunt het officiële "
-"eigen stuurprogramma installeren voor de beste prestaties bij gaming, AI en "
-"professionele toepassingen."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:183
-msgid "Mesa Variant"
-msgstr "Mesa-variant"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:194
-msgid ""
-"Choose which Mesa build to use. Only one variant can be active at a time."
-msgstr ""
-"Kies welke Mesa-build je wilt gebruiken. Er kan slechts één variant tegelijk "
-"actief zijn."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:282
-msgid "Detected graphics cards:"
-msgstr "Gedetecteerde grafische kaarten:"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:289
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 116
+#: usr/share/big-kernel-manager/core/mesa_manager.py:116
 #, python-brace-format
-msgid "• <b>{}</b> — NVIDIA proprietary driver (not Mesa)"
-msgstr "• <b>{}</b> — NVIDIA-stuurprogramma (niet Mesa)"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:294
+msgid "Driver not found: {}"
+msgstr "Stuurprogramma niet gevonden: {}"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
+#: usr/share/big-kernel-manager/core/mesa_manager.py:151
 #, python-brace-format
-msgid "• <b>{}</b> — Mesa driver"
-msgstr "• <b>{}</b> — Mesa-stuurprogramma"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
-#: usr/share/big-kernel-manager/ui/mesa_page.py:415
-#: usr/share/big-kernel-manager/ui/mesa_page.py:422
-msgid "Active"
-msgstr "Actief"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:427
-#: usr/share/big-kernel-manager/ui/mesa_page.py:916
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1014
-msgid "Switch"
-msgstr "Schakelaar"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:431
-#, python-brace-format
-msgid "Switch to {}"
-msgstr "Schakel over naar {}"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
-#: usr/share/big-kernel-manager/ui/mesa_page.py:456
-msgid "Change Video Driver"
-msgstr "Video stuurprogramma wijzigen"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
-#: usr/share/big-kernel-manager/ui/mesa_page.py:460
-#, python-brace-format
-msgid ""
-"Switch to <b>{}</b>?\n"
-"\n"
-"A system reboot will be required for the change to take effect."
-msgstr ""
-"Overschakelen naar <b>{}</b>?\n"
-"\n"
-"Om de wijziging door te voeren, is een herstart van het systeem vereist."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 267
-#: usr/share/big-kernel-manager/ui/mesa_page.py:465
-msgid "Apply"
-msgstr "Toepassen"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 413
-#: usr/share/big-kernel-manager/ui/mesa_page.py:481
-#, python-brace-format
-msgid "Applying {}"
-msgstr "Toepassen {}"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
-#: usr/share/big-kernel-manager/ui/mesa_page.py:482
-msgid "Preparing to apply driver..."
-msgstr "Klaar om te solliciteren als chauffeur..."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
-#: usr/share/big-kernel-manager/ui/mesa_page.py:503
-msgid ""
-"Video driver changed successfully!\n"
-"\n"
-"You must reboot your system for the new driver to become active."
-msgstr "Andere chauffeurs"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
-#: usr/share/big-kernel-manager/ui/mesa_page.py:509
-msgid ""
-"Driver change failed.\n"
-"Check the terminal output for details."
-msgstr ""
-"Het wijzigen van het stuurprogramma is mislukt.\n"
-"Controleer de terminaluitvoer voor details."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:589
-msgid "NVIDIA Proprietary Driver"
-msgstr "NVIDIA-eigen stuurprogramma"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:601
-msgid ""
-"Official closed-source driver with the best performance for gaming, AI, and "
-"professional workloads. Only one version can be active at a time."
-msgstr ""
-"Officiële closed-source driver met de beste prestaties voor gaming, AI en "
-"professionele workloads. Er kan slechts één versie tegelijk actief zijn."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:677
-#: usr/share/big-kernel-manager/ui/mesa_page.py:680
-msgid "All recommended packages installed"
-msgstr "Alle aanbevolen pakketten zijn geïnstalleerd"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:686
-#: usr/share/big-kernel-manager/ui/mesa_page.py:689
-msgid "Some packages not installed"
-msgstr "Sommige pakketten zijn niet geïnstalleerd"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:747
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1163
-msgid "Included"
-msgstr "Inbegrepen"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:754
-#, python-brace-format
-msgid "Already included in your Mesa version ({})"
-msgstr "Al opgenomen in uw Mesa-versie ({})"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/mesa_page.py:796
-msgid "Other Drivers"
-msgstr "Andere chauffeurs"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:808
-msgid ""
-"Additional drivers for special hardware configurations like virtual machines."
-msgstr ""
-"Extra stuurprogramma's voor speciale hardwareconfiguraties zoals virtuele "
-"machines."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
-#: usr/share/big-kernel-manager/ui/mesa_page.py:887
-msgid "Compatible"
-msgstr "Verenigbaar"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:888
-msgid "Open Source"
-msgstr "Open bron"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:888
-msgid "Proprietary"
-msgstr "Eigendom"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:895
-msgid "⚠ No Wayland support · No longer maintained"
-msgstr "⚠ Geen Wayland-ondersteuning · Niet langer onderhouden"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:920
-#, python-brace-format
-msgid "Switch from {} to {}"
-msgstr "Schakel over van {} naar {}"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:961
-msgid "open-source"
-msgstr "open source"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:961
-msgid "proprietary"
-msgstr "eigen"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
-#: usr/share/big-kernel-manager/ui/mesa_page.py:963
-#: usr/share/big-kernel-manager/ui/category_page.py:566
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:363
-#: usr/share/big-kernel-manager/ui/home_page.py:691
-msgid "Install Driver"
-msgstr "Installeer stuurprogramma"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:967
-#, python-brace-format
-msgid ""
-"Install <b>{}</b> ({} driver)?\n"
-"\n"
-"A system reboot may be required after installation."
-msgstr ""
-"<b>{}</b> ({} stuurprogramma) installeren?\n"
-"\n"
-"Na de installatie kan het nodig zijn het systeem opnieuw op te starten."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1001
-msgid "Switch NVIDIA Driver"
-msgstr "Schakel over naar NVIDIA-stuurprogramma"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1005
-#, python-brace-format
-msgid ""
-"Switch from <b>{}</b> to <b>{}</b>?\n"
-"\n"
-"The current driver will be replaced automatically.\n"
-"A system reboot will be required."
-msgstr ""
-"Overstappen van <b>{}</b> naar <b>{}</b>?\n"
-"\n"
-"De huidige driver wordt automatisch vervangen.\n"
-"Een herstart van het systeem is vereist."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1027
-#, python-brace-format
-msgid "Switching to {}"
-msgstr "Overstappen naar {}"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1028
-msgid "Replacing current NVIDIA driver..."
-msgstr "Huidig ​​NVIDIA-stuurprogramma vervangen..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1042
-#: usr/share/big-kernel-manager/ui/category_page.py:604
-msgid "Remove Driver"
-msgstr "Stuurprogramma verwijderen"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1046
-#, python-brace-format
-msgid ""
-"Remove <b>{}</b>?\n"
-"\n"
-"A system reboot may be required after removal."
-msgstr ""
-"<b>{}</b> verwijderen?\n"
-"\n"
-"Na verwijdering kan het nodig zijn het systeem opnieuw op te starten."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1064
-msgid "Preparing removal..."
-msgstr "Verwijdering voorbereiden..."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1084
-msgid "activated"
-msgstr "geactiveerd"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1086
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
-msgid "installed"
-msgstr "geïnstalleerd"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1088
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1270
-msgid "removed"
-msgstr "VERWIJDERD"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1091
-#, python-brace-format
-msgid ""
-"{} was {} successfully!\n"
-"\n"
-"A system reboot may be required."
-msgstr ""
-"{} is {} succesvol geweest!\n"
-"\n"
-"Mogelijk is een herstart van het systeem vereist."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1097
-msgid ""
-"Driver operation failed.\n"
-"Check the terminal output for details."
-msgstr ""
-"Bediening van het stuurprogramma is mislukt.\n"
-"Controleer de terminaluitvoer voor details."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1146
-msgid "Already included in your Mesa version"
-msgstr "Al opgenomen in uw Mesa-versie"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1188
-msgid "Install Package"
-msgstr "Pakket installeren"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1191
-#, python-brace-format
-msgid ""
-"Install <b>{}</b>?\n"
-"\n"
-"{}"
-msgstr ""
-"<b>{}</b> installeren?\n"
-"\n"
-"{}"
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1212
-#: usr/share/big-kernel-manager/ui/home_page.py:713
-msgid "Downloading package..."
-msgstr "Pakket downloaden..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1229
-msgid "Remove Package"
-msgstr "Pakket verwijderen..."
-
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1232
-#, python-brace-format
-msgid "Remove <b>{}</b>?"
-msgstr ""
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1250
-msgid "Removing package..."
-msgstr "Pakket verwijderen..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1272
-#, python-brace-format
-msgid "{} was {} successfully!"
-msgstr "{} is {} succesvol geweest!"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/mesa_page.py:1277
-msgid ""
-"Package operation failed.\n"
-"Check the terminal output for details."
-msgstr "Wi-Fi-stuurprogramma's"
-
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:117
-msgid "Technical details"
-msgstr "Technische details"
-
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:131
-msgid "Terminal output"
-msgstr "Ethernet-stuurprogramma's"
-
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 169
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 390
-# File: usr/share/big-kernel-manager/ui/window.py, line: 463
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:151
-msgid "Close"
-msgstr "Sluiten"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 200
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:207
-#: usr/share/big-kernel-manager/ui/category_page.py:588
-#: usr/share/big-kernel-manager/ui/category_page.py:626
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:384
-msgid "Please wait..."
-msgstr "Even geduld a.u.b..."
-
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:229
-#, python-brace-format
-msgid "Step {} of {}: {}"
-msgstr "Stap {} van {}: {}"
-
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:231
-#, python-brace-format
-msgid "Step {} of {}"
-msgstr "Stap {} van {}"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:333
-msgid "Operation completed successfully!"
-msgstr "Operatie succesvol voltooid!"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:338
-msgid "Operation failed. Check terminal output for details."
-msgstr ""
-"De bewerking is mislukt. Controleer de terminaluitvoer voor meer informatie."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:364
-msgid "Completed!"
-msgstr "Voltooid!"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
-#: usr/share/big-kernel-manager/ui/progress_dialog.py:408
-msgid "Cancelled"
-msgstr "Geannuleerd"
-
-#: usr/share/big-kernel-manager/ui/window.py:44
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:36
-msgid "Video / GPU"
-msgstr "Video/GPU"
-
-#: usr/share/big-kernel-manager/ui/window.py:45
-msgid "Mesa, NVIDIA, and GPU drivers."
-msgstr "Mesa-, NVIDIA- en GPU-stuurprogramma's."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:50
-msgid "Wi-Fi Drivers"
-msgstr "Bluetooth-stuurprogramma's"
-
-#: usr/share/big-kernel-manager/ui/window.py:51
-msgid "Wireless network adapter drivers."
-msgstr "Stuurprogramma voor draadloze netwerkadapter."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:56
-msgid "Ethernet Drivers"
-msgstr "Ethernet-stuurprogramma's"
-
-#: usr/share/big-kernel-manager/ui/window.py:57
-msgid "Wired network adapter drivers."
-msgstr "Stuurprogramma voor bekabelde netwerkadapters."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:62
-msgid "Bluetooth Drivers"
-msgstr "Bluetooth-stuurprogramma's"
-
-#: usr/share/big-kernel-manager/ui/window.py:63
-msgid "Bluetooth adapter drivers."
-msgstr "Stuurprogramma voor Bluetooth-adapter."
-
-#: usr/share/big-kernel-manager/ui/window.py:68
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:40
-msgid "DVB / TV"
-msgstr "DVB/TV"
-
-#: usr/share/big-kernel-manager/ui/window.py:69
-msgid "Digital TV tuner firmware."
-msgstr "Webcamfirmware"
-
-#: usr/share/big-kernel-manager/ui/window.py:74
-msgid "Audio Firmware"
-msgstr "Audiofirmware"
-
-#: usr/share/big-kernel-manager/ui/window.py:75
-msgid "Audio device firmware."
-msgstr "Webcamfirmware"
-
-#: usr/share/big-kernel-manager/ui/window.py:80
-msgid "Webcam Firmware"
-msgstr "Webcamfirmware"
-
-#: usr/share/big-kernel-manager/ui/window.py:81
-msgid "Webcam device firmware."
-msgstr "Firmware van webcamapparaat."
-
-#: usr/share/big-kernel-manager/ui/window.py:86
-msgid "Touchscreen Firmware"
-msgstr "Touchscreen-firmware"
-
-#: usr/share/big-kernel-manager/ui/window.py:87
-msgid "Touchscreen device firmware."
-msgstr "Firmware voor touchscreen-apparaat."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:92
-msgid "Printer Drivers"
-msgstr "Printerstuurprogramma's"
-
-#: usr/share/big-kernel-manager/ui/window.py:93
-msgid "Printer drivers and support packages."
-msgstr "Printerdrivers en ondersteuningspakketten."
-
-#: usr/share/big-kernel-manager/ui/window.py:98
-msgid "3D Printer Firmware"
-msgstr "3D-printerfirmware"
-
-#: usr/share/big-kernel-manager/ui/window.py:99
-msgid "3D printer firmware."
-msgstr "3D-printerfirmware."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:104
-msgid "Scanner Drivers"
-msgstr "Scannerstuurprogramma's"
-
-#: usr/share/big-kernel-manager/ui/window.py:105
-msgid "Scanner drivers and SANE backends."
-msgstr "Scannerstuurprogramma's en SANE-backends."
-
-#: usr/share/big-kernel-manager/ui/window.py:110
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:47
-msgid "Other Firmware"
-msgstr "Extra firmwarepakketten."
-
-#: usr/share/big-kernel-manager/ui/window.py:111
-msgid "Additional firmware packages."
-msgstr "Extra firmwarepakketten."
-
-#: usr/share/big-kernel-manager/ui/window.py:189
-msgid "Home"
-msgstr "Thuis"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 89
-#: usr/share/big-kernel-manager/ui/window.py:190
-msgid "Kernel"
-msgstr "Kernel"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/window.py:191
-msgid "Video Driver"
-msgstr "Videostuurprogramma"
-
-#: usr/share/big-kernel-manager/ui/window.py:218
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:122
-msgid "Categories"
-msgstr "Categorieën"
-
-#: usr/share/big-kernel-manager/ui/window.py:231
-msgid "A system reboot is recommended to apply changes."
-msgstr ""
-"Het wordt aanbevolen om het systeem opnieuw op te starten om de wijzigingen "
-"door te voeren."
-
-#: usr/share/big-kernel-manager/ui/window.py:269
-msgid "Content"
-msgstr "Inhoud"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 129
-#: usr/share/big-kernel-manager/ui/window.py:316
-msgid "Menu"
-msgstr "Menu"
-
-#: usr/share/big-kernel-manager/ui/window.py:318
-msgid "Application menu"
-msgstr "Applicatiemenu"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 134
-#: usr/share/big-kernel-manager/ui/window.py:321
-msgid "About"
-msgstr "Over"
-
-#: usr/share/big-kernel-manager/ui/window.py:326
-#: usr/share/big-kernel-manager/ui/window.py:558
-msgid "Show all"
-msgstr "Verouderde kernel: {} — ontvangt geen beveiligingsupdates meer"
-
-#: usr/share/big-kernel-manager/ui/window.py:327
-#: usr/share/big-kernel-manager/ui/window.py:329
-msgid "Show all drivers"
-msgstr "Verouderde kernel: {} — ontvangt geen beveiligingsupdates meer"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/window.py:454
-msgid "Hardware detection failed. Check system logs for details."
-msgstr "Hardwaredetectie mislukt. Controleer de systeemlogboeken voor details."
-
-#: usr/share/big-kernel-manager/ui/window.py:534
-#, python-brace-format
-msgid "Obsolete kernel: {} — no longer receives security updates"
-msgstr "Verouderde kernel: {} — ontvangt geen beveiligingsupdates meer"
-
-#: usr/share/big-kernel-manager/ui/window.py:538
-msgid "Manage"
-msgstr "Beheren"
-
-#: usr/share/big-kernel-manager/ui/window.py:558
-msgid "Show detected"
-msgstr "Ander"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:67
-#: usr/share/big-kernel-manager/ui/category_page.py:277
-msgid "Other"
-msgstr "Ander"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:128
-msgid "Search drivers..."
-msgstr "Stuurprogramma's zoeken..."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 184
-#: usr/share/big-kernel-manager/ui/category_page.py:132
-msgid "Search drivers"
-msgstr "Zoek chauffeurs"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:162
-msgid "No more automatically detected compatible drivers in this category."
-msgstr ""
-"Geen automatisch gedetecteerde compatibele stuurprogramma's meer in deze "
-"categorie."
-
-#: usr/share/big-kernel-manager/ui/category_page.py:173
-#: usr/share/big-kernel-manager/ui/category_page.py:200
-msgid "Show drivers without confirmed compatibility"
-msgstr "Toon stuurprogramma's zonder bevestigde compatibiliteit"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:187
-#: usr/share/big-kernel-manager/ui/category_page.py:260
-msgid "No drivers needed for this category"
-msgstr "Voor deze categorie zijn geen stuurprogramma's nodig"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:191
-msgid ""
-"No drivers in this category were automatically detected as compatible with "
-"your hardware."
-msgstr ""
-"Er zijn geen stuurprogramma's in deze categorie automatisch gedetecteerd als "
-"compatibel met uw hardware."
-
-#: usr/share/big-kernel-manager/ui/category_page.py:238
-msgid "Detection Error"
-msgstr "Detectiefout"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:264
-msgid ""
-"No drivers in this category were detected as necessary for your hardware."
-msgstr ""
-"Er zijn geen stuurprogramma's in deze categorie gedetecteerd die nodig zijn "
-"voor uw hardware."
-
-#: usr/share/big-kernel-manager/ui/category_page.py:339
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:283
-msgid "1 driver"
-msgstr "1 bestuurder"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/category_page.py:339
-#, python-brace-format
-msgid "{} drivers"
-msgstr "{} chauffeurs"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:341
-#, python-brace-format
-msgid "{} detected"
-msgstr "{} gedetecteerd"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/category_page.py:343
-#, python-brace-format
-msgid "{} installed"
-msgstr "{} geïnstalleerd"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:405
-msgid "Detected"
-msgstr "Gedetecteerd"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/category_page.py:407
-#: usr/share/big-kernel-manager/ui/home_page.py:487
-#: usr/share/big-kernel-manager/ui/home_page.py:503
-#: usr/share/big-kernel-manager/ui/home_page.py:734
-msgid "Installed"
-msgstr "{} installeren?"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/category_page.py:409
-msgid "Not installed"
-msgstr "Niet geïnstalleerd"
-
-#: usr/share/big-kernel-manager/ui/category_page.py:503
-#, python-brace-format
-msgid "{total} drivers · {detected} detected · {installed} installed"
-msgstr ""
-"{total} stuurprogramma's · {gedetecteerd} gedetecteerd · {geïnstalleerd} "
-"geïnstalleerd"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/ui/category_page.py:567
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:364
-#: usr/share/big-kernel-manager/ui/home_page.py:692
-#, python-brace-format
-msgid "Install {}?"
-msgstr "{} installeren?"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
-#: usr/share/big-kernel-manager/ui/category_page.py:605
-#, python-brace-format
-msgid "Remove {}?"
-msgstr "Verwijderen {}?"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: usr/share/big-kernel-manager/ui/category_page.py:653
-msgid "Operation completed successfully."
-msgstr "Operatie succesvol afgerond."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/category_page.py:657
-msgid "Operation failed. Check logs for details."
-msgstr "Operatie mislukt. Controleer de logboeken voor details."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:40
-msgid "Stable, long-term support"
-msgstr "Stabiele, langdurige ondersteuning"
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:43
-msgid ""
-"Receives security updates for years. Best choice for most users — reliable "
-"and well-tested."
-msgstr ""
-"Ontvangt jarenlang beveiligingsupdates. Beste keuze voor de meeste "
-"gebruikers: betrouwbaar en goed getest."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:49
-msgid "Low-latency, real-time"
-msgstr ""
-"Ontworpen voor audio-/videoproductie en taken die een nauwkeurige timing "
-"vereisen. Mogelijk incompatibel met sommige stuurprogramma's (bijvoorbeeld "
-"NVIDIA). Alleen aanbevolen voor gevorderde gebruikers."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:52
-msgid ""
-"Designed for audio/video production and tasks needing precise timing. May be "
-"incompatible with some drivers (e.g. NVIDIA). Only recommended for advanced "
-"users."
-msgstr ""
-"Ontworpen voor audio-/videoproductie en taken die een nauwkeurige timing "
-"vereisen. Mogelijk incompatibel met sommige stuurprogramma's (bijvoorbeeld "
-"NVIDIA). Alleen aanbevolen voor gevorderde gebruikers."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:59
-msgid "Gaming & performance optimized"
-msgstr "Gaming en prestaties geoptimaliseerd"
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:62
-msgid ""
-"Tuned for faster gaming and a more responsive desktop. Great for daily use "
-"if you want extra performance."
-msgstr ""
-"Afgestemd voor sneller gamen en een responsievere desktop. Ideaal voor "
-"dagelijks gebruik als je extra prestaties wilt."
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:68
-msgid "Latest features & drivers"
-msgstr "Nieuwste functies en stuurprogramma's"
-
-#: usr/share/big-kernel-manager/ui/kernel_card_builder.py:72
-msgid "Always up to date with the newest features and hardware support."
-msgstr "Altijd up-to-date met de nieuwste functies en hardware-ondersteuning."
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
-msgid "Wi-Fi"
-msgstr "Wifi"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
-msgid "Ethernet"
-msgstr "Ethernet"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
-msgid "Audio"
-msgstr "Audio"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
-msgid "Webcam"
-msgstr "Webcam"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
-msgid "Touchscreen"
-msgstr "Touchscreen"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
-msgid "Printers"
-msgstr "Printers"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45
-msgid "3D Printers"
-msgstr "3D-printers"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:46
-msgid "Scanners"
-msgstr "Scanners"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:93
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:329
-msgid "All drivers are installed"
-msgstr "Alle stuurprogramma's zijn geïnstalleerd"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:95
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:331
-msgid "All necessary drivers are already installed on your system."
-msgstr "Alle benodigde stuurprogramma's zijn al op uw systeem geïnstalleerd."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:105
-#: usr/share/big-kernel-manager/ui/mesa_data.py:275
-msgid "Recommended"
-msgstr "Aanbevolen"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:152
-msgid "Detecting hardware"
-msgstr "Hardware detecteren"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:155
-msgid "Detecting hardware..."
-msgstr "Hardware detecteren..."
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:285
-#, python-brace-format
-msgid "{n} drivers"
-msgstr "{n} chauffeurs"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:288
-msgid "1 installed"
-msgstr "1 geïnstalleerd"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:290
-#, python-brace-format
-msgid "{n} installed"
-msgstr "{n} geïnstalleerd"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:320
-#, python-brace-format
-msgid "{n} drivers available to install"
-msgstr "{n} stuurprogramma's beschikbaar om te installeren"
-
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:323
-msgid "Install recommended drivers for better hardware support."
-msgstr ""
-"Installeer aanbevolen stuurprogramma's voor betere hardwareondersteuning."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:411
-msgid "Driver installed successfully."
-msgstr "Stuurprogramma succesvol geïnstalleerd."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
-#: usr/share/big-kernel-manager/ui/drivers_hub_page.py:415
-msgid "Installation failed. Check logs for details."
-msgstr "Installatie mislukt. Controleer de logboeken voor details."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:70
-msgid "What is Kernel?"
-msgstr "Wat is Kernel?"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:72
-msgid ""
-"The kernel is the heart of your operating system. It controls your "
-"processor, memory, and all hardware. Most drivers already come built-in with "
-"the kernel."
-msgstr ""
-"De kernel is het hart van uw besturingssysteem. Het bestuurt uw processor, "
-"geheugen en alle hardware. De meeste stuurprogramma's zijn al ingebouwd in "
-"de kernel."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
-#: usr/share/big-kernel-manager/ui/home_page.py:83
-msgid "What are Drivers?"
-msgstr "Wat zijn stuurprogramma's?"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:85
-msgid ""
-"Drivers allow each device — like your video card, Wi-Fi, or sound — to "
-"communicate with the system. If everything is already working, you probably "
-"don't need to change anything."
-msgstr ""
-"Dankzij stuurprogramma's kan elk apparaat (zoals uw videokaart, Wi-Fi of "
-"geluid) met het systeem communiceren. Als alles al werkt, hoeft u "
-"waarschijnlijk niets te wijzigen."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:113
-msgid "Checking your system…"
-msgstr "Uw systeem controleren..."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:119
-msgid "Detecting hardware and installed drivers."
-msgstr "Hardware en geïnstalleerde stuurprogramma's detecteren."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:149
-msgid "Recommended for your hardware"
-msgstr "Aanbevolen voor uw hardware"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
-#: usr/share/big-kernel-manager/ui/home_page.py:197
-msgid "Install recommended"
-msgstr "Installeren aanbevolen"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:227
-msgid "Compatible drivers available"
-msgstr "Compatibele stuurprogramma's beschikbaar"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:273
-#, python-brace-format
-msgid "{} — no driver loaded, install {} for this device"
-msgstr "{} — geen stuurprogramma geladen, installeer {} voor dit apparaat"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
-#: usr/share/big-kernel-manager/ui/home_page.py:277
-msgid "Go to drivers"
-msgstr "Ga naar chauffeurs"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:287
-msgid ""
-"These drivers are compatible with your hardware. Your devices are working, "
-"but these may improve performance or add features."
-msgstr ""
-"Deze stuurprogramma's zijn compatibel met uw hardware. Uw apparaten werken, "
-"maar deze kunnen de prestaties verbeteren of functies toevoegen."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:376
-#, python-brace-format
-msgid "All {} recommended video packages for your {} hardware are installed."
-msgstr ""
-"Alle door {} aanbevolen videopakketten voor uw {} hardware zijn "
-"geïnstalleerd."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:386
-#, python-brace-format
-msgid "{} of {} recommended packages are not installed."
-msgstr "{} van {} aanbevolen pakketten zijn niet geïnstalleerd."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:396
-#, python-brace-format
-msgid "Install all {} recommended"
-msgstr "Installeer alle {} aanbevolen"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:457
-#, python-brace-format
-msgid "Already installed ({})"
-msgstr "Al geïnstalleerd ({})"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:469
-#: usr/share/big-kernel-manager/ui/home_page.py:472
-#: usr/share/big-kernel-manager/ui/home_page.py:608
-msgid "Show installed packages"
-msgstr "Toon geïnstalleerde pakketten"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:605
-msgid "Hide installed packages"
-msgstr "Geïnstalleerde pakketten verbergen"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:620
-msgid "Install Recommended Packages"
-msgstr "Installeer aanbevolen pakketten"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:623
-#, python-brace-format
-msgid ""
-"Install <b>{}</b> packages?\n"
-"\n"
-"{}"
-msgstr ""
-"<b>{}</b> pakketten installeren?\n"
-"\n"
-"{}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
-#: usr/share/big-kernel-manager/ui/home_page.py:629
-msgid "Install All"
-msgstr "Installeer alles"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
-#: usr/share/big-kernel-manager/ui/home_page.py:642
-#, python-brace-format
-msgid "Installing {} packages"
-msgstr "{} pakketten installeren"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:653
-msgid "Installing recommended packages"
-msgstr "Aanbevolen pakketten installeren"
-
-#: usr/share/big-kernel-manager/ui/home_page.py:670
-msgid "All recommended packages installed successfully!"
-msgstr "Alle aanbevolen pakketten zijn succesvol geïnstalleerd!"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 437
-#: usr/share/big-kernel-manager/ui/home_page.py:680
-msgid ""
-"Package installation failed.\n"
-"Check the terminal output for details."
-msgstr ""
-"Installatie van pakket mislukt.\n"
-"Controleer de terminaluitvoer voor details."
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
-#: usr/share/big-kernel-manager/ui/home_page.py:732
-#, python-brace-format
-msgid "{} installed successfully!"
-msgstr "{} is succesvol geïnstalleerd!"
-
+msgid "Applying {} driver..."
+msgstr "Stuurprogramma {}wordt toegepast..."
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
-#: usr/share/big-kernel-manager/ui/home_page.py:740
+#: usr/share/big-kernel-manager/core/mesa_manager.py:153
 #, python-brace-format
-msgid "Installation of {} failed."
-msgstr "Installatie van {} is mislukt."
-
-#: usr/share/big-kernel-manager/ui/home_page.py:770
-msgid "Information"
-msgstr "Informatie"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:37
-msgid "Latest NVIDIA driver — best performance and newest features"
-msgstr "Nieuwste NVIDIA-driver: beste prestaties en nieuwste functies"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:40
-msgid "NVIDIA 575 series — use if the latest driver causes issues"
-msgstr ""
-"NVIDIA 575-serie: gebruik deze als het nieuwste stuurprogramma problemen "
-"veroorzaakt"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:43
-msgid "NVIDIA 570 series — use if the latest driver causes issues"
-msgstr ""
-"NVIDIA 570-serie: gebruik deze als het nieuwste stuurprogramma problemen "
-"veroorzaakt"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:47
-msgid "For Intel + NVIDIA laptops — switches between GPUs to save battery"
-msgstr ""
-"Voor Intel + NVIDIA-laptops: schakelt tussen GPU's om de batterij te sparen"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:50
-msgid "For Intel + NVIDIA laptops — NVIDIA 575 series"
-msgstr "Voor Intel + NVIDIA-laptops — NVIDIA 575-serie"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:53
-msgid "For Intel + NVIDIA laptops — NVIDIA 570 series"
-msgstr "Voor Intel + NVIDIA-laptops — NVIDIA 570-serie"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:56
-msgid "For Intel + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
-msgstr "Voor Intel + NVIDIA-laptops — NVIDIA 470 (verouderd, geen Wayland)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:59
-msgid "For Intel + NVIDIA laptops — NVIDIA 390 (very old GPUs only)"
-msgstr ""
-"Voor AMD + NVIDIA-laptops: schakelt tussen GPU's om de batterij te sparen"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:63
-msgid "For AMD + NVIDIA laptops — switches between GPUs to save battery"
-msgstr ""
-"Voor AMD + NVIDIA-laptops: schakelt tussen GPU's om de batterij te sparen"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:66
-msgid "For AMD + NVIDIA laptops — NVIDIA 575 series"
-msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 575-serie"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:69
-msgid "For AMD + NVIDIA laptops — NVIDIA 570 series"
-msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 470 (verouderd, geen Wayland)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:72
-msgid "For AMD + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
-msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 470 (verouderd, geen Wayland)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:76
-msgid "Optimized display for virtual machines (VirtualBox, VMware, QEMU/KVM)"
-msgstr ""
-"Geoptimaliseerde weergave voor virtuele machines (VirtualBox, VMware, QEMU/"
-"KVM)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:90
-msgid "Gaming & 3D Graphics"
-msgstr "Gamen en 3D-graphics"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:93
-msgid ""
-"Vulkan and OpenGL libraries essential for games, Steam, Wine/Proton and 3D "
-"applications."
-msgstr ""
-"Vulkan- en OpenGL-bibliotheken die essentieel zijn voor games, Steam, Wine/"
-"Proton en 3D-toepassingen."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:99
-msgid "Vulkan for AMD Radeon GPUs"
-msgstr "Vulkan voor AMD Radeon GPU's"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:106
-msgid "32-bit Vulkan (AMD) — needed by Steam, Wine/Proton and older games"
-msgstr "32-bit Vulkan (AMD) — nodig voor Steam, Wine/Proton en oudere games"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:114
-msgid "Vulkan for Intel GPUs"
-msgstr "32-bit Vulkan (Intel) — nodig voor Steam, Wine/Proton en oudere games"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:121
-msgid "32-bit Vulkan (Intel) — needed by Steam, Wine/Proton and older games"
-msgstr "32-bit Vulkan (Intel) — nodig voor Steam, Wine/Proton en oudere games"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:130
-msgid "Open-source Vulkan for NVIDIA (Nouveau) — no proprietary driver needed"
-msgstr ""
-"Open-source Vulkan voor NVIDIA (Nouveau) — geen eigen stuurprogramma nodig"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:139
-msgid "32-bit OpenGL — needed by Steam, Wine/Proton and older 32-bit games"
-msgstr "32-bit OpenGL — nodig voor Steam, Wine/Proton en oudere 32-bit-games"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:149
-msgid "Video Playback"
-msgstr "Video afspelen"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:152
-msgid ""
-"Hardware-accelerated video decoding (VAAPI/VDPAU). Makes videos, streaming "
-"and video calls smoother while reducing CPU and power usage."
-msgstr ""
-"Hardwareversnelde videodecodering (VAAPI/VDPAU). Maakt video's, streaming en "
-"videogesprekken vloeiender terwijl het CPU- en energieverbruik wordt "
-"verminderd."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:159
-msgid "VAAPI for NVIDIA proprietary driver"
-msgstr "VAAPI voor NVIDIA eigen stuurprogramma"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:165
-msgid "VAAPI for Intel (Broadwell / Gen 8 and newer)"
-msgstr "VAAPI voor Intel (Broadwell/Gen 8 en nieuwer)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:172
-msgid "VAAPI for older Intel (Haswell to Coffee Lake / Gen 4–9)"
-msgstr "VAAPI voor oudere Intel (Haswell tot Coffee Lake / Gen 4–9)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:179
-msgid "VAAPI for AMD and NVIDIA open-source (Nouveau)"
-msgstr "VAAPI voor AMD en NVIDIA open source (Nouveau)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:186
-msgid ""
-"VDPAU for AMD/NVIDIA open-source — legacy API being replaced by VAAPI and "
-"Vulkan. Probably not needed."
-msgstr ""
-"VDPAU voor AMD/NVIDIA open-source: verouderde API wordt vervangen door VAAPI "
-"en Vulkan. Waarschijnlijk niet nodig."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:197
-msgid "GPU Compute (AI / ML)"
-msgstr "GPU-rekenkracht (AI / ML)"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:200
-msgid ""
-"CUDA and OpenCL libraries for artificial intelligence, machine learning, "
-"Blender, DaVinci Resolve and other GPU-accelerated workloads."
-msgstr ""
-"CUDA- en OpenCL-bibliotheken voor kunstmatige intelligentie, machine "
-"learning, Blender, DaVinci Resolve en andere GPU-versnelde workloads."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:207
-msgid "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
-msgstr "NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:213
-msgid "OpenCL for NVIDIA — Blender, DaVinci, Darktable"
-msgstr "OpenCL voor NVIDIA — Blender, DaVinci, Darktable"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:219
-msgid "OpenCL for AMD — Blender, GIMP, DaVinci"
-msgstr "OpenCL voor AMD — Blender, GIMP, DaVinci"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:225
-msgid "OpenCL for Intel — Blender, DaVinci"
-msgstr "OpenCL voor Intel — Blender, DaVinci"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:270
-msgid "Stable"
-msgstr "Stabiel"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:272
-msgid ""
-"Officially tested by the Mesa team. The safest and most reliable choice for "
-"everyday use, gaming, and video playback."
-msgstr ""
-"Officieel getest door het Mesa-team. De veiligste en meest betrouwbare keuze "
-"voor dagelijks gebruik, gaming en videoweergave."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 295
-#: usr/share/big-kernel-manager/ui/mesa_data.py:279
-#: usr/share/big-kernel-manager/ui/mesa_data.py:285
-msgid "Performance"
-msgstr "Prestatie"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:281
-msgid ""
-"Modified version with gaming optimizations for extra performance. Reliable "
-"for most users but may rarely cause instabilities."
-msgstr ""
-"Aangepaste versie met gaming-optimalisaties voor extra prestaties. "
-"Betrouwbaar voor de meeste gebruikers, maar kan zelden instabiliteiten "
-"veroorzaken."
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:289
-msgid "Development"
-msgstr "Ontwikkeling"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:291
-msgid ""
-"Built from the very latest source code with cutting-edge features. Offers "
-"the best gaming performance but is the least tested — only for advanced "
-"users."
-msgstr ""
-"Gebouwd op basis van de allernieuwste broncode met geavanceerde functies. "
-"Biedt de beste spelprestaties, maar is het minst getest – alleen voor "
-"gevorderde gebruikers."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
-#: usr/share/big-kernel-manager/ui/mesa_data.py:299
-#: usr/share/big-kernel-manager/ui/mesa_data.py:305
-msgid "Legacy"
-msgstr "Erfgoed"
-
-#: usr/share/big-kernel-manager/ui/mesa_data.py:301
-msgid ""
-"For very old graphics cards that only support OpenGL 2.1 or earlier. Only "
-"install this if newer Mesa versions don't work with your hardware."
-msgstr ""
-"Voor zeer oude grafische kaarten die alleen OpenGL 2.1 of eerder "
-"ondersteunen. Installeer dit alleen als nieuwere Mesa-versies niet werken "
-"met uw hardware."
-
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 86
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 130
-#~ msgid "Operation progress"
-#~ msgstr "Operatie voortgang"
-
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
-# File: usr/share/big-kernel-manager/ui/base_page.py, line: 118
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 153
-#~ msgid "Command output"
-#~ msgstr "Opdrachtuitvoer"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 211
+msgid "Starting {} driver installation..."
+msgstr "Installatie van {} stuurprogramma starten..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 161
+#: usr/share/big-kernel-manager/core/mesa_manager.py:161
+msgid "Checking for conflicting packages..."
+msgstr "{} pakketten controleren..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
+#: usr/share/big-kernel-manager/core/mesa_manager.py:173
 #, python-brace-format
-#~ msgid "Version: {}"
-#~ msgstr "Versie: {}"
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 275
-#~ msgid "Cannot remove the currently running kernel"
-#~ msgstr "De momenteel actieve kernel kan niet worden verwijderd."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 302
+msgid "Removing conflicts: {}"
+msgstr "Conflicten verwijderen: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 178
+#: usr/share/big-kernel-manager/core/mesa_manager.py:178
 #, python-brace-format
-#~ msgid ""
-#~ "Are you sure you want to install the <b>{}</b> kernel?\n"
-#~ "\n"
-#~ "This will install the kernel and its modules."
-#~ msgstr ""
-#~ "Weet u zeker dat u de <b>{}</b> kernel wilt installeren?\n"
-#~ "\n"
-#~ "Dit zal de kernel en zijn modules installeren."
-
-# #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
-#
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 336
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 404
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 420
-#~ msgid "This may take a few minutes. Please wait..."
-#~ msgstr "Dit kan enkele minuten duren. Even geduld a.u.b..."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 370
+msgid "Checking {} packages..."
+msgstr "⚠️ Pakket {} niet beschikbaar, overslaan..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 187
+#: usr/share/big-kernel-manager/core/mesa_manager.py:187
 #, python-brace-format
-#~ msgid ""
-#~ "Are you sure you want to remove the <b>{}</b> kernel?\n"
-#~ "\n"
-#~ "This will remove the kernel and its modules."
-#~ msgstr ""
-#~ "Weet u zeker dat u de <b>{}</b> kernel wilt verwijderen?\n"
-#~ "\n"
-#~ "Dit verwijdert de kernel en zijn modules."
-
-# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 403
+msgid "⚠️ Package {} not available, skipping..."
+msgstr "⚠️ Pakket {} niet beschikbaar, overslaan..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 191
+#: usr/share/big-kernel-manager/core/mesa_manager.py:191
+msgid "❌ No packages available to install."
+msgstr "Conflicterende pakketten verwijderen..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/mesa_manager.py:197
 #, python-brace-format
-#~ msgid "Starting removal of {} kernel..."
-#~ msgstr "Beginnen met verwijderen van{}  kernel..."
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 93
-#~ msgid "Operation in progress"
-#~ msgstr "Bezig met bewerking"
-
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 131
-#~ msgid "Show Terminal Output"
-#~ msgstr "Terminaluitvoer weergeven"
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 78
-#~ msgid ""
-#~ "Classic OpenGL implementation for very old hardware. Only use if your GPU "
-#~ "does not support modern Mesa drivers."
-#~ msgstr ""
-#~ "Klassieke OpenGL-implementatie voor zeer oude hardware. Gebruik dit "
-#~ "alleen als je GPU geen moderne Mesa-stuurprogramma's ondersteunt."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 82
-#~ msgid ""
-#~ "Official stable Mesa release. Best balance of performance, compatibility "
-#~ "and stability. Includes Vulkan drivers for AMD, Intel and software "
-#~ "rendering."
-#~ msgstr ""
-#~ "Officiële stabiele Mesa-release. Beste balans van prestaties, "
-#~ "compatibiliteit en stabiliteit. Bevat Vulkan-stuurprogramma's voor AMD, "
-#~ "Intel en software-rendering."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 89
-#~ msgid ""
-#~ "Custom build with performance patches. May provide better FPS in games, "
-#~ "but can cause issues with system updates. Use with caution."
-#~ msgstr ""
-#~ "Aangepaste build met prestatiepatches. Kan betere FPS in games bieden, "
-#~ "maar kan problemen veroorzaken met systeemupdates. Gebruik met "
-#~ "voorzichtigheid."
-
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 94
-#~ msgid ""
-#~ "Bleeding-edge development version. Contains the newest features but is "
-#~ "unstable and may break with updates. Not recommended for daily use."
-#~ msgstr ""
-#~ "Bloedende rand ontwikkelingsversie. Bevat de nieuwste functies, maar is "
-#~ "onstabiel en kan breken met updates. Niet aanbevolen voor dagelijks "
-#~ "gebruik."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 235
-#~ msgid "Kernel and Mesa Management"
-#~ msgstr "Kernel- en Mesa-beheer"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 274
-#~ msgid ""
-#~ "Changing your system's kernel or Mesa drivers can impact system "
-#~ "stability. Please review the following recommendations:"
-#~ msgstr ""
-#~ "Het wijzigen van de kernel of Mesa-stuurprogramma's van uw systeem kan de "
-#~ "stabiliteit van het systeem beïnvloeden. Gelieve de volgende "
-#~ "aanbevelingen te bekijken:"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 282
-#~ msgid "Always keep at least one working kernel"
-#~ msgstr ""
-#~ "Zorg ervoor dat er altijd ten minste één werkende kernel beschikbaar is."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 282
-#~ msgid "installed as a fallback"
-#~ msgstr "geïnstalleerd als fallback"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 284
-#~ msgid ""
-#~ "LTS kernels offer better stability, while newer kernels provide newer "
-#~ "hardware support"
-#~ msgstr ""
-#~ "LTS-kernels bieden betere stabiliteit, terwijl nieuwere kernels "
-#~ "ondersteuning bieden voor nieuwere hardware."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 286
-#~ msgid "Test your system thoroughly after kernel changes"
-#~ msgstr "Test uw systeem grondig na wijzigingen aan de kernel."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 288
-#~ msgid ""
-#~ "If a new kernel causes issues, you can select the previous kernel from "
-#~ "the boot menu"
-#~ msgstr ""
-#~ "Als een nieuwe kernel problemen veroorzaakt, kunt u de vorige kernel "
-#~ "selecteren in het opstartmenu."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 290
-#~ msgid ""
-#~ "Real-time (RT) kernels are specialized for low-latency tasks but may not "
-#~ "be suitable for general use"
-#~ msgstr ""
-#~ "Real-time (RT) kernels zijn gespecialiseerd voor taken met een lage "
-#~ "latentie, maar zijn mogelijk niet geschikt voor algemeen gebruik."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 293
-#~ msgid "Kernel Management"
-#~ msgstr "Kernelbeheer"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 294
-# File: usr/share/big-kernel-manager/ui/window.py, line: 313
-#~ msgid "Tips"
-#~ msgstr "Tips"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 301
-#~ msgid ""
-#~ "Mesa drivers provide 3D graphics acceleration for AMD, Intel, and some "
-#~ "NVIDIA GPUs"
-#~ msgstr ""
-#~ "Mesa-stuurprogramma's bieden 3D-grafische versnelling voor AMD-, Intel- "
-#~ "en sommige NVIDIA-GPU's."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 303
-#~ msgid ""
-#~ "Changing Mesa versions may affect graphics performance and application "
-#~ "compatibility"
-#~ msgstr ""
-#~ "Het wijzigen van Mesa-versies kan van invloed zijn op de grafische "
-#~ "prestaties en de compatibiliteit van applicaties."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 305
-#~ msgid "The stable version is recommended for most users"
-#~ msgstr "De stabiele versie wordt aanbevolen voor de meeste gebruikers."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 307
-#~ msgid ""
-#~ "Development versions may offer better performance but with less stability"
-#~ msgstr ""
-#~ "Ontwikkelingsversies bieden mogelijk betere prestaties, maar zijn minder "
-#~ "stabiel."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 309
-#~ msgid ""
-#~ "If graphics issues occur after a change, you can switch back to the "
-#~ "previous driver"
-#~ msgstr ""
-#~ "Als er na een wijziging grafische problemen optreden, kunt u "
-#~ "terugschakelen naar het vorige stuurprogramma."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 312
-#~ msgid "Mesa Driver Management"
-#~ msgstr "Mesa-stuurprogramma beheer"
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 329
-#~ msgid ""
-#~ "If unsure, the <b>LTS kernel</b> and <b>Stable Mesa</b> drivers are the "
-#~ "safest choices for most users."
-#~ msgstr ""
-#~ "Als je het niet zeker weet, zijn de <b>LTS-kernel</b> en <b>Stabiele "
-#~ "Mesa</b> stuurprogramma's de veiligste keuzes voor de meeste gebruikers."
-
-# File: usr/share/big-kernel-manager/ui/window.py, line: 449
-#~ msgid "Show this warning on startup"
-#~ msgstr "Deze waarschuwing bij opstarten weergeven"
-
-# File: usr/share/big-kernel-manager/core/base_manager.py, line: 140
-#~ msgid "⚠️ Operation cancelled by user."
-#~ msgstr "⚠️ Bewerking geannuleerd door gebruiker."
+msgid "Installing: {}"
+msgstr "Installeren: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 205
+#: usr/share/big-kernel-manager/core/mesa_manager.py:205
+msgid "Removing conflicting packages..."
+msgstr "Conflicterende pakketten verwijderen..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 237
+#: usr/share/big-kernel-manager/core/mesa_manager.py:237
+msgid "Failed to remove conflicting packages."
+msgstr "Kan conflicterende pakketten niet verwijderen."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/mesa_manager.py:241
+#, python-brace-format
+msgid "❌ Failed to remove conflicts (exit code: {})"
+msgstr "❌ Kan conflicten niet verwijderen (afsluitcode: {})"
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 419
+#: usr/share/big-kernel-manager/core/mesa_manager.py:249
+#, python-brace-format
+msgid "Installing {} driver..."
+msgstr "{} stuurprogramma installeren..."
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
+#: usr/share/big-kernel-manager/core/mesa_manager.py:282
+msgid "Failed to apply driver."
+msgstr "Kan stuurprogramma niet toepassen."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/mesa_manager.py:285
+#, python-brace-format
+msgid "❌ Operation failed (exit code: {})"
+msgstr "❌ Bewerking mislukt (afsluitcode: {})"
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
+#: usr/share/big-kernel-manager/core/mesa_manager.py:292
+msgid "Driver applied successfully!"
+msgstr "Chauffeur succesvol toegepast!"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/core/mesa_manager.py:294
+#, python-brace-format
+msgid "✅ {} driver applied successfully!"
+msgstr "✅ {} chauffeur succesvol toegepast!"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/core/base_manager.py:202
+#: usr/share/big-kernel-manager/core/mesa_manager.py:302
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Fout: {}"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 206
+#: usr/share/big-kernel-manager/core/mesa_manager.py:303
+#, python-brace-format
+msgid "❌ Error: {}"
+msgstr "❌ Fout: {}"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 137
+#: usr/share/big-kernel-manager/core/base_manager.py:137
+#, python-brace-format
+msgid "Database locked. Retrying in {} seconds..."
+msgstr "Database vergrendeld. Opnieuw proberen over {} seconden..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 142
+#: usr/share/big-kernel-manager/core/base_manager.py:142
+#, python-brace-format
+msgid "Waiting {} s before retry..."
+msgstr "Wacht {} s voordat het opnieuw wordt geprobeerd..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 147
+#: usr/share/big-kernel-manager/core/base_manager.py:147
+#, python-brace-format
+msgid "Retry attempt {} of {}..."
+msgstr ""
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 105
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 108
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:312
+#: usr/share/big-kernel-manager/core/base_manager.py:177
+#: usr/share/big-kernel-manager/core/base_manager.py:180
+#, python-brace-format
+msgid "Starting {}..."
+msgstr "Startende {}..."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 106
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:310
+#: usr/share/big-kernel-manager/core/base_manager.py:178
+#, python-brace-format
+msgid "Command: {}"
+msgstr "Opdracht: {}"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 160
+#: usr/share/big-kernel-manager/core/base_manager.py:253
+#, python-brace-format
+msgid "Still working... ({:.0%} complete)"
+msgstr "Bezig... ({:.0%} voltooid)"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 177
+#: usr/share/big-kernel-manager/core/base_manager.py:279
+msgid "Operation cancelled"
+msgstr "Bewerking geannuleerd"
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 178
+#: usr/share/big-kernel-manager/core/base_manager.py:280
+msgid "Operation was cancelled."
+msgstr "De operatie is geannuleerd."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 183
+#: usr/share/big-kernel-manager/core/base_manager.py:285
+#, python-brace-format
+msgid "{}  complete!"
+msgstr ""
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
+#: usr/share/big-kernel-manager/core/base_manager.py:289
+#, python-brace-format
+msgid "{}  completed successfully."
+msgstr "{} is succesvol voltooid."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 193
+#: usr/share/big-kernel-manager/core/base_manager.py:295
+#, python-brace-format
+msgid "{}  failed."
+msgstr "{} is mislukt."
+# File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
+#: usr/share/big-kernel-manager/core/base_manager.py:299
+#, python-brace-format
+msgid "{}  failed (exit code: {})"
+msgstr "{} mislukt (afsluitcode: {})"
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 310
+#: usr/share/big-kernel-manager/core/base_manager.py:310
+msgid ""
+"Package not found in repositories. The package name may have changed or been removed.\n"
+"Suggestion: Try refreshing the database with 'sudo pacman -Sy' and search for the correct name."
+msgstr ""
+"Pakket niet gevonden in repository's. De pakketnaam is mogelijk gewijzigd of verwijderd.\n"
+"Suggestie: Probeer de database te vernieuwen met 'sudo pacman -Sy' en zoek naar de juiste naam."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 319
+#: usr/share/big-kernel-manager/core/base_manager.py:319
+msgid ""
+"A conflict prevented the operation from completing.\n"
+"Suggestion: Clean the cache and update with 'sudo pacman -Scc' followed by 'sudo pacman -Syyu'."
+msgstr ""
+"Een conflict verhinderde dat de operatie kon worden voltooid.\n"
+"Suggestie: Maak de cache schoon en update met 'sudo pacman -Scc' gevolgd door 'sudo pacman -Syyu'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 327
+#: usr/share/big-kernel-manager/core/base_manager.py:327
+msgid ""
+"Some files from this package already exist on the system.\n"
+"Suggestion: Check which package owns the file with 'pacman -Qo <file_path>' and resolve the "
+"conflict."
+msgstr ""
+"Sommige bestanden uit dit pakket bestaan ​​al op het systeem.\n"
+"Suggestie: Controleer welk pakket eigenaar is van het bestand met 'pacman -Qo <file_path>' en los "
+"het conflict op."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 335
+#: usr/share/big-kernel-manager/core/base_manager.py:335
+msgid ""
+"Required dependencies could not be resolved.\n"
+"Suggestion: Update the full system first with 'sudo pacman -Syu'."
+msgstr ""
+"Vereiste afhankelijkheden konden niet worden opgelost.\n"
+"Suggestie: Update eerst het volledige systeem met 'sudo pacman -Syu'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 342
+#: usr/share/big-kernel-manager/core/base_manager.py:342
+msgid ""
+"Package signature could not be verified.\n"
+"Suggestion: Update your keyrings with 'sudo pacman -S archlinux-keyring manjaro-keyring'."
+msgstr ""
+"Pakkethandtekening kan niet worden geverifieerd.\n"
+"Suggestie: Update je sleutelhangers met 'sudo pacman -S archlinux-keyring manjaro-keyring'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 350
+#: usr/share/big-kernel-manager/core/base_manager.py:350
+msgid ""
+"The package database is locked by another process.\n"
+"If no other package manager is running, remove the lock with 'sudo rm /var/lib/pacman/db.lck'."
+msgstr ""
+"De pakketdatabase is vergrendeld door een ander proces.\n"
+"Als er geen andere pakketbeheerder actief is, verwijder dan de vergrendeling met 'sudo rm "
+"/var/lib/pacman/db.lck'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 358
+#: usr/share/big-kernel-manager/core/base_manager.py:358
+msgid ""
+"Not enough disk space to complete the operation.\n"
+"Suggestion: Free space by clearing the package cache with 'sudo pacman -Scc'."
+msgstr ""
+"Onvoldoende schijfruimte om de bewerking te voltooien.\n"
+"Suggestie: Maak ruimte vrij door de pakketcache te wissen met 'sudo pacman -Scc'."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 366
+#: usr/share/big-kernel-manager/core/base_manager.py:366
+msgid ""
+"Could not download required files.\n"
+"Suggestion: Check your internet connection. If the problem persists, try updating your mirror list."
+msgstr ""
+"Kon de vereiste bestanden niet downloaden.\n"
+"Suggestie: Controleer uw internetverbinding. Als het probleem zich blijft voordoen, probeer dan uw "
+"mirrorlijst bij te werken."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 374
+#: usr/share/big-kernel-manager/core/base_manager.py:374
+msgid ""
+"A downloaded package is corrupted.\n"
+"Suggestion: Clear the cache with 'sudo pacman -Scc' and try again."
+msgstr ""
+"Een gedownload pakket is beschadigd.\n"
+"Suggestie: Wis de cache met 'sudo pacman -Scc' en probeer het opnieuw."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 391
+#: usr/share/big-kernel-manager/core/base_manager.py:391
+msgid "Generating GRUB configuration..."
+msgstr "Post-transactiehooks uitvoeren..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 392
+#: usr/share/big-kernel-manager/core/base_manager.py:392
+msgid "Running post-transaction hooks..."
+msgstr "Post-transactiehooks uitvoeren..."
+# File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
+#: usr/share/big-kernel-manager/core/base_manager.py:393
+msgid "Installing packages..."
+msgstr "Pakketten installeren..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 394
+#: usr/share/big-kernel-manager/core/base_manager.py:394
+msgid "Removing packages..."
+msgstr "Pakketten verwijderen..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 395
+#: usr/share/big-kernel-manager/core/base_manager.py:395
+msgid "Checking for file conflicts..."
+msgstr "Controleren op bestandsconflicten..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 396
+#: usr/share/big-kernel-manager/core/base_manager.py:396
+msgid "Checking dependencies..."
+msgstr "Afhankelijkheden controleren..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 400
+#: usr/share/big-kernel-manager/core/base_manager.py:400
+msgid "Synchronizing package databases..."
+msgstr "Pakketdatabases synchroniseren..."
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/driver_installer.py, line: 99
+#: usr/share/big-kernel-manager/core/driver_installer.py:99
+#, python-brace-format
+msgid "pamac-installer not found. Cannot install AUR package {}."
+msgstr ""
+# 
+# File: big-kernel-manager/usr/share/big-kernel-manager/core/driver_installer.py, line: 113
+#: usr/share/big-kernel-manager/core/driver_installer.py:113
+msgid "Continue the installation in the pamac window that was opened."
+msgstr "Ga door met de installatie in het geopende pamac-venster."
+# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
+#: usr/share/big-kernel-manager/core/mhwd_manager.py:335
+msgid "Completed"
+msgstr "Voltooid"
