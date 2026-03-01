@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 04:00-0300\n"
 "Language-Team: Romanian <ro@li.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -87,7 +87,7 @@ msgstr "Pentru laptopuri AMD + NVIDIA — seria NVIDIA 570"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 72
 #: usr/share/big-kernel-manager/ui/mesa_data.py:72
 msgid "For AMD + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
-msgstr "Afișaj optimizat pentru mașini virtuale (VirtualBox, VMware, QEMU/KVM)"
+msgstr "Pentru laptopuri AMD + NVIDIA — NVIDIA 470 (vechi, fără Wayland)"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 76
 #: usr/share/big-kernel-manager/ui/mesa_data.py:76
@@ -144,7 +144,9 @@ msgstr "Redare video"
 msgid ""
 "Hardware-accelerated video decoding (VAAPI/VDPAU). Makes videos, streaming and video calls smoother "
 "while reducing CPU and power usage."
-msgstr "Driver proprietar VAAPI pentru NVIDIA"
+msgstr ""
+"Decodare video accelerată hardware (VAAPI/VDPAU). Face videoclipurile, streaming-ul și apelurile "
+"video mai fluide, reducând în același timp utilizarea procesorului și a energiei."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 159
 #: usr/share/big-kernel-manager/ui/mesa_data.py:159
@@ -277,7 +279,7 @@ msgstr "Detalii tehnice"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Terminal output"
-msgstr "Drivere Wi-Fi"
+msgstr "Ieșire terminal"
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -611,7 +613,7 @@ msgstr "Comutați de la {} la {}"
 #: usr/share/big-kernel-manager/ui/mesa_page.py:951
 #, python-brace-format
 msgid "Remove the installed NVIDIA driver ({}) first."
-msgstr "Baza de date blocată. Se reîncercă în {} secunde..."
+msgstr "Eliminați mai întâi driverul NVIDIA instalat ({})."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
 #: usr/share/big-kernel-manager/ui/mesa_page.py:961
@@ -621,7 +623,7 @@ msgstr "open-source"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
 #: usr/share/big-kernel-manager/ui/mesa_page.py:961
 msgid "proprietary"
-msgstr ""
+msgstr "proprietar"
 "Instalați <b>{}</b> ({} driver)?\n"
 "\n"
 "Poate fi necesară o repornire a sistemului după instalare."
@@ -749,6 +751,9 @@ msgid ""
 "\n"
 "A system reboot may be required."
 msgstr ""
+"{} a fost {} cu succes!\n"
+"\n"
+"Poate fi necesară o repornire a sistemului."
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1097
 msgid ""
@@ -806,7 +811,7 @@ msgstr "Se elimină pachetul..."
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1272
 #, python-brace-format
 msgid "{} was {} successfully!"
-msgstr ""
+msgstr "{} a fost {} cu succes!"
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1277
 msgid ""

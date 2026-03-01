@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 04:05-0300\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -204,7 +204,7 @@ msgstr "OpenCL pre NVIDIA — Blender, DaVinci, Darktable"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 219
 #: usr/share/big-kernel-manager/ui/mesa_data.py:219
 msgid "OpenCL for AMD — Blender, GIMP, DaVinci"
-msgstr "OpenCL pre Intel — Blender, DaVinci"
+msgstr "OpenCL pre AMD — Blender, GIMP, DaVinci"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 225
 #: usr/share/big-kernel-manager/ui/mesa_data.py:225
@@ -221,9 +221,7 @@ msgstr "Stabilný"
 msgid ""
 "Officially tested by the Mesa team. The safest and most reliable choice for everyday use, gaming, "
 "and video playback."
-msgstr ""
-"Upravená verzia s hernými optimalizáciami pre extra výkon. Spoľahlivý pre väčšinu používateľov, ale "
-"zriedkavo môže spôsobiť nestabilitu."
+msgstr "Oficiálne testované tímom Mesa. Najbezpečnejšia a najspoľahlivejšia voľba pre každodenné použitie, hranie hier a prehrávanie videa."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:105
 #: usr/share/big-kernel-manager/ui/mesa_data.py:275
@@ -254,9 +252,7 @@ msgstr "rozvoj"
 msgid ""
 "Built from the very latest source code with cutting-edge features. Offers the best gaming "
 "performance but is the least tested — only for advanced users."
-msgstr ""
-"Pre veľmi staré grafické karty, ktoré podporujú iba OpenGL 2.1 alebo staršie. Nainštalujte ho iba v "
-"prípade, že novšie verzie Mesa nefungujú s vaším hardvérom."
+msgstr "Postavené z najnovšieho zdrojového kódu s najmodernejšími funkciami. Ponúka najlepší herný výkon, ale je najmenej testovaný – len pre pokročilých používateľov."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 276
 #: usr/share/big-kernel-manager/ui/mesa_data.py:299
 #: usr/share/big-kernel-manager/ui/mesa_data.py:305
@@ -279,7 +275,7 @@ msgstr "Technické detaily"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Terminal output"
-msgstr "Ethernetové ovládače"
+msgstr "Výstup terminálu"
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -620,7 +616,7 @@ msgstr "Najprv odstráňte nainštalovaný ovládač NVIDIA ({})."
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
 #: usr/share/big-kernel-manager/ui/mesa_page.py:961
 msgid "open-source"
-msgstr "vlastnícky"
+msgstr "open-source"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
 #: usr/share/big-kernel-manager/ui/mesa_page.py:961
@@ -642,6 +638,9 @@ msgid ""
 "\n"
 "A system reboot may be required after installation."
 msgstr ""
+"Nainštalovať <b>{}</b> ({} ovládač)?\n"
+"\n"
+"Po inštalácii môže byť potrebný reštart systému."
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
 #: usr/share/big-kernel-manager/core/driver_installer.py:57
 #: usr/share/big-kernel-manager/ui/kernel_page.py:688
@@ -747,6 +746,9 @@ msgid ""
 "\n"
 "A system reboot may be required."
 msgstr ""
+"{} bolo úspešne {}!\n"
+"\n"
+"Môže byť potrebný reštart systému."
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1097
 msgid ""

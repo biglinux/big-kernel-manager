@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 03:25-0300\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -277,7 +277,7 @@ msgstr ""
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/progress_dialog.py, line: 117
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:117
 msgid "Technical details"
-msgstr "Vaihe {}/{}: {}"
+msgstr "Tekniset tiedot"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Terminal output"
@@ -383,7 +383,7 @@ msgstr ""
 msgid ""
 "Your computer has an <b>NVIDIA</b> graphics card. You can install the official proprietary driver "
 "for the best performance in gaming, AI and professional applications."
-msgstr "Mesan variantti"
+msgstr "Tietokoneessasi on <b>NVIDIA</b>-näytönohjain. Voit asentaa virallisen suljetun ohjaimen parhaan suorituskyvyn saavuttamiseksi peleissä, tekoälysovelluksissa ja ammattikäytössä."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 183
 #: usr/share/big-kernel-manager/ui/mesa_page.py:183
@@ -476,9 +476,7 @@ msgstr ""
 msgid ""
 "Driver change failed.\n"
 "Check the terminal output for details."
-msgstr ""
-"Kuljettajan vaihto epäonnistui.\n"
-"Tarkista lisätiedot liittimen ulostulosta."
+msgstr "Ajurin vaihto epäonnistui.\nTarkista lisätiedot terminaalin tulosteesta."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 589
 #: usr/share/big-kernel-manager/ui/mesa_page.py:589
@@ -763,10 +761,7 @@ msgstr ""
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1146
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1146
 msgid "Already included in your Mesa version"
-msgstr ""
-"Asennetaanko <b>{}</b>?\n"
-"\n"
-"{}"
+msgstr "Sisältyy jo Mesa-versioosi"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1188
@@ -836,17 +831,17 @@ msgstr ""
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 49
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:49
 msgid "Low-latency, real-time"
-msgstr ""
-"Suunniteltu audio/videotuotantoon ja tehtäviin, jotka vaativat tarkkaa ajoitusta. Voi olla "
-"yhteensopimaton joidenkin ohjainten (esim. NVIDIA) kanssa. Suositellaan vain edistyneille "
-"käyttäjille."
+msgstr "Matala viive, reaaliaikainen"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 52
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:52
 msgid ""
 "Designed for audio/video production and tasks needing precise timing. May be incompatible with some "
 "drivers (e.g. NVIDIA). Only recommended for advanced users."
-msgstr "Peli ja suorituskyky optimoitu"
+msgstr ""
+"Suunniteltu audio/videotuotantoon ja tehtäviin, jotka vaativat tarkkaa ajoitusta. Voi olla "
+"yhteensopimaton joidenkin ohjainten (esim. NVIDIA) kanssa. Suositellaan vain edistyneille "
+"käyttäjille."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 59
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:59
@@ -1212,7 +1207,7 @@ msgstr "Langallisen verkkosovittimen ajurit."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:62
 msgid "Bluetooth Drivers"
-msgstr "Tulostinohjaimet"
+msgstr "Bluetooth-ajurit"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 63
 #: usr/share/big-kernel-manager/ui/window.py:63
@@ -1379,7 +1374,7 @@ msgstr "Hallitse"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 558
 #: usr/share/big-kernel-manager/ui/window.py:558
 msgid "Show detected"
-msgstr "Show havaittu"
+msgstr "Näytä havaitut"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
@@ -1399,12 +1394,12 @@ msgstr "Bluetooth"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 41
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:41
 msgid "Audio"
-msgstr "Verkkokamera"
+msgstr "Audio"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
 msgid "Webcam"
-msgstr "Verkkokamera"
+msgstr "Web-kamera"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43

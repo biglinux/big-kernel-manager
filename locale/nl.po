@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 03:50-0300\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -82,7 +82,7 @@ msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 575-serie"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 69
 #: usr/share/big-kernel-manager/ui/mesa_data.py:69
 msgid "For AMD + NVIDIA laptops — NVIDIA 570 series"
-msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 470 (verouderd, geen Wayland)"
+msgstr "Voor AMD + NVIDIA-laptops — NVIDIA 570-serie"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 72
 #: usr/share/big-kernel-manager/ui/mesa_data.py:72
@@ -119,7 +119,7 @@ msgstr "32-bit Vulkan (AMD) — nodig voor Steam, Wine/Proton en oudere games"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 114
 #: usr/share/big-kernel-manager/ui/mesa_data.py:114
 msgid "Vulkan for Intel GPUs"
-msgstr "32-bit Vulkan (Intel) — nodig voor Steam, Wine/Proton en oudere games"
+msgstr "Vulkan voor Intel-GPU's"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 121
 #: usr/share/big-kernel-manager/ui/mesa_data.py:121
@@ -263,7 +263,7 @@ msgstr ""
 #: usr/share/big-kernel-manager/ui/mesa_data.py:299
 #: usr/share/big-kernel-manager/ui/mesa_data.py:305
 msgid "Legacy"
-msgstr "Erfgoed"
+msgstr "Verouderd"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 301
 #: usr/share/big-kernel-manager/ui/mesa_data.py:301
@@ -281,7 +281,7 @@ msgstr "Technische details"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Terminal output"
-msgstr "Ethernet-stuurprogramma's"
+msgstr "Terminal-uitvoer"
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -469,7 +469,10 @@ msgid ""
 "Video driver changed successfully!\n"
 "\n"
 "You must reboot your system for the new driver to become active."
-msgstr "Andere chauffeurs"
+msgstr ""
+"Videostuurprogramma succesvol gewijzigd!\n"
+"\n"
+"U moet uw systeem opnieuw opstarten om het nieuwe stuurprogramma te activeren."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 451
 #: usr/share/big-kernel-manager/ui/mesa_page.py:509
 msgid ""
@@ -540,7 +543,7 @@ msgstr "Verwijderen"
 #: usr/share/big-kernel-manager/ui/category_page.py:446
 #, python-brace-format
 msgid "Remove {}"
-msgstr ""
+msgstr "Verwijder {}"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: usr/share/big-kernel-manager/ui/kernel_page.py:636
@@ -659,9 +662,7 @@ msgstr "Installeren {}"
 #: usr/share/big-kernel-manager/ui/kernel_page.py:689
 #: usr/share/big-kernel-manager/ui/mesa_page.py:986
 msgid "Preparing installation..."
-msgstr ""
-"Kernel is succesvol geïnstalleerd.\n"
-"Mogelijk moet u opnieuw opstarten om het te gebruiken."
+msgstr "Installatie voorbereiden..."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1001
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1001
@@ -815,7 +816,9 @@ msgstr "{} is {} succesvol geweest!"
 msgid ""
 "Package operation failed.\n"
 "Check the terminal output for details."
-msgstr "Wi-Fi-stuurprogramma's"
+msgstr ""
+"Pakketbewerking mislukt.\n"
+"Controleer de terminaluitvoer voor details."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 40
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:40
@@ -832,10 +835,7 @@ msgstr ""
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 49
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:49
 msgid "Low-latency, real-time"
-msgstr ""
-"Ontworpen voor audio-/videoproductie en taken die een nauwkeurige timing vereisen. Mogelijk "
-"incompatibel met sommige stuurprogramma's (bijvoorbeeld NVIDIA). Alleen aanbevolen voor gevorderde "
-"gebruikers."
+msgstr "Lage latentie, real-time"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 52
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:52

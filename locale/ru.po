@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 02:35-0300\n"
 "Language-Team: Russian <ru@li.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -396,7 +396,7 @@ msgstr "Вариант Меса"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 194
 #: usr/share/big-kernel-manager/ui/mesa_page.py:194
 msgid "Choose which Mesa build to use. Only one variant can be active at a time."
-msgstr "Обнаруженные видеокарты:"
+msgstr "Выберите вариант Mesa. Одновременно может быть активен только один вариант."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 282
 #: usr/share/big-kernel-manager/ui/mesa_page.py:282
@@ -429,7 +429,7 @@ msgstr "Активный"
 #: usr/share/big-kernel-manager/ui/mesa_page.py:916
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1014
 msgid "Switch"
-msgstr "Выключатель"
+msgstr "Переключить"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 431
 #: usr/share/big-kernel-manager/ui/mesa_page.py:431
@@ -576,8 +576,8 @@ msgid "Install {}"
 msgstr "Установить {}"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/mesa_page.py:796
-msgid "Other Drivers"
-msgstr "Другие драйверы"
+msgid "Ethernet Drivers"
+msgstr "Драйверы Ethernet"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 808
 #: usr/share/big-kernel-manager/ui/mesa_page.py:808
@@ -742,7 +742,7 @@ msgstr "установлен"
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1088
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1270
 msgid "removed"
-msgstr "удаленный"
+msgstr "удалено"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1091
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1091
@@ -830,7 +830,7 @@ msgstr "Стабильная и долгосрочная поддержка"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 43
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:43
 msgid "Receives security updates for years. Best choice for most users — reliable and well-tested."
-msgstr "Низкая задержка, в режиме реального времени"
+msgstr "Получает обновления безопасности в течение многих лет. Лучший выбор для большинства пользователей — надежный и хорошо протестированный."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 49
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:49
@@ -921,7 +921,7 @@ msgstr "Ошибка обнаружения"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 264
 #: usr/share/big-kernel-manager/ui/category_page.py:264
 msgid "No drivers in this category were detected as necessary for your hardware."
-msgstr "1 водитель"
+msgstr "Драйверы в этой категории не были обнаружены как необходимые для вашего оборудования."
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -930,18 +930,18 @@ msgstr "1 водитель"
 #: usr/share/big-kernel-manager/ui/category_page.py:339
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:283
 msgid "1 driver"
-msgstr "1 водитель"
+msgstr "1 драйвер"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/category_page.py:339
 #, python-brace-format
 msgid "{} drivers"
-msgstr "{} драйверы"
+msgstr "{} драйверов"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 341
 #: usr/share/big-kernel-manager/ui/category_page.py:341
 #, python-brace-format
 msgid "{} detected"
-msgstr "{} обнаружен"
+msgstr "{} обнаружено"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: usr/share/big-kernel-manager/ui/category_page.py:343
@@ -971,7 +971,7 @@ msgstr "Не установлено"
 #: usr/share/big-kernel-manager/ui/category_page.py:503
 #, python-brace-format
 msgid "{total} drivers · {detected} detected · {installed} installed"
-msgstr "Драйверов: {всего} · Обнаружено: {обнаружено} · Установлено: {установлено}"
+msgstr "Драйверов: {total} · Обнаружено: {detected} · Установлено: {installed}"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
 #: usr/share/big-kernel-manager/ui/category_page.py:567
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:364
@@ -1059,13 +1059,15 @@ msgstr "Перейти к драйверам"
 msgid ""
 "These drivers are compatible with your hardware. Your devices are working, but these may improve "
 "performance or add features."
-msgstr "{} из {} рекомендуемых пакетов не установлены."
+msgstr ""
+"Эти драйверы совместимы с вашим оборудованием. Ваши устройства работают, но они могут улучшить "
+"производительность или добавить функции."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 376
 #: usr/share/big-kernel-manager/ui/home_page.py:376
 #, python-brace-format
 msgid "All {} recommended video packages for your {} hardware are installed."
-msgstr ""
+msgstr "Все {} рекомендуемые видеопакеты для вашего оборудования {} установлены."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 386
 #: usr/share/big-kernel-manager/ui/home_page.py:386
@@ -1201,8 +1203,8 @@ msgid "Wireless network adapter drivers."
 msgstr "Драйвера адаптера беспроводной сети."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:56
-msgid "Ethernet Drivers"
-msgstr "Драйверы Ethernet"
+msgid "Other Drivers"
+msgstr "Другие драйверы"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
 #: usr/share/big-kernel-manager/ui/window.py:57
@@ -1307,7 +1309,7 @@ msgstr "Дополнительные пакеты прошивок."
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 189
 #: usr/share/big-kernel-manager/ui/window.py:189
 msgid "Home"
-msgstr "Дом"
+msgstr "Главная"
 # File: usr/share/big-kernel-manager/ui/window.py, line: 89
 #: usr/share/big-kernel-manager/ui/window.py:190
 msgid "Kernel"
@@ -1358,7 +1360,7 @@ msgstr "Показать все"
 #: usr/share/big-kernel-manager/ui/window.py:327
 #: usr/share/big-kernel-manager/ui/window.py:329
 msgid "Show all drivers"
-msgstr "Показать всех водителей"
+msgstr "Показать все драйверы"
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
 #: usr/share/big-kernel-manager/ui/window.py:454
 msgid "Hardware detection failed. Check system logs for details."

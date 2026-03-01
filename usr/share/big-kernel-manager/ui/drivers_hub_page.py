@@ -44,7 +44,7 @@ def _init_driver_categories() -> None:
             ("printer", "printer-symbolic", _("Printers")),
             ("printer3d", "printer-symbolic", _("3D Printers")),
             ("scanner", "document-scan-symbolic", _("Scanners")),
-            ("other", "application-x-firmware-symbolic", _("Other Firmware")),
+            ("other", "application-x-firmware-symbolic", _("Other")),
         ]
     )
 

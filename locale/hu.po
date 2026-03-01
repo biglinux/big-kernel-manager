@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 03:40-0300\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -82,12 +82,12 @@ msgstr "AMD + NVIDIA laptopokhoz – NVIDIA 575 sorozat"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 69
 #: usr/share/big-kernel-manager/ui/mesa_data.py:69
 msgid "For AMD + NVIDIA laptops — NVIDIA 570 series"
-msgstr "Optimalizált megjelenítés virtuális gépekhez (VirtualBox, VMware, QEMU/KVM)"
+msgstr "AMD + NVIDIA laptopokhoz – NVIDIA 570 sorozat"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 72
 #: usr/share/big-kernel-manager/ui/mesa_data.py:72
 msgid "For AMD + NVIDIA laptops — NVIDIA 470 (legacy, no Wayland)"
-msgstr "Optimalizált megjelenítés virtuális gépekhez (VirtualBox, VMware, QEMU/KVM)"
+msgstr "AMD + NVIDIA laptopokhoz – NVIDIA 470 (örökölt, nincs Wayland)"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 76
 #: usr/share/big-kernel-manager/ui/mesa_data.py:76
@@ -97,7 +97,7 @@ msgstr "Optimalizált megjelenítés virtuális gépekhez (VirtualBox, VMware, Q
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 90
 #: usr/share/big-kernel-manager/ui/mesa_data.py:90
 msgid "Gaming & 3D Graphics"
-msgstr "32 bites Vulkan (AMD) – Steam, Wine/Proton és régebbi játékokhoz szükséges"
+msgstr "Játék és 3D grafika"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 93
 #: usr/share/big-kernel-manager/ui/mesa_data.py:93
@@ -581,7 +581,7 @@ msgstr "További illesztőprogramok speciális hardverkonfigurációkhoz, péld�
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
 #: usr/share/big-kernel-manager/ui/mesa_page.py:887
 msgid "Compatible"
-msgstr "Illesztőprogram telepítése"
+msgstr "Kompatibilis"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 888
 #: usr/share/big-kernel-manager/ui/mesa_page.py:888
@@ -629,7 +629,7 @@ msgstr "szabadalmazott"
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:363
 #: usr/share/big-kernel-manager/ui/home_page.py:691
 msgid "Install Driver"
-msgstr "Eltávolítás előkészítése..."
+msgstr "Illesztőprogram telepítése"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 967
 #: usr/share/big-kernel-manager/ui/mesa_page.py:967

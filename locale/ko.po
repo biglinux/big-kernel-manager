@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 02:55-0300\n"
 "Language-Team: Korean <ko@li.org>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -154,12 +154,12 @@ msgstr "NVIDIA 독점 드라이버용 VAAPI"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 165
 #: usr/share/big-kernel-manager/ui/mesa_data.py:165
 msgid "VAAPI for Intel (Broadwell / Gen 8 and newer)"
-msgstr "AMD/NVIDIA 오픈 소스용 VDPAU - 레거시 API가 VAAPI 및 Vulkan으로 대체됩니다. 아마도 필요하지 않을 것입니다."
+msgstr "Intel용 VAAPI (Broadwell / Gen 8 이상)"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 172
 #: usr/share/big-kernel-manager/ui/mesa_data.py:172
 msgid "VAAPI for older Intel (Haswell to Coffee Lake / Gen 4–9)"
-msgstr "AMD/NVIDIA 오픈 소스용 VDPAU - 레거시 API가 VAAPI 및 Vulkan으로 대체됩니다. 아마도 필요하지 않을 것입니다."
+msgstr "구형 Intel용 VAAPI (Haswell ~ Coffee Lake / Gen 4–9)"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 179
 #: usr/share/big-kernel-manager/ui/mesa_data.py:179
@@ -171,7 +171,8 @@ msgstr "AMD 및 NVIDIA 오픈 소스용 VAAPI(Nouveau)"
 msgid ""
 "VDPAU for AMD/NVIDIA open-source — legacy API being replaced by VAAPI and Vulkan. Probably not "
 "needed."
-msgstr "AMD/NVIDIA 오픈 소스용 VDPAU - 레거시 API가 VAAPI 및 Vulkan으로 대체됩니다. 아마도 필요하지 않을 것입니다."
+msgstr ""
+"AMD/NVIDIA 오픈 소스용 VDPAU — 레거시 API가 VAAPI 및 Vulkan으로 대체되고 있습니다. 필요하지 않을 수 있습니다."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 197
 #: usr/share/big-kernel-manager/ui/mesa_data.py:197
@@ -473,7 +474,7 @@ msgstr "NVIDIA 독점 드라이버"
 msgid ""
 "Official closed-source driver with the best performance for gaming, AI, and professional workloads. "
 "Only one version can be active at a time."
-msgstr "모든 권장 패키지가 설치됨"
+msgstr "게임, AI 및 전문 작업을 위한 최고의 성능을 제공하는 공식 폐쇄 소스 드라이버입니다. 한 번에 하나의 버전만 활성화할 수 있습니다."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 677
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 680
@@ -611,7 +612,7 @@ msgstr "소유권"
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:363
 #: usr/share/big-kernel-manager/ui/home_page.py:691
 msgid "Install Driver"
-msgstr "드라이버 제거"
+msgstr "드라이버 설치"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 967
 #: usr/share/big-kernel-manager/ui/mesa_page.py:967
@@ -838,14 +839,14 @@ msgstr "최신 기능 및 드라이버"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_card_builder.py, line: 72
 #: usr/share/big-kernel-manager/ui/kernel_card_builder.py:72
 msgid "Always up to date with the newest features and hardware support."
-msgstr "최신 기능과 하드웨어 지원으로 항상 최신 상태를 유지하세요."
+msgstr "항상 최신 기능과 하드웨어 지원이 반영됩니다."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 67
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 277
 #: usr/share/big-kernel-manager/ui/category_page.py:67
 #: usr/share/big-kernel-manager/ui/category_page.py:277
 msgid "Other"
-msgstr "다른"
+msgstr "기타"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 128
 #: usr/share/big-kernel-manager/ui/category_page.py:128
@@ -897,12 +898,12 @@ msgstr "이 범주에는 하드웨어에 필요한 드라이버가 감지되지 
 #: usr/share/big-kernel-manager/ui/category_page.py:339
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:283
 msgid "1 driver"
-msgstr "운전자 1명"
+msgstr "드라이버 1개"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/category_page.py:339
 #, python-brace-format
 msgid "{} drivers"
-msgstr "{} 드라이버"
+msgstr "드라이버 {}개"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 341
 #: usr/share/big-kernel-manager/ui/category_page.py:341
@@ -938,19 +939,19 @@ msgstr "설치되지 않음"
 #: usr/share/big-kernel-manager/ui/category_page.py:503
 #, python-brace-format, fuzzy
 msgid "{total} drivers · {detected} detected · {installed} installed"
-msgstr ""
+msgstr "드라이버 {total}개 · {detected}개 감지됨 · {installed}개 설치됨"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
 #: usr/share/big-kernel-manager/ui/category_page.py:567
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:364
 #: usr/share/big-kernel-manager/ui/home_page.py:692
 #, python-brace-format
 msgid "Install {}?"
-msgstr "설치하다 {}?"
+msgstr "{}을(를) 설치하시겠습니까?"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
 #: usr/share/big-kernel-manager/ui/category_page.py:605
 #, python-brace-format
 msgid "Remove {}?"
-msgstr "제거하다 {}?"
+msgstr "{}을(를) 제거하시겠습니까?"
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
 #: usr/share/big-kernel-manager/ui/category_page.py:653
 msgid "Operation completed successfully."
@@ -1000,7 +1001,7 @@ msgstr "귀하의 하드웨어에 권장됩니다"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 285
 #: usr/share/big-kernel-manager/ui/home_page.py:197
 msgid "Install recommended"
-msgstr "설치 권장"
+msgstr "권장 설치"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 227
 #: usr/share/big-kernel-manager/ui/home_page.py:227
@@ -1011,7 +1012,7 @@ msgstr "호환 가능한 드라이버 사용 가능"
 #: usr/share/big-kernel-manager/ui/home_page.py:273
 #, python-brace-format
 msgid "{} — no driver loaded, install {} for this device"
-msgstr "{} — 드라이버가 로드되지 않았습니다. 이 기기에 대해 {}를 설치하세요."
+msgstr "{} — 드라이버가 로드되지 않았습니다. 이 장치에 대해 {}을(를) 설치하세요."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/home_page.py:277
 msgid "Go to drivers"
@@ -1065,10 +1066,7 @@ msgstr "설치된 패키지 숨기기"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 620
 #: usr/share/big-kernel-manager/ui/home_page.py:620
 msgid "Install Recommended Packages"
-msgstr ""
-"<b>{}</b> 패키지를 설치하시겠습니까?\n"
-"\n"
-"{}"
+msgstr "권장 패키지 설치"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 623
 #: usr/share/big-kernel-manager/ui/home_page.py:623
@@ -1090,7 +1088,7 @@ msgstr "모두 설치"
 #: usr/share/big-kernel-manager/ui/home_page.py:642
 #, python-brace-format
 msgid "Installing {} packages"
-msgstr "{} 패키지 설치"
+msgstr "{} 패키지 설치 중"
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -1104,7 +1102,7 @@ msgstr "패키지 다운로드 중..."
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 653
 #: usr/share/big-kernel-manager/ui/home_page.py:653
 msgid "Installing recommended packages"
-msgstr "모든 권장 패키지가 성공적으로 설치되었습니다!"
+msgstr "권장 패키지 설치 중"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 670
 #: usr/share/big-kernel-manager/ui/home_page.py:670
@@ -1122,7 +1120,7 @@ msgstr ""
 #: usr/share/big-kernel-manager/ui/home_page.py:732
 #, python-brace-format
 msgid "{} installed successfully!"
-msgstr "{}가 성공적으로 설치되었습니다!"
+msgstr "{}이(가) 성공적으로 설치되었습니다!"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
 #: usr/share/big-kernel-manager/ui/home_page.py:740
 #, python-brace-format
@@ -1155,7 +1153,7 @@ msgstr "비디오/GPU"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 45
 #: usr/share/big-kernel-manager/ui/window.py:45
 msgid "Mesa, NVIDIA, and GPU drivers."
-msgstr "메사, NVIDIA 및 GPU 드라이버."
+msgstr "Mesa, NVIDIA 및 GPU 드라이버."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:50
 msgid "Wi-Fi Drivers"
@@ -1173,7 +1171,7 @@ msgstr "이더넷 드라이버"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
 #: usr/share/big-kernel-manager/ui/window.py:57
 msgid "Wired network adapter drivers."
-msgstr "블루투스 어댑터 드라이버."
+msgstr "유선 네트워크 어댑터 드라이버."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:62
 msgid "Bluetooth Drivers"
@@ -1273,7 +1271,7 @@ msgstr "추가 펌웨어 패키지."
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 189
 #: usr/share/big-kernel-manager/ui/window.py:189
 msgid "Home"
-msgstr "변경 사항을 적용하려면 시스템을 재부팅하는 것이 좋습니다."
+msgstr "홈"
 # File: usr/share/big-kernel-manager/ui/window.py, line: 89
 #: usr/share/big-kernel-manager/ui/window.py:190
 msgid "Kernel"

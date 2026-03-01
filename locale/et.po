@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 03:20-0300\n"
 "Language-Team: Estonian <et@li.org>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -107,12 +107,10 @@ msgstr "Vulkani ja OpenGL-i raamatukogud on olulised mängude, Steami, Wine/Prot
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 99
 #: usr/share/big-kernel-manager/ui/mesa_data.py:99
 msgid "Vulkan for AMD Radeon GPUs"
-msgstr "32-bitine Vulkan (AMD) – vajalik Steami, Wine/Protoni ja vanemate mängude jaoks"
-# 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 106
-#: usr/share/big-kernel-manager/ui/mesa_data.py:106
+msgstr "Vulkan AMD Radeon GPU-de jaoks"
+
 msgid "32-bit Vulkan (AMD) — needed by Steam, Wine/Proton and older games"
-msgstr "32-bitine Vulkan (AMD) – vajalik Steami, Wine/Protoni ja vanemate mängude jaoks"
+msgstr "32-bitine Vulkan (AMD) — vajalik Steami, Wine/Protoni ja vanemate mängude jaoks"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 114
 #: usr/share/big-kernel-manager/ui/mesa_data.py:114
@@ -122,7 +120,7 @@ msgstr "Vulkan Inteli GPU-de jaoks"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 121
 #: usr/share/big-kernel-manager/ui/mesa_data.py:121
 msgid "32-bit Vulkan (Intel) — needed by Steam, Wine/Proton and older games"
-msgstr "Avatud lähtekoodiga Vulkan NVIDIA jaoks (Nouveau) – patenteeritud draiverit pole vaja"
+msgstr "32-bitine Vulkan (Intel) — vajalik Steami, Wine/Protoni ja vanemate mängude jaoks"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 130
 #: usr/share/big-kernel-manager/ui/mesa_data.py:130
@@ -511,7 +509,7 @@ msgstr "Mõned paketid pole installitud"
 #: usr/share/big-kernel-manager/ui/mesa_page.py:747
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1163
 msgid "Included"
-msgstr "Täiendavad draiverid spetsiaalsete riistvarakonfiguratsioonide (nt virtuaalmasinate) jaoks."
+msgstr "Kaasas"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 754
 #: usr/share/big-kernel-manager/ui/mesa_page.py:754
@@ -580,7 +578,7 @@ msgstr "Täiendavad draiverid spetsiaalsete riistvarakonfiguratsioonide (nt virt
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
 #: usr/share/big-kernel-manager/ui/mesa_page.py:887
 msgid "Compatible"
-msgstr "Installige draiver"
+msgstr "Ühilduv"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 888
 #: usr/share/big-kernel-manager/ui/mesa_page.py:888
@@ -755,10 +753,10 @@ msgstr ""
 "Draiveri töö ebaõnnestus.\n"
 "Täpsemalt kontrollige terminali väljundit."
 # 
-# File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1146
+# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 1146
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1146
 msgid "Already included in your Mesa version"
-msgstr "See on teie Mesa versioonis juba lisatud"
+msgstr "Juba lisatud teie Mesa versiooni"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1188

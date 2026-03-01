@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 02:40-0300\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -287,7 +287,7 @@ msgstr "Szczegóły techniczne"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Terminal output"
-msgstr "Sterowniki Wi-Fi"
+msgstr "Wyjście terminala"
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -397,7 +397,7 @@ msgstr ""
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 183
 #: usr/share/big-kernel-manager/ui/mesa_page.py:183
 msgid "Mesa Variant"
-msgstr "• <b>{}</b> — zastrzeżony sterownik NVIDIA (nie Mesa)"
+msgstr "Wariant Mesa"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 194
 #: usr/share/big-kernel-manager/ui/mesa_page.py:194
@@ -516,7 +516,7 @@ msgstr "Wszystkie zalecane pakiety zainstalowane"
 #: usr/share/big-kernel-manager/ui/mesa_page.py:686
 #: usr/share/big-kernel-manager/ui/mesa_page.py:689
 msgid "Some packages not installed"
-msgstr "Dołączony"
+msgstr "Niektóre pakiety nie są zainstalowane"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 747
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1163
@@ -748,7 +748,7 @@ msgstr "zainstalowany"
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1088
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1270
 msgid "removed"
-msgstr "REMOVED"
+msgstr "usunięto"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1091
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1091
@@ -818,7 +818,7 @@ msgstr "Usuwanie pakietu..."
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1272
 #, python-brace-format
 msgid "{} was {} successfully!"
-msgstr ""
+msgstr "{} został pomyślnie {}!"
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1277
 msgid ""
@@ -1200,16 +1200,16 @@ msgstr "Sterowniki karty sieci bezprzewodowej."
 #: usr/share/big-kernel-manager/ui/window.py:45
 msgid "Mesa, NVIDIA, and GPU drivers."
 msgstr "Sterowniki Mesa, NVIDIA i GPU."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 50
 #: usr/share/big-kernel-manager/ui/window.py:50
 msgid "Wi-Fi Drivers"
-msgstr "Sterowniki Ethernet"
+msgstr "Sterowniki Wi-Fi"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
 #: usr/share/big-kernel-manager/ui/window.py:51
 msgid "Wireless network adapter drivers."
 msgstr "Sterowniki karty sieci bezprzewodowej."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 56
 #: usr/share/big-kernel-manager/ui/window.py:56
 msgid "Ethernet Drivers"
 msgstr "Sterowniki Ethernet"
@@ -1218,7 +1218,7 @@ msgstr "Sterowniki Ethernet"
 #: usr/share/big-kernel-manager/ui/window.py:57
 msgid "Wired network adapter drivers."
 msgstr "Sterowniki karty sieci przewodowej."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 62
 #: usr/share/big-kernel-manager/ui/window.py:62
 msgid "Bluetooth Drivers"
 msgstr "Sterowniki Bluetooth"
@@ -1265,13 +1265,13 @@ msgstr "Oprogramowanie sprzętowe kamery internetowej."
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 86
 #: usr/share/big-kernel-manager/ui/window.py:86
 msgid "Touchscreen Firmware"
-msgstr "Oprogramowanie sprzętowe urządzenia z ekranem dotykowym."
+msgstr "Oprogramowanie sprzętowe ekranu dotykowego"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 87
 #: usr/share/big-kernel-manager/ui/window.py:87
 msgid "Touchscreen device firmware."
 msgstr "Oprogramowanie sprzętowe urządzenia z ekranem dotykowym."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 92
 #: usr/share/big-kernel-manager/ui/window.py:92
 msgid "Printer Drivers"
 msgstr "Sterowniki drukarki"
@@ -1290,7 +1290,7 @@ msgstr "Oprogramowanie sprzętowe drukarki 3D"
 #: usr/share/big-kernel-manager/ui/window.py:99
 msgid "3D printer firmware."
 msgstr "Oprogramowanie sprzętowe drukarki 3D."
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 104
 #: usr/share/big-kernel-manager/ui/window.py:104
 msgid "Scanner Drivers"
 msgstr "Sterowniki skanera"
@@ -1298,7 +1298,7 @@ msgstr "Sterowniki skanera"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 105
 #: usr/share/big-kernel-manager/ui/window.py:105
 msgid "Scanner drivers and SANE backends."
-msgstr "Inne oprogramowanie sprzętowe"
+msgstr "Sterowniki skanera i zaplecza SANE."
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -1317,12 +1317,12 @@ msgstr "Dodatkowe pakiety oprogramowania sprzętowego."
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 189
 #: usr/share/big-kernel-manager/ui/window.py:189
 msgid "Home"
-msgstr "Dom"
-# File: usr/share/big-kernel-manager/ui/window.py, line: 89
+msgstr "Strona główna"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 190
 #: usr/share/big-kernel-manager/ui/window.py:190
 msgid "Kernel"
 msgstr "Jądro"
-# File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 191
 #: usr/share/big-kernel-manager/ui/window.py:191
 msgid "Video Driver"
 msgstr "Sterownik wideo"
@@ -1341,8 +1341,8 @@ msgstr "Aby zastosować zmiany, zaleca się ponowne uruchomienie systemu."
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 269
 #: usr/share/big-kernel-manager/ui/window.py:269
 msgid "Content"
-msgstr "Treść"
-# File: usr/share/big-kernel-manager/ui/window.py, line: 129
+msgstr "Zawartość"
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 316
 #: usr/share/big-kernel-manager/ui/window.py:316
 msgid "Menu"
 msgstr "Menu"
@@ -1351,10 +1351,10 @@ msgstr "Menu"
 #: usr/share/big-kernel-manager/ui/window.py:318
 msgid "Application menu"
 msgstr "Menu aplikacji"
-# File: usr/share/big-kernel-manager/ui/window.py, line: 134
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 321
 #: usr/share/big-kernel-manager/ui/window.py:321
 msgid "About"
-msgstr "O"
+msgstr "O programie"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 326
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 558
@@ -1369,7 +1369,7 @@ msgstr "Pokaż wszystko"
 #: usr/share/big-kernel-manager/ui/window.py:329
 msgid "Show all drivers"
 msgstr "Pokaż wszystkie sterowniki"
-# File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
+# File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 454
 #: usr/share/big-kernel-manager/ui/window.py:454
 msgid "Hardware detection failed. Check system logs for details."
 msgstr "Wykrycie sprzętu nie powiodło się. Sprawdź dzienniki systemowe, aby uzyskać szczegółowe informacje."
@@ -1383,12 +1383,12 @@ msgstr "Przestarzałe jądro: {} — nie otrzymuje już aktualizacji zabezpiecze
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 538
 #: usr/share/big-kernel-manager/ui/window.py:538
 msgid "Manage"
-msgstr "Zarządzać"
+msgstr "Zarządzaj"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 558
 #: usr/share/big-kernel-manager/ui/window.py:558
 msgid "Show detected"
-msgstr "Pokaż wykryto"
+msgstr "Pokaż wykryte"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 37
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:37
@@ -1398,7 +1398,7 @@ msgstr "Wi-Fi"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 38
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:38
 msgid "Ethernet"
-msgstr "Ethernetu"
+msgstr "Ethernet"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 39
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:39
@@ -1423,7 +1423,7 @@ msgstr "Ekran dotykowy"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44
 msgid "Printers"
-msgstr "Drukarki 3D"
+msgstr "Drukarki"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 45
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:45

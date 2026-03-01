@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 03:10-0300\n"
 "Language-Team: Danish <da@li.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -151,7 +151,7 @@ msgstr ""
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 159
 #: usr/share/big-kernel-manager/ui/mesa_data.py:159
 msgid "VAAPI for NVIDIA proprietary driver"
-msgstr "VAAPI til Intel (Broadwell / Gen 8 og nyere)"
+msgstr "VAAPI til NVIDIA proprietær driver"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_data.py, line: 165
 #: usr/share/big-kernel-manager/ui/mesa_data.py:165
@@ -460,10 +460,7 @@ msgstr "Ansøgning {}"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
 #: usr/share/big-kernel-manager/ui/mesa_page.py:482
 msgid "Preparing to apply driver..."
-msgstr ""
-"Videodriver blev ændret!\n"
-"\n"
-"Du skal genstarte dit system for at den nye driver bliver aktiv."
+msgstr "Forbereder at anvende driver..."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
 #: usr/share/big-kernel-manager/ui/mesa_page.py:503
 msgid ""
@@ -581,7 +578,7 @@ msgstr "Andre drivere"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 808
 #: usr/share/big-kernel-manager/ui/mesa_page.py:808
 msgid "Additional drivers for special hardware configurations like virtual machines."
-msgstr "Open Source"
+msgstr "Yderligere drivere til specielle hardwarekonfigurationer som virtuelle maskiner."
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
 #: usr/share/big-kernel-manager/ui/mesa_page.py:887
 msgid "Compatible"
@@ -600,7 +597,7 @@ msgstr "Proprietær"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 895
 #: usr/share/big-kernel-manager/ui/mesa_page.py:895
 msgid "⚠ No Wayland support · No longer maintained"
-msgstr "Skift fra {} til {}"
+msgstr "⚠ Ingen Wayland-understøttelse · Vedligeholdes ikke længere"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 920
 #: usr/share/big-kernel-manager/ui/mesa_page.py:920
@@ -626,10 +623,7 @@ msgstr "open source"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
 #: usr/share/big-kernel-manager/ui/mesa_page.py:961
 msgid "proprietary"
-msgstr ""
-"Installer <b>{}</b> ({} driver)?\n"
-"\n"
-"En systemgenstart kan være påkrævet efter installationen."
+msgstr "proprietær"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 299
 #: usr/share/big-kernel-manager/ui/mesa_page.py:963
 #: usr/share/big-kernel-manager/ui/category_page.py:566
@@ -931,7 +925,7 @@ msgstr "Ingen drivere i denne kategori blev fundet som nødvendige for din hardw
 #: usr/share/big-kernel-manager/ui/category_page.py:339
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:283
 msgid "1 driver"
-msgstr "1 chauffør"
+msgstr "1 driver"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/category_page.py:339
 #, python-brace-format
@@ -1053,7 +1047,7 @@ msgstr "{} — ingen driver indlæst, installer {} for denne enhed"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/home_page.py:277
 msgid "Go to drivers"
-msgstr "Gå til chauffører"
+msgstr "Gå til drivere"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 287
 #: usr/share/big-kernel-manager/ui/home_page.py:287
@@ -1152,7 +1146,7 @@ msgstr "Alle anbefalede pakker er installeret med succes!"
 msgid ""
 "Package installation failed.\n"
 "Check the terminal output for details."
-msgstr "{} installeret med succes!"
+msgstr "Pakkeinstallation mislykkedes.\nTjek terminaludgangen for detaljer."
 # File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
 #: usr/share/big-kernel-manager/ui/home_page.py:732
 #, python-brace-format
@@ -1231,7 +1225,7 @@ msgstr "DVB / TV"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 69
 #: usr/share/big-kernel-manager/ui/window.py:69
 msgid "Digital TV tuner firmware."
-msgstr "Firmware til lydenhed."
+msgstr "Digital TV tuner firmware."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 74
 #: usr/share/big-kernel-manager/ui/window.py:74
@@ -1332,7 +1326,7 @@ msgstr "En systemgenstart anbefales for at anvende ændringer."
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 269
 #: usr/share/big-kernel-manager/ui/window.py:269
 msgid "Content"
-msgstr "Tilfreds"
+msgstr "Indhold"
 # File: usr/share/big-kernel-manager/ui/window.py, line: 129
 #: usr/share/big-kernel-manager/ui/window.py:316
 msgid "Menu"
@@ -1359,7 +1353,7 @@ msgstr "Vis alle"
 #: usr/share/big-kernel-manager/ui/window.py:327
 #: usr/share/big-kernel-manager/ui/window.py:329
 msgid "Show all drivers"
-msgstr "Vis alle chauffører"
+msgstr "Vis alle drivere"
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
 #: usr/share/big-kernel-manager/ui/window.py:454
 msgid "Hardware detection failed. Check system logs for details."
@@ -1374,7 +1368,7 @@ msgstr "Forældet kerne: {} — modtager ikke længere sikkerhedsopdateringer"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 538
 #: usr/share/big-kernel-manager/ui/window.py:538
 msgid "Manage"
-msgstr "Styre"
+msgstr "Administrer"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 558
 #: usr/share/big-kernel-manager/ui/window.py:558
@@ -1409,7 +1403,7 @@ msgstr "Webcam"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43
 msgid "Touchscreen"
-msgstr "Printere"
+msgstr "Touchskærm"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 44
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:44

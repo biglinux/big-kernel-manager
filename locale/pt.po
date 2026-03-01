@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
-"Language-Team: Portuguese <pt@li.org>\n"
-"Language: pt\n"
+"PO-Revision-Date: 2026-03-01 02:15-0300\n"
+"Language-Team: Portuguese (Brazil) <pt_BR@li.org>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -355,7 +355,7 @@ msgstr "Falha"
 #: usr/share/big-kernel-manager/core/base_manager.py:230
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:407
 msgid "Operation cancelled by user."
-msgstr "Operação cancelada pelo utilizador."
+msgstr "Operação cancelada pelo usuário."
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 334
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:408
 msgid "Cancelled"
@@ -363,7 +363,7 @@ msgstr "Cancelado"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/mesa_page.py:115
 msgid "Video Drivers"
-msgstr "Controladores de vídeo"
+msgstr "Drivers de Vídeo"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 127
 #: usr/share/big-kernel-manager/ui/mesa_page.py:127
@@ -412,7 +412,7 @@ msgstr "• <b>{}</b> — driver Mesa"
 #: usr/share/big-kernel-manager/ui/kernel_page.py:165
 #: usr/share/big-kernel-manager/ui/mesa_page.py:319
 msgid "Error"
-msgstr "Erro: {}"
+msgstr "Erro"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: usr/share/big-kernel-manager/ui/mesa_page.py:415
 #: usr/share/big-kernel-manager/ui/mesa_page.py:422
@@ -461,7 +461,7 @@ msgstr "Aplicando {}"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
 #: usr/share/big-kernel-manager/ui/mesa_page.py:482
 msgid "Preparing to apply driver..."
-msgstr "A preparar para aplicar{}o controlador..."
+msgstr "Preparando para aplicar o driver..."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 337
 #: usr/share/big-kernel-manager/ui/mesa_page.py:503
 msgid ""
@@ -478,7 +478,7 @@ msgid ""
 "Driver change failed.\n"
 "Check the terminal output for details."
 msgstr ""
-"A alteração do controlador falhou.\n"
+"A alteração do driver falhou.\n"
 "Verifique a saída do terminal para obter detalhes."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 589
@@ -574,7 +574,7 @@ msgstr "Instalação {}"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/mesa_page.py:796
 msgid "Other Drivers"
-msgstr "Controladores de vídeo"
+msgstr "Outros Drivers"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 808
 #: usr/share/big-kernel-manager/ui/mesa_page.py:808
@@ -583,7 +583,7 @@ msgstr "Drivers adicionais para configurações de hardware especiais como máqu
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 305
 #: usr/share/big-kernel-manager/ui/mesa_page.py:887
 msgid "Compatible"
-msgstr "Concluído!"
+msgstr "Compatível"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 888
 #: usr/share/big-kernel-manager/ui/mesa_page.py:888
@@ -631,7 +631,7 @@ msgstr "proprietário"
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:363
 #: usr/share/big-kernel-manager/ui/home_page.py:691
 msgid "Install Driver"
-msgstr "Instalar o kernel"
+msgstr "Instalar Driver"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 967
 #: usr/share/big-kernel-manager/ui/mesa_page.py:967
@@ -656,12 +656,12 @@ msgstr ""
 #: usr/share/big-kernel-manager/ui/home_page.py:723
 #, python-brace-format
 msgid "Installing {}"
-msgstr "Instalação {}"
+msgstr "Instalando {}"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 327
 #: usr/share/big-kernel-manager/ui/kernel_page.py:689
 #: usr/share/big-kernel-manager/ui/mesa_page.py:986
 msgid "Preparing installation..."
-msgstr "A preparar a instalação{}do kernel..."
+msgstr "Preparando instalação..."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1001
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1001
@@ -696,7 +696,7 @@ msgstr "Substituindo driver NVIDIA atual..."
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1042
 #: usr/share/big-kernel-manager/ui/category_page.py:604
 msgid "Remove Driver"
-msgstr "Remover Kernel"
+msgstr "Remover Driver"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1046
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1046
@@ -723,7 +723,7 @@ msgstr "Removendo {}"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1064
 msgid "Preparing removal..."
-msgstr "A preparar para remover{}o kernel..."
+msgstr "Preparando remoção..."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 190
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1084
 msgid "activated"
@@ -733,13 +733,13 @@ msgstr "Ativo"
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1086
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1270
 msgid "installed"
-msgstr "Instalar"
+msgstr "instalado"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 267
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1088
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1270
 msgid "removed"
-msgstr "Remover"
+msgstr "removido"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 1091
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1091
@@ -802,7 +802,7 @@ msgstr "Remover <b>{}</b>?"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1250
 msgid "Removing package..."
-msgstr "Removendo {}"
+msgstr "Removendo pacote..."
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
 #: usr/share/big-kernel-manager/ui/mesa_page.py:1272
 #, fuzzy, python-brace-format
@@ -927,7 +927,7 @@ msgstr "1 driver"
 #: usr/share/big-kernel-manager/ui/category_page.py:339
 #, fuzzy, python-brace-format
 msgid "{} drivers"
-msgstr "Controladores de vídeo"
+msgstr "{} drivers"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 341
 #: usr/share/big-kernel-manager/ui/category_page.py:341
@@ -939,7 +939,7 @@ msgstr "{} detectado"
 #: usr/share/big-kernel-manager/ui/category_page.py:343
 #, fuzzy, python-brace-format
 msgid "{} installed"
-msgstr "Instalar"
+msgstr "{} instalado"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 405
 #: usr/share/big-kernel-manager/ui/category_page.py:405
@@ -952,12 +952,12 @@ msgstr "Detectado"
 #: usr/share/big-kernel-manager/ui/home_page.py:503
 #: usr/share/big-kernel-manager/ui/home_page.py:734
 msgid "Installed"
-msgstr "Instalar"
+msgstr "Instalado"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: usr/share/big-kernel-manager/ui/category_page.py:409
 msgid "Not installed"
-msgstr "Instalar"
+msgstr "Não instalado"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/category_page.py, line: 503
 #: usr/share/big-kernel-manager/ui/category_page.py:503
@@ -970,12 +970,12 @@ msgstr "{total} drivers · {detected} detectados · {installed} instalados"
 #: usr/share/big-kernel-manager/ui/home_page.py:692
 #, fuzzy, python-brace-format
 msgid "Install {}?"
-msgstr "Instalação {}"
+msgstr "Instalar {}?"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 394
 #: usr/share/big-kernel-manager/ui/category_page.py:605
 #, fuzzy, python-brace-format
 msgid "Remove {}?"
-msgstr "Removendo {}"
+msgstr "Remover {}?"
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
 #: usr/share/big-kernel-manager/ui/category_page.py:653
 msgid "Operation completed successfully."
@@ -1001,7 +1001,7 @@ msgstr ""
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 259
 #: usr/share/big-kernel-manager/ui/home_page.py:83
 msgid "What are Drivers?"
-msgstr "Alterar Driver de Vídeo"
+msgstr "O que são Drivers?"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 85
 #: usr/share/big-kernel-manager/ui/home_page.py:85
@@ -1044,7 +1044,7 @@ msgstr "{} — nenhum driver carregado, instale {} para este dispositivo"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/home_page.py:277
 msgid "Go to drivers"
-msgstr "Controladores de vídeo"
+msgstr "Ir para drivers"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 287
 #: usr/share/big-kernel-manager/ui/home_page.py:287
@@ -1113,12 +1113,12 @@ msgstr ""
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: usr/share/big-kernel-manager/ui/home_page.py:629
 msgid "Install All"
-msgstr "Instalar"
+msgstr "Instalar Tudo"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
 #: usr/share/big-kernel-manager/ui/home_page.py:642
 #, fuzzy, python-brace-format
 msgid "Installing {} packages"
-msgstr "Instalação {}"
+msgstr "Instalando {} pacotes"
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -1144,7 +1144,7 @@ msgid ""
 "Package installation failed.\n"
 "Check the terminal output for details."
 msgstr ""
-"A instalação do kernel falhou.\n"
+"A instalação do pacote falhou.\n"
 "Verifique a saída do terminal para obter detalhes."
 # File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
 #: usr/share/big-kernel-manager/ui/home_page.py:732
@@ -1169,7 +1169,7 @@ msgstr "Aviso"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/home_page.py, line: 770
 #: usr/share/big-kernel-manager/ui/home_page.py:770
 msgid "Information"
-msgstr ""
+msgstr "Informação"
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
@@ -1187,7 +1187,7 @@ msgstr "Drivers Mesa, NVIDIA e GPU."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:50
 msgid "Wi-Fi Drivers"
-msgstr "Controladores de vídeo"
+msgstr "Drivers de Wi-Fi"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
 #: usr/share/big-kernel-manager/ui/window.py:51
@@ -1196,7 +1196,7 @@ msgstr "Drivers de adaptador de rede sem fio (Wireless)."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:56
 msgid "Ethernet Drivers"
-msgstr "Controladores de vídeo"
+msgstr "Drivers de Ethernet"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 57
 #: usr/share/big-kernel-manager/ui/window.py:57
@@ -1205,7 +1205,7 @@ msgstr "Drivers de adaptador de rede cabeada."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:62
 msgid "Bluetooth Drivers"
-msgstr "Controladores de vídeo"
+msgstr "Drivers de Bluetooth"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 63
 #: usr/share/big-kernel-manager/ui/window.py:63
@@ -1258,7 +1258,7 @@ msgstr "Firmware de dispositivo de touchscreen."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:92
 msgid "Printer Drivers"
-msgstr "Controladores de vídeo"
+msgstr "Drivers de Impressora"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 93
 #: usr/share/big-kernel-manager/ui/window.py:93
@@ -1277,7 +1277,7 @@ msgstr "Firmware de impressora 3D."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:104
 msgid "Scanner Drivers"
-msgstr "Controladores de vídeo"
+msgstr "Drivers de Scanner"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 105
 #: usr/share/big-kernel-manager/ui/window.py:105
@@ -1309,7 +1309,7 @@ msgstr "Kernel"
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:191
 msgid "Video Driver"
-msgstr "Controladores de vídeo"
+msgstr "Driver de Vídeo"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 218
 #: usr/share/big-kernel-manager/ui/window.py:218
@@ -1452,13 +1452,13 @@ msgstr "{n} drivers"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:288
 msgid "1 installed"
-msgstr "Instalar"
+msgstr "1 instalado"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 280
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 307
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:290
 #, fuzzy, python-brace-format
 msgid "{n} installed"
-msgstr "Instalar"
+msgstr "{n} instalados"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 320
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:320
@@ -1473,7 +1473,7 @@ msgstr "Instale drivers recomendados para melhor suporte a hardware."
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 279
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:411
 msgid "Driver installed successfully."
-msgstr "Operação concluída com sucesso!"
+msgstr "Driver instalado com sucesso."
 # File: usr/share/big-kernel-manager/ui/progress_dialog.py, line: 290
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:415
 msgid "Installation failed. Check logs for details."
@@ -1485,7 +1485,7 @@ msgstr "Kernels instalados"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
 #: usr/share/big-kernel-manager/ui/kernel_page.py:119
 msgid "Remove all obsolete kernels"
-msgstr "Remover núcleo {}"
+msgstr "Remover todos os kernels obsoletos"
 # File: usr/share/big-kernel-manager/ui/window.py, line: 89
 #: usr/share/big-kernel-manager/ui/kernel_page.py:261
 msgid "Kernel in use"
@@ -1509,7 +1509,7 @@ msgstr "Não recebe mais atualizações de segurança"
 #: usr/share/big-kernel-manager/ui/kernel_page.py:430
 #, python-brace-format
 msgid "Remove kernel {}"
-msgstr "Remover núcleo {}"
+msgstr "Remover kernel {}"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 416
 #: usr/share/big-kernel-manager/ui/kernel_page.py:416
@@ -1628,7 +1628,7 @@ msgstr "Os seguintes pacotes serão removidos:"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 395
 #: usr/share/big-kernel-manager/ui/kernel_page.py:778
 msgid "Preparing removal…"
-msgstr "A preparar para remover{}o kernel..."
+msgstr "Preparando remoção…"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
 #: usr/share/big-kernel-manager/ui/kernel_page.py:799
 msgid "Kernel removed successfully."
@@ -1644,7 +1644,7 @@ msgstr ""
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 367
 #: usr/share/big-kernel-manager/ui/kernel_page.py:816
 msgid "Remove Obsolete Kernels"
-msgstr "Remover Kernel"
+msgstr "Remover Kernels Obsoletos"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 820
 #: usr/share/big-kernel-manager/ui/kernel_page.py:820
@@ -1665,12 +1665,12 @@ msgstr ""
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 375
 #: usr/share/big-kernel-manager/ui/kernel_page.py:825
 msgid "Remove All"
-msgstr "Remover"
+msgstr "Remover Tudo"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 278
 #: usr/share/big-kernel-manager/ui/kernel_page.py:848
 #, fuzzy, python-brace-format
 msgid "Removing kernel {} ({}/{})..."
-msgstr "Remover núcleo {}"
+msgstr "Removendo kernel {} ({}/{})..."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 866
 #: usr/share/big-kernel-manager/ui/kernel_page.py:866
@@ -1680,7 +1680,7 @@ msgstr "Falhou ao remover {}. Parando."
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 451
 #: usr/share/big-kernel-manager/ui/kernel_page.py:877
 msgid "All obsolete kernels removed successfully."
-msgstr "O kernel foi removido com sucesso."
+msgstr "Todos os kernels obsoletos foram removidos com sucesso."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 916
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/kernel_page.py, line: 919
@@ -1699,12 +1699,12 @@ msgstr "Driver não encontrado: {}"
 #: usr/share/big-kernel-manager/core/mesa_manager.py:151
 #, python-brace-format
 msgid "Applying {} driver..."
-msgstr "Aplicando{}driver..."
+msgstr "Aplicando driver {}..."
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 335
 #: usr/share/big-kernel-manager/core/mesa_manager.py:153
 #, fuzzy, python-brace-format
 msgid "Starting {} driver installation..."
-msgstr "Iniciando a instalação do{}kernel..."
+msgstr "Iniciando a instalação do driver {}..."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 161
 #: usr/share/big-kernel-manager/core/mesa_manager.py:161
@@ -1714,13 +1714,13 @@ msgstr "Verificando pacotes conflitantes..."
 #: usr/share/big-kernel-manager/core/mesa_manager.py:173
 #, fuzzy, python-brace-format
 msgid "Removing conflicts: {}"
-msgstr "Removendo {}"
+msgstr "Removendo conflitos: {}"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 178
 #: usr/share/big-kernel-manager/core/mesa_manager.py:178
 #, python-brace-format
 msgid "Checking {} packages..."
-msgstr "Verificando pacotes doc {}..."
+msgstr "Verificando pacotes {}..."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 187
 #: usr/share/big-kernel-manager/core/mesa_manager.py:187
@@ -1736,7 +1736,7 @@ msgstr "❌ Nenhum pacote disponível para instalar."
 #: usr/share/big-kernel-manager/core/mesa_manager.py:197
 #, fuzzy, python-brace-format
 msgid "Installing: {}"
-msgstr "Instalação {}"
+msgstr "Instalando: {}"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/core/mesa_manager.py, line: 205
 #: usr/share/big-kernel-manager/core/mesa_manager.py:205
@@ -1756,11 +1756,11 @@ msgstr "❌ {} falhou (código de saída: {})"
 #: usr/share/big-kernel-manager/core/mesa_manager.py:249
 #, fuzzy, python-brace-format
 msgid "Installing {} driver..."
-msgstr "Aplicando{}driver..."
+msgstr "Instalando driver {}..."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 414
 #: usr/share/big-kernel-manager/core/mesa_manager.py:282
 msgid "Failed to apply driver."
-msgstr "A preparar para aplicar{}o controlador..."
+msgstr "Falha ao aplicar o driver."
 # File: usr/share/big-kernel-manager/core/base_manager.py, line: 197
 #: usr/share/big-kernel-manager/core/mesa_manager.py:285
 #, fuzzy, python-brace-format
@@ -1835,7 +1835,7 @@ msgstr "❌ A operação foi cancelada."
 #: usr/share/big-kernel-manager/core/base_manager.py:285
 #, python-brace-format
 msgid "{}  complete!"
-msgstr "completo!"
+msgstr "{} completo!"
 # File: usr/share/big-kernel-manager/core/base_manager.py, line: 187
 #: usr/share/big-kernel-manager/core/base_manager.py:289
 #, fuzzy, python-brace-format
@@ -1949,7 +1949,7 @@ msgstr "Executando hooks pós-transação..."
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
 #: usr/share/big-kernel-manager/core/base_manager.py:393
 msgid "Installing packages..."
-msgstr "Instalação {}"
+msgstr "Instalando pacotes..."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/core/base_manager.py, line: 394
 #: usr/share/big-kernel-manager/core/base_manager.py:394

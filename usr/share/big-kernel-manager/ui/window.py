@@ -47,19 +47,19 @@ _CATEGORY_DEFS = [
     (
         "wifi",
         "network-wireless-symbolic",
-        _("Wi-Fi Drivers"),
+        _("Wi-Fi"),
         _("Wireless network adapter drivers."),
     ),
     (
         "ethernet",
         "network-wired-symbolic",
-        _("Ethernet Drivers"),
+        _("Ethernet"),
         _("Wired network adapter drivers."),
     ),
     (
         "bluetooth",
         "bluetooth-symbolic",
-        _("Bluetooth Drivers"),
+        _("Bluetooth"),
         _("Bluetooth adapter drivers."),
     ),
     (
@@ -71,43 +71,43 @@ _CATEGORY_DEFS = [
     (
         "sound",
         "audio-speakers-symbolic",
-        _("Audio Firmware"),
+        _("Audio"),
         _("Audio device firmware."),
     ),
     (
         "webcam",
         "camera-web-symbolic",
-        _("Webcam Firmware"),
+        _("Webcam"),
         _("Webcam device firmware."),
     ),
     (
         "touchscreen",
         "input-touchpad-symbolic",
-        _("Touchscreen Firmware"),
+        _("Touchscreen"),
         _("Touchscreen device firmware."),
     ),
     (
         "printer",
         "printer-symbolic",
-        _("Printer Drivers"),
+        _("Printers"),
         _("Printer drivers and support packages."),
     ),
     (
         "printer3d",
         "printer-symbolic",
-        _("3D Printer Firmware"),
+        _("3D Printers"),
         _("3D printer firmware."),
     ),
     (
         "scanner",
         "document-scan-symbolic",
-        _("Scanner Drivers"),
+        _("Scanners"),
         _("Scanner drivers and SANE backends."),
     ),
     (
         "other",
         "application-x-firmware-symbolic",
-        _("Other Firmware"),
+        _("Other"),
         _("Additional firmware packages."),
     ),
 ]
@@ -188,7 +188,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         _SIDEBAR_ITEMS = [
             ("welcome", "go-home-symbolic", _("Home")),
             ("kernel", "drive-harddisk-symbolic", _("Kernel")),
-            ("video", "video-display-symbolic", _("Video Driver")),
+            ("video", "video-display-symbolic", _("Video")),
         ] + [
             (cat_id, icon, title)
             for cat_id, icon, title, _desc in _CATEGORY_DEFS
@@ -554,9 +554,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
 
     def _on_show_all_toggled(self, button: Gtk.ToggleButton) -> None:
         show_all = button.get_active()
-        button.set_label(
-            _("Show detected") if show_all else _("Show all")
-        )
+        button.set_label(_("Show detected") if show_all else _("Show all"))
         self.mesa_section.set_show_all(show_all)
         for sec in self._category_sections.values():
             sec.set_show_all(show_all)

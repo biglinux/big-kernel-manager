@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 03:15-0300\n"
 "Language-Team: Greek <el@li.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -281,7 +281,7 @@ msgstr "Τεχνικές λεπτομέρειες"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 67
 #: usr/share/big-kernel-manager/ui/progress_dialog.py:131
 msgid "Terminal output"
-msgstr "Προγράμματα οδήγησης Wi-Fi"
+msgstr "Έξοδος τερματικού"
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
 # 
 # #-#-#-#-#  big-kernel-manager.pot (big-kernel-manager)  #-#-#-#-#
@@ -1199,7 +1199,7 @@ msgstr "Προγράμματα οδήγησης Mesa, NVIDIA και GPU."
 # File: usr/share/big-kernel-manager/ui/mesa_page.py, line: 65
 #: usr/share/big-kernel-manager/ui/window.py:50
 msgid "Wi-Fi Drivers"
-msgstr "Προγράμματα οδήγησης Ethernet"
+msgstr "Προγράμματα οδήγησης Wi-Fi"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/window.py, line: 51
 #: usr/share/big-kernel-manager/ui/window.py:51
@@ -1409,7 +1409,7 @@ msgstr "Ήχος"
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 42
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:42
 msgid "Webcam"
-msgstr "Webcam"
+msgstr "Κάμερα ιστού"
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/drivers_hub_page.py, line: 43
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:43

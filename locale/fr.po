@@ -7,13 +7,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: big-kernel-manager\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Translation Automator <auto@translator.ai>\n"
+"PO-Revision-Date: 2026-03-01 02:25-0300\n"
 "Language-Team: French <fr@li.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: attranslate\n"
+"X-Generator: manual\n"
 # File: usr/share/big-kernel-manager/ui/base_page.py, line: 56
 #: usr/share/big-kernel-manager/ui/base_page.py:39
 #: usr/share/big-kernel-manager/ui/base_page.py:44
@@ -617,7 +617,7 @@ msgstr "Passer de {} à {}"
 #: usr/share/big-kernel-manager/ui/mesa_page.py:951
 #, python-brace-format
 msgid "Remove the installed NVIDIA driver ({}) first."
-msgstr "Base de données verrouillée. Nouvelle tentative dans {} secondes..."
+msgstr "Supprimez d'abord le pilote NVIDIA installé ({})."
 # 
 # File: big-kernel-manager/usr/share/big-kernel-manager/ui/mesa_page.py, line: 961
 #: usr/share/big-kernel-manager/ui/mesa_page.py:961
@@ -973,7 +973,7 @@ msgstr "Non installé"
 #: usr/share/big-kernel-manager/ui/category_page.py:503
 #, python-brace-format
 msgid "{total} drivers · {detected} detected · {installed} installed"
-msgstr "{total} pilotes · {détectés} détectés · {installés} installés"
+msgstr "{total} pilotes · {detected} détectés · {installed} installés"
 # File: usr/share/big-kernel-manager/ui/kernel_page.py, line: 326
 #: usr/share/big-kernel-manager/ui/category_page.py:567
 #: usr/share/big-kernel-manager/ui/drivers_hub_page.py:364
