@@ -19,7 +19,9 @@ from core.constants import ICON_SIZE_ITEM
 from core.driver_database import DriverModule, FirmwareEntry, PeripheralEntry
 from core.driver_installer import DriverInstaller
 from ui.base_page import BaseSection
+from utils.desc_translate import translate_description
 from utils.i18n import _
+from utils.tooltip_helper import TooltipHelper, build_tooltip_body
 
 # Threshold above which items are grouped by brand instead of flat list.
 _GROUP_THRESHOLD = 20
@@ -96,6 +98,7 @@ class CategorySection(BaseSection):
         ] = []
         self.progress_dialog = None
         self._search_timeout_id: int = 0
+        self._tooltip = TooltipHelper()
         self._create_content()
 
     # ------------------------------------------------------------------
@@ -144,14 +147,28 @@ class CategorySection(BaseSection):
         self._status_label.set_visible(False)
         self.append(self._status_label)
 
+        # Network scan banner (hidden by default)
+        self._net_scan_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
+        self._net_scan_box.set_halign(Gtk.Align.CENTER)
+        self._net_scan_box.set_margin_top(4)
+        self._net_scan_box.set_margin_bottom(8)
+        self._net_scan_box.set_visible(False)
+        net_spinner = Gtk.Spinner()
+        net_spinner.set_spinning(True)
+        net_spinner.set_size_request(16, 16)
+        self._net_scan_box.append(net_spinner)
+        net_label = Gtk.Label(label=_("Searching for printers on the network…"))
+        net_label.add_css_class("dim-label")
+        net_label.add_css_class("caption")
+        self._net_scan_box.append(net_label)
+        self.append(self._net_scan_box)
+
         # Driver list
         self._list_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
         self.append(self._list_box)
 
         # "Show all" footer area (visible when items are hidden)
-        self._show_all_footer = Gtk.Box(
-            orientation=Gtk.Orientation.VERTICAL, spacing=8
-        )
+        self._show_all_footer = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=8)
         self._show_all_footer.set_halign(Gtk.Align.CENTER)
         self._show_all_footer.set_margin_top(24)
         self._show_all_footer.set_margin_bottom(8)
@@ -159,8 +176,7 @@ class CategorySection(BaseSection):
 
         footer_info = Gtk.Label(
             label=_(
-                "No more automatically detected compatible drivers "
-                "in this category."
+                "No more automatically detected compatible drivers in this category."
             )
         )
         footer_info.add_css_class("dim-label")
@@ -168,12 +184,9 @@ class CategorySection(BaseSection):
         footer_info.set_justify(Gtk.Justification.CENTER)
         self._show_all_footer.append(footer_info)
 
-        footer_btn = Gtk.Button(
-            label=_(
-                "Show drivers without confirmed compatibility"
-            )
-        )
+        footer_btn = Gtk.Button(label=_("Show drivers without detected compatibility"))
         footer_btn.add_css_class("pill")
+        footer_btn.add_css_class("suggested-action")
         footer_btn.set_halign(Gtk.Align.CENTER)
         footer_btn.connect("clicked", self._on_show_all_request)
         self._show_all_footer.append(footer_btn)
@@ -183,9 +196,7 @@ class CategorySection(BaseSection):
         # Empty state
         self._empty_status = Adw.StatusPage()
         self._empty_status.set_icon_name("dialog-information-symbolic")
-        self._empty_status.set_title(
-            _("No drivers needed for this category")
-        )
+        self._empty_status.set_title(_("No drivers needed for this category"))
         self._empty_status.set_description(
             _(
                 "No drivers in this category were automatically detected "
@@ -197,7 +208,7 @@ class CategorySection(BaseSection):
         self._empty_status.set_visible(False)
 
         show_all_btn = Gtk.Button(
-            label=_("Show drivers without confirmed compatibility")
+            label=_("Show drivers without detected compatibility")
         )
         show_all_btn.add_css_class("suggested-action")
         show_all_btn.add_css_class("pill")
@@ -217,6 +228,14 @@ class CategorySection(BaseSection):
         """Set the items to display. Called after detection completes."""
         self._items = list(items)
         self._rebuild_list()
+
+    def show_network_scan(self) -> None:
+        """Show the 'searching network printers' banner."""
+        self._net_scan_box.set_visible(True)
+
+    def hide_network_scan(self) -> None:
+        """Hide the network scan banner."""
+        self._net_scan_box.set_visible(False)
 
     def set_show_all(self, show_all: bool) -> None:
         """Toggle between showing all items or only detected/installed ones."""
@@ -256,9 +275,7 @@ class CategorySection(BaseSection):
 
         if not self._items:
             self._empty_status.set_icon_name("dialog-information-symbolic")
-            self._empty_status.set_title(
-                _("No drivers needed for this category")
-            )
+            self._empty_status.set_title(_("No drivers needed for this category"))
             self._empty_status.set_description(
                 _(
                     "No drivers in this category were detected as necessary "
@@ -410,7 +427,7 @@ class CategorySection(BaseSection):
 
         desc = getattr(item, "description", "")
         device_name = getattr(item, "detected_device_name", None)
-        info = device_name or desc.strip()
+        info = device_name or translate_description(desc.strip())
 
         subtitle_parts: list[str] = []
         if status_parts:
@@ -452,6 +469,12 @@ class CategorySection(BaseSection):
             [Gtk.AccessibleProperty.LABEL],
             [f"{item.name}: {'installed' if installed else 'not installed'}"],
         )
+
+        # Rich tooltip on hover
+        display_name = item.name.replace("-", " ").title()
+        tooltip_body = build_tooltip_body(item, self._category_id)
+        self._tooltip.add_tooltip(row, display_name, tooltip_body, self._icon_name)
+
         return row
 
     def _apply_visibility(self) -> None:
@@ -461,7 +484,6 @@ class CategorySection(BaseSection):
         detected_count = 0
 
         if self._is_grouped:
-            # Grouped mode: toggle entire brand expanders
             for expander, _brand, items in self._brand_expanders:
                 has_relevant = any(
                     getattr(i, "detected", False) or getattr(i, "installed", False)
@@ -469,7 +491,12 @@ class CategorySection(BaseSection):
                 )
                 show = self._show_all or has_relevant
                 expander.set_visible(show)
+                expander.set_expanded(has_relevant)
                 if show:
+                    # Restore individual row visibility
+                    for row, item in self._row_data:
+                        if item in items:
+                            row.set_visible(True)
                     for i in items:
                         if getattr(i, "installed", False):
                             installed_count += 1
@@ -510,8 +537,10 @@ class CategorySection(BaseSection):
             self._status_label.set_visible(True)
 
             # Show footer "Show all" button when not all items are visible
-            total_items = len(self._row_data) if not self._is_grouped else sum(
-                len(items) for _, _, items in self._brand_expanders
+            total_items = (
+                len(self._row_data)
+                if not self._is_grouped
+                else sum(len(items) for _, _, items in self._brand_expanders)
             )
             has_hidden = not self._show_all and visible_count < total_items
             self._show_all_footer.set_visible(has_hidden)
@@ -535,16 +564,25 @@ class CategorySection(BaseSection):
             return False
 
         if self._is_grouped:
-            # In grouped mode, show brands that have matching items
             for expander, brand_name, items in self._brand_expanders:
                 brand_match = query in brand_name.lower()
-                has_match = brand_match or any(
-                    query
-                    in f"{i.name} {getattr(i, 'description', '')} {getattr(i, 'package', '')}".lower()
-                    for i in items
-                )
-                expander.set_visible(has_match)
-                if has_match and not brand_match:
+                group_visible = False
+                for row, item in self._row_data:
+                    if item not in items:
+                        continue
+                    match = (
+                        brand_match
+                        or query
+                        in (
+                            f"{item.name} {getattr(item, 'description', '')} "
+                            f"{getattr(item, 'package', '')}"
+                        ).lower()
+                    )
+                    row.set_visible(match)
+                    if match:
+                        group_visible = True
+                expander.set_visible(group_visible)
+                if group_visible:
                     expander.set_expanded(True)
         else:
             for row, item in self._row_data:

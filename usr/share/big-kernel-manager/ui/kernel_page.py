@@ -17,7 +17,7 @@ import re
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Adw, GLib, Gio
+from gi.repository import Gtk, Adw, GLib
 
 from core.constants import ICON_SIZE_HEADER, ICON_SIZE_ITEM
 from core.kernel_manager import KernelManager
@@ -920,7 +920,9 @@ class KernelSection(BaseSection):
         )
         btn.connect(
             "clicked",
-            lambda _b, u=url: Gio.AppInfo.launch_default_for_uri(u, None),
+            lambda _b, u=url: Gtk.UriLauncher(uri=u).launch(
+                _b.get_root(), None, None, None
+            ),
         )
         return btn
 

@@ -9,9 +9,10 @@ depends=(
   'gtk4'
   'libadwaita'
   'polkit'
+  'hicolor-icon-theme'
+  'avahi'
+  'nss-mdns'
 )
-#makedepends=('')
-#optdepends=('')
 #conflicts=('')
 #provides=('')
 #replaces=('')

@@ -20,8 +20,11 @@ from core.constants import (
     PROGRESS_UPDATE_INTERVAL,
     STATUS_UPDATE_INTERVAL,
 )
+from core.logging_config import get_logger
 from core.subprocess_env import subprocess_env
 from utils.i18n import _
+
+_logger = get_logger("BaseManager")
 
 
 class BaseManager:
@@ -35,7 +38,7 @@ class BaseManager:
                 asynchronously. Defaults to launching a daemon thread.
         """
         self.sudo_command = SUDO_COMMAND
-        self._current_process = None
+        self._current_process: subprocess.Popen | None = None
         self._cancelled = False
         self._last_output_lines: list[str] = []
         self._thread_launcher = thread_launcher or self._default_launcher
@@ -59,7 +62,7 @@ class BaseManager:
                     self._current_process.kill()
                     self._current_process.wait()
             except Exception as e:
-                print(f"Error terminating process: {e}")
+                _logger.error("Error terminating process: %s", e)
 
     def _run_pacman_command(
         self,

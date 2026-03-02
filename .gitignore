@@ -40,8 +40,8 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# Translations
-*.pot
+# Translations (compiled files only)
+*.mo
 
 # Django stuff:
 *.log

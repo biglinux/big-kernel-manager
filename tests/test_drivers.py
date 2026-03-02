@@ -285,5 +285,93 @@ class TestDriverInstaller(unittest.TestCase):
             self.assertIn("test-pkg", args)
 
 
+class TestNetworkPrinterDiscovery(unittest.TestCase):
+    """Tests for mDNS network printer discovery and matching."""
+
+    def test_parse_avahi_output_extracts_printer(self):
+        from core.hardware_detect import _parse_avahi_output
+
+        avahi_output = (
+            "+;eth0;IPv4;Brother MFC-J480DW;_ipp._tcp;local\n"
+            "=;eth0;IPv4;Brother MFC-J480DW;_ipp._tcp;local;"
+            "mfc-j480dw.local;192.168.1.50;631;"
+            '"ty=Brother MFC-J480DW" "usb_MFG=Brother" "usb_MDL=MFC-J480DW"\n'
+        )
+        printers = _parse_avahi_output(avahi_output, "_ipp._tcp")
+        self.assertEqual(len(printers), 1)
+        p = printers[0]
+        self.assertEqual(p.manufacturer, "Brother")
+        self.assertEqual(p.model, "MFC-J480DW")
+        self.assertEqual(p.ip, "192.168.1.50")
+
+    def test_parse_avahi_output_guesses_manufacturer_from_name(self):
+        from core.hardware_detect import _parse_avahi_output
+
+        avahi_output = (
+            "=;wlan0;IPv4;Epson L3150;_ipp._tcp;local;"
+            'epson-l3150.local;192.168.1.60;631;"ty=Epson L3150"\n'
+        )
+        printers = _parse_avahi_output(avahi_output, "_ipp._tcp")
+        self.assertEqual(len(printers), 1)
+        self.assertEqual(printers[0].manufacturer, "Epson")
+        self.assertEqual(printers[0].model, "Epson L3150")
+
+    def test_parse_avahi_output_empty(self):
+        from core.hardware_detect import _parse_avahi_output
+
+        printers = _parse_avahi_output("", "_ipp._tcp")
+        self.assertEqual(printers, [])
+
+    def test_match_network_printers_detects_correct_packages(self):
+        from core.driver_database import PeripheralEntry
+        from core.hardware_detect import NetworkPrinter, match_network_printers
+
+        db = MagicMock()
+        db.printers = [
+            PeripheralEntry(
+                name="brother-mfc-j480dw",
+                description="Brother MFC-J480DW",
+                package="brother-mfc-j480dw",
+                detected=False,
+            ),
+            PeripheralEntry(
+                name="epson-l3150",
+                description="Epson L3150",
+                package="epson-inkjet-printer-escpr",
+                detected=False,
+            ),
+            PeripheralEntry(
+                name="canon-mg3600",
+                description="Canon MG3600",
+                package="cnijfilter2",
+                detected=False,
+            ),
+        ]
+
+        net_printers = [
+            NetworkPrinter(
+                name="Brother MFC-J480DW",
+                manufacturer="Brother",
+                model="MFC-J480DW",
+                ip="192.168.1.50",
+                service_type="_ipp._tcp",
+            ),
+        ]
+
+        newly = match_network_printers(db, net_printers)
+        self.assertTrue(db.printers[0].detected)
+        self.assertFalse(db.printers[1].detected)
+        self.assertFalse(db.printers[2].detected)
+        self.assertEqual(newly, 1)
+
+    def test_match_network_printers_empty(self):
+        from core.hardware_detect import match_network_printers
+
+        db = MagicMock()
+        db.printers = []
+        result = match_network_printers(db, [])
+        self.assertEqual(result, 0)
+
+
 if __name__ == "__main__":
     unittest.main()

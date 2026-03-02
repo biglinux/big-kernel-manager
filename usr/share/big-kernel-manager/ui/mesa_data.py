@@ -197,32 +197,41 @@ def _init_purpose_sections() -> None:
                 "title": _("GPU Compute (AI / ML)"),
                 "icon": "bkm-compute",
                 "desc": _(
-                    "CUDA and OpenCL libraries for artificial intelligence, "
-                    "machine learning, Blender, DaVinci Resolve and other "
-                    "GPU-accelerated workloads."
+                    "Your graphics card can do more than display images — "
+                    "it can also help with heavy processing tasks. "
+                    "These libraries allow programs to use the GPU for "
+                    "things like artificial intelligence, video editing, "
+                    "3D rendering, image processing and scientific simulations. "
+                    "Examples: running local AI assistants (Ollama, LocalAI), "
+                    "transcribing audio with Whisper, rendering 3D scenes "
+                    "in Blender, applying filters in GIMP or Darktable, "
+                    "generating images with Stable Diffusion, "
+                    "and running physics simulations."
                 ),
                 "packages": [
                     {
                         "name": "cuda",
-                        "short": _("NVIDIA CUDA — TensorFlow, PyTorch, AI/ML"),
+                        "short": _(
+                            "NVIDIA CUDA — Ollama, Whisper, Stable Diffusion, Blender"
+                        ),
                         "vendors": {"nvidia"},
                         "cat": "Compute",
                     },
                     {
                         "name": "opencl-nvidia",
-                        "short": _("OpenCL for NVIDIA — Blender, DaVinci, Darktable"),
+                        "short": _("OpenCL for NVIDIA — Blender, GIMP, Darktable"),
                         "vendors": {"nvidia"},
                         "cat": "Compute",
                     },
                     {
                         "name": "opencl-mesa",
-                        "short": _("OpenCL for AMD — Blender, GIMP, DaVinci"),
+                        "short": _("OpenCL for AMD — Blender, GIMP, Darktable"),
                         "vendors": {"amd"},
                         "cat": "Compute",
                     },
                     {
                         "name": "intel-compute-runtime",
-                        "short": _("OpenCL for Intel — Blender, DaVinci"),
+                        "short": _("OpenCL for Intel — Blender, GIMP, Darktable"),
                         "vendors": {"intel"},
                         "cat": "Compute",
                     },
@@ -361,6 +370,18 @@ def _get_recommendations(
             if name == "libva-nvidia-driver" and not has_nvidia_proprietary:
                 continue
             if name in ("cuda", "opencl-nvidia") and not has_nvidia_proprietary:
+                continue
+            # Hide vulkan-nouveau when NVIDIA proprietary is active
+            if name == "vulkan-nouveau" and has_nvidia_proprietary:
+                continue
+            # Hide mesa-vdpau when neither AMD nor nouveau is active
+            has_amd_or_nouveau = "amd" in gpu_vendors or (
+                "nvidia" in gpu_vendors and not has_nvidia_proprietary
+            )
+            if name == "mesa-vdpau" and not has_amd_or_nouveau:
+                continue
+            # Hide libva-mesa-driver when neither AMD nor nouveau is active
+            if name == "libva-mesa-driver" and not has_amd_or_nouveau:
                 continue
             entry = {
                 "name": name,

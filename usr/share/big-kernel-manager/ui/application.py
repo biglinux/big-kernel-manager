@@ -28,9 +28,9 @@ class SettingsManager:
     def __init__(self):
         """Initialize the settings manager."""
         self.settings_file = SETTINGS_FILE
+        self._logger = get_logger("SettingsManager")
         os.makedirs(CONFIG_DIR, exist_ok=True)
         self._settings = self._load_settings()
-        self._logger = get_logger("SettingsManager")
 
     def _load_settings(self) -> dict:
         """Load settings from file."""
@@ -39,7 +39,7 @@ class SettingsManager:
                 with open(self.settings_file, "r", encoding="utf-8") as f:
                     return json.load(f)
             except Exception as e:
-                print(f"Error loading settings: {e}")
+                self._logger.error("Error loading settings: %s", e)
         return {}
 
     def _save_settings(self) -> bool:
@@ -49,7 +49,7 @@ class SettingsManager:
                 json.dump(self._settings, f, indent=2, ensure_ascii=False)
             return True
         except Exception as e:
-            print(f"Error saving settings: {e}")
+            self._logger.error("Error saving settings: %s", e)
             return False
 
     def get(self, key: str, default=None):

@@ -1,1 +1,2 @@
-Printing driver for Index Braille embossers (Braille accessibility printers)
+    CUPS filter/driver for Index Braille Embossers.
+    Includes support for Index-direct-Braille (idB)

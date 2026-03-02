@@ -12,6 +12,7 @@ List-based layout:
 
 import subprocess
 import os
+import re
 from pathlib import Path
 
 import gi
@@ -55,6 +56,7 @@ class MesaSection(BaseSection):
         self._gpu_vendors: set[str] = set()
         self._active_mesa: str = ""
         self._has_nvidia_proprietary: bool = False
+        self._intel_gen: int = 0  # Detected Intel GPU generation (0 = unknown)
         self._is_vm = self._detect_virtual_machine()
         _init_mesa_names()
         _init_driver_notes()
@@ -188,17 +190,35 @@ class MesaSection(BaseSection):
         mesa_hdr.append(mesa_title)
         self._mesa_card_inner.append(mesa_hdr)
 
-        mesa_help = Gtk.Label()
-        mesa_help.set_text(
+        self._mesa_help_label = Gtk.Label()
+        self._mesa_help_label.set_text(
             _(
                 "Choose which Mesa build to use. "
                 "Only one variant can be active at a time."
             )
         )
-        mesa_help.set_wrap(True)
-        mesa_help.set_xalign(0)
-        mesa_help.add_css_class("dim-label")
-        self._mesa_card_inner.append(mesa_help)
+        self._mesa_help_label.set_wrap(True)
+        self._mesa_help_label.set_xalign(0)
+        self._mesa_help_label.add_css_class("dim-label")
+        self._mesa_card_inner.append(self._mesa_help_label)
+
+        # Warning label for NVIDIA proprietary users (hidden by default)
+        self._mesa_nvidia_note = Gtk.Label()
+        self._mesa_nvidia_note.set_markup(
+            _(
+                "<b>Note:</b> You are using the NVIDIA proprietary driver. "
+                "Mesa is only used for minor tasks in this case. "
+                "We recommend keeping the <b>Stable</b> variant — "
+                "other versions will not improve performance and may "
+                "cause instabilities."
+            )
+        )
+        self._mesa_nvidia_note.set_wrap(True)
+        self._mesa_nvidia_note.set_xalign(0)
+        self._mesa_nvidia_note.add_css_class("dim-label")
+        self._mesa_nvidia_note.add_css_class("warning")
+        self._mesa_nvidia_note.set_visible(False)
+        self._mesa_card_inner.append(self._mesa_nvidia_note)
 
         # Rows will be added by _update_mesa_list
         self._mesa_card.append(self._mesa_card_inner)
@@ -260,11 +280,75 @@ class MesaSection(BaseSection):
                     parts = line.split(": ", 1)
                     name = parts[1] if len(parts) > 1 else line
                     is_nvidia = "nvidia" in name.lower()
-                    info["gpus"].append({"name": name, "nvidia": is_nvidia})
+                    is_intel = "intel" in name.lower()
+                    gpu_entry: dict = {"name": name, "nvidia": is_nvidia}
+                    if is_intel:
+                        gpu_entry["intel_gen"] = MesaSection._detect_intel_gen(name)
+                    info["gpus"].append(gpu_entry)
         except OSError:
             pass
 
         return info
+
+    @staticmethod
+    def _detect_intel_gen(gpu_name: str) -> int:
+        """Estimate Intel GPU generation from lspci name.
+
+        Returns the approximate Intel graphics generation number:
+          6 = Sandy Bridge, 7 = Ivy Bridge / Haswell,
+          8 = Broadwell, 9 = Skylake / Kaby Lake / Coffee Lake,
+          11 = Ice Lake, 12 = Alder Lake / Raptor Lake / Xe / Arc, etc.
+        Returns 0 if unrecognized.
+        """
+        low = gpu_name.lower()
+
+        # Arc discrete GPUs → Gen 12.7+
+        if "arc " in low:
+            return 12
+
+        # Xe branding → Gen 12+
+        if "xe" in low:
+            return 12
+
+        # UHD Graphics 7xx → Alder Lake / Raptor Lake (Gen 12)
+        m = re.search(r"uhd\s+graphics\s+(\d+)", low)
+        if m:
+            num = int(m.group(1))
+            if num >= 700:
+                return 12
+            # UHD 6xx → Coffee Lake / Comet Lake (Gen 9.5)
+            return 9
+
+        # Iris Plus / Iris Pro patterns
+        if "iris plus" in low or "iris pro" in low:
+            # Iris Plus G1/G4/G7 → Ice Lake (Gen 11)
+            if re.search(r"iris plus\s+g[147]", low):
+                return 11
+            # Iris Plus 6xx → Kaby Lake / Coffee Lake (Gen 9.5)
+            m2 = re.search(r"iris plus\s+(\d+)", low)
+            if m2:
+                num = int(m2.group(1))
+                if num >= 640:
+                    return 9
+                return 8
+            return 9
+
+        # HD Graphics with a number
+        m = re.search(r"hd\s+graphics\s+(\d+)", low)
+        if m:
+            num = int(m.group(1))
+            if num >= 5300:
+                return 8  # Broadwell
+            if num >= 4000:
+                return 7  # Haswell / Ivy Bridge
+            if num >= 2000:
+                return 6  # Sandy Bridge
+            # 3-digit low (510, 530, 610, 630) = Skylake+ Gen 9
+            if 500 <= num <= 699:
+                return 9
+            return 6
+
+        return 0
 
     def _update_gpu_card(self, gpu_info: dict) -> None:
         """Update the GPU info label and NVIDIA description in the header."""
@@ -275,25 +359,36 @@ class MesaSection(BaseSection):
             return
 
         has_nvidia = any(gpu["nvidia"] for gpu in gpus)
-        self._nvidia_desc_label.set_visible(has_nvidia)
-
         nvidia_active = gpu_info["nvidia_loaded"] and gpu_info["nvidia_pkg"]
-        lines: list[str] = [
-            "<b>" + _("Detected graphics cards:") + "</b>"
-        ]
+
+        # Show NVIDIA proprietary install suggestion only when:
+        # - NVIDIA GPU detected AND driver NOT installed
+        # - AND GPU is series 500+ (check lspci name for GeForce x5xx+)
+        show_nvidia_hint = False
+        if has_nvidia and not nvidia_active:
+            for gpu in gpus:
+                if gpu["nvidia"]:
+                    # Match series numbers like 500, 1050, 2060, 3070, 4090, 5090 etc.
+                    m = re.search(r"\b(\d{3,4})\b", gpu["name"])
+                    if m:
+                        series = int(m.group(1))
+                        if series >= 500:
+                            show_nvidia_hint = True
+                            break
+        self._nvidia_desc_label.set_visible(show_nvidia_hint)
+
+        lines: list[str] = ["<b>" + _("Detected graphics cards:") + "</b>"]
         for gpu in gpus:
             name = gpu["name"].split("[")[0].strip()
             if gpu["nvidia"] and nvidia_active:
+                driver_desc = _("NVIDIA proprietary driver (not Mesa)")
                 lines.append(
-                    _(
-                        "\u2022 <b>{}</b> \u2014 NVIDIA proprietary driver (not Mesa)"
-                    ).format(GLib.markup_escape_text(name))
+                    f"\u2022 <b>{GLib.markup_escape_text(name)}</b> \u2014 {driver_desc}"
                 )
             else:
+                driver_desc = _("Mesa driver")
                 lines.append(
-                    _("\u2022 <b>{}</b> \u2014 Mesa driver").format(
-                        GLib.markup_escape_text(name)
-                    )
+                    f"\u2022 <b>{GLib.markup_escape_text(name)}</b> \u2014 {driver_desc}"
                 )
 
         self._gpu_info_label.set_markup("\n".join(lines))
@@ -324,6 +419,13 @@ class MesaSection(BaseSection):
         self._hide_loading()
         self._update_gpu_card(gpu_info)
         self._gpu_vendors = self._extract_gpu_vendors(gpu_info)
+        # Detect Intel GPU generation for VAAPI driver filtering
+        self._intel_gen = 0
+        if gpu_info:
+            for gpu in gpu_info.get("gpus", []):
+                gen = gpu.get("intel_gen", 0)
+                if gen > self._intel_gen:
+                    self._intel_gen = gen
         # Detect active Mesa variant for package compatibility
         self._active_mesa = ""
         for d in drivers:
@@ -333,6 +435,8 @@ class MesaSection(BaseSection):
         # Check if NVIDIA proprietary is installed
         has_nvidia_prop = bool(gpu_info and gpu_info.get("nvidia_pkg"))
         self._has_nvidia_proprietary = has_nvidia_prop
+        # Show/hide NVIDIA note in Mesa variant card
+        self._mesa_nvidia_note.set_visible(has_nvidia_prop)
         self._update_mesa_list(drivers)
         self._build_vendor_sections(mhwd_drivers)
         return False
@@ -349,16 +453,16 @@ class MesaSection(BaseSection):
     # ------------------------------------------------------------------
 
     def _update_mesa_list(self, drivers: list[dict]) -> None:
-        # Remove existing variant rows (keep header + help label)
+        # Remove existing variant rows (keep header + help label + nvidia note)
         while self._mesa_card_inner.get_last_child() is not None:
             child = self._mesa_card_inner.get_last_child()
-            # Keep the first 2 children (header row + help label)
+            # Keep the first 3 children (header row + help label + nvidia note)
             count = 0
             c = self._mesa_card_inner.get_first_child()
             while c is not None:
                 count += 1
                 c = c.get_next_sibling()
-            if count <= 2:
+            if count <= 3:
                 break
             self._mesa_card_inner.remove(child)
 
@@ -418,18 +522,14 @@ class MesaSection(BaseSection):
             active_btn.set_valign(Gtk.Align.CENTER)
             active_btn.set_can_focus(False)
             active_btn.set_can_target(False)
-            active_btn.update_property(
-                [Gtk.AccessibleProperty.LABEL], [_("Active")]
-            )
+            active_btn.update_property([Gtk.AccessibleProperty.LABEL], [_("Active")])
             row.append(active_btn)
         else:
             btn = Gtk.Button()
             btn.set_label(_("Switch"))
             btn.add_css_class("suggested-action")
             btn.set_valign(Gtk.Align.CENTER)
-            btn.set_tooltip_text(
-                _("Switch to {}").format(human_title)
-            )
+            btn.set_tooltip_text(_("Switch to {}").format(human_title))
             btn.connect("clicked", self._on_mesa_switch_clicked, driver)
             btn.update_property(
                 [Gtk.AccessibleProperty.LABEL], [btn.get_tooltip_text()]
@@ -599,14 +699,26 @@ class MesaSection(BaseSection):
         help_lbl.set_text(
             _(
                 "Official closed-source driver with the best performance "
-                "for gaming, AI, and professional workloads. "
-                "Only one version can be active at a time."
+                "for gaming, AI, and professional workloads."
             )
         )
         help_lbl.set_wrap(True)
         help_lbl.set_xalign(0)
         help_lbl.add_css_class("dim-label")
         inner.append(help_lbl)
+
+        # "Only one version" hint — shown only when multiple versions available
+        self._nvidia_one_version_lbl = Gtk.Label()
+        self._nvidia_one_version_lbl.set_text(
+            _("Only one version can be active at a time.")
+        )
+        self._nvidia_one_version_lbl.set_wrap(True)
+        self._nvidia_one_version_lbl.set_xalign(0)
+        self._nvidia_one_version_lbl.add_css_class("dim-label")
+        self._nvidia_one_version_lbl.set_visible(
+            False
+        )  # Updated by _apply_mhwd_visibility
+        inner.append(self._nvidia_one_version_lbl)
 
         rows_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=0)
 
@@ -624,13 +736,34 @@ class MesaSection(BaseSection):
         self._vendor_container.append(card)
         self._apply_mhwd_visibility()
 
-    def _build_purpose_section(self, section: dict) -> None:
-        """Build a card-wrapped section for a purpose (gaming, video, compute)."""
-        # Filter packages to detected GPU vendors (or show all)
+    def _filter_purpose_packages(self, section: dict) -> list[dict]:
+        """Filter packages for a purpose section based on detected GPU vendors."""
+        nvidia_prop = self._has_nvidia_proprietary
+        has_amd_or_nouveau = "amd" in self._gpu_vendors or (
+            "nvidia" in self._gpu_vendors and not nvidia_prop
+        )
+        intel_gen = self._intel_gen
         relevant: list[dict] = []
         for pkg in section["packages"]:
-            if self._show_all or pkg["vendors"] & self._gpu_vendors:
-                relevant.append(pkg)
+            if not (self._show_all or pkg["vendors"] & self._gpu_vendors):
+                continue
+            if pkg["name"] == "vulkan-nouveau" and nvidia_prop:
+                continue
+            if pkg["name"] == "mesa-vdpau" and not has_amd_or_nouveau:
+                continue
+            if pkg["name"] == "libva-mesa-driver" and not has_amd_or_nouveau:
+                continue
+            if not self._show_all and intel_gen > 0:
+                if pkg["name"] == "intel-media-driver" and intel_gen < 8:
+                    continue
+                if pkg["name"] == "libva-intel-driver" and intel_gen >= 8:
+                    continue
+            relevant.append(pkg)
+        return relevant
+
+    def _build_purpose_section(self, section: dict) -> None:
+        """Build a card-wrapped section for a purpose (gaming, video, compute)."""
+        relevant = self._filter_purpose_packages(section)
         if not relevant:
             return
 
@@ -848,6 +981,7 @@ class MesaSection(BaseSection):
 
     def _apply_mhwd_visibility(self) -> None:
         """Toggle MHWD driver row visibility based on show_all flag."""
+        visible_nvidia_count = 0
         for row, drv in self._mhwd_row_widgets:
             if self._show_all:
                 show = True
@@ -862,6 +996,11 @@ class MesaSection(BaseSection):
             else:
                 show = False
             row.set_visible(show)
+            if show and drv.is_nvidia:
+                visible_nvidia_count += 1
+        # Only show "one version at a time" when multiple are visible
+        if hasattr(self, "_nvidia_one_version_lbl"):
+            self._nvidia_one_version_lbl.set_visible(visible_nvidia_count > 1)
 
     def _build_mhwd_row(self, driver: MhwdDriver) -> Gtk.Box:
         """Build a card-style row for an MHWD driver."""
@@ -910,6 +1049,10 @@ class MesaSection(BaseSection):
             rm_btn = Gtk.Button(label=_("Remove"))
             rm_btn.add_css_class("destructive-action")
             rm_btn.set_valign(Gtk.Align.CENTER)
+            rm_btn.update_property(
+                [Gtk.AccessibleProperty.LABEL],
+                [_("Remove {}").format(driver.display_name)],
+            )
             rm_btn.connect("clicked", self._on_mhwd_remove_clicked, driver)
             row.append(rm_btn)
         elif self._nvidia_installed_name and driver.is_nvidia and driver.compatible:
@@ -922,6 +1065,10 @@ class MesaSection(BaseSection):
                     driver.display_name,
                 )
             )
+            btn.update_property(
+                [Gtk.AccessibleProperty.LABEL],
+                [_("Switch to {}").format(driver.display_name)],
+            )
             btn.connect("clicked", self._on_mhwd_switch_clicked, driver)
             row.append(btn)
         else:
@@ -930,6 +1077,10 @@ class MesaSection(BaseSection):
             btn.set_valign(Gtk.Align.CENTER)
             if allowed:
                 btn.add_css_class("suggested-action")
+                btn.update_property(
+                    [Gtk.AccessibleProperty.LABEL],
+                    [_("Install {}").format(driver.display_name)],
+                )
                 btn.connect("clicked", self._on_mhwd_install_clicked, driver)
             else:
                 btn.set_sensitive(False)
@@ -1170,12 +1321,20 @@ class MesaSection(BaseSection):
                 btn = Gtk.Button(label=_("Remove"))
                 btn.add_css_class("destructive-action")
                 btn.set_valign(Gtk.Align.CENTER)
+                btn.update_property(
+                    [Gtk.AccessibleProperty.LABEL],
+                    [_("Remove {}").format(pkg_name)],
+                )
                 btn.connect("clicked", self._on_gpu_pkg_remove_clicked, pkg)
                 row.append(btn)
             else:
                 btn = Gtk.Button(label=_("Install"))
                 btn.add_css_class("suggested-action")
                 btn.set_valign(Gtk.Align.CENTER)
+                btn.update_property(
+                    [Gtk.AccessibleProperty.LABEL],
+                    [_("Install {}").format(pkg_name)],
+                )
                 btn.connect("clicked", self._on_gpu_pkg_install_clicked, pkg)
                 row.append(btn)
 

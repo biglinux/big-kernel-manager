@@ -1,1 +1,2 @@
-Printing driver for Brother MFC-J280W multifunction printer
+    LPR and CUPS driver for the Brother MFC-J280W. This package
+    is based off the MFC-J265W, all credit is for woegjiub

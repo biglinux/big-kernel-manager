@@ -379,3 +379,182 @@ def _match_peripheral_vendor(
             if any(kw in pkg for kw in keywords):
                 return True
     return False
+
+
+# ---- Network printer discovery via mDNS/Avahi ----------------------------
+
+
+@dataclass
+class NetworkPrinter:
+    """A printer discovered on the local network via mDNS."""
+
+    name: str
+    manufacturer: str
+    model: str
+    ip: str
+    service_type: str
+
+
+# Map mDNS manufacturer names → package-name keywords (lowercase).
+_MDNS_MFG_KEYWORDS: dict[str, list[str]] = {
+    "brother": ["brother"],
+    "epson": ["epson"],
+    "canon": ["canon", "cnijfilter", "scangearmp"],
+    "hp": ["hp", "hplip"],
+    "samsung": ["samsung"],
+    "pantum": ["pantum"],
+    "kyocera": ["kyocera"],
+    "ricoh": ["ricoh"],
+    "xerox": ["xerox"],
+    "lexmark": ["lexmark"],
+    "konica": ["konica"],
+    "dell": ["dell"],
+    "oki": ["oki"],
+    "sharp": ["sharp"],
+    "toshiba": ["toshiba"],
+    "fuji": ["fuji"],
+    "develop": ["develop"],
+}
+
+
+def detect_network_printers(timeout: int = 10) -> list[NetworkPrinter]:
+    """Discover printers on the local network using avahi-browse (mDNS/DNS-SD).
+
+    Scans for IPP, LPD, and PDL-datastream services. Extracts manufacturer
+    and model info from the TXT records (usb_MFG, usb_MDL, ty fields).
+
+    Returns a list of unique network printers found.
+    """
+    services = ["_ipp._tcp", "_printer._tcp", "_pdl-datastream._tcp"]
+    printers: dict[str, NetworkPrinter] = {}  # keyed by ip to deduplicate
+
+    for svc in services:
+        output = _run(
+            ["avahi-browse", "-t", "-r", "-p", svc],
+            timeout=timeout,
+        )
+        if not output:
+            continue
+
+        for printer in _parse_avahi_output(output, svc):
+            # Deduplicate by IP; prefer entries with more info
+            existing = printers.get(printer.ip)
+            if not existing or (not existing.model and printer.model):
+                printers[printer.ip] = printer
+
+    result = list(printers.values())
+    _logger.info("Network printers discovered: %d", len(result))
+    return result
+
+
+def _parse_avahi_output(output: str, service_type: str) -> list[NetworkPrinter]:
+    """Parse avahi-browse -p output, extracting printer info from TXT records.
+
+    avahi-browse -p format (parseable):
+    =;iface;protocol;name;type;domain;hostname;address;port;txt
+
+    TXT record fields of interest:
+    - ty=<model name>
+    - usb_MFG=<manufacturer>
+    - usb_MDL=<model>
+    - product=(<model>)
+    """
+    printers: list[NetworkPrinter] = []
+    txt_re = re.compile(r'"([^"]*)"')
+
+    for line in output.splitlines():
+        if not line.startswith("="):
+            continue
+
+        parts = line.split(";")
+        if len(parts) < 10:
+            continue
+
+        friendly_name = parts[3]
+        address = parts[7]
+        txt_field = parts[9] if len(parts) > 9 else ""
+
+        # Parse TXT record key-value pairs
+        txt_entries = txt_re.findall(txt_field)
+        txt_dict: dict[str, str] = {}
+        for entry in txt_entries:
+            if "=" in entry:
+                k, v = entry.split("=", 1)
+                txt_dict[k.strip().lower()] = v.strip()
+
+        manufacturer = txt_dict.get("usb_mfg", "")
+        model = txt_dict.get("usb_mdl", "") or txt_dict.get("ty", "")
+        if not model:
+            # Try product field: product=(Model Name)
+            product = txt_dict.get("product", "")
+            if product.startswith("(") and product.endswith(")"):
+                model = product[1:-1]
+
+        if not manufacturer and friendly_name:
+            # Guess manufacturer from the friendly name
+            first_word = friendly_name.split()[0].lower() if friendly_name else ""
+            for mfg_key in _MDNS_MFG_KEYWORDS:
+                if first_word.startswith(mfg_key):
+                    manufacturer = mfg_key.capitalize()
+                    break
+
+        printers.append(
+            NetworkPrinter(
+                name=friendly_name,
+                manufacturer=manufacturer,
+                model=model,
+                ip=address,
+                service_type=service_type,
+            )
+        )
+
+    return printers
+
+
+def match_network_printers(
+    database: DriverDatabase,
+    net_printers: list[NetworkPrinter],
+) -> int:
+    """Match network printers against the printer database.
+
+    Updates ``detected`` and ``detected_device_name`` for printers that
+    match a discovered network printer's manufacturer.
+
+    Returns the number of newly detected printers.
+    """
+    if not net_printers:
+        return 0
+
+    # Build set of manufacturer keywords from discovered printers
+    net_mfg_keywords: set[str] = set()
+    for np in net_printers:
+        mfg = np.manufacturer.lower()
+        if mfg in _MDNS_MFG_KEYWORDS:
+            net_mfg_keywords.update(_MDNS_MFG_KEYWORDS[mfg])
+        elif mfg:
+            net_mfg_keywords.add(mfg)
+
+    newly_detected = 0
+    for p in database.printers:
+        if p.detected:
+            continue
+        pkg = p.package.lower()
+        for kw in net_mfg_keywords:
+            if kw in pkg:
+                p.detected = True
+                # Use the network printer name as the device name
+                for np in net_printers:
+                    if np.manufacturer.lower() in pkg or any(
+                        k in pkg
+                        for k in _MDNS_MFG_KEYWORDS.get(np.manufacturer.lower(), [])
+                    ):
+                        display = np.model or np.name
+                        if np.ip:
+                            display = f"{display} ({np.ip})"
+                        p.detected_device_name = display
+                        break
+                newly_detected += 1
+                break
+
+    _logger.info("Network printer matches: %d new detections", newly_detected)
+    return newly_detected

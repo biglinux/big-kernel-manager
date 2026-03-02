@@ -1,1 +1,3 @@
-Wi-Fi driver for Realtek RTL8188FU/RTL8188FTV USB wireless adapters (802.11n)
+    Kernel driver module for Realtek RTL8188FU and
+    RTL8188FTV Wireless 802.11n USB 2.0 adapters (device id
+    0bda:f179)

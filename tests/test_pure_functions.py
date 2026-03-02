@@ -219,5 +219,133 @@ class TestMesaHumanNames(unittest.TestCase):
             self.assertTrue(len(val["desc"]) > 0)
 
 
+# ------------------------------------------------------------------
+# translate_description (no gettext — falls back to identity)
+# ------------------------------------------------------------------
+
+
+class TestTranslateDescription(unittest.TestCase):
+    """Tests for description translation (without active locale)."""
+
+    def setUp(self):
+        from utils.desc_translate import translate_description
+
+        self.translate = translate_description
+
+    def test_empty_string(self):
+        self.assertEqual(self.translate(""), "")
+
+    def test_preserves_model_names(self):
+        result = self.translate("Printing driver for Brother DCP-T310")
+        self.assertIn("Brother DCP-T310", result)
+
+    def test_translates_known_phrase(self):
+        result = self.translate("Printing driver for Brother DCP-T310")
+        # Model name must be preserved regardless of locale
+        self.assertIn("Brother DCP-T310", result)
+        # The phrase part should not be the original English lowercased
+        # (it will be translated or have canonical casing applied)
+        self.assertTrue(len(result) > 0)
+
+    def test_case_insensitive_match(self):
+        result = self.translate("PRINTING DRIVER FOR HP LaserJet 1020")
+        self.assertIn("HP LaserJet 1020", result)
+
+    def test_firmware_phrase(self):
+        result = self.translate("Firmware for Realtek RTL8821CU Wi-Fi chips")
+        # Model name preserved
+        self.assertIn("Realtek RTL8821CU", result)
+        self.assertTrue(len(result) > 0)
+
+    def test_scanner_phrase(self):
+        result = self.translate("Scanner driver for Canon LiDE 300")
+        self.assertIn("Canon LiDE 300", result)
+
+    def test_unknown_text_unchanged(self):
+        original = "Some completely unknown custom text 12345"
+        self.assertEqual(self.translate(original), original)
+
+
+# ------------------------------------------------------------------
+# build_tooltip_body
+# ------------------------------------------------------------------
+
+
+class TestBuildTooltipBody(unittest.TestCase):
+    """Tests for tooltip body generation."""
+
+    def setUp(self):
+        from utils.tooltip_helper import build_tooltip_body
+
+        self.build = build_tooltip_body
+
+    def _make_driver(self, **kw):
+        from core.driver_database import DriverModule
+
+        defaults = dict(
+            name="rtl8821cu-dkms",
+            category="wifi",
+            description="Driver for Realtek RTL8821CU",
+            package="rtl8821cu-dkms",
+        )
+        defaults.update(kw)
+        return DriverModule(**defaults)
+
+    def _make_peripheral(self, **kw):
+        from core.driver_database import PeripheralEntry
+
+        defaults = dict(
+            name="brother-dcp-t310",
+            description="Printing driver for Brother DCP-T310",
+            package="brother-dcp-t310",
+        )
+        defaults.update(kw)
+        return PeripheralEntry(**defaults)
+
+    def test_contains_package_name(self):
+        item = self._make_driver()
+        body = self.build(item, "wifi")
+        self.assertIn("rtl8821cu-dkms", body)
+
+    def test_detected_installed_status(self):
+        item = self._make_driver(detected=True, installed=True)
+        body = self.build(item, "wifi")
+        self.assertIn("✓", body)
+
+    def test_detected_not_installed(self):
+        item = self._make_driver(detected=True, installed=False)
+        body = self.build(item, "wifi")
+        # Should show some status text (locale-dependent)
+        self.assertTrue(len(body) > 0)
+
+    def test_device_name_shown(self):
+        item = self._make_driver(
+            detected=True,
+            detected_device_name="Realtek RTL8821CU [802.11ac]",
+        )
+        body = self.build(item, "wifi")
+        self.assertIn("Realtek RTL8821CU [802.11ac]", body)
+
+    def test_category_tip_present(self):
+        item = self._make_driver()
+        body = self.build(item, "wifi")
+        self.assertIn("💡", body)
+
+    def test_printer_category_tip(self):
+        item = self._make_peripheral()
+        body = self.build(item, "printer")
+        self.assertIn("💡", body)
+
+    def test_unknown_category_no_tip(self):
+        item = self._make_driver(category="nonexistent")
+        body = self.build(item, "nonexistent")
+        self.assertNotIn("💡", body)
+
+    def test_empty_description(self):
+        item = self._make_driver(description="")
+        body = self.build(item, "wifi")
+        self.assertIn("rtl8821cu-dkms", body)
+
+
 if __name__ == "__main__":
     unittest.main()

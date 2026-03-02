@@ -60,6 +60,7 @@ class PeripheralEntry:
     usb_ids: list[tuple[str, str]] = field(default_factory=list)
     installed: bool = False
     detected: bool = False
+    detected_device_name: str | None = None
 
 
 def _parse_ids_file(path: Path) -> list[tuple[str, str]]:

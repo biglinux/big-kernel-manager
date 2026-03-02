@@ -265,6 +265,17 @@ button.destructive-action:disabled {
 /* --- Smooth transitions ------------------------------------------- */
 row, button { transition: background 200ms ease; }
 
+/* --- Tooltip popover ---------------------------------------------- */
+.tooltip-popover > contents {
+    border-radius: 12px;
+    border: 1px solid alpha(@borders, 0.22);
+    background: alpha(@popover_bg_color, 0.97);
+    box-shadow:
+        0 4px 16px alpha(black, 0.10),
+        0 1px 4px alpha(black, 0.06);
+    padding: 0;
+}
+
 /* --- Reduced motion ----------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
     * {

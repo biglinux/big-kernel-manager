@@ -284,9 +284,10 @@ class HomePage(Gtk.Box):
 
         self._sug_desc.set_text(
             _(
-                "These drivers are compatible with your hardware. "
-                "Your devices are working, but these may improve "
-                "performance or add features."
+                "Your devices are already working with the built-in driver, "
+                "which is usually the most stable and recommended option. "
+                "If you experience issues, you can try a driver detected as "
+                "compatible that may improve performance or add features."
             )
         )
 
@@ -787,7 +788,7 @@ class HomePage(Gtk.Box):
                     [alert["action_label"]],
                 )
                 page = alert["action_page"]
-                btn.connect("activated", lambda _, p=page: self._on_navigate(p))
+                btn.connect("clicked", lambda _, p=page: self._on_navigate(p))
                 card.append(btn)
 
             self._alert_box.append(card)

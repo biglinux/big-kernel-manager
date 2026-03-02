@@ -14,15 +14,17 @@ import gi
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
-from gi.repository import Gtk, Gio, Adw, GLib, Gdk
+from gi.repository import Gtk, Gio, Adw, GLib, Gdk, Pango
 
 from core.constants import APP_NAME, WINDOW_DEFAULT_WIDTH, WINDOW_DEFAULT_HEIGHT
 from core.driver_database import DriverDatabase
 from core.hardware_detect import (
     detect_all_devices,
+    detect_network_printers,
     fetch_installed_set,
-    match_modules,
     match_firmware,
+    match_modules,
+    match_network_printers,
     update_peripheral_install_status,
 )
 from core.kernel_manager import KernelManager
@@ -64,7 +66,7 @@ _CATEGORY_DEFS = [
     ),
     (
         "dvb",
-        "video-television-symbolic",
+        "tv-symbolic",
         _("DVB / TV"),
         _("Digital TV tuner firmware."),
     ),
@@ -100,7 +102,7 @@ _CATEGORY_DEFS = [
     ),
     (
         "scanner",
-        "document-scan-symbolic",
+        "scanner-symbolic",
         _("Scanners"),
         _("Scanner drivers and SANE backends."),
     ),
@@ -121,6 +123,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         self._logger = get_logger("Window")
         self.set_title(APP_NAME)
         self.set_default_size(WINDOW_DEFAULT_WIDTH, WINDOW_DEFAULT_HEIGHT)
+        self.set_size_request(360, 480)
         self.set_resizable(True)
         self._category_sections: dict[str, CategorySection] = {}
         self._build_ui()
@@ -136,6 +139,8 @@ class KernelManagerWindow(Adw.ApplicationWindow):
 
         # === SPLIT VIEW ===
         self._split_view = Adw.NavigationSplitView()
+        self._split_view.set_min_sidebar_width(140)
+        self._split_view.set_max_sidebar_width(220)
         self._split_view.set_sidebar(sidebar_page)
         self._split_view.set_content(content_page)
 
@@ -187,7 +192,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
 
         _SIDEBAR_ITEMS = [
             ("welcome", "go-home-symbolic", _("Home")),
-            ("kernel", "drive-harddisk-symbolic", _("Kernel")),
+            ("kernel", "utilities-terminal-symbolic", _("Kernel")),
             ("video", "video-display-symbolic", _("Video")),
         ] + [
             (cat_id, icon, title)
@@ -197,7 +202,8 @@ class KernelManagerWindow(Adw.ApplicationWindow):
 
         for page_id, icon_name, label_text in _SIDEBAR_ITEMS:
             row = Gtk.ListBoxRow()
-            row._page_id = page_id
+            row.set_name(page_id)
+            row.update_property([Gtk.AccessibleProperty.LABEL], [label_text])
             box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=8)
             box.set_margin_start(4)
             box.set_margin_end(4)
@@ -271,6 +277,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
     def _setup_breakpoints(self, sections: list) -> None:
         """Configure responsive breakpoints for content sections."""
         bp1 = Adw.Breakpoint.new(Adw.BreakpointCondition.parse("max-width: 700sp"))
+        bp1.add_setter(self._split_view, "collapsed", True)
         for sec in sections:
             bp1.add_setter(sec, "margin-start", 16)
             bp1.add_setter(sec, "margin-end", 16)
@@ -308,7 +315,36 @@ class KernelManagerWindow(Adw.ApplicationWindow):
 
     def _create_content_header(self) -> Adw.HeaderBar:
         header = Adw.HeaderBar()
-        header.set_show_title(False)
+        header.set_show_title(True)
+
+        # Centered title widget with description + switch
+        center_box = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
+        center_box.set_halign(Gtk.Align.FILL)
+        center_box.set_valign(Gtk.Align.CENTER)
+        center_box.set_hexpand(True)
+
+        self._show_all_label = Gtk.Label()
+        self._show_all_label.set_label(
+            _("Showing drivers detected as compatible with your computer")
+        )
+        self._show_all_label.add_css_class("dim-label")
+        self._show_all_label.add_css_class("caption")
+        self._show_all_label.set_ellipsize(Pango.EllipsizeMode.END)
+        self._show_all_label.set_hexpand(True)
+        center_box.append(self._show_all_label)
+
+        self._show_all_switch = Gtk.Switch()
+        self._show_all_switch.set_valign(Gtk.Align.CENTER)
+        self._show_all_switch.set_tooltip_text(_("Show all drivers"))
+        self._show_all_switch.update_property(
+            [Gtk.AccessibleProperty.LABEL], [_("Show all drivers")]
+        )
+        self._show_all_switch.connect("notify::active", self._on_show_all_toggled)
+        center_box.append(self._show_all_switch)
+
+        self._show_all_box = center_box
+        self._show_all_box.set_visible(False)
+        header.set_title_widget(self._show_all_box)
 
         # Menu (rightmost)
         menu_btn = Gtk.MenuButton()
@@ -321,17 +357,6 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         menu.append(_("About"), "app.about")
         menu_btn.set_menu_model(menu)
         header.pack_end(menu_btn)
-
-        # Show-all toggle button (before menu)
-        self._show_all_switch = Gtk.ToggleButton(label=_("Show all"))
-        self._show_all_switch.set_tooltip_text(_("Show all drivers"))
-        self._show_all_switch.update_property(
-            [Gtk.AccessibleProperty.LABEL], [_("Show all drivers")]
-        )
-        self._show_all_switch.connect("toggled", self._on_show_all_toggled)
-        self._show_all_box = self._show_all_switch
-        self._show_all_box.set_visible(False)
-        header.pack_end(self._show_all_box)
 
         self._setup_actions()
         return header
@@ -350,7 +375,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
     ) -> None:
         if row is None:
             return
-        page_id = row._page_id
+        page_id = row.get_name()
         self._stack.set_visible_child_name(page_id)
         self._show_all_box.set_visible(page_id in self._DRIVER_PAGES)
         # On collapsed split view, show content pane
@@ -362,7 +387,7 @@ class KernelManagerWindow(Adw.ApplicationWindow):
         idx = 0
         row = self._sidebar_list.get_row_at_index(idx)
         while row is not None:
-            if row._page_id == page_name:
+            if row.get_name() == page_name:
                 self._sidebar_list.select_row(row)
                 return
             idx += 1
@@ -442,6 +467,15 @@ class KernelManagerWindow(Adw.ApplicationWindow):
                     gpu_info,
                     mhwd_video,
                 )
+                # Start async network printer discovery
+                cat = self._category_sections
+                if "printer" in cat:
+                    cat["printer"].show_network_scan()
+                    threading.Thread(
+                        target=self._detect_network_printers,
+                        args=(db,),
+                        daemon=True,
+                    ).start()
                 return False
 
             GLib.idle_add(_populate)
@@ -456,6 +490,32 @@ class KernelManagerWindow(Adw.ApplicationWindow):
                 return False
 
             GLib.idle_add(_show_error)
+
+    def _detect_network_printers(self, db: DriverDatabase) -> None:
+        """Run network printer discovery in background and update UI."""
+        try:
+            net_printers = detect_network_printers(timeout=10)
+            newly_detected = match_network_printers(db, net_printers)
+
+            def _update_ui() -> bool:
+                cat = self._category_sections
+                if "printer" in cat:
+                    cat["printer"].hide_network_scan()
+                    if newly_detected > 0:
+                        cat["printer"].set_items(db.printers)
+                return False
+
+            GLib.idle_add(_update_ui)
+        except Exception as exc:
+            self._logger.warning("Network printer discovery failed: %s", exc)
+
+            def _hide_scan() -> bool:
+                cat = self._category_sections
+                if "printer" in cat:
+                    cat["printer"].hide_network_scan()
+                return False
+
+            GLib.idle_add(_hide_scan)
 
     # ------------------------------------------------------------------
     # Populate helpers (called from GLib.idle_add in _detect_hardware)
@@ -552,9 +612,16 @@ class KernelManagerWindow(Adw.ApplicationWindow):
     # Show-all toggle
     # ------------------------------------------------------------------
 
-    def _on_show_all_toggled(self, button: Gtk.ToggleButton) -> None:
-        show_all = button.get_active()
-        button.set_label(_("Show detected") if show_all else _("Show all"))
+    def _on_show_all_toggled(self, switch: Gtk.Switch, _pspec: object) -> None:
+        show_all = switch.get_active()
+        if show_all:
+            self._show_all_label.set_label(
+                _("Showing all drivers, including incompatible ones")
+            )
+        else:
+            self._show_all_label.set_label(
+                _("Showing drivers detected as compatible with your computer")
+            )
         self.mesa_section.set_show_all(show_all)
         for sec in self._category_sections.values():
             sec.set_show_all(show_all)

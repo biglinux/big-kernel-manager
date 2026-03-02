@@ -1,1 +1,3 @@
-Bluetooth driver for Ralink/Mediatek RT3290/RT3298LE wireless modules (legacy, no longer supported)
+Linux Bluetooth driver for Ralink (Mediatek) RT3290/RT3298LE wireless module
+
+This module has no official support by Mediatek. Support was discontinued.

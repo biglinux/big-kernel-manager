@@ -1,1 +1,2 @@
-Scanner driver for Kyocera multifunction printers
+    Kyocera sane scanner support package for many Kyocera
+    printers.

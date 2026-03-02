@@ -148,9 +148,12 @@ class MesaManager(BaseManager):
             output_callback: Callback function for command output.
             complete_callback: Callback function for completion notification.
         """
-        self._progress(progress_callback, 0.1, _("Applying {} driver...").format(driver['name']))
+        self._progress(
+            progress_callback, 0.1, _("Applying {} driver...").format(driver["name"])
+        )
         self._output(
-            output_callback, _("Starting {} driver installation...").format(driver['name'])
+            output_callback,
+            _("Starting {} driver installation...").format(driver["name"]),
         )
 
         try:
@@ -170,12 +173,16 @@ class MesaManager(BaseManager):
                 if installed_conflicts:
                     self._output(
                         output_callback,
-                        _("Removing conflicts: {}").format(', '.join(installed_conflicts)),
+                        _("Removing conflicts: {}").format(
+                            ", ".join(installed_conflicts)
+                        ),
                     )
 
             # Step 2: Check available packages to install
             self._progress(
-                progress_callback, 0.3, _("Checking {} packages...").format(driver['name'])
+                progress_callback,
+                0.3,
+                _("Checking {} packages...").format(driver["name"]),
             )
 
             packages_to_install = []
@@ -184,7 +191,8 @@ class MesaManager(BaseManager):
                     packages_to_install.append(pkg)
                 else:
                     self._output(
-                        output_callback, _("⚠️ Package {} not available, skipping...").format(pkg)
+                        output_callback,
+                        _("⚠️ Package {} not available, skipping...").format(pkg),
                     )
 
             if not packages_to_install:
@@ -194,51 +202,27 @@ class MesaManager(BaseManager):
                 return
 
             self._output(
-                output_callback, _("Installing: {}").format(', '.join(packages_to_install))
+                output_callback,
+                _("Installing: {}").format(", ".join(packages_to_install)),
             )
-
-            env = subprocess_env()
 
             # Step 3: Remove conflicting packages (if any)
             if installed_conflicts:
                 self._progress(
                     progress_callback, 0.35, _("Removing conflicting packages...")
                 )
-
-                remove_cmd = [
-                    self.sudo_command,
-                    "pacman",
-                    "-Rdd",
-                    "--noconfirm",
-                ] + installed_conflicts
-
-                process = subprocess.Popen(
-                    remove_cmd,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.STDOUT,
-                    stdin=subprocess.DEVNULL,
-                    text=True,
-                    env=env,
+                ok = self._run_pacman_subprocess(
+                    [self.sudo_command, "pacman", "-Rdd", "--noconfirm"]
+                    + installed_conflicts,
+                    0.35,
+                    progress_callback,
+                    output_callback,
                 )
-
-                progress = 0.35
-                if process.stdout:
-                    for line in iter(process.stdout.readline, ""):
-                        line = line.strip()
-                        if line:
-                            self._output(output_callback, line)
-                            progress, _status = self._parse_progress(line, progress)
-                            self._progress(progress_callback, progress, _status)
-
-                process.wait()
-
-                if process.returncode != 0:
+                if not ok:
                     self._progress(
-                        progress_callback, 0.0, _("Failed to remove conflicting packages.")
-                    )
-                    self._output(
-                        output_callback,
-                        _("❌ Failed to remove conflicts (exit code: {})").format(process.returncode),
+                        progress_callback,
+                        0.0,
+                        _("Failed to remove conflicting packages."),
                     )
                     if complete_callback:
                         complete_callback(False)
@@ -246,44 +230,19 @@ class MesaManager(BaseManager):
 
             # Step 4: Install the new driver packages
             self._progress(
-                progress_callback, 0.5, _("Installing {} driver...").format(driver['name'])
+                progress_callback,
+                0.5,
+                _("Installing {} driver...").format(driver["name"]),
             )
-
-            install_cmd = [
-                self.sudo_command,
-                "pacman",
-                "-S",
-                "--noconfirm",
-                "--ask",
-                "4",
-            ] + packages_to_install
-
-            process = subprocess.Popen(
-                install_cmd,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                stdin=subprocess.DEVNULL,
-                text=True,
-                env=env,
+            ok = self._run_pacman_subprocess(
+                [self.sudo_command, "pacman", "-S", "--noconfirm", "--ask", "4"]
+                + packages_to_install,
+                0.5,
+                progress_callback,
+                output_callback,
             )
-
-            progress = 0.5
-            if process.stdout:
-                for line in iter(process.stdout.readline, ""):
-                    line = line.strip()
-                    if line:
-                        self._output(output_callback, line)
-                        progress, _status = self._parse_progress(line, progress)
-                        self._progress(progress_callback, progress, _status)
-
-            process.wait()
-
-            if process.returncode != 0:
+            if not ok:
                 self._progress(progress_callback, 0.0, _("Failed to apply driver."))
-                self._output(
-                    output_callback,
-                    _("❌ Operation failed (exit code: {})").format(process.returncode),
-                )
                 if complete_callback:
                     complete_callback(False)
                 return
@@ -291,7 +250,8 @@ class MesaManager(BaseManager):
             # Success
             self._progress(progress_callback, 1.0, _("Driver applied successfully!"))
             self._output(
-                output_callback, _("✅ {} driver applied successfully!").format(driver['name'])
+                output_callback,
+                _("✅ {} driver applied successfully!").format(driver["name"]),
             )
 
             if complete_callback:
@@ -303,6 +263,40 @@ class MesaManager(BaseManager):
             self._output(output_callback, _("❌ Error: {}").format(str(e)))
             if complete_callback:
                 complete_callback(False)
+
+    def _run_pacman_subprocess(
+        self,
+        cmd: list[str],
+        initial_progress: float,
+        progress_callback: Callable | None,
+        output_callback: Callable | None,
+    ) -> bool:
+        """Run a pacman command, stream output, and return success."""
+        env = subprocess_env()
+        process = subprocess.Popen(
+            cmd,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            stdin=subprocess.DEVNULL,
+            text=True,
+            env=env,
+        )
+        progress = initial_progress
+        if process.stdout:
+            for line in iter(process.stdout.readline, ""):
+                line = line.strip()
+                if line:
+                    self._output(output_callback, line)
+                    progress, _status = self._parse_progress(line, progress)
+                    self._progress(progress_callback, progress, _status)
+        process.wait()
+        if process.returncode != 0:
+            self._output(
+                output_callback,
+                _("❌ Operation failed (exit code: {})").format(process.returncode),
+            )
+            return False
+        return True
 
     def _is_real_package_installed(self, package_name: str) -> bool:
         """
