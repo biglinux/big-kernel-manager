@@ -4,14 +4,7 @@ pkgname=big-kernel-manager
 pkgdesc="Application to manage kernel and mesa drivers for BigLinux"
 # Uncomment and edit the following lines as needed
 depends=(
-  'python>=3.6'
-  'python-gobject'
-  'gtk4'
-  'libadwaita'
-  'polkit'
-  'hicolor-icon-theme'
-  'avahi'
-  'nss-mdns'
+  'biglinux-driver-manager'
 )
 #conflicts=('')
 #provides=('')

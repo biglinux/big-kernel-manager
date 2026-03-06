@@ -1,8 +1,0 @@
-[Unit]
-Description=Big Kernel Manager — check for available drivers at login
-
-[Service]
-Type=oneshot
-ExecStart=/usr/share/big-kernel-manager/login-check-drivers.sh
-# Give the desktop environment time to fully start
-ExecStartPre=/usr/bin/sleep 5
